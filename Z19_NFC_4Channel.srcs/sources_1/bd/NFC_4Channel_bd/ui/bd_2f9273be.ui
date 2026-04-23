@@ -1,0 +1,99 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25404",
+   "Default View_TopLeft":"10,-890",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_in1_0 -pg 1 -lvl 0 -x 0 -y -70 -defaultsOSRD
+preplace portBus O_NAND_RE_N_0 -pg 1 -lvl 9 -x 3190 -y 330 -defaultsOSRD
+preplace portBus O_NAND_RE_P_0 -pg 1 -lvl 9 -x 3190 -y 310 -defaultsOSRD
+preplace portBus O_NAND_WP_N_0 -pg 1 -lvl 9 -x 3190 -y 290 -defaultsOSRD
+preplace portBus O_NAND_ALE_0 -pg 1 -lvl 9 -x 3190 -y 270 -defaultsOSRD
+preplace portBus O_NAND_CLE_0 -pg 1 -lvl 9 -x 3190 -y 250 -defaultsOSRD
+preplace portBus O_NAND_WE_N_0 -pg 1 -lvl 9 -x 3190 -y 230 -defaultsOSRD
+preplace portBus IO_NAND_DQ_0 -pg 1 -lvl 9 -x 3190 -y 390 -defaultsOSRD
+preplace portBus IO_NAND_DQS_N_0 -pg 1 -lvl 9 -x 3190 -y 370 -defaultsOSRD
+preplace portBus IO_NAND_DQS_P_0 -pg 1 -lvl 9 -x 3190 -y 350 -defaultsOSRD
+preplace portBus O_NAND_CE_N_0 -pg 1 -lvl 9 -x 3190 -y 210 -defaultsOSRD
+preplace portBus I_NAND_RB_N_0 -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 7 -x 2670 -y -720 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 7 -x 2670 -y -540 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 7 -x 2670 -y -340 -defaultsOSRD
+preplace inst axi_bram_ctrl_3 -pg 1 -lvl 7 -x 2670 -y -150 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 8 -x 3070 -y -720 -defaultsOSRD
+preplace inst axi_bram_ctrl_1_bram -pg 1 -lvl 8 -x 3070 -y -540 -defaultsOSRD
+preplace inst axi_bram_ctrl_2_bram -pg 1 -lvl 8 -x 3070 -y -340 -defaultsOSRD
+preplace inst axi_bram_ctrl_3_bram -pg 1 -lvl 8 -x 3070 -y -150 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 5 -x 1870 -y -1050 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 5 -x 1870 -y -600 -defaultsOSRD
+preplace inst axi_dma_2 -pg 1 -lvl 5 -x 1870 -y 0 -defaultsOSRD
+preplace inst axi_dma_3 -pg 1 -lvl 5 -x 1870 -y 280 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 660 -y -80 -defaultsOSRD
+preplace inst nfc_top_0 -pg 1 -lvl 7 -x 2670 -y 270 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -x 1160 -y -110 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 4 -x 1490 -y -440 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 6 -x 2250 -y -460 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 2 -x 660 -y -440 -defaultsOSRD
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 4 1330 -560 1670J -360 2080J -290 2440
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 2 60 -170 990
+preplace netloc nfc_top_0_O_NAND_RE_N 1 7 2 2860J 330 NJ
+preplace netloc nfc_top_0_O_NAND_RE_P 1 7 2 NJ 320 3170J
+preplace netloc nfc_top_0_O_NAND_WP_N 1 7 2 2850J 290 NJ
+preplace netloc nfc_top_0_O_NAND_ALE 1 7 2 2860J 270 NJ
+preplace netloc nfc_top_0_O_NAND_CLE 1 7 2 2850J 250 NJ
+preplace netloc nfc_top_0_O_NAND_WE_N 1 7 2 2860J 230 NJ
+preplace netloc Net 1 7 2 2850J 390 NJ
+preplace netloc Net1 1 7 2 2860J 370 NJ
+preplace netloc Net2 1 7 2 2850J 350 NJ
+preplace netloc nfc_top_0_O_NAND_CE_N 1 7 2 2850J 210 NJ
+preplace netloc clk_wiz_0_clk_ctrl_50 1 1 6 60 -530 980 -530 1350 -550 1660 -380 2100 -300 2430
+preplace netloc clk_wiz_0_locked 1 2 5 960J -10 NJ -10 1640J -120 NJ -120 2400
+preplace netloc I_NAND_RB_N_0_1 1 0 7 NJ 370 60 400 NJ 400 NJ 400 NJ 400 2070J 370 NJ
+preplace netloc clk_in1_0_1 1 0 2 N -70 N
+preplace netloc clk_wiz_0_nand_clk_fast 1 2 5 970J 130 NJ 130 NJ 130 NJ 130 2390
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 7 1 N -160
+preplace netloc smartconnect_1_M01_AXI 1 6 1 2420 -560n
+preplace netloc smartconnect_1_M03_AXI 1 6 1 2450 -430n
+preplace netloc axi_dma_3_M_AXI_S2MM 1 5 1 2090 -400n
+preplace netloc smartconnect_0_M04_AXI 1 4 3 NJ -400 2040J -280 2420
+preplace netloc axi_dma_2_M_AXIS_MM2S 1 5 2 2040 110 2410J
+preplace netloc axi_dma_2_M_AXI_S2MM 1 5 1 2060 -440n
+preplace netloc axi_dma_0_M_AXI_S2MM 1 5 1 2070 -1090n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N -730
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 4 990 -540 NJ -540 1680J -480 2040J
+preplace netloc smartconnect_0_M02_AXI 1 4 1 1650 -440n
+preplace netloc smartconnect_1_M00_AXI 1 6 1 2400 -740n
+preplace netloc axi_dma_1_M_AXI_MM2S 1 5 1 2060 -660n
+preplace netloc nfc_top_0_m_axis_1 1 4 4 1700 -260 NJ -260 NJ -260 2860
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 7 1 N -550
+preplace netloc axi_dma_3_M_AXI_MM2S 1 5 1 2070 -420n
+preplace netloc smartconnect_0_M03_AXI 1 4 1 1630 -420n
+preplace netloc smartconnect_1_M02_AXI 1 6 1 2470 -450n
+preplace netloc axi_dma_2_M_AXI_MM2S 1 5 1 2050 -460n
+preplace netloc smartconnect_0_M01_AXI 1 4 1 1650 -650n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 7 1 N -530
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 7 1 N -350
+preplace netloc axi_dma_0_M_AXI_MM2S 1 5 1 2100 -1110n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 5 2 NJ -620 2460
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1630 -1100n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 2 2 NJ -450 1340
+preplace netloc axi_bram_ctrl_2_BRAM_PORTB 1 7 1 N -330
+preplace netloc axi_dma_3_M_AXIS_MM2S 1 5 2 2100 230 NJ
+preplace netloc axi_dma_1_M_AXI_S2MM 1 5 1 2050 -640n
+preplace netloc nfc_top_0_m_axis_0 1 4 4 1690 -230 NJ -230 NJ -230 2840
+preplace netloc nfc_top_0_m_axis_3 1 4 4 1700 460 NJ 460 NJ 460 2840
+preplace netloc nfc_top_0_m_axis_2 1 4 4 1700 120 NJ 120 2450J 80 2850
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 5 2 NJ -1070 2480
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 7 1 N -710
+preplace netloc axi_bram_ctrl_3_BRAM_PORTB 1 7 1 N -140
+levelinfo -pg 1 0 40 660 1160 1490 1870 2250 2670 3070 3190
+pagesize -pg 1 -db -bbox -sgen -200 -1540 3410 740
+"
+}
+{
+   "da_axi4_cnt":"9",
+   "da_board_cnt":"3",
+   "da_bram_cntlr_cnt":"8",
+   "da_clkrst_cnt":"1"
+}

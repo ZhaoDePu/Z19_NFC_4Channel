@@ -1,0 +1,24 @@
+18:37:23 **** Incremental Build of configuration Debug for project NFC_4CH_TEST ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/sw/z19_nfc_4ch_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:85:12: warning: 'dma_recv' defined but not used [-Wunused-function]
+ static int dma_recv(u32 ch, u32 byte_len)
+            ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: NFC_4CH_TEST.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/sw/z19_nfc_4ch_platform/standalone_domain/bsplib/lib -o "NFC_4CH_TEST.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: NFC_4CH_TEST.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size NFC_4CH_TEST.elf  |tee "NFC_4CH_TEST.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49884	   4872	  32336	  87092	  15434	NFC_4CH_TEST.elf
+'Finished building: NFC_4CH_TEST.elf.size'
+' '
+
+18:37:26 Build Finished (took 3s.202ms)
+

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Apr 22 14:52:09 2026
+# Process ID: 25884
+# Current directory: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel
+# Command line: vivado.exe -mode batch -source _tmp_dump_pins.tcl
+# Log file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vivado.log
+# Journal file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel\vivado.jou
+#-----------------------------------------------------------
+source _tmp_dump_pins.tcl
+# set_part xczu19eg-ffvd1760-2-i
+INFO: [Coretcl 2-1500] The part has been set to 'xczu19eg-ffvd1760-2-i' for the current project only. Run set_part -help for more details. To evaluate different speed grades in the current design, use the set_speed_grade command, or use the open_checkpoint -part command to change the part used by an existing checkpoint design.
+# puts "PART=[get_property PART [current_project]]"
+PART=xczu19eg-ffvd1760-2-i
+# set pinAV27 [get_package_pins -quiet AV27]
+# puts "AV27_count=[llength $pinAV27]"
+AV27_count=0
+# set b64 [get_iobanks -quiet 64]
+# set b65 [get_iobanks -quiet 65]
+# puts "bank64=[llength $b64] bank65=[llength $b65]"
+bank64=0 bank65=0
+# set s64 [get_sites -quiet -of_objects $b64]
+# set s65 [get_sites -quiet -of_objects $b65]
+# set p64 [lsort [get_package_pins -quiet -of_objects $s64]]
+# set p65 [lsort [get_package_pins -quiet -of_objects $s65]]
+# puts "p64_count=[llength $p64]"
+p64_count=0
+# puts "p65_count=[llength $p65]"
+p65_count=0
+# set fp [open "_bank64_65_pkgpins.txt" w]
+# puts $fp "BANK64"
+# foreach p $p64 {puts $fp $p}
+# puts $fp "BANK65"
+# foreach p $p65 {puts $fp $p}
+# close $fp
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 14:52:13 2026...
