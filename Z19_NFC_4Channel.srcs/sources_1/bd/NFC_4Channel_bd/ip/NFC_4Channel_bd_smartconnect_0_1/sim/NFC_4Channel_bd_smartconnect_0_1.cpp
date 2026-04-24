@@ -684,7 +684,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
     M00_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M00_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
-    M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "13");
+    M00_AXI_transactor_param_props.addLong("ADDR_WIDTH", "15");
     M00_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M00_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
@@ -711,7 +711,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M00_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M00_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M00_AXI_transactor_param_props.addString("CLK_DOMAIN", "NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast");
-    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,13,1,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
+    mp_M00_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,15,1,16,1,1,16,1>("M00_AXI_transactor", M00_AXI_transactor_param_props);
     mp_M00_AXI_transactor->AWADDR(M00_AXI_awaddr);
     mp_M00_AXI_transactor->AWLEN(M00_AXI_awlen);
     mp_M00_AXI_transactor->AWSIZE(M00_AXI_awsize);
@@ -767,7 +767,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M01_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
     M01_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M01_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
-    M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "13");
+    M01_AXI_transactor_param_props.addLong("ADDR_WIDTH", "15");
     M01_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
     M01_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M01_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
@@ -794,7 +794,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M01_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M01_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M01_AXI_transactor_param_props.addString("CLK_DOMAIN", "NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast");
-    mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,13,1,16,1,1,16,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
+    mp_M01_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,15,1,16,1,1,16,1>("M01_AXI_transactor", M01_AXI_transactor_param_props);
     mp_M01_AXI_transactor->AWADDR(M01_AXI_awaddr);
     mp_M01_AXI_transactor->AWLEN(M01_AXI_awlen);
     mp_M01_AXI_transactor->AWSIZE(M01_AXI_awsize);
@@ -850,7 +850,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M02_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
     M02_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M02_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
-    M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "13");
+    M02_AXI_transactor_param_props.addLong("ADDR_WIDTH", "15");
     M02_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
     M02_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M02_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
@@ -877,7 +877,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M02_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M02_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M02_AXI_transactor_param_props.addString("CLK_DOMAIN", "NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast");
-    mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,13,1,16,1,1,16,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
+    mp_M02_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,15,1,16,1,1,16,1>("M02_AXI_transactor", M02_AXI_transactor_param_props);
     mp_M02_AXI_transactor->AWADDR(M02_AXI_awaddr);
     mp_M02_AXI_transactor->AWLEN(M02_AXI_awlen);
     mp_M02_AXI_transactor->AWSIZE(M02_AXI_awsize);
@@ -933,7 +933,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M03_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
     M03_AXI_transactor_param_props.addLong("FREQ_HZ", "50000000");
     M03_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
-    M03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "13");
+    M03_AXI_transactor_param_props.addLong("ADDR_WIDTH", "15");
     M03_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "16");
     M03_AXI_transactor_param_props.addLong("ARUSER_WIDTH", "16");
     M03_AXI_transactor_param_props.addLong("WUSER_WIDTH", "0");
@@ -960,7 +960,7 @@ void NFC_4Channel_bd_smartconnect_0_1::before_end_of_elaboration()
     M03_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M03_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     M03_AXI_transactor_param_props.addString("CLK_DOMAIN", "NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast");
-    mp_M03_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,13,1,16,1,1,16,1>("M03_AXI_transactor", M03_AXI_transactor_param_props);
+    mp_M03_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,15,1,16,1,1,16,1>("M03_AXI_transactor", M03_AXI_transactor_param_props);
     mp_M03_AXI_transactor->AWADDR(M03_AXI_awaddr);
     mp_M03_AXI_transactor->AWLEN(M03_AXI_awlen);
     mp_M03_AXI_transactor->AWSIZE(M03_AXI_awsize);

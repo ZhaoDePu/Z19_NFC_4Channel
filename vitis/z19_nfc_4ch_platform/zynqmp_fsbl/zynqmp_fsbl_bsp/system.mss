@@ -6,9 +6,8 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 7.1
  PARAMETER PROC_INSTANCE = psu_cortexa53_0
- PARAMETER stdin = psu_coresight_0
- PARAMETER stdout = psu_coresight_0
- PARAMETER zynqmp_fsbl_bsp = true
+ PARAMETER stdin = psu_uart_0
+ PARAMETER stdout = psu_uart_0
 END
 
 

@@ -320,7 +320,7 @@ module bd_4414_wrapper
     S08_AXI_wvalid,
     aclk,
     aresetn);
-  output [12:0]M00_AXI_araddr;
+  output [14:0]M00_AXI_araddr;
   output [1:0]M00_AXI_arburst;
   output [3:0]M00_AXI_arcache;
   output [7:0]M00_AXI_arlen;
@@ -331,7 +331,7 @@ module bd_4414_wrapper
   output [2:0]M00_AXI_arsize;
   output [15:0]M00_AXI_aruser;
   output M00_AXI_arvalid;
-  output [12:0]M00_AXI_awaddr;
+  output [14:0]M00_AXI_awaddr;
   output [1:0]M00_AXI_awburst;
   output [3:0]M00_AXI_awcache;
   output [7:0]M00_AXI_awlen;
@@ -355,7 +355,7 @@ module bd_4414_wrapper
   input M00_AXI_wready;
   output [3:0]M00_AXI_wstrb;
   output M00_AXI_wvalid;
-  output [12:0]M01_AXI_araddr;
+  output [14:0]M01_AXI_araddr;
   output [1:0]M01_AXI_arburst;
   output [3:0]M01_AXI_arcache;
   output [7:0]M01_AXI_arlen;
@@ -366,7 +366,7 @@ module bd_4414_wrapper
   output [2:0]M01_AXI_arsize;
   output [15:0]M01_AXI_aruser;
   output M01_AXI_arvalid;
-  output [12:0]M01_AXI_awaddr;
+  output [14:0]M01_AXI_awaddr;
   output [1:0]M01_AXI_awburst;
   output [3:0]M01_AXI_awcache;
   output [7:0]M01_AXI_awlen;
@@ -390,7 +390,7 @@ module bd_4414_wrapper
   input M01_AXI_wready;
   output [3:0]M01_AXI_wstrb;
   output M01_AXI_wvalid;
-  output [12:0]M02_AXI_araddr;
+  output [14:0]M02_AXI_araddr;
   output [1:0]M02_AXI_arburst;
   output [3:0]M02_AXI_arcache;
   output [7:0]M02_AXI_arlen;
@@ -401,7 +401,7 @@ module bd_4414_wrapper
   output [2:0]M02_AXI_arsize;
   output [15:0]M02_AXI_aruser;
   output M02_AXI_arvalid;
-  output [12:0]M02_AXI_awaddr;
+  output [14:0]M02_AXI_awaddr;
   output [1:0]M02_AXI_awburst;
   output [3:0]M02_AXI_awcache;
   output [7:0]M02_AXI_awlen;
@@ -425,7 +425,7 @@ module bd_4414_wrapper
   input M02_AXI_wready;
   output [3:0]M02_AXI_wstrb;
   output M02_AXI_wvalid;
-  output [12:0]M03_AXI_araddr;
+  output [14:0]M03_AXI_araddr;
   output [1:0]M03_AXI_arburst;
   output [3:0]M03_AXI_arcache;
   output [7:0]M03_AXI_arlen;
@@ -436,7 +436,7 @@ module bd_4414_wrapper
   output [2:0]M03_AXI_arsize;
   output [15:0]M03_AXI_aruser;
   output M03_AXI_arvalid;
-  output [12:0]M03_AXI_awaddr;
+  output [14:0]M03_AXI_awaddr;
   output [1:0]M03_AXI_awburst;
   output [3:0]M03_AXI_awcache;
   output [7:0]M03_AXI_awlen;
@@ -634,7 +634,7 @@ module bd_4414_wrapper
   input aclk;
   input aresetn;
 
-  wire [12:0]M00_AXI_araddr;
+  wire [14:0]M00_AXI_araddr;
   wire [1:0]M00_AXI_arburst;
   wire [3:0]M00_AXI_arcache;
   wire [7:0]M00_AXI_arlen;
@@ -645,7 +645,7 @@ module bd_4414_wrapper
   wire [2:0]M00_AXI_arsize;
   wire [15:0]M00_AXI_aruser;
   wire M00_AXI_arvalid;
-  wire [12:0]M00_AXI_awaddr;
+  wire [14:0]M00_AXI_awaddr;
   wire [1:0]M00_AXI_awburst;
   wire [3:0]M00_AXI_awcache;
   wire [7:0]M00_AXI_awlen;
@@ -669,7 +669,7 @@ module bd_4414_wrapper
   wire M00_AXI_wready;
   wire [3:0]M00_AXI_wstrb;
   wire M00_AXI_wvalid;
-  wire [12:0]M01_AXI_araddr;
+  wire [14:0]M01_AXI_araddr;
   wire [1:0]M01_AXI_arburst;
   wire [3:0]M01_AXI_arcache;
   wire [7:0]M01_AXI_arlen;
@@ -680,7 +680,7 @@ module bd_4414_wrapper
   wire [2:0]M01_AXI_arsize;
   wire [15:0]M01_AXI_aruser;
   wire M01_AXI_arvalid;
-  wire [12:0]M01_AXI_awaddr;
+  wire [14:0]M01_AXI_awaddr;
   wire [1:0]M01_AXI_awburst;
   wire [3:0]M01_AXI_awcache;
   wire [7:0]M01_AXI_awlen;
@@ -704,7 +704,7 @@ module bd_4414_wrapper
   wire M01_AXI_wready;
   wire [3:0]M01_AXI_wstrb;
   wire M01_AXI_wvalid;
-  wire [12:0]M02_AXI_araddr;
+  wire [14:0]M02_AXI_araddr;
   wire [1:0]M02_AXI_arburst;
   wire [3:0]M02_AXI_arcache;
   wire [7:0]M02_AXI_arlen;
@@ -715,7 +715,7 @@ module bd_4414_wrapper
   wire [2:0]M02_AXI_arsize;
   wire [15:0]M02_AXI_aruser;
   wire M02_AXI_arvalid;
-  wire [12:0]M02_AXI_awaddr;
+  wire [14:0]M02_AXI_awaddr;
   wire [1:0]M02_AXI_awburst;
   wire [3:0]M02_AXI_awcache;
   wire [7:0]M02_AXI_awlen;
@@ -739,7 +739,7 @@ module bd_4414_wrapper
   wire M02_AXI_wready;
   wire [3:0]M02_AXI_wstrb;
   wire M02_AXI_wvalid;
-  wire [12:0]M03_AXI_araddr;
+  wire [14:0]M03_AXI_araddr;
   wire [1:0]M03_AXI_arburst;
   wire [3:0]M03_AXI_arcache;
   wire [7:0]M03_AXI_arlen;
@@ -750,7 +750,7 @@ module bd_4414_wrapper
   wire [2:0]M03_AXI_arsize;
   wire [15:0]M03_AXI_aruser;
   wire M03_AXI_arvalid;
-  wire [12:0]M03_AXI_awaddr;
+  wire [14:0]M03_AXI_awaddr;
   wire [1:0]M03_AXI_awburst;
   wire [3:0]M03_AXI_awcache;
   wire [7:0]M03_AXI_awlen;

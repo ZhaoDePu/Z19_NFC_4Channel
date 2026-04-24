@@ -3,7 +3,7 @@
 CC := mb-gcc
 CC_FLAGS := -MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  
 CFLAGS := 
-LN_FLAGS := -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilfpga,-lxil,-lxilsecure,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group                                                                                                -nostartfiles -Wl,--no-relax -Wl,--gc-sections
+LN_FLAGS := -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilfpga,-lxil,-lxilsecure,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilskey,-lxil,-lgcc,-lc,--end-group                                                                                       -nostartfiles -Wl,--no-relax -Wl,--gc-sections
 
 c_SOURCES := $(wildcard *.c)
 S_SOURCES := $(wildcard *.S)

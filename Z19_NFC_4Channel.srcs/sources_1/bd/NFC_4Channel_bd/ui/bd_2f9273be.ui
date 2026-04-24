@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.25404",
-   "Default View_TopLeft":"10,-890",
+   "Default View_ScaleFactor":"0.95039",
+   "Default View_TopLeft":"1627,-1128",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -52,41 +52,41 @@ preplace netloc clk_wiz_0_locked 1 2 5 960J -10 NJ -10 1640J -120 NJ -120 2400
 preplace netloc I_NAND_RB_N_0_1 1 0 7 NJ 370 60 400 NJ 400 NJ 400 NJ 400 2070J 370 NJ
 preplace netloc clk_in1_0_1 1 0 2 N -70 N
 preplace netloc clk_wiz_0_nand_clk_fast 1 2 5 970J 130 NJ 130 NJ 130 NJ 130 2390
-preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 7 1 N -160
-preplace netloc smartconnect_1_M01_AXI 1 6 1 2420 -560n
-preplace netloc smartconnect_1_M03_AXI 1 6 1 2450 -430n
-preplace netloc axi_dma_3_M_AXI_S2MM 1 5 1 2090 -400n
-preplace netloc smartconnect_0_M04_AXI 1 4 3 NJ -400 2040J -280 2420
-preplace netloc axi_dma_2_M_AXIS_MM2S 1 5 2 2040 110 2410J
-preplace netloc axi_dma_2_M_AXI_S2MM 1 5 1 2060 -440n
-preplace netloc axi_dma_0_M_AXI_S2MM 1 5 1 2070 -1090n
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N -730
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 4 990 -540 NJ -540 1680J -480 2040J
-preplace netloc smartconnect_0_M02_AXI 1 4 1 1650 -440n
-preplace netloc smartconnect_1_M00_AXI 1 6 1 2400 -740n
-preplace netloc axi_dma_1_M_AXI_MM2S 1 5 1 2060 -660n
-preplace netloc nfc_top_0_m_axis_1 1 4 4 1700 -260 NJ -260 NJ -260 2860
-preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 7 1 N -550
-preplace netloc axi_dma_3_M_AXI_MM2S 1 5 1 2070 -420n
-preplace netloc smartconnect_0_M03_AXI 1 4 1 1630 -420n
-preplace netloc smartconnect_1_M02_AXI 1 6 1 2470 -450n
-preplace netloc axi_dma_2_M_AXI_MM2S 1 5 1 2050 -460n
-preplace netloc smartconnect_0_M01_AXI 1 4 1 1650 -650n
-preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 7 1 N -530
-preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 7 1 N -350
-preplace netloc axi_dma_0_M_AXI_MM2S 1 5 1 2100 -1110n
-preplace netloc axi_dma_1_M_AXIS_MM2S 1 5 2 NJ -620 2460
-preplace netloc smartconnect_0_M00_AXI 1 4 1 1630 -1100n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 2 2 NJ -450 1340
-preplace netloc axi_bram_ctrl_2_BRAM_PORTB 1 7 1 N -330
-preplace netloc axi_dma_3_M_AXIS_MM2S 1 5 2 2100 230 NJ
-preplace netloc axi_dma_1_M_AXI_S2MM 1 5 1 2050 -640n
-preplace netloc nfc_top_0_m_axis_0 1 4 4 1690 -230 NJ -230 NJ -230 2840
-preplace netloc nfc_top_0_m_axis_3 1 4 4 1700 460 NJ 460 NJ 460 2840
-preplace netloc nfc_top_0_m_axis_2 1 4 4 1700 120 NJ 120 2450J 80 2850
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 5 2 NJ -1070 2480
 preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 7 1 N -710
 preplace netloc axi_bram_ctrl_3_BRAM_PORTB 1 7 1 N -140
+preplace netloc axi_dma_0_M_AXI_MM2S 1 5 1 2100 -1110n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 5 2 NJ -620 2460
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 2 2 NJ -450 1340
+preplace netloc smartconnect_1_M03_AXI 1 6 1 2450 -430n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTB 1 7 1 N -330
+preplace netloc axi_dma_3_M_AXIS_MM2S 1 5 2 2100 230 NJ
+preplace netloc nfc_top_0_m_axis_0 1 4 4 1690 -230 NJ -230 NJ -230 2840
+preplace netloc smartconnect_0_M02_AXI 1 4 1 1650 -440n
+preplace netloc axi_dma_2_M_AXI_S2MM 1 5 1 2060 -440n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 7 1 N -550
+preplace netloc smartconnect_0_M00_AXI 1 4 1 1630 -1100n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 7 1 N -530
+preplace netloc axi_dma_1_M_AXI_S2MM 1 5 1 2050 -640n
+preplace netloc nfc_top_0_m_axis_1 1 4 4 1700 -260 NJ -260 NJ -260 2860
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 2 4 990 -540 NJ -540 1680J -480 2040J
+preplace netloc nfc_top_0_m_axis_3 1 4 4 1700 460 NJ 460 NJ 460 2840
+preplace netloc smartconnect_0_M01_AXI 1 4 1 1650 -650n
+preplace netloc smartconnect_1_M01_AXI 1 6 1 2420 -560n
+preplace netloc smartconnect_0_M04_AXI 1 4 3 NJ -400 2040J -280 2420
+preplace netloc axi_dma_3_M_AXI_MM2S 1 5 1 2070 -420n
+preplace netloc nfc_top_0_m_axis_2 1 4 4 1700 120 NJ 120 2450J 80 2850
+preplace netloc axi_dma_0_M_AXI_S2MM 1 5 1 2070 -1090n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 5 2 NJ -1070 2480
+preplace netloc axi_dma_2_M_AXI_MM2S 1 5 1 2050 -460n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 7 1 N -730
+preplace netloc axi_dma_3_M_AXI_S2MM 1 5 1 2090 -400n
+preplace netloc axi_bram_ctrl_3_BRAM_PORTA 1 7 1 N -160
+preplace netloc smartconnect_1_M00_AXI 1 6 1 2400 -740n
+preplace netloc smartconnect_0_M03_AXI 1 4 1 1630 -420n
+preplace netloc smartconnect_1_M02_AXI 1 6 1 2470 -450n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 7 1 N -350
+preplace netloc axi_dma_2_M_AXIS_MM2S 1 5 2 2040 110 2410J
+preplace netloc axi_dma_1_M_AXI_MM2S 1 5 1 2060 -660n
 levelinfo -pg 1 0 40 660 1160 1490 1870 2250 2670 3070 3190
 pagesize -pg 1 -db -bbox -sgen -200 -1540 3410 740
 "

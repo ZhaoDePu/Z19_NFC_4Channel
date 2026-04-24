@@ -237,7 +237,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   output bit [1 : 0] S08_AXI_bresp,
   output bit_as_bool S08_AXI_bvalid,
   input bit_as_bool S08_AXI_bready,
-  output bit [12 : 0] M00_AXI_awaddr,
+  output bit [14 : 0] M00_AXI_awaddr,
   output bit [7 : 0] M00_AXI_awlen,
   output bit [2 : 0] M00_AXI_awsize,
   output bit [1 : 0] M00_AXI_awburst,
@@ -256,7 +256,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit [1 : 0] M00_AXI_bresp,
   input bit_as_bool M00_AXI_bvalid,
   output bit_as_bool M00_AXI_bready,
-  output bit [12 : 0] M00_AXI_araddr,
+  output bit [14 : 0] M00_AXI_araddr,
   output bit [7 : 0] M00_AXI_arlen,
   output bit [2 : 0] M00_AXI_arsize,
   output bit [1 : 0] M00_AXI_arburst,
@@ -272,7 +272,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit_as_bool M00_AXI_rlast,
   input bit_as_bool M00_AXI_rvalid,
   output bit_as_bool M00_AXI_rready,
-  output bit [12 : 0] M01_AXI_awaddr,
+  output bit [14 : 0] M01_AXI_awaddr,
   output bit [7 : 0] M01_AXI_awlen,
   output bit [2 : 0] M01_AXI_awsize,
   output bit [1 : 0] M01_AXI_awburst,
@@ -291,7 +291,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit [1 : 0] M01_AXI_bresp,
   input bit_as_bool M01_AXI_bvalid,
   output bit_as_bool M01_AXI_bready,
-  output bit [12 : 0] M01_AXI_araddr,
+  output bit [14 : 0] M01_AXI_araddr,
   output bit [7 : 0] M01_AXI_arlen,
   output bit [2 : 0] M01_AXI_arsize,
   output bit [1 : 0] M01_AXI_arburst,
@@ -307,7 +307,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit_as_bool M01_AXI_rlast,
   input bit_as_bool M01_AXI_rvalid,
   output bit_as_bool M01_AXI_rready,
-  output bit [12 : 0] M02_AXI_awaddr,
+  output bit [14 : 0] M02_AXI_awaddr,
   output bit [7 : 0] M02_AXI_awlen,
   output bit [2 : 0] M02_AXI_awsize,
   output bit [1 : 0] M02_AXI_awburst,
@@ -326,7 +326,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit [1 : 0] M02_AXI_bresp,
   input bit_as_bool M02_AXI_bvalid,
   output bit_as_bool M02_AXI_bready,
-  output bit [12 : 0] M02_AXI_araddr,
+  output bit [14 : 0] M02_AXI_araddr,
   output bit [7 : 0] M02_AXI_arlen,
   output bit [2 : 0] M02_AXI_arsize,
   output bit [1 : 0] M02_AXI_arburst,
@@ -342,7 +342,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit_as_bool M02_AXI_rlast,
   input bit_as_bool M02_AXI_rvalid,
   output bit_as_bool M02_AXI_rready,
-  output bit [12 : 0] M03_AXI_awaddr,
+  output bit [14 : 0] M03_AXI_awaddr,
   output bit [7 : 0] M03_AXI_awlen,
   output bit [2 : 0] M03_AXI_awsize,
   output bit [1 : 0] M03_AXI_awburst,
@@ -361,7 +361,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (
   input bit [1 : 0] M03_AXI_bresp,
   input bit_as_bool M03_AXI_bvalid,
   output bit_as_bool M03_AXI_bready,
-  output bit [12 : 0] M03_AXI_araddr,
+  output bit [14 : 0] M03_AXI_araddr,
   output bit [7 : 0] M03_AXI_arlen,
   output bit [2 : 0] M03_AXI_arsize,
   output bit [1 : 0] M03_AXI_arburst,
@@ -559,7 +559,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   output wire [1 : 0] S08_AXI_bresp;
   output wire S08_AXI_bvalid;
   input bit S08_AXI_bready;
-  output wire [12 : 0] M00_AXI_awaddr;
+  output wire [14 : 0] M00_AXI_awaddr;
   output wire [7 : 0] M00_AXI_awlen;
   output wire [2 : 0] M00_AXI_awsize;
   output wire [1 : 0] M00_AXI_awburst;
@@ -578,7 +578,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M00_AXI_bresp;
   input bit M00_AXI_bvalid;
   output wire M00_AXI_bready;
-  output wire [12 : 0] M00_AXI_araddr;
+  output wire [14 : 0] M00_AXI_araddr;
   output wire [7 : 0] M00_AXI_arlen;
   output wire [2 : 0] M00_AXI_arsize;
   output wire [1 : 0] M00_AXI_arburst;
@@ -594,7 +594,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M00_AXI_rlast;
   input bit M00_AXI_rvalid;
   output wire M00_AXI_rready;
-  output wire [12 : 0] M01_AXI_awaddr;
+  output wire [14 : 0] M01_AXI_awaddr;
   output wire [7 : 0] M01_AXI_awlen;
   output wire [2 : 0] M01_AXI_awsize;
   output wire [1 : 0] M01_AXI_awburst;
@@ -613,7 +613,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M01_AXI_bresp;
   input bit M01_AXI_bvalid;
   output wire M01_AXI_bready;
-  output wire [12 : 0] M01_AXI_araddr;
+  output wire [14 : 0] M01_AXI_araddr;
   output wire [7 : 0] M01_AXI_arlen;
   output wire [2 : 0] M01_AXI_arsize;
   output wire [1 : 0] M01_AXI_arburst;
@@ -629,7 +629,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M01_AXI_rlast;
   input bit M01_AXI_rvalid;
   output wire M01_AXI_rready;
-  output wire [12 : 0] M02_AXI_awaddr;
+  output wire [14 : 0] M02_AXI_awaddr;
   output wire [7 : 0] M02_AXI_awlen;
   output wire [2 : 0] M02_AXI_awsize;
   output wire [1 : 0] M02_AXI_awburst;
@@ -648,7 +648,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M02_AXI_bresp;
   input bit M02_AXI_bvalid;
   output wire M02_AXI_bready;
-  output wire [12 : 0] M02_AXI_araddr;
+  output wire [14 : 0] M02_AXI_araddr;
   output wire [7 : 0] M02_AXI_arlen;
   output wire [2 : 0] M02_AXI_arsize;
   output wire [1 : 0] M02_AXI_arburst;
@@ -664,7 +664,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M02_AXI_rlast;
   input bit M02_AXI_rvalid;
   output wire M02_AXI_rready;
-  output wire [12 : 0] M03_AXI_awaddr;
+  output wire [14 : 0] M03_AXI_awaddr;
   output wire [7 : 0] M03_AXI_awlen;
   output wire [2 : 0] M03_AXI_awsize;
   output wire [1 : 0] M03_AXI_awburst;
@@ -683,7 +683,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M03_AXI_bresp;
   input bit M03_AXI_bvalid;
   output wire M03_AXI_bready;
-  output wire [12 : 0] M03_AXI_araddr;
+  output wire [14 : 0] M03_AXI_araddr;
   output wire [7 : 0] M03_AXI_arlen;
   output wire [2 : 0] M03_AXI_arsize;
   output wire [1 : 0] M03_AXI_arburst;
@@ -878,7 +878,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   output wire [1 : 0] S08_AXI_bresp;
   output wire S08_AXI_bvalid;
   input bit S08_AXI_bready;
-  output wire [12 : 0] M00_AXI_awaddr;
+  output wire [14 : 0] M00_AXI_awaddr;
   output wire [7 : 0] M00_AXI_awlen;
   output wire [2 : 0] M00_AXI_awsize;
   output wire [1 : 0] M00_AXI_awburst;
@@ -897,7 +897,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M00_AXI_bresp;
   input bit M00_AXI_bvalid;
   output wire M00_AXI_bready;
-  output wire [12 : 0] M00_AXI_araddr;
+  output wire [14 : 0] M00_AXI_araddr;
   output wire [7 : 0] M00_AXI_arlen;
   output wire [2 : 0] M00_AXI_arsize;
   output wire [1 : 0] M00_AXI_arburst;
@@ -913,7 +913,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M00_AXI_rlast;
   input bit M00_AXI_rvalid;
   output wire M00_AXI_rready;
-  output wire [12 : 0] M01_AXI_awaddr;
+  output wire [14 : 0] M01_AXI_awaddr;
   output wire [7 : 0] M01_AXI_awlen;
   output wire [2 : 0] M01_AXI_awsize;
   output wire [1 : 0] M01_AXI_awburst;
@@ -932,7 +932,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M01_AXI_bresp;
   input bit M01_AXI_bvalid;
   output wire M01_AXI_bready;
-  output wire [12 : 0] M01_AXI_araddr;
+  output wire [14 : 0] M01_AXI_araddr;
   output wire [7 : 0] M01_AXI_arlen;
   output wire [2 : 0] M01_AXI_arsize;
   output wire [1 : 0] M01_AXI_arburst;
@@ -948,7 +948,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M01_AXI_rlast;
   input bit M01_AXI_rvalid;
   output wire M01_AXI_rready;
-  output wire [12 : 0] M02_AXI_awaddr;
+  output wire [14 : 0] M02_AXI_awaddr;
   output wire [7 : 0] M02_AXI_awlen;
   output wire [2 : 0] M02_AXI_awsize;
   output wire [1 : 0] M02_AXI_awburst;
@@ -967,7 +967,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M02_AXI_bresp;
   input bit M02_AXI_bvalid;
   output wire M02_AXI_bready;
-  output wire [12 : 0] M02_AXI_araddr;
+  output wire [14 : 0] M02_AXI_araddr;
   output wire [7 : 0] M02_AXI_arlen;
   output wire [2 : 0] M02_AXI_arsize;
   output wire [1 : 0] M02_AXI_arburst;
@@ -983,7 +983,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit M02_AXI_rlast;
   input bit M02_AXI_rvalid;
   output wire M02_AXI_rready;
-  output wire [12 : 0] M03_AXI_awaddr;
+  output wire [14 : 0] M03_AXI_awaddr;
   output wire [7 : 0] M03_AXI_awlen;
   output wire [2 : 0] M03_AXI_awsize;
   output wire [1 : 0] M03_AXI_awburst;
@@ -1002,7 +1002,7 @@ module NFC_4Channel_bd_smartconnect_0_1 (aclk,aresetn,S00_AXI_awid,S00_AXI_awadd
   input bit [1 : 0] M03_AXI_bresp;
   input bit M03_AXI_bvalid;
   output wire M03_AXI_bready;
-  output wire [12 : 0] M03_AXI_araddr;
+  output wire [14 : 0] M03_AXI_araddr;
   output wire [7 : 0] M03_AXI_arlen;
   output wire [2 : 0] M03_AXI_arsize;
   output wire [1 : 0] M03_AXI_arburst;

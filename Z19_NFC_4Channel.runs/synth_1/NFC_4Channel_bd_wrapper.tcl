@@ -17,11 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param power.BramSDPPropagationFix 1
-set_param chipscope.maxJobs 3
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableLutRouteBelPower 1
 create_project -in_memory -part xczu19eg-ffvc1760-2-i
 
 set_param project.singleFileAddWarning.threshold 0

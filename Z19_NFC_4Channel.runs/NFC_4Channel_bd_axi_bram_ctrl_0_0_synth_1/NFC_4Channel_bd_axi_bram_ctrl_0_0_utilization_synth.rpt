@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Apr 22 16:46:27 2026
+| Date         : Fri Apr 24 14:44:15 2026
 | Host         : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file NFC_4Channel_bd_axi_bram_ctrl_0_0_utilization_synth.rpt -pb NFC_4Channel_bd_axi_bram_ctrl_0_0_utilization_synth.pb
 | Design       : NFC_4Channel_bd_axi_bram_ctrl_0_0
@@ -31,16 +31,16 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| CLB LUTs*                  |  290 |     0 |    522720 |  0.06 |
-|   LUT as Logic             |  289 |     0 |    522720 |  0.06 |
+| CLB LUTs*                  |  294 |     0 |    522720 |  0.06 |
+|   LUT as Logic             |  293 |     0 |    522720 |  0.06 |
 |   LUT as Memory            |    1 |     0 |    161280 | <0.01 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    1 |     0 |           |       |
-| CLB Registers              |  281 |     0 |   1045440 |  0.03 |
-|   Register as Flip Flop    |  281 |     0 |   1045440 |  0.03 |
+| CLB Registers              |  293 |     0 |   1045440 |  0.03 |
+|   Register as Flip Flop    |  293 |     0 |   1045440 |  0.03 |
 |   Register as Latch        |    0 |     0 |   1045440 |  0.00 |
 | CARRY8                     |    1 |     0 |     65340 | <0.01 |
-| F7 Muxes                   |    0 |     0 |    261360 |  0.00 |
+| F7 Muxes                   |    2 |     0 |    261360 | <0.01 |
 | F8 Muxes                   |    0 |     0 |    130680 |  0.00 |
 | F9 Muxes                   |    0 |     0 |     65340 |  0.00 |
 +----------------------------+------+-------+-----------+-------+
@@ -62,7 +62,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 281   |          Yes |       Reset |            - |
+| 293   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -160,13 +160,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  281 |            Register |
-| LUT6     |  137 |                 CLB |
-| LUT5     |   70 |                 CLB |
-| LUT3     |   69 |                 CLB |
-| LUT4     |   49 |                 CLB |
-| LUT2     |   22 |                 CLB |
+| FDRE     |  293 |            Register |
+| LUT6     |  144 |                 CLB |
+| LUT3     |   72 |                 CLB |
+| LUT5     |   63 |                 CLB |
+| LUT4     |   44 |                 CLB |
+| LUT2     |   23 |                 CLB |
 | LUT1     |    4 |                 CLB |
+| MUXF7    |    2 |                 CLB |
 | SRL16E   |    1 |                 CLB |
 | CARRY8   |    1 |                 CLB |
 +----------+------+---------------------+

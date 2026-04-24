@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Apr 22 16:48:13 2026
+-- Date        : Fri Apr 24 14:44:35 2026
 -- Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top NFC_4Channel_bd_axi_bram_ctrl_0_bram_0 -prefix
 --               NFC_4Channel_bd_axi_bram_ctrl_0_bram_0_ NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_stub.vhdl

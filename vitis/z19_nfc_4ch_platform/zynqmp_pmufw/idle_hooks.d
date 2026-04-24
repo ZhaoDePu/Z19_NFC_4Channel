@@ -8,6 +8,7 @@ idle_hooks.o: idle_hooks.c zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xil_assert.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xil_exception.h pm_node_idle.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xparameters.h \
+ zynqmp_pmufw_bsp/psu_pmu_0/include/xuartps_hw.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xgpiops_hw.h pm_common.h pmu_local.h \
  xpfw_default.h xpfw_config.h xpfw_util.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xil_types.h \
@@ -42,6 +43,8 @@ zynqmp_pmufw_bsp/psu_pmu_0/include/xil_exception.h:
 pm_node_idle.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xparameters.h:
+
+zynqmp_pmufw_bsp/psu_pmu_0/include/xuartps_hw.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xgpiops_hw.h:
 

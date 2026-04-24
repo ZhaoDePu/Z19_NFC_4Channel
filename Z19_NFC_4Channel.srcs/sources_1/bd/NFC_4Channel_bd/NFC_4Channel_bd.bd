@@ -3417,130 +3417,10 @@
       }
     },
     "interface_nets": {
-      "axi_bram_ctrl_0_BRAM_PORTB": {
+      "smartconnect_1_M02_AXI": {
         "interface_ports": [
-          "axi_bram_ctrl_0_bram/BRAM_PORTB",
-          "axi_bram_ctrl_0/BRAM_PORTB"
-        ]
-      },
-      "axi_bram_ctrl_3_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_3_bram/BRAM_PORTB",
-          "axi_bram_ctrl_3/BRAM_PORTB"
-        ]
-      },
-      "axi_dma_0_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_dma_0/M_AXI_MM2S",
-          "smartconnect_1/S01_AXI"
-        ]
-      },
-      "axi_dma_1_M_AXIS_MM2S": {
-        "interface_ports": [
-          "nfc_top_0/s_axis_1",
-          "axi_dma_1/M_AXIS_MM2S"
-        ]
-      },
-      "zynq_ultra_ps_e_0_M_AXI_HPM0_LPD": {
-        "interface_ports": [
-          "zynq_ultra_ps_e_0/M_AXI_HPM0_LPD",
-          "smartconnect_0/S00_AXI"
-        ]
-      },
-      "smartconnect_1_M03_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_3/S_AXI",
-          "smartconnect_1/M03_AXI"
-        ]
-      },
-      "axi_bram_ctrl_2_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_2_bram/BRAM_PORTB",
-          "axi_bram_ctrl_2/BRAM_PORTB"
-        ]
-      },
-      "axi_dma_3_M_AXIS_MM2S": {
-        "interface_ports": [
-          "nfc_top_0/s_axis_3",
-          "axi_dma_3/M_AXIS_MM2S"
-        ]
-      },
-      "nfc_top_0_m_axis_0": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_0",
-          "axi_dma_0/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_0_M02_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M02_AXI",
-          "axi_dma_2/S_AXI_LITE"
-        ]
-      },
-      "axi_dma_2_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_2/M_AXI_S2MM",
-          "smartconnect_1/S06_AXI"
-        ]
-      },
-      "axi_bram_ctrl_1_BRAM_PORTA": {
-        "interface_ports": [
-          "axi_bram_ctrl_1_bram/BRAM_PORTA",
-          "axi_bram_ctrl_1/BRAM_PORTA"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "axi_dma_0/S_AXI_LITE"
-        ]
-      },
-      "axi_bram_ctrl_1_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_1_bram/BRAM_PORTB",
-          "axi_bram_ctrl_1/BRAM_PORTB"
-        ]
-      },
-      "axi_dma_1_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_1/M_AXI_S2MM",
-          "smartconnect_1/S04_AXI"
-        ]
-      },
-      "nfc_top_0_m_axis_1": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_1",
-          "axi_dma_1/S_AXIS_S2MM"
-        ]
-      },
-      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
-        "interface_ports": [
-          "smartconnect_1/S00_AXI",
-          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
-        ]
-      },
-      "nfc_top_0_m_axis_3": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_3",
-          "axi_dma_3/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_dma_1/S_AXI_LITE"
-        ]
-      },
-      "smartconnect_1_M01_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_1/S_AXI",
-          "smartconnect_1/M01_AXI"
-        ]
-      },
-      "smartconnect_0_M04_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M04_AXI",
-          "nfc_top_0/s_axil"
+          "axi_bram_ctrl_2/S_AXI",
+          "smartconnect_1/M02_AXI"
         ]
       },
       "axi_dma_3_M_AXI_MM2S": {
@@ -3549,34 +3429,16 @@
           "smartconnect_1/S07_AXI"
         ]
       },
-      "nfc_top_0_m_axis_2": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_2",
-          "axi_dma_2/S_AXIS_S2MM"
-        ]
-      },
       "axi_dma_0_M_AXI_S2MM": {
         "interface_ports": [
           "axi_dma_0/M_AXI_S2MM",
           "smartconnect_1/S02_AXI"
         ]
       },
-      "axi_dma_0_M_AXIS_MM2S": {
+      "smartconnect_0_M02_AXI": {
         "interface_ports": [
-          "nfc_top_0/s_axis_0",
-          "axi_dma_0/M_AXIS_MM2S"
-        ]
-      },
-      "axi_dma_2_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_dma_2/M_AXI_MM2S",
-          "smartconnect_1/S05_AXI"
-        ]
-      },
-      "axi_bram_ctrl_0_BRAM_PORTA": {
-        "interface_ports": [
-          "axi_bram_ctrl_0_bram/BRAM_PORTA",
-          "axi_bram_ctrl_0/BRAM_PORTA"
+          "smartconnect_0/M02_AXI",
+          "axi_dma_2/S_AXI_LITE"
         ]
       },
       "axi_dma_3_M_AXI_S2MM": {
@@ -3585,10 +3447,40 @@
           "smartconnect_1/S08_AXI"
         ]
       },
-      "axi_bram_ctrl_3_BRAM_PORTA": {
+      "smartconnect_0_M03_AXI": {
         "interface_ports": [
-          "axi_bram_ctrl_3_bram/BRAM_PORTA",
-          "axi_bram_ctrl_3/BRAM_PORTA"
+          "smartconnect_0/M03_AXI",
+          "axi_dma_3/S_AXI_LITE"
+        ]
+      },
+      "axi_bram_ctrl_1_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_1_bram/BRAM_PORTB",
+          "axi_bram_ctrl_1/BRAM_PORTB"
+        ]
+      },
+      "axi_dma_3_M_AXIS_MM2S": {
+        "interface_ports": [
+          "nfc_top_0/s_axis_3",
+          "axi_dma_3/M_AXIS_MM2S"
+        ]
+      },
+      "nfc_top_0_m_axis_1": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_1",
+          "axi_dma_1/S_AXIS_S2MM"
+        ]
+      },
+      "nfc_top_0_m_axis_2": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_2",
+          "axi_dma_2/S_AXIS_S2MM"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "axi_dma_0/S_AXI_LITE"
         ]
       },
       "smartconnect_1_M00_AXI": {
@@ -3597,22 +3489,16 @@
           "smartconnect_1/M00_AXI"
         ]
       },
-      "smartconnect_0_M03_AXI": {
+      "nfc_top_0_m_axis_3": {
         "interface_ports": [
-          "smartconnect_0/M03_AXI",
-          "axi_dma_3/S_AXI_LITE"
+          "nfc_top_0/m_axis_3",
+          "axi_dma_3/S_AXIS_S2MM"
         ]
       },
-      "smartconnect_1_M02_AXI": {
+      "axi_bram_ctrl_1_BRAM_PORTA": {
         "interface_ports": [
-          "axi_bram_ctrl_2/S_AXI",
-          "smartconnect_1/M02_AXI"
-        ]
-      },
-      "axi_bram_ctrl_2_BRAM_PORTA": {
-        "interface_ports": [
-          "axi_bram_ctrl_2_bram/BRAM_PORTA",
-          "axi_bram_ctrl_2/BRAM_PORTA"
+          "axi_bram_ctrl_1_bram/BRAM_PORTA",
+          "axi_bram_ctrl_1/BRAM_PORTA"
         ]
       },
       "axi_dma_2_M_AXIS_MM2S": {
@@ -3621,10 +3507,124 @@
           "axi_dma_2/M_AXIS_MM2S"
         ]
       },
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_LPD": {
+        "interface_ports": [
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_LPD",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
+      "axi_dma_2_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_dma_2/M_AXI_MM2S",
+          "smartconnect_1/S05_AXI"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_0_bram/BRAM_PORTB",
+          "axi_bram_ctrl_0/BRAM_PORTB"
+        ]
+      },
+      "axi_dma_1_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_1/M_AXI_S2MM",
+          "smartconnect_1/S04_AXI"
+        ]
+      },
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
+        "interface_ports": [
+          "smartconnect_1/S00_AXI",
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
+        ]
+      },
+      "nfc_top_0_m_axis_0": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_0",
+          "axi_dma_0/S_AXIS_S2MM"
+        ]
+      },
+      "smartconnect_1_M01_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_1/S_AXI",
+          "smartconnect_1/M01_AXI"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "axi_dma_1/S_AXI_LITE"
+        ]
+      },
+      "axi_dma_0_M_AXIS_MM2S": {
+        "interface_ports": [
+          "nfc_top_0/s_axis_0",
+          "axi_dma_0/M_AXIS_MM2S"
+        ]
+      },
+      "axi_bram_ctrl_2_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_2_bram/BRAM_PORTA",
+          "axi_bram_ctrl_2/BRAM_PORTA"
+        ]
+      },
+      "axi_bram_ctrl_3_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_3_bram/BRAM_PORTA",
+          "axi_bram_ctrl_3/BRAM_PORTA"
+        ]
+      },
+      "axi_dma_2_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_2/M_AXI_S2MM",
+          "smartconnect_1/S06_AXI"
+        ]
+      },
+      "axi_dma_1_M_AXIS_MM2S": {
+        "interface_ports": [
+          "nfc_top_0/s_axis_1",
+          "axi_dma_1/M_AXIS_MM2S"
+        ]
+      },
       "axi_dma_1_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_1/M_AXI_MM2S",
           "smartconnect_1/S03_AXI"
+        ]
+      },
+      "axi_bram_ctrl_2_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_2_bram/BRAM_PORTB",
+          "axi_bram_ctrl_2/BRAM_PORTB"
+        ]
+      },
+      "smartconnect_1_M03_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_3/S_AXI",
+          "smartconnect_1/M03_AXI"
+        ]
+      },
+      "axi_dma_0_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_dma_0/M_AXI_MM2S",
+          "smartconnect_1/S01_AXI"
+        ]
+      },
+      "smartconnect_0_M04_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M04_AXI",
+          "nfc_top_0/s_axil"
+        ]
+      },
+      "axi_bram_ctrl_3_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_3_bram/BRAM_PORTB",
+          "axi_bram_ctrl_3/BRAM_PORTB"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTA": {
+        "interface_ports": [
+          "axi_bram_ctrl_0_bram/BRAM_PORTA",
+          "axi_bram_ctrl_0/BRAM_PORTA"
         ]
       }
     },
@@ -3771,11 +3771,55 @@
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           },
           "Data_S2MM": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           }
         }
       },
@@ -3783,11 +3827,55 @@
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           },
           "Data_S2MM": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           }
         }
       },
@@ -3795,11 +3883,55 @@
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           },
           "Data_S2MM": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           }
         }
       },
@@ -3807,11 +3939,55 @@
         "address_spaces": {
           "Data_MM2S": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           },
           "Data_S2MM": {
             "range": "4G",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_axi_bram_ctrl_0_Mem0": {
+                "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
+                "offset": "0xA0000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_1_Mem0": {
+                "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
+                "offset": "0xA2000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_2_Mem0": {
+                "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
+                "offset": "0xA4000000",
+                "range": "32K"
+              },
+              "SEG_axi_bram_ctrl_3_Mem0": {
+                "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
+                "offset": "0xA6000000",
+                "range": "32K"
+              }
+            }
           }
         }
       },
@@ -3823,23 +3999,23 @@
             "segments": {
               "SEG_axi_bram_ctrl_0_Mem0": {
                 "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
-                "offset": "0x0080000000",
-                "range": "8K"
+                "offset": "0x00A0000000",
+                "range": "32K"
               },
               "SEG_axi_bram_ctrl_1_Mem0": {
                 "address_block": "/axi_bram_ctrl_1/S_AXI/Mem0",
-                "offset": "0x0082000000",
-                "range": "8K"
+                "offset": "0x00A2000000",
+                "range": "32K"
               },
               "SEG_axi_bram_ctrl_2_Mem0": {
                 "address_block": "/axi_bram_ctrl_2/S_AXI/Mem0",
-                "offset": "0x0084000000",
-                "range": "8K"
+                "offset": "0x00A4000000",
+                "range": "32K"
               },
               "SEG_axi_bram_ctrl_3_Mem0": {
                 "address_block": "/axi_bram_ctrl_3/S_AXI/Mem0",
-                "offset": "0x0086000000",
-                "range": "8K"
+                "offset": "0x00A6000000",
+                "range": "32K"
               },
               "SEG_axi_dma_0_Reg": {
                 "address_block": "/axi_dma_0/S_AXI_LITE/Reg",

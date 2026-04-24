@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="NFC_4Channel_bd_axi_dma_0_3_synth_1" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1776847512">
   <File Type="PA-TCL" Name="NFC_4Channel_bd_axi_dma_0_3.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="NFC_4Channel_bd_axi_dma_0_3_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="NFC_4Channel_bd_axi_dma_0_3_reports.tcl"/>
   <File Type="RDS-RDS" Name="NFC_4Channel_bd_axi_dma_0_3.vds"/>
-  <File Type="RDS-UTIL" Name="NFC_4Channel_bd_axi_dma_0_3_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="NFC_4Channel_bd_axi_dma_0_3_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="NFC_4Channel_bd_axi_dma_0_3.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="NFC_4Channel_bd_axi_dma_0_3_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="NFC_4Channel_bd_axi_dma_0_3_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/NFC_4Channel_bd_axi_dma_0_3">
     <File Path="$PSRCDIR/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_dma_0_3/NFC_4Channel_bd_axi_dma_0_3.xci">
       <FileInfo>

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Apr 22 18:37:16 2026
+| Date         : Fri Apr 24 14:53:44 2026
 | Host         : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 | Command      : report_drc -file NFC_4Channel_bd_wrapper_drc_opted.rpt -pb NFC_4Channel_bd_wrapper_drc_opted.pb -rpx NFC_4Channel_bd_wrapper_drc_opted.rpx
 | Design       : NFC_4Channel_bd_wrapper
@@ -24,57 +24,16 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 20
-+-----------+----------+--------------------------------------------+------------+
-| Rule      | Severity | Description                                | Violations |
-+-----------+----------+--------------------------------------------+------------+
-| REQP-1774 | Warning  | RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32 | 8          |
-| REQP-1853 | Warning  | BUFGCE_DIV_cascade_from_clock_buf          | 4          |
-| REQP-1935 | Advisory | RAMB36E2_nochange_collision_advisory       | 8          |
-+-----------+----------+--------------------------------------------+------------+
+             Violations found: 12
++-----------+----------+--------------------------------------+------------+
+| Rule      | Severity | Description                          | Violations |
++-----------+----------+--------------------------------------+------------+
+| REQP-1853 | Warning  | BUFGCE_DIV_cascade_from_clock_buf    | 4          |
+| REQP-1935 | Advisory | RAMB36E2_nochange_collision_advisory | 8          |
++-----------+----------+--------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-REQP-1774#1 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#2 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#3 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_1_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#4 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_1_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#5 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_2_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#6 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_2_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#7 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_3_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
-REQP-1774#8 Warning
-RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
-The RAMB36E2 cell NFC_4Channel_bd_i/axi_bram_ctrl_3_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.SERIES8_TDP_SP36_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
-Related violations: <none>
-
 REQP-1853#1 Warning
 BUFGCE_DIV_cascade_from_clock_buf  
 Cascaded clock buffers exist in the design with constant CE pin. This may result in large clock skew and timing violations. Cell BUFGCE_DIV NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_core/fcc_phy/BUFGCE_DIV_inst I pin is driven by another clock buffer NFC_4Channel_bd_i/clk_wiz_0/inst/clkout1_buf.

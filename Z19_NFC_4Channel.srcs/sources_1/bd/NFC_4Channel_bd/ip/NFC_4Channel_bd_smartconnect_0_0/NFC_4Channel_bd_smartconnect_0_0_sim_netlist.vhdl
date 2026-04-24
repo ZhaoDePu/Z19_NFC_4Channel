@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Apr 22 17:20:43 2026
+-- Date        : Fri Apr 24 14:45:03 2026
 -- Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top NFC_4Channel_bd_smartconnect_0_0 -prefix
---               NFC_4Channel_bd_smartconnect_0_0_ NFC_4Channel_bd_smartconnect_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_smartconnect_0_0/NFC_4Channel_bd_smartconnect_0_0_sim_netlist.vhdl
 -- Design      : NFC_4Channel_bd_smartconnect_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,6 +20,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_cdc_sync is
     aresetn : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_cdc_sync : entity is "cdc_sync";
 end NFC_4Channel_bd_smartconnect_0_0_cdc_sync;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_cdc_sync is
@@ -107,6 +109,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_upcnt_n : entity is "upcnt_n";
 end NFC_4Channel_bd_smartconnect_0_0_upcnt_n;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_upcnt_n is
@@ -279,6 +283,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_exit is
     m_axi_arready : in STD_LOGIC;
     m_axi_awready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_exit : entity is "sc_exit_v1_0_9_exit";
 end NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_exit;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_exit is
@@ -1210,6 +1216,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_decerr_slave is
     m_axi_awid : in STD_LOGIC_VECTOR ( 15 downto 0 );
     m_axi_arid : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_decerr_slave : entity is "sc_mmu_v1_0_8_decerr_slave";
 end NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_decerr_slave;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_decerr_slave is
@@ -2601,6 +2609,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr is
     s_sc_aclk : in STD_LOGIC;
     \grant_i_reg[4]_3\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr : entity is "sc_node_v1_0_10_arb_alg_rr";
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr is
@@ -3432,6 +3442,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator is
     s_sc_aclk : in STD_LOGIC;
     \gen_normal_area.fifo_node_payld_full_i\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator : entity is "sc_node_v1_0_10_fi_regulator";
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator is
@@ -3708,6 +3720,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler is
     s_sc_aclk : in STD_LOGIC;
     s_sc_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler : entity is "sc_node_v1_0_10_mi_handler";
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler is
@@ -5297,6 +5311,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv is
     s_axi_bready : in STD_LOGIC;
     s_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv : entity is "sc_si_converter_v1_0_9_axilite_conv";
 end NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv is
@@ -5310,7 +5326,6 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_
   signal \ar_addr_d[11]_i_1_n_0\ : STD_LOGIC;
   signal \ar_addr_d[11]_i_3_n_0\ : STD_LOGIC;
   signal \ar_addr_d[11]_i_4_n_0\ : STD_LOGIC;
-  signal \ar_addr_d[31]_i_1_n_0\ : STD_LOGIC;
   signal \ar_addr_d[6]_i_2_n_0\ : STD_LOGIC;
   signal \ar_addr_d[7]_i_2_n_0\ : STD_LOGIC;
   signal ar_cnt : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -5382,6 +5397,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_
   signal \b_cnt[8]_i_4_n_0\ : STD_LOGIC;
   signal b_cnt_reg : STD_LOGIC_VECTOR ( 8 downto 0 );
   signal f_worst_resp_return : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal m_aruser : STD_LOGIC;
   signal \^m_axi_araddr\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal m_axi_arvalid_i_i_1_n_0 : STD_LOGIC;
   signal m_axi_arvalid_i_i_2_n_0 : STD_LOGIC;
@@ -5928,7 +5944,7 @@ begin
       I0 => s_axi_arvalid,
       I1 => \r_state__0\(1),
       I2 => \r_state__0\(0),
-      O => \ar_addr_d[31]_i_1_n_0\
+      O => m_aruser
     );
 \ar_addr_d[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
@@ -6073,7 +6089,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(12),
       Q => \^m_axi_araddr\(12),
       R => areset
@@ -6084,7 +6100,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(13),
       Q => \^m_axi_araddr\(13),
       R => areset
@@ -6095,7 +6111,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(14),
       Q => \^m_axi_araddr\(14),
       R => areset
@@ -6106,7 +6122,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(15),
       Q => \^m_axi_araddr\(15),
       R => areset
@@ -6117,7 +6133,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(16),
       Q => \^m_axi_araddr\(16),
       R => areset
@@ -6128,7 +6144,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(17),
       Q => \^m_axi_araddr\(17),
       R => areset
@@ -6139,7 +6155,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(18),
       Q => \^m_axi_araddr\(18),
       R => areset
@@ -6150,7 +6166,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(19),
       Q => \^m_axi_araddr\(19),
       R => areset
@@ -6172,7 +6188,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(20),
       Q => \^m_axi_araddr\(20),
       R => areset
@@ -6183,7 +6199,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(21),
       Q => \^m_axi_araddr\(21),
       R => areset
@@ -6194,7 +6210,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(22),
       Q => \^m_axi_araddr\(22),
       R => areset
@@ -6205,7 +6221,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(23),
       Q => \^m_axi_araddr\(23),
       R => areset
@@ -6216,7 +6232,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(24),
       Q => \^m_axi_araddr\(24),
       R => areset
@@ -6227,7 +6243,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(25),
       Q => \^m_axi_araddr\(25),
       R => areset
@@ -6238,7 +6254,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(26),
       Q => \^m_axi_araddr\(26),
       R => areset
@@ -6249,7 +6265,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(27),
       Q => \^m_axi_araddr\(27),
       R => areset
@@ -6260,7 +6276,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(28),
       Q => \^m_axi_araddr\(28),
       R => areset
@@ -6271,7 +6287,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(29),
       Q => \^m_axi_araddr\(29),
       R => areset
@@ -6293,7 +6309,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(30),
       Q => \^m_axi_araddr\(30),
       R => areset
@@ -6304,7 +6320,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_araddr(31),
       Q => \^m_axi_araddr\(31),
       R => areset
@@ -6940,7 +6956,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arsize(0),
       Q => ar_size_d(0),
       R => areset
@@ -6951,7 +6967,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arsize(1),
       Q => ar_size_d(1),
       R => areset
@@ -6962,7 +6978,7 @@ begin
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arsize(2),
       Q => ar_size_d(2),
       R => areset
@@ -7733,7 +7749,7 @@ aw_done_reg: unisim.vcomponents.FDRE
 \m_aruser_reg[sc_route][1]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_aruser(0),
       Q => m_axi_aruser(0),
       R => areset
@@ -7741,7 +7757,7 @@ aw_done_reg: unisim.vcomponents.FDRE
 \m_aruser_reg[sc_route][2]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_aruser(1),
       Q => m_axi_aruser(1),
       R => areset
@@ -7749,7 +7765,7 @@ aw_done_reg: unisim.vcomponents.FDRE
 \m_aruser_reg[sc_route][3]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_aruser(2),
       Q => m_axi_aruser(2),
       R => areset
@@ -7757,7 +7773,7 @@ aw_done_reg: unisim.vcomponents.FDRE
 \m_aruser_reg[sc_route][4]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_aruser(3),
       Q => m_axi_aruser(3),
       R => areset
@@ -7765,7 +7781,7 @@ aw_done_reg: unisim.vcomponents.FDRE
 \m_aruser_reg[sc_route][5]\: unisim.vcomponents.FDRE
      port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_aruser(4),
       Q => m_axi_aruser(4),
       R => areset
@@ -7776,7 +7792,7 @@ aw_done_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arprot(0),
       Q => m_axi_arprot(0),
       R => areset
@@ -7787,7 +7803,7 @@ aw_done_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arprot(1),
       Q => m_axi_arprot(1),
       R => areset
@@ -7798,7 +7814,7 @@ aw_done_reg: unisim.vcomponents.FDRE
     )
         port map (
       C => aclk,
-      CE => \ar_addr_d[31]_i_1_n_0\,
+      CE => m_aruser,
       D => s_axi_arprot(2),
       Q => m_axi_arprot(2),
       R => areset
@@ -11803,6 +11819,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleor
     m_axi_arready : in STD_LOGIC;
     s_axi_arid : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleorder : entity is "sc_transaction_regulator_v1_0_8_singleorder";
 end NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleorder;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleorder is
@@ -15580,6 +15598,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter is
     S00_AXI_awready_0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter : entity is "sc_util_v1_0_4_axi_splitter";
 end NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter is
@@ -17634,6 +17654,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_srl_rtl is
     \gen_pipelined.mesg_reg_reg[1]_2\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \gen_pipelined.mesg_reg_reg[1]_3\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_srl_rtl : entity is "sc_util_v1_0_4_srl_rtl";
 end NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_srl_rtl;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_srl_rtl is
@@ -18050,6 +18072,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0 is
     s_sc_payld : in STD_LOGIC_VECTOR ( 9 downto 0 );
     S_SC_B_recv : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0 : entity is "bd_84d5_boutsw_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0 is
@@ -18123,6 +18147,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0 is
     \gen_single_rank.data_reg[55]\ : in STD_LOGIC_VECTOR ( 169 downto 0 );
     S_SC_R_recv : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0 : entity is "bd_84d5_routsw_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0 is
@@ -18208,6 +18234,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_lpf is
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_lpf : entity is "lpf";
 end NFC_4Channel_bd_smartconnect_0_0_lpf;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_lpf is
@@ -18284,6 +18312,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sequence_psr : entity is "sequence_psr";
 end NFC_4Channel_bd_smartconnect_0_0_sequence_psr;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sequence_psr is
@@ -18649,7 +18679,7 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -18660,6 +18690,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top is
   attribute C_WRITE_ACCEPTANCE of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is 32;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is "sc_exit_v1_0_9_top";
   attribute P_BYPASS : integer;
   attribute P_BYPASS of NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top : entity is 0;
   attribute P_FULLY_PIPELINED : integer;
@@ -21103,7 +21135,7 @@ entity \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__1\ is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__1\ : entity is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__1\ : entity is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__1\ : entity is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__1\ : entity is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -23559,7 +23591,7 @@ entity \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__2\ is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__2\ : entity is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__2\ : entity is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__2\ : entity is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__2\ : entity is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -26015,7 +26047,7 @@ entity \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__3\ is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__3\ : entity is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__3\ : entity is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__3\ : entity is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__3\ : entity is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -28471,7 +28503,7 @@ entity \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0\ is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0\ : entity is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0\ : entity is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0\ : entity is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of \NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0\ : entity is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -30848,6 +30880,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_reg_fifo is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_sc_payld : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_reg_fifo : entity is "sc_node_v1_0_10_reg_fifo";
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_reg_fifo;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_reg_fifo is
@@ -33208,6 +33242,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top is
   attribute LP_S_STATIC_DWIDTH of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top : entity is 1;
   attribute LP_ZERO_ROUTE_WIDTH : integer;
   attribute LP_ZERO_ROUTE_WIDTH of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top : entity is "sc_node_v1_0_10_top";
   attribute P_NUM_OUTSTANDING : integer;
   attribute P_NUM_OUTSTANDING of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top : entity is 16;
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top;
@@ -42905,6 +42941,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top is
   attribute C_WRITE_ACCEPTANCE of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top : entity is 32;
   attribute C_WRITE_WATERMARK : integer;
   attribute C_WRITE_WATERMARK of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top : entity is "sc_si_converter_v1_0_9_top";
   attribute P_EXOK : string;
   attribute P_EXOK of NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top : entity is "2'b01";
   attribute P_FULLY_PIPELINED : integer;
@@ -48327,7 +48365,7 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top is
   attribute C_IS_CASCADED : integer;
   attribute C_IS_CASCADED of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is 0;
   attribute C_MEP_IDENTIFIER : string;
-  attribute C_MEP_IDENTIFIER of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is "4'b0000";
+  attribute C_MEP_IDENTIFIER of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is "4'b0001";
   attribute C_MEP_IDENTIFIER_WIDTH : integer;
   attribute C_MEP_IDENTIFIER_WIDTH of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is 4;
   attribute C_M_ID_WIDTH : integer;
@@ -48360,6 +48398,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top is
   attribute C_WRITE_ACCEPTANCE of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is 32;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is "sc_transaction_regulator_v1_0_8_top";
   attribute P_FULLY_PIPELINED : integer;
   attribute P_FULLY_PIPELINED of NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top : entity is 2;
   attribute P_ID_BUFFER_WIDTH : integer;
@@ -53810,6 +53850,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axic_reg_srl_fifo is
     \gen_pipelined.state_reg[1]_1\ : in STD_LOGIC;
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axic_reg_srl_fifo : entity is "sc_util_v1_0_4_axic_reg_srl_fifo";
 end NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axic_reg_srl_fifo;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axic_reg_srl_fifo is
@@ -54276,6 +54318,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_r_cmd_reg.s_read_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0 : entity is "bd_84d5_m00arn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0 is
@@ -54434,6 +54478,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_w_cmd_reg.s_write_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0 : entity is "bd_84d5_m00awn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0 is
@@ -54594,6 +54640,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0 is
     M00_AXI_bvalid : in STD_LOGIC;
     M00_AXI_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0 : entity is "bd_84d5_m00bn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0 is
@@ -54765,6 +54813,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0 is
     M00_AXI_arready : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0 : entity is "bd_84d5_m00e_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0 is
@@ -54856,7 +54906,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0 is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of inst : label is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of inst : label is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -54979,6 +55029,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0 is
     M00_AXI_rvalid : in STD_LOGIC;
     M00_AXI_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0 : entity is "bd_84d5_m00rn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0 is
@@ -55136,6 +55188,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     M00_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0 : entity is "bd_84d5_m00wn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0 is
@@ -55294,6 +55348,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_r_cmd_reg.s_read_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0 : entity is "bd_84d5_m01arn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0 is
@@ -55452,6 +55508,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_w_cmd_reg.s_write_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0 : entity is "bd_84d5_m01awn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0 is
@@ -55612,6 +55670,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0 is
     M01_AXI_bvalid : in STD_LOGIC;
     M01_AXI_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0 : entity is "bd_84d5_m01bn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0 is
@@ -55783,6 +55843,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0 is
     M01_AXI_arready : in STD_LOGIC;
     M01_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0 : entity is "bd_84d5_m01e_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0 is
@@ -55874,7 +55936,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0 is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of inst : label is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of inst : label is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -55997,6 +56059,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0 is
     M01_AXI_rvalid : in STD_LOGIC;
     M01_AXI_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0 : entity is "bd_84d5_m01rn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0 is
@@ -56154,6 +56218,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     M01_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0 : entity is "bd_84d5_m01wn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0 is
@@ -56312,6 +56378,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_r_cmd_reg.s_read_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0 : entity is "bd_84d5_m02arn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0 is
@@ -56470,6 +56538,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_w_cmd_reg.s_write_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0 : entity is "bd_84d5_m02awn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0 is
@@ -56630,6 +56700,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0 is
     M02_AXI_bvalid : in STD_LOGIC;
     M02_AXI_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0 : entity is "bd_84d5_m02bn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0 is
@@ -56801,6 +56873,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0 is
     M02_AXI_arready : in STD_LOGIC;
     M02_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0 : entity is "bd_84d5_m02e_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0 is
@@ -56892,7 +56966,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0 is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of inst : label is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of inst : label is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -57015,6 +57089,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0 is
     M02_AXI_rvalid : in STD_LOGIC;
     M02_AXI_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0 : entity is "bd_84d5_m02rn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0 is
@@ -57172,6 +57248,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     M02_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0 : entity is "bd_84d5_m02wn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0 is
@@ -57330,6 +57408,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_r_cmd_reg.s_read_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0 : entity is "bd_84d5_m03arn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0 is
@@ -57488,6 +57568,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_w_cmd_reg.s_write_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0 : entity is "bd_84d5_m03awn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0 is
@@ -57648,6 +57730,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0 is
     M03_AXI_bvalid : in STD_LOGIC;
     M03_AXI_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0 : entity is "bd_84d5_m03bn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0 is
@@ -57819,6 +57903,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0 is
     M03_AXI_arready : in STD_LOGIC;
     M03_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0 : entity is "bd_84d5_m03e_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0 is
@@ -57910,7 +57996,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0 is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of inst : label is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of inst : label is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -58033,6 +58119,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0 is
     M03_AXI_rvalid : in STD_LOGIC;
     M03_AXI_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0 : entity is "bd_84d5_m03rn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0 is
@@ -58190,6 +58278,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     M03_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0 : entity is "bd_84d5_m03wn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0 is
@@ -58348,6 +58438,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_r_cmd_reg.s_read_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0 : entity is "bd_84d5_m04arn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0 is
@@ -58506,6 +58598,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_w_cmd_reg.s_write_cmd_vacancy_i_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0 : entity is "bd_84d5_m04awn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0 is
@@ -58666,6 +58760,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0 is
     M04_AXI_bvalid : in STD_LOGIC;
     M04_AXI_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0 : entity is "bd_84d5_m04bn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0 is
@@ -58837,6 +58933,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0 is
     M04_AXI_arready : in STD_LOGIC;
     M04_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0 : entity is "bd_84d5_m04e_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0 is
@@ -58928,7 +59026,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0 is
   attribute C_SINGLE_ISSUING : integer;
   attribute C_SINGLE_ISSUING of inst : label is 1;
   attribute C_SSC_ROUTE_ARRAY : string;
-  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101101111";
+  attribute C_SSC_ROUTE_ARRAY of inst : label is "48'b101101101101101101101101101101101101101101111101";
   attribute C_SSC_ROUTE_WIDTH : integer;
   attribute C_SSC_ROUTE_WIDTH of inst : label is 3;
   attribute C_S_ID_WIDTH : integer;
@@ -59051,6 +59149,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0 is
     M04_AXI_rvalid : in STD_LOGIC;
     M04_AXI_rready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0 : entity is "bd_84d5_m04rn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0 is
@@ -59208,6 +59308,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     M04_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0 : entity is "bd_84d5_m04wn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0 is
@@ -59403,6 +59505,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0 is
     M_SC_R_payld : in STD_LOGIC_VECTOR ( 33 downto 0 );
     M_SC_R_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0 : entity is "bd_84d5_s00sic_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0 is
@@ -59577,7 +59681,7 @@ inst: entity work.NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top
       s_axi_araddr(31 downto 0) => m_axi_araddr(31 downto 0),
       s_axi_arburst(1 downto 0) => B"00",
       s_axi_arcache(3 downto 0) => B"0000",
-      s_axi_arid(3 downto 0) => B"0000",
+      s_axi_arid(3 downto 0) => B"0001",
       s_axi_arlen(7 downto 0) => m_axi_arlen(7 downto 0),
       s_axi_arlock(0) => '0',
       s_axi_arprot(2 downto 0) => m_axi_arprot(2 downto 0),
@@ -59592,7 +59696,7 @@ inst: entity work.NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top
       s_axi_awaddr(11 downto 0) => m_axi_awaddr(11 downto 0),
       s_axi_awburst(1 downto 0) => B"00",
       s_axi_awcache(3 downto 0) => B"0000",
-      s_axi_awid(3 downto 0) => B"0000",
+      s_axi_awid(3 downto 0) => B"0001",
       s_axi_awlen(7 downto 0) => B"00000000",
       s_axi_awlock(0) => '0',
       s_axi_awprot(2 downto 0) => B"000",
@@ -59647,6 +59751,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0 is
     s_axi_rlast : in STD_LOGIC;
     s_axi_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0 : entity is "bd_84d5_s00tr_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0 is
@@ -59695,7 +59801,7 @@ architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0 is
   attribute C_IS_CASCADED : integer;
   attribute C_IS_CASCADED of inst : label is 0;
   attribute C_MEP_IDENTIFIER : string;
-  attribute C_MEP_IDENTIFIER of inst : label is "4'b0000";
+  attribute C_MEP_IDENTIFIER of inst : label is "4'b0001";
   attribute C_MEP_IDENTIFIER_WIDTH : integer;
   attribute C_MEP_IDENTIFIER_WIDTH of inst : label is 4;
   attribute C_M_ID_WIDTH : integer;
@@ -59794,7 +59900,7 @@ inst: entity work.NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0
       m_axi_wstrb(3 downto 0) => NLW_inst_m_axi_wstrb_UNCONNECTED(3 downto 0),
       m_axi_wuser(1023 downto 0) => NLW_inst_m_axi_wuser_UNCONNECTED(1023 downto 0),
       m_axi_wvalid => NLW_inst_m_axi_wvalid_UNCONNECTED,
-      mep_identifier(3 downto 0) => B"0000",
+      mep_identifier(3 downto 0) => B"0001",
       s_axi_araddr(39 downto 0) => B"0000000000000000000000000000000000000000",
       s_axi_arburst(1 downto 0) => B"00",
       s_axi_arcache(3 downto 0) => B"0000",
@@ -59850,6 +59956,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_SC_AR_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0 : entity is "bd_84d5_sarn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0 is
@@ -60008,6 +60116,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_SC_AW_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0 : entity is "bd_84d5_sawn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0 is
@@ -60166,6 +60276,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_bready_i_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0 : entity is "bd_84d5_sbn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0 is
@@ -60324,6 +60436,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axi_rvalid_i_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0 : entity is "bd_84d5_srn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0 is
@@ -60482,6 +60596,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0 is
     interconnect_aresetn : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_SC_W_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0 : entity is "bd_84d5_swn_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0 is
@@ -60639,6 +60755,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset is
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset : entity is "proc_sys_reset";
 end NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset is
@@ -60837,6 +60955,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top is
   attribute C_WRITE_ACCEPTANCE of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top : entity is 32;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top : entity is "sc_mmu_v1_0_8_top";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top : entity is 1;
   attribute P_AXI4 : integer;
@@ -65407,6 +65527,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo is
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_sc_payld : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo : entity is "sc_node_v1_0_10_fifo";
 end NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo is
@@ -65621,6 +65743,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0 is
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0 : entity is "bd_84d5_psr_aclk_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0 is
@@ -65694,6 +65818,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0 is
     s_axi_rlast : in STD_LOGIC;
     s_axi_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0 : entity is "bd_84d5_s00mmu_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0 is
@@ -65950,6 +66076,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ is
     M00_AXI_arready : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ : entity is "m00_exit_pipeline_imp_14PZQCJ";
 end NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ is
@@ -66001,6 +66129,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR is
     M00_AXI_rready : in STD_LOGIC;
     M00_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR : entity is "m00_nodes_imp_1I3FPXR";
 end NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR is
@@ -66076,6 +66206,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF is
     M01_AXI_arready : in STD_LOGIC;
     M01_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF : entity is "m01_exit_pipeline_imp_115P1PF";
 end NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF is
@@ -66127,6 +66259,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H is
     M01_AXI_rready : in STD_LOGIC;
     M01_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H : entity is "m01_nodes_imp_QMNM2H";
 end NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H is
@@ -66202,6 +66336,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3 is
     M02_AXI_arready : in STD_LOGIC;
     M02_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3 : entity is "m02_exit_pipeline_imp_1GBM5K3";
 end NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3 is
@@ -66253,6 +66389,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU is
     M02_AXI_rready : in STD_LOGIC;
     M02_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU : entity is "m02_nodes_imp_9VJVDU";
 end NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU is
@@ -66328,6 +66466,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ is
     M03_AXI_arready : in STD_LOGIC;
     M03_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ : entity is "m03_exit_pipeline_imp_1BNDSGZ";
 end NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ is
@@ -66379,6 +66519,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0 is
     M03_AXI_rready : in STD_LOGIC;
     M03_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0 : entity is "m03_nodes_imp_1GVRPP0";
 end NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0 is
@@ -66454,6 +66596,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR is
     M04_AXI_arready : in STD_LOGIC;
     M04_AXI_rvalid : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR : entity is "m04_exit_pipeline_imp_1L9IIAR";
 end NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR is
@@ -66505,6 +66649,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS is
     M04_AXI_rready : in STD_LOGIC;
     M04_AXI_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS : entity is "m04_nodes_imp_1OV1OUS";
 end NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS is
@@ -66574,6 +66720,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ is
     s_axi_rvalid_i_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     S_SC_W_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ : entity is "s00_nodes_imp_177IGQ";
 end NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ is
@@ -67014,6 +67162,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG is
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG : entity is "clk_map_imp_TJ1WQG";
 end NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG is
@@ -67079,6 +67229,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO is
     M_SC_R_payld : in STD_LOGIC_VECTOR ( 33 downto 0 );
     M_SC_R_send : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO : entity is "s00_entry_pipeline_imp_4YY0IO";
 end NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO is
@@ -68931,6 +69083,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0 is
     S_SC_AR_payld : in STD_LOGIC_VECTOR ( 39 downto 0 );
     M_SC_AR_recv : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0 : entity is "bd_84d5_arni_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0 is
@@ -69101,6 +69255,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0 is
     S_SC_AW_payld : in STD_LOGIC_VECTOR ( 39 downto 0 );
     M_SC_AW_recv : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0 : entity is "bd_84d5_awni_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0 is
@@ -69249,7 +69405,7 @@ inst: entity work.\NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top__paramet
       s_sc_payld(164 downto 162) => S_SC_AW_payld(39 downto 37),
       s_sc_payld(161 downto 153) => B"000000000",
       s_sc_payld(152 downto 121) => S_SC_AW_payld(36 downto 5),
-      s_sc_payld(120 downto 5) => B"00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      s_sc_payld(120 downto 5) => B"00010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
       s_sc_payld(4 downto 0) => S_SC_AW_payld(4 downto 0),
       s_sc_recv(0) => S_SC_AW_recv(0),
       s_sc_req(0) => '0',
@@ -69272,6 +69428,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0 is
     S_SC_B_payld : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_SC_B_recv : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0 : entity is "bd_84d5_bni_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0 is
@@ -69438,6 +69596,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0 is
     S_SC_R_payld : in STD_LOGIC_VECTOR ( 33 downto 0 );
     M_SC_R_recv : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0 : entity is "bd_84d5_rni_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0 is
@@ -69607,6 +69767,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0 is
     S_SC_W_payld : in STD_LOGIC_VECTOR ( 40 downto 0 );
     M_SC_W_recv : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0 : entity is "bd_84d5_wni_0";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0 is
@@ -69797,6 +69959,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q is
     S_SC_W_payld : in STD_LOGIC_VECTOR ( 40 downto 0 );
     M_SC_W_recv : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q : entity is "i_nodes_imp_1BL5L3Q";
 end NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q is
@@ -69906,6 +70070,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE is
     M_SC_W_recv : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gen_single_rank.data_reg[55]\ : in STD_LOGIC_VECTOR ( 169 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE : entity is "switchboards_imp_UZ6KOE";
 end NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE is
@@ -70117,6 +70283,8 @@ entity NFC_4Channel_bd_smartconnect_0_0_bd_84d5 is
   );
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of NFC_4Channel_bd_smartconnect_0_0_bd_84d5 : entity is "NFC_4Channel_bd_smartconnect_0_0.hwdef";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of NFC_4Channel_bd_smartconnect_0_0_bd_84d5 : entity is "bd_84d5";
 end NFC_4Channel_bd_smartconnect_0_0_bd_84d5;
 
 architecture STRUCTURE of NFC_4Channel_bd_smartconnect_0_0_bd_84d5 is

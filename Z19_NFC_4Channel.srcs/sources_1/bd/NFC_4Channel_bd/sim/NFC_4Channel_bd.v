@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Apr 22 18:32:20 2026
+//Date        : Fri Apr 24 14:42:35 2026
 //Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 //Command     : generate_target NFC_4Channel_bd.bd
 //Design      : NFC_4Channel_bd
@@ -40,56 +40,56 @@ module NFC_4Channel_bd
   wire [31:0]Net;
   wire [3:0]Net1;
   wire [3:0]Net2;
-  wire [12:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
+  wire [14:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_0_BRAM_PORTA_EN;
   wire axi_bram_ctrl_0_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_0_BRAM_PORTA_WE;
-  wire [12:0]axi_bram_ctrl_0_BRAM_PORTB_ADDR;
+  wire [14:0]axi_bram_ctrl_0_BRAM_PORTB_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTB_CLK;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTB_DIN;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTB_DOUT;
   wire axi_bram_ctrl_0_BRAM_PORTB_EN;
   wire axi_bram_ctrl_0_BRAM_PORTB_RST;
   wire [3:0]axi_bram_ctrl_0_BRAM_PORTB_WE;
-  wire [12:0]axi_bram_ctrl_1_BRAM_PORTA_ADDR;
+  wire [14:0]axi_bram_ctrl_1_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_1_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_1_BRAM_PORTA_EN;
   wire axi_bram_ctrl_1_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_1_BRAM_PORTA_WE;
-  wire [12:0]axi_bram_ctrl_1_BRAM_PORTB_ADDR;
+  wire [14:0]axi_bram_ctrl_1_BRAM_PORTB_ADDR;
   wire axi_bram_ctrl_1_BRAM_PORTB_CLK;
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTB_DIN;
   wire [31:0]axi_bram_ctrl_1_BRAM_PORTB_DOUT;
   wire axi_bram_ctrl_1_BRAM_PORTB_EN;
   wire axi_bram_ctrl_1_BRAM_PORTB_RST;
   wire [3:0]axi_bram_ctrl_1_BRAM_PORTB_WE;
-  wire [12:0]axi_bram_ctrl_2_BRAM_PORTA_ADDR;
+  wire [14:0]axi_bram_ctrl_2_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_2_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_2_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_2_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_2_BRAM_PORTA_EN;
   wire axi_bram_ctrl_2_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_2_BRAM_PORTA_WE;
-  wire [12:0]axi_bram_ctrl_2_BRAM_PORTB_ADDR;
+  wire [14:0]axi_bram_ctrl_2_BRAM_PORTB_ADDR;
   wire axi_bram_ctrl_2_BRAM_PORTB_CLK;
   wire [31:0]axi_bram_ctrl_2_BRAM_PORTB_DIN;
   wire [31:0]axi_bram_ctrl_2_BRAM_PORTB_DOUT;
   wire axi_bram_ctrl_2_BRAM_PORTB_EN;
   wire axi_bram_ctrl_2_BRAM_PORTB_RST;
   wire [3:0]axi_bram_ctrl_2_BRAM_PORTB_WE;
-  wire [12:0]axi_bram_ctrl_3_BRAM_PORTA_ADDR;
+  wire [14:0]axi_bram_ctrl_3_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_3_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_3_BRAM_PORTA_DIN;
   wire [31:0]axi_bram_ctrl_3_BRAM_PORTA_DOUT;
   wire axi_bram_ctrl_3_BRAM_PORTA_EN;
   wire axi_bram_ctrl_3_BRAM_PORTA_RST;
   wire [3:0]axi_bram_ctrl_3_BRAM_PORTA_WE;
-  wire [12:0]axi_bram_ctrl_3_BRAM_PORTB_ADDR;
+  wire [14:0]axi_bram_ctrl_3_BRAM_PORTB_ADDR;
   wire axi_bram_ctrl_3_BRAM_PORTB_CLK;
   wire [31:0]axi_bram_ctrl_3_BRAM_PORTB_DIN;
   wire [31:0]axi_bram_ctrl_3_BRAM_PORTB_DOUT;
@@ -343,7 +343,7 @@ module NFC_4Channel_bd
   wire smartconnect_0_M04_AXI_WREADY;
   wire [3:0]smartconnect_0_M04_AXI_WSTRB;
   wire smartconnect_0_M04_AXI_WVALID;
-  wire [12:0]smartconnect_1_M00_AXI_ARADDR;
+  wire [14:0]smartconnect_1_M00_AXI_ARADDR;
   wire [1:0]smartconnect_1_M00_AXI_ARBURST;
   wire [3:0]smartconnect_1_M00_AXI_ARCACHE;
   wire [7:0]smartconnect_1_M00_AXI_ARLEN;
@@ -352,7 +352,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M00_AXI_ARREADY;
   wire [2:0]smartconnect_1_M00_AXI_ARSIZE;
   wire smartconnect_1_M00_AXI_ARVALID;
-  wire [12:0]smartconnect_1_M00_AXI_AWADDR;
+  wire [14:0]smartconnect_1_M00_AXI_AWADDR;
   wire [1:0]smartconnect_1_M00_AXI_AWBURST;
   wire [3:0]smartconnect_1_M00_AXI_AWCACHE;
   wire [7:0]smartconnect_1_M00_AXI_AWLEN;
@@ -374,7 +374,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M00_AXI_WREADY;
   wire [3:0]smartconnect_1_M00_AXI_WSTRB;
   wire smartconnect_1_M00_AXI_WVALID;
-  wire [12:0]smartconnect_1_M01_AXI_ARADDR;
+  wire [14:0]smartconnect_1_M01_AXI_ARADDR;
   wire [1:0]smartconnect_1_M01_AXI_ARBURST;
   wire [3:0]smartconnect_1_M01_AXI_ARCACHE;
   wire [7:0]smartconnect_1_M01_AXI_ARLEN;
@@ -383,7 +383,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M01_AXI_ARREADY;
   wire [2:0]smartconnect_1_M01_AXI_ARSIZE;
   wire smartconnect_1_M01_AXI_ARVALID;
-  wire [12:0]smartconnect_1_M01_AXI_AWADDR;
+  wire [14:0]smartconnect_1_M01_AXI_AWADDR;
   wire [1:0]smartconnect_1_M01_AXI_AWBURST;
   wire [3:0]smartconnect_1_M01_AXI_AWCACHE;
   wire [7:0]smartconnect_1_M01_AXI_AWLEN;
@@ -405,7 +405,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M01_AXI_WREADY;
   wire [3:0]smartconnect_1_M01_AXI_WSTRB;
   wire smartconnect_1_M01_AXI_WVALID;
-  wire [12:0]smartconnect_1_M02_AXI_ARADDR;
+  wire [14:0]smartconnect_1_M02_AXI_ARADDR;
   wire [1:0]smartconnect_1_M02_AXI_ARBURST;
   wire [3:0]smartconnect_1_M02_AXI_ARCACHE;
   wire [7:0]smartconnect_1_M02_AXI_ARLEN;
@@ -414,7 +414,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M02_AXI_ARREADY;
   wire [2:0]smartconnect_1_M02_AXI_ARSIZE;
   wire smartconnect_1_M02_AXI_ARVALID;
-  wire [12:0]smartconnect_1_M02_AXI_AWADDR;
+  wire [14:0]smartconnect_1_M02_AXI_AWADDR;
   wire [1:0]smartconnect_1_M02_AXI_AWBURST;
   wire [3:0]smartconnect_1_M02_AXI_AWCACHE;
   wire [7:0]smartconnect_1_M02_AXI_AWLEN;
@@ -436,7 +436,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M02_AXI_WREADY;
   wire [3:0]smartconnect_1_M02_AXI_WSTRB;
   wire smartconnect_1_M02_AXI_WVALID;
-  wire [12:0]smartconnect_1_M03_AXI_ARADDR;
+  wire [14:0]smartconnect_1_M03_AXI_ARADDR;
   wire [1:0]smartconnect_1_M03_AXI_ARBURST;
   wire [3:0]smartconnect_1_M03_AXI_ARCACHE;
   wire [7:0]smartconnect_1_M03_AXI_ARLEN;
@@ -445,7 +445,7 @@ module NFC_4Channel_bd
   wire smartconnect_1_M03_AXI_ARREADY;
   wire [2:0]smartconnect_1_M03_AXI_ARSIZE;
   wire smartconnect_1_M03_AXI_ARVALID;
-  wire [12:0]smartconnect_1_M03_AXI_AWADDR;
+  wire [14:0]smartconnect_1_M03_AXI_AWADDR;
   wire [1:0]smartconnect_1_M03_AXI_AWBURST;
   wire [3:0]smartconnect_1_M03_AXI_AWCACHE;
   wire [7:0]smartconnect_1_M03_AXI_AWLEN;
@@ -605,8 +605,8 @@ module NFC_4Channel_bd
         .s_axi_wstrb(smartconnect_1_M00_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_1_M00_AXI_WVALID));
   NFC_4Channel_bd_axi_bram_ctrl_0_bram_0 axi_bram_ctrl_0_bram
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTB_ADDR}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTA_ADDR}),
+        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_0_BRAM_PORTB_ADDR}),
         .clka(axi_bram_ctrl_0_BRAM_PORTA_CLK),
         .clkb(axi_bram_ctrl_0_BRAM_PORTB_CLK),
         .dina(axi_bram_ctrl_0_BRAM_PORTA_DIN),
@@ -668,8 +668,8 @@ module NFC_4Channel_bd
         .s_axi_wstrb(smartconnect_1_M01_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_1_M01_AXI_WVALID));
   NFC_4Channel_bd_axi_bram_ctrl_1_bram_0 axi_bram_ctrl_1_bram
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTB_ADDR}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTA_ADDR}),
+        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_1_BRAM_PORTB_ADDR}),
         .clka(axi_bram_ctrl_1_BRAM_PORTA_CLK),
         .clkb(axi_bram_ctrl_1_BRAM_PORTB_CLK),
         .dina(axi_bram_ctrl_1_BRAM_PORTA_DIN),
@@ -731,8 +731,8 @@ module NFC_4Channel_bd
         .s_axi_wstrb(smartconnect_1_M02_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_1_M02_AXI_WVALID));
   NFC_4Channel_bd_axi_bram_ctrl_2_bram_0 axi_bram_ctrl_2_bram
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_2_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_2_BRAM_PORTB_ADDR}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_2_BRAM_PORTA_ADDR}),
+        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_2_BRAM_PORTB_ADDR}),
         .clka(axi_bram_ctrl_2_BRAM_PORTA_CLK),
         .clkb(axi_bram_ctrl_2_BRAM_PORTB_CLK),
         .dina(axi_bram_ctrl_2_BRAM_PORTA_DIN),
@@ -794,8 +794,8 @@ module NFC_4Channel_bd
         .s_axi_wstrb(smartconnect_1_M03_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_1_M03_AXI_WVALID));
   NFC_4Channel_bd_axi_bram_ctrl_3_bram_0 axi_bram_ctrl_3_bram
-       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_3_BRAM_PORTA_ADDR}),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_3_BRAM_PORTB_ADDR}),
+       (.addra({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_3_BRAM_PORTA_ADDR}),
+        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,axi_bram_ctrl_3_BRAM_PORTB_ADDR}),
         .clka(axi_bram_ctrl_3_BRAM_PORTA_CLK),
         .clkb(axi_bram_ctrl_3_BRAM_PORTB_CLK),
         .dina(axi_bram_ctrl_3_BRAM_PORTA_DIN),

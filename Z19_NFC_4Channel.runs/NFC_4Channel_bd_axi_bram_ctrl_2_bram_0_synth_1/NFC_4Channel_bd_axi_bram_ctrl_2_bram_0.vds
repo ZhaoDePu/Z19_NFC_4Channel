@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Apr 22 16:46:37 2026
-# Process ID: 19492
+# Start of session at: Fri Apr 24 14:43:07 2026
+# Process ID: 6012
 # Current directory: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1
 # Command line: vivado.exe -log NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.tcl
 # Log file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vds
@@ -21,9 +21,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17500 
+INFO: Helper process launched with PID 4456 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1673.648 ; gain = 77.500
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1674.273 ; gain = 77.770
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0/synth/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vhd:78]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
@@ -57,8 +57,8 @@ INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0'
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 2048 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 2048 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8192 - type: integer 
 	Parameter C_ADDRA_WIDTH bound to: 32 - type: integer 
 	Parameter C_HAS_RSTB bound to: 1 - type: integer 
 	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
@@ -71,8 +71,8 @@ INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0'
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
 	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8192 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 32 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
 	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
@@ -98,14 +98,16 @@ INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0'
 	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
 	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 2 - type: string 
+	Parameter C_COUNT_36K_BRAM bound to: 8 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     7.734465 mW - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     17.246228 mW - type: string 
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'd:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0/synth/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vhd:253]
-INFO: [Synth 8-256] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' (9#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0/synth/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' (11#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0/synth/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.vhd:78]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[12]
+WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[11]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[10]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
@@ -117,6 +119,48 @@ WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRE
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
 WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized6 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized5 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized4 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port DBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized1 has unconnected port ECCPIPECE
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SBITERR
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized0 has unconnected port DBITERR
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized0 has unconnected port SSRA
@@ -131,81 +175,37 @@ WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSR
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTSBITERR
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTDBITERR
 WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ECCPIPECE
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEA[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[31]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[30]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[29]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[28]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[27]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[26]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[25]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[24]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[23]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[22]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[21]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[20]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[19]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[18]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRA[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[31]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[30]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[29]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[28]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[27]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[26]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[25]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[24]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[23]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[22]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[21]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[20]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[19]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[18]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AClk
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWID[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[31]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[30]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[29]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[28]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[27]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[26]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[25]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[24]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[23]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[22]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[21]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[20]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[19]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[18]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_v8_4_4_synth has unconnected port S_AXI_AWADDR[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[7]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 1968.426 ; gain = 372.277
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1973.203 ; gain = 376.699
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -218,12 +218,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1968.426 ; gain = 372.277
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1973.203 ; gain = 376.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 1968.426 ; gain = 372.277
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1973.203 ; gain = 376.699
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1968.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1973.203 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -234,13 +234,13 @@ Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel
 Finished Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1985.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.734 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1985.129 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2001.734 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 1985.129 ; gain = 388.980
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2001.734 ; gain = 405.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -248,17 +248,17 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 1985.129 ; gain = 388.980
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2001.734 ; gain = 405.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:53 . Memory (MB): peak = 1985.129 ; gain = 388.980
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2001.734 ; gain = 405.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:44 ; elapsed = 00:00:54 . Memory (MB): peak = 1985.129 ; gain = 388.980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2001.734 ; gain = 405.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -270,6 +270,11 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -277,6 +282,22 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -294,7 +315,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 1985.129 ; gain = 388.980
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2001.734 ; gain = 405.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,13 +327,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 2517.602 ; gain = 921.453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 2532.160 ; gain = 935.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 2518.148 ; gain = 922.000
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 2533.191 ; gain = 936.688
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -324,7 +345,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:12 . Memory (MB): peak = 2527.777 ; gain = 931.629
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 2543.789 ; gain = 947.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -348,13 +369,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -373,25 +394,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -407,51 +428,63 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |RAMB36E2 |     2|
+|1     |RAMB36E2 |     8|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+--------------------------------------------------------------+-----------------------------------------+------+
 |      |Instance                                                      |Module                                   |Cells |
 +------+--------------------------------------------------------------+-----------------------------------------+------+
-|1     |top                                                           |                                         |     2|
-|2     |  U0                                                          |blk_mem_gen_v8_4_4                       |     2|
-|3     |    inst_blk_mem_gen                                          |blk_mem_gen_v8_4_4_synth                 |     2|
-|4     |      \gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen  |blk_mem_gen_top                          |     2|
-|5     |        \valid.cstr                                           |blk_mem_gen_generic_cstr                 |     2|
+|1     |top                                                           |                                         |     8|
+|2     |  U0                                                          |blk_mem_gen_v8_4_4                       |     8|
+|3     |    inst_blk_mem_gen                                          |blk_mem_gen_v8_4_4_synth                 |     8|
+|4     |      \gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen  |blk_mem_gen_top                          |     8|
+|5     |        \valid.cstr                                           |blk_mem_gen_generic_cstr                 |     8|
 |6     |          \ramloop[0].ram.r                                   |blk_mem_gen_prim_width                   |     1|
 |7     |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper                 |     1|
 |8     |          \ramloop[1].ram.r                                   |blk_mem_gen_prim_width__parameterized0   |     1|
 |9     |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized0 |     1|
+|10    |          \ramloop[2].ram.r                                   |blk_mem_gen_prim_width__parameterized1   |     1|
+|11    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized1 |     1|
+|12    |          \ramloop[3].ram.r                                   |blk_mem_gen_prim_width__parameterized2   |     1|
+|13    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized2 |     1|
+|14    |          \ramloop[4].ram.r                                   |blk_mem_gen_prim_width__parameterized3   |     1|
+|15    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized3 |     1|
+|16    |          \ramloop[5].ram.r                                   |blk_mem_gen_prim_width__parameterized4   |     1|
+|17    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized4 |     1|
+|18    |          \ramloop[6].ram.r                                   |blk_mem_gen_prim_width__parameterized5   |     1|
+|19    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized5 |     1|
+|20    |          \ramloop[7].ram.r                                   |blk_mem_gen_prim_width__parameterized6   |     1|
+|21    |            \prim_noinit.ram                                  |blk_mem_gen_prim_wrapper__parameterized6 |     1|
 +------+--------------------------------------------------------------+-----------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2559.594 ; gain = 963.090
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 193 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:01:07 . Memory (MB): peak = 2542.586 ; gain = 929.734
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:15 . Memory (MB): peak = 2542.586 ; gain = 946.438
+Synthesis finished with 0 errors, 0 critical warnings and 189 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:56 . Memory (MB): peak = 2559.594 ; gain = 934.559
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 2559.594 ; gain = 963.090
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2542.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2559.594 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2585.043 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2603.195 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 17 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:28 . Memory (MB): peak = 2585.043 ; gain = 2155.250
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2585.043 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:16 . Memory (MB): peak = 2603.195 ; gain = 2172.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2603.195 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_axi_bram_ctrl_2_bram_0, cache-ID = 19d024a9115e3ad6
-INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2585.043 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_axi_bram_ctrl_2_bram_0, cache-ID = 33dcbeb97ec5b094
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2603.195 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_utilization_synth.rpt -pb NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 16:48:14 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 14:44:35 2026...

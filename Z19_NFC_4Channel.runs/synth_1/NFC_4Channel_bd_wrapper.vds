@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Apr 22 18:33:46 2026
-# Process ID: 20284
+# Start of session at: Fri Apr 24 14:49:54 2026
+# Process ID: 14608
 # Current directory: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1
 # Command line: vivado.exe -log NFC_4Channel_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NFC_4Channel_bd_wrapper.tcl
 # Log file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/NFC_4Channel_bd_wrapper.vds
@@ -15,69 +15,69 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx_2019_2/RTL_prj/OCOW
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2019_2/Vivado/2019.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.cache/ip 
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 489.457 ; gain = 60.996
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 489.785 ; gain = 61.781
 Command: synth_design -top NFC_4Channel_bd_wrapper -part xczu19eg-ffvc1760-2-i
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27984 
+INFO: Helper process launched with PID 15204 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1769.785 ; gain = 78.773
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1768.828 ; gain = 78.602
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_wrapper' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/hdl/NFC_4Channel_bd_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:13]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' (1#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_bram_0' (2#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_1' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_1' (3#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_1_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_1_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_1_bram_0' (4#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_1_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_2' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_2' (5#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' (6#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_3' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_3' (7#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_3_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_3_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_3_bram_0' (8#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_3_bram_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_0' (9#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' (1#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_bram_0' (2#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_1' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_1' (3#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_1_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_1_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_1_bram_0' (4#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_1_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_2' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_2' (5#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_2_bram_0' (6#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_2_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_3' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_3' (7#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_3_bram_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_3_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_3_bram_0' (8#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_bram_ctrl_3_bram_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_0' (9#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'NFC_4Channel_bd_axi_dma_0_0' has 64 connections declared, but only 58 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:811]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_2' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_2' (10#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_2' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_2' (10#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_2_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'NFC_4Channel_bd_axi_dma_0_2' has 64 connections declared, but only 58 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:870]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_3' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_3' (11#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_3' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_3' (11#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_3_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_2' of module 'NFC_4Channel_bd_axi_dma_0_3' has 64 connections declared, but only 58 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:929]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_4' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_4' (12#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_axi_dma_0_4' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_axi_dma_0_4' (12#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_axi_dma_0_4_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_3' of module 'NFC_4Channel_bd_axi_dma_0_4' has 64 connections declared, but only 58 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:988]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_clk_wiz_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_clk_wiz_0_0' (13#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_clk_wiz_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_clk_wiz_0_0' (13#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_clk_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'NFC_4Channel_bd_clk_wiz_0_0' has 6 connections declared, but only 5 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1047]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_nfc_top_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' (14#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_nfc_top_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_nfc_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' (14#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_nfc_top_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'nfc_top_0' of module 'NFC_4Channel_bd_nfc_top_0_0' has 79 connections declared, but only 71 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1053]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_proc_sys_reset_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_proc_sys_reset_0_0' (15#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_proc_sys_reset_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_proc_sys_reset_0_0' (15#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'NFC_4Channel_bd_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1125]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_smartconnect_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_smartconnect_0_0' (16#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_smartconnect_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_smartconnect_0_0' (16#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'NFC_4Channel_bd_smartconnect_0_0' has 137 connections declared, but only 125 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1132]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_smartconnect_0_1' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_smartconnect_0_1' (17#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_smartconnect_0_1' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_smartconnect_0_1' (17#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_smartconnect_0_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'smartconnect_1' of module 'NFC_4Channel_bd_smartconnect_0_1' has 313 connections declared, but only 297 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1258]
-INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_zynq_ultra_ps_e_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_zynq_ultra_ps_e_0_0' (18#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-20284-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_zynq_ultra_ps_e_0_0' [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_zynq_ultra_ps_e_0_0' (18#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/.Xil/Vivado-14608-DESKTOP-TRF6PNO/realtime/NFC_4Channel_bd_zynq_ultra_ps_e_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'NFC_4Channel_bd_zynq_ultra_ps_e_0_0' has 82 connections declared, but only 81 given [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:1556]
 INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd' (19#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/synth/NFC_4Channel_bd.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_wrapper' (20#1) [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/hdl/NFC_4Channel_bd_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1845.762 ; gain = 154.750
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1844.469 ; gain = 154.242
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -90,12 +90,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1850.477 ; gain = 159.465
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1849.562 ; gain = 159.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1850.477 ; gain = 159.465
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1849.562 ; gain = 159.336
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1850.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1849.562 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -149,13 +149,13 @@ Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel
 Finished Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1950.660 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1948.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1950.660 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1948.992 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1950.660 ; gain = 259.648
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1948.992 ; gain = 258.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -163,7 +163,7 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1950.660 ; gain = 259.648
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1948.992 ; gain = 258.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -334,10 +334,10 @@ Applied set_property DONT_TOUCH = true for NFC_4Channel_bd_i/axi_bram_ctrl_1_bra
 Applied set_property DONT_TOUCH = true for NFC_4Channel_bd_i/axi_bram_ctrl_2_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for NFC_4Channel_bd_i/axi_bram_ctrl_3_bram. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1950.660 ; gain = 259.648
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1948.992 ; gain = 258.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1950.660 ; gain = 259.648
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1948.992 ; gain = 258.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -373,7 +373,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1950.660 ; gain = 259.648
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1948.992 ; gain = 258.766
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -385,13 +385,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2591.359 ; gain = 900.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2587.922 ; gain = 897.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2591.805 ; gain = 900.793
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2588.441 ; gain = 898.215
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -403,7 +403,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2603.203 ; gain = 912.191
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2599.844 ; gain = 909.617
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -427,13 +427,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -452,25 +452,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -528,30 +528,30 @@ Report Instance Areas:
 +------+--------------------+----------------+------+
 |      |Instance            |Module          |Cells |
 +------+--------------------+----------------+------+
-|1     |top                 |                |  4175|
-|2     |  NFC_4Channel_bd_i |NFC_4Channel_bd |  4175|
+|1     |top                 |                |  4207|
+|2     |  NFC_4Channel_bd_i |NFC_4Channel_bd |  4207|
 +------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 2616.977 ; gain = 825.781
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2616.977 ; gain = 925.965
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2614.652 ; gain = 824.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2614.652 ; gain = 924.426
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2616.977 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2614.652 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.293 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2668.727 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 12 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 2676.305 ; gain = 2186.848
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2676.305 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2673.734 ; gain = 2183.949
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2673.734 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/synth_1/NFC_4Channel_bd_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NFC_4Channel_bd_wrapper_utilization_synth.rpt -pb NFC_4Channel_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 18:34:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 14:50:44 2026...

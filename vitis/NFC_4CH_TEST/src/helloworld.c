@@ -1,15 +1,27 @@
 #include "xil_printf.h"
 #include "xil_io.h"
 #include "xaxidma.h"
+#include "xaxidma_hw.h"
 #include "xparameters.h"
 #include "sleep.h"
 #include "xil_cache.h"
+#include "xil_mmu.h"
+#include "xil_exception.h"
 
 // --- 硬件地址 ---
 #define NFC_BASE        0x90000000UL
 #define NFC_CH_NUM      4U
 #define NFC_CH_STRIDE   0x40U
 #define BRAM_CH_RD_OFF  0x1000U
+
+// 临时地址同步：将 BRAM0 映射到 0xA0000000 用于通路隔离验证
+#define BRAM0_BASE_SYNC 0xA0000000U
+
+// DMA缓冲区后端选择：
+// 1) 本地静态缓冲区（OCM/栈/全局地址，DMA可能不可达）
+// 0) 各通道BRAM窗口（当前4通道BD推荐）
+#define USE_LOCAL_BUFFER 0
+#define LOCAL_BUF_SIZE   4096U
 
 // --- 测试数据大小：4KB（安全，远小于 16KB 页，DMA Simple 模式无问题）---
 #define TEST_LEN    1024U
@@ -38,18 +50,136 @@ static const u16 g_dma_dev_ids[NFC_CH_NUM] = {
 };
 
 static const u32 g_bram_base[NFC_CH_NUM] = {
-    XPAR_BRAM_0_BASEADDR,
+    BRAM0_BASE_SYNC,
     XPAR_BRAM_1_BASEADDR,
     XPAR_BRAM_2_BASEADDR,
     XPAR_BRAM_3_BASEADDR
 };
 
+static u8 g_wr_buf[NFC_CH_NUM][LOCAL_BUF_SIZE] __attribute__((aligned(64)));
+static u8 g_rd_buf[NFC_CH_NUM][LOCAL_BUF_SIZE] __attribute__((aligned(64)));
+
 static u32 nfc_base_of(u32 ch)      { return NFC_BASE + ch * NFC_CH_STRIDE; }
-static u32 bram_wr_base_of(u32 ch)  { return g_bram_base[ch]; }
-static u32 bram_rd_base_of(u32 ch)  { return g_bram_base[ch] + BRAM_CH_RD_OFF; }
+static u32 bram_wr_base_of(u32 ch)
+{
+#if USE_LOCAL_BUFFER
+    return (u32)(UINTPTR)&g_wr_buf[ch][0];
+#else
+    return g_bram_base[ch];
+#endif
+}
+static u32 bram_rd_base_of(u32 ch)
+{
+#if USE_LOCAL_BUFFER
+    return (u32)(UINTPTR)&g_rd_buf[ch][0];
+#else
+    return g_bram_base[ch] + BRAM_CH_RD_OFF;
+#endif
+}
 
 static void nfc_wr(u32 ch, u32 off, u32 v) { Xil_Out32(nfc_base_of(ch) + off, v); }
 static u32  nfc_rd(u32 ch, u32 off)        { return Xil_In32(nfc_base_of(ch) + off); }
+
+static void dma_dump_status(u32 ch)
+{
+    XAxiDma *dma = &g_dmas[ch];
+    u32 mm2s_sr = XAxiDma_ReadReg(dma->RegBase, XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET);
+    u32 s2mm_sr = XAxiDma_ReadReg(dma->RegBase, XAXIDMA_RX_OFFSET + XAXIDMA_SR_OFFSET);
+    xil_printf("DBG CH%u: DMASR MM2S=0x%08X S2MM=0x%08X\r\n", ch, mm2s_sr, s2mm_sr);
+}
+
+static void bram_mmu_setup(void)
+{
+#if !USE_LOCAL_BUFFER
+    for (u32 ch = 0; ch < NFC_CH_NUM; ch++) {
+        Xil_SetTlbAttributes((UINTPTR)g_bram_base[ch], NORM_NONCACHE);
+        xil_printf("DBG CH%u: TLB set NORM_NONCACHE @ 0x%08X\r\n", ch, g_bram_base[ch]);
+    }
+#endif
+}
+
+#if defined(__aarch64__)
+static u64 read_current_el(void)
+{
+    u64 v;
+    __asm__ volatile("mrs %0, CurrentEL" : "=r"(v));
+    return v;
+}
+
+static u64 read_esr_by_el(u32 el)
+{
+    u64 v = 0;
+    if (el == 1U) {
+        __asm__ volatile("mrs %0, esr_el1" : "=r"(v));
+    } else if (el == 2U) {
+        __asm__ volatile("mrs %0, esr_el2" : "=r"(v));
+    } else if (el == 3U) {
+        __asm__ volatile("mrs %0, esr_el3" : "=r"(v));
+    }
+    return v;
+}
+
+static u64 read_far_by_el(u32 el)
+{
+    u64 v = 0;
+    if (el == 1U) {
+        __asm__ volatile("mrs %0, far_el1" : "=r"(v));
+    } else if (el == 2U) {
+        __asm__ volatile("mrs %0, far_el2" : "=r"(v));
+    } else if (el == 3U) {
+        __asm__ volatile("mrs %0, far_el3" : "=r"(v));
+    }
+    return v;
+}
+
+static u64 read_elr_by_el(u32 el)
+{
+    u64 v = 0;
+    if (el == 1U) {
+        __asm__ volatile("mrs %0, elr_el1" : "=r"(v));
+    } else if (el == 2U) {
+        __asm__ volatile("mrs %0, elr_el2" : "=r"(v));
+    } else if (el == 3U) {
+        __asm__ volatile("mrs %0, elr_el3" : "=r"(v));
+    }
+    return v;
+}
+
+static void my_sync_abort_handler(void *cb)
+{
+    (void)cb;
+    u32 el = (u32)((read_current_el() >> 2U) & 0x3U);
+    u64 esr = read_esr_by_el(el);
+    u64 far = read_far_by_el(el);
+    u64 elr = read_elr_by_el(el);
+    u32 ec  = (u32)((esr >> 26U) & 0x3FU);
+    u32 iss = (u32)(esr & 0x01FFFFFFU);
+
+    xil_printf("\r\n!!! Sync Abort Caught !!!\r\n");
+    xil_printf("CurrentEL=%u\r\n", el);
+    xil_printf("ESR_EL1=0x%08X_%08X\r\n", (u32)(esr >> 32), (u32)esr);
+    xil_printf("FAR_EL1=0x%08X_%08X\r\n", (u32)(far >> 32), (u32)far);
+    xil_printf("ELR_EL1=0x%08X_%08X\r\n", (u32)(elr >> 32), (u32)elr);
+    xil_printf("ESR.EC=0x%02X ESR.ISS=0x%07X\r\n", ec, iss);
+    xil_printf("System halted in my_sync_abort_handler\r\n");
+
+    while (1) {}
+}
+
+static void install_abort_handler(void)
+{
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_SYNC_INT,
+                                 (Xil_ExceptionHandler)my_sync_abort_handler,
+                                 NULL);
+    Xil_ExceptionEnable();
+}
+#else
+static void install_abort_handler(void)
+{
+    xil_printf("WARN: custom sync abort handler only supports AArch64\r\n");
+}
+#endif
 
 static int nfc_fire(u32 ch, u16 opc, u32 lba_l, u32 len)
 {
@@ -108,12 +238,14 @@ static int dma_recv(u32 ch, u32 byte_len)
                                     byte_len, XAXIDMA_DEVICE_TO_DMA);
     if (st != XST_SUCCESS) {
         xil_printf("ERR: CH%u XAxiDma_SimpleTransfer(S2MM) failed %d\r\n", ch, st);
+        dma_dump_status(ch);
         return -1;
     }
     int to = 0;
     while (XAxiDma_Busy(dma, XAXIDMA_DEVICE_TO_DMA)) {
         if (++to > POLL_TO) {
             xil_printf("ERR: CH%u DMA S2MM timeout\r\n", ch);
+            dma_dump_status(ch);
             return -1;
         }
     }
@@ -122,8 +254,8 @@ static int dma_recv(u32 ch, u32 byte_len)
     return 0;
 }
 
-// MM2S: BRAM → NFC（先启动 DMA，再发 NFC 命令）
-static int dma_send(u32 ch, u32 byte_len)
+// MM2S: BRAM → NFC（先启动 DMA，等 NFC 发起后再等完成）
+static int dma_send_start(u32 ch, u32 byte_len)
 {
     u32 bram_wr = bram_wr_base_of(ch);
     XAxiDma *dma = &g_dmas[ch];
@@ -134,12 +266,22 @@ static int dma_send(u32 ch, u32 byte_len)
                                     byte_len, XAXIDMA_DMA_TO_DEVICE);
     if (st != XST_SUCCESS) {
         xil_printf("ERR: CH%u XAxiDma_SimpleTransfer(MM2S) failed %d\r\n", ch, st);
+        dma_dump_status(ch);
         return -1;
     }
+    return 0;
+}
+
+static int dma_send_wait(u32 ch)
+{
+    XAxiDma *dma = &g_dmas[ch];
     int to = 0;
+
     while (XAxiDma_Busy(dma, XAXIDMA_DMA_TO_DEVICE)) {
         if (++to > POLL_TO) {
             xil_printf("ERR: CH%u DMA MM2S timeout\r\n", ch);
+            dma_dump_status(ch);
+            xil_printf("HINT: If DMASR has DMADecErr(0x40), DMA address is not mapped in BD Address Editor\r\n");
             return -1;
         }
     }
@@ -164,7 +306,21 @@ int main(void)
 {
     u32 cur_ch = 0;
 
+    if (TEST_LEN > LOCAL_BUF_SIZE) {
+        xil_printf("ERR: TEST_LEN(%d) > LOCAL_BUF_SIZE(%d)\r\n", TEST_LEN, LOCAL_BUF_SIZE);
+        return -1;
+    }
+
+    install_abort_handler();
+
     Xil_DCacheDisable();
+    bram_mmu_setup();
+
+#if USE_LOCAL_BUFFER
+    xil_printf("DBG: DMA buffer backend = LOCAL (no DDR)\r\n");
+#else
+    xil_printf("DBG: DMA buffer backend = BRAM\r\n");
+#endif
 
     for (u32 ch = 0; ch < NFC_CH_NUM; ch++) {
         XAxiDma_Config *cfg = XAxiDma_LookupConfig(g_dma_dev_ids[ch]);
@@ -277,18 +433,27 @@ int main(void)
             u32 bram_wr = bram_wr_base_of(cur_ch);
 
             xil_printf("CH%u Programming %d bytes to LBA=0 (pattern=0xA5)...\r\n", cur_ch, TEST_LEN);
+            xil_printf("DBG CH%u: step0 wr_base=0x%08X\r\n", cur_ch, bram_wr);
+
+            xil_printf("DBG CH%u: write first byte...\r\n", cur_ch);
+            Xil_Out8(bram_wr + 0, 0xA5);
+            xil_printf("DBG CH%u: first byte readback=0x%02X\r\n", cur_ch, Xil_In8(bram_wr + 0));
+
             for (u32 i = 0; i < TEST_LEN; i++)
                 Xil_Out8(bram_wr + i, 0xA5);
             xil_printf("DBG CH%u: step1 fill done\r\n", cur_ch);
 
-            if (dma_send(cur_ch, TEST_LEN) != 0)
+            if (dma_send_start(cur_ch, TEST_LEN) != 0)
+                break;
+
+            if (nfc_fire(cur_ch, 0x1080, 0, TEST_LEN) != 0) break;
+
+            if (dma_send_wait(cur_ch) != 0)
                 break;
             xil_printf("DBG CH%u: step2 dma_send done\r\n", cur_ch);
 
-            if (nfc_fire(cur_ch, 0x1080, 0, TEST_LEN) != 0) break;
-            xil_printf("DBG CH%u: step3 nfc_fire done\r\n", cur_ch);
             nfc_wait_resp(cur_ch);
-            xil_printf("DBG CH%u: step4 nfc_wait_resp done\r\n", cur_ch);
+            xil_printf("DBG CH%u: step3 nfc_wait_resp done\r\n", cur_ch);
             break;
         }
 
@@ -332,18 +497,27 @@ int main(void)
             u32 bram_wr = bram_wr_base_of(cur_ch);
 
             xil_printf("CH%u Programming %d bytes (0xA5) to LBA=0...\r\n", cur_ch, TEST_LEN);
+            xil_printf("DBG CH%u: step0 wr_base=0x%08X\r\n", cur_ch, bram_wr);
+
+            xil_printf("DBG CH%u: write first byte...\r\n", cur_ch);
+            Xil_Out8(bram_wr + 0, 0xA5);
+            xil_printf("DBG CH%u: first byte readback=0x%02X\r\n", cur_ch, Xil_In8(bram_wr + 0));
+
             for (u32 i = 0; i < TEST_LEN; i++)
                 Xil_Out8(bram_wr + i, 0xA5);
             xil_printf("DBG CH%u: step1 fill done\r\n", cur_ch);
 
-            if (dma_send(cur_ch, TEST_LEN) != 0)
+            if (dma_send_start(cur_ch, TEST_LEN) != 0)
+                break;
+
+            if (nfc_fire(cur_ch, 0x1080, 0, TEST_LEN) != 0) break;
+
+            if (dma_send_wait(cur_ch) != 0)
                 break;
             xil_printf("DBG CH%u: step2 dma_send done\r\n", cur_ch);
 
-            if (nfc_fire(cur_ch, 0x1080, 0, TEST_LEN) != 0) break;
-            xil_printf("DBG CH%u: step3 nfc_fire done\r\n", cur_ch);
             nfc_wait_resp(cur_ch);
-            xil_printf("DBG CH%u: step4 nfc_wait_resp done\r\n", cur_ch);
+            xil_printf("DBG CH%u: step3 nfc_wait_resp done\r\n", cur_ch);
             break;
         }
 

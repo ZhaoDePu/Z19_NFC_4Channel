@@ -14,5 +14,5 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx_2019_2/RTL_prj/OCOW
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2019_2/Vivado/2019.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.cache/ip 
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP NFC_4Channel_bd_axi_bram_ctrl_0_2, cache-ID = a3f6b613e1f0fd44.
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 16:47:54 2026...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP NFC_4Channel_bd_axi_bram_ctrl_0_2, cache-ID = 944907938541d311.
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 14:44:26 2026...

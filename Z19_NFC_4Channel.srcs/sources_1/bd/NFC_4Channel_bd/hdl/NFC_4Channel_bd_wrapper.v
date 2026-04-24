@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Wed Apr 22 18:32:20 2026
+//Date        : Fri Apr 24 14:42:35 2026
 //Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 //Command     : generate_target NFC_4Channel_bd_wrapper.bd
 //Design      : NFC_4Channel_bd_wrapper

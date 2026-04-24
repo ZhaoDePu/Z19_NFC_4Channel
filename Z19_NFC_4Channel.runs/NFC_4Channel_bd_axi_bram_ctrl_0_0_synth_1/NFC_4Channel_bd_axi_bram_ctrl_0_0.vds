@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Apr 22 16:45:16 2026
-# Process ID: 29020
+# Start of session at: Fri Apr 24 14:43:07 2026
+# Process ID: 4232
 # Current directory: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1
 # Command line: vivado.exe -log NFC_4Channel_bd_axi_bram_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NFC_4Channel_bd_axi_bram_ctrl_0_0.tcl
 # Log file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_0_0.vds
@@ -21,15 +21,15 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29628 
+INFO: Helper process launched with PID 9912 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1674.840 ; gain = 77.172
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1673.543 ; gain = 77.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_0_0/synth/NFC_4Channel_bd_axi_bram_ctrl_0_0.vhd:111]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
-	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
-	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_MEMORY_DEPTH bound to: 8192 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
@@ -47,9 +47,9 @@ INFO: [Synth 8-638] synthesizing module 'NFC_4Channel_bd_axi_bram_ctrl_0_0' [d:/
 INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'd:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_axi_bram_ctrl_0_0/synth/NFC_4Channel_bd_axi_bram_ctrl_0_0.vhd:270]
 INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
 	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
-	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
-	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_MEMORY_DEPTH bound to: 8192 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
@@ -65,8 +65,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [d:/Xilinx_2019_2/RTL_pr
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
-	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
@@ -82,7 +82,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [d:/Xilinx_2019_2/RT
 	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
 	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'full_axi' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
@@ -106,7 +106,7 @@ INFO: [Synth 8-638] synthesizing module 'full_axi' [d:/Xilinx_2019_2/RTL_prj/OCO
 WARNING: [Synth 8-6774] Null subtype or type declaration found [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
 INFO: [Synth 8-3919] null assignment ignored [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
 INFO: [Synth 8-638] synthesizing module 'wr_chnl' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
-	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -119,7 +119,7 @@ INFO: [Synth 8-638] synthesizing module 'wr_chnl' [d:/Xilinx_2019_2/RTL_prj/OCOW
 	Parameter C_ECC_TYPE bound to: 0 - type: integer 
 INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126]
 INFO: [Synth 8-638] synthesizing module 'wrap_brst' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
-	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (1#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
@@ -165,7 +165,7 @@ WARNING: [Synth 8-6014] Unused sequential element aw_active_d1_reg was removed. 
 INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (8#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
 WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30020]
 INFO: [Synth 8-638] synthesizing module 'rd_chnl' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/a002/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
-	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 15 - type: integer 
 	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -190,6 +190,8 @@ WARNING: [Synth 8-3331] design wrap_brst has unconnected port curr_axlen[6]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port curr_axlen[5]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port curr_axlen[4]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_ld[2]
+WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_int[14]
+WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_int[13]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_int[12]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_int[11]
 WARNING: [Synth 8-3331] design wrap_brst has unconnected port bram_addr_int[10]
@@ -207,6 +209,8 @@ WARNING: [Synth 8-3331] design rd_chnl has unconnected port AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port AXI_ARPROT[0]
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port Enable_ECC
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port Arb2AR_Active
+WARNING: [Synth 8-3331] design rd_chnl has unconnected port Sng_BRAM_Addr[14]
+WARNING: [Synth 8-3331] design rd_chnl has unconnected port Sng_BRAM_Addr[13]
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port Sng_BRAM_Addr[12]
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port Sng_BRAM_Addr[11]
 WARNING: [Synth 8-3331] design rd_chnl has unconnected port Sng_BRAM_Addr[10]
@@ -261,6 +265,8 @@ WARNING: [Synth 8-3331] design wr_chnl has unconnected port FaultInjectData[2]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port FaultInjectData[1]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port FaultInjectData[0]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port Arb2AW_Active
+WARNING: [Synth 8-3331] design wr_chnl has unconnected port Sng_BRAM_Addr[14]
+WARNING: [Synth 8-3331] design wr_chnl has unconnected port Sng_BRAM_Addr[13]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port Sng_BRAM_Addr[12]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port Sng_BRAM_Addr[11]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port Sng_BRAM_Addr[10]
@@ -279,15 +285,9 @@ WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[28]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[27]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[26]
 WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[25]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[24]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[23]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[22]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[21]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[20]
-WARNING: [Synth 8-3331] design wr_chnl has unconnected port BRAM_RdData[19]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1756.055 ; gain = 158.387
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1755.535 ; gain = 159.828
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -300,12 +300,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1765.418 ; gain = 167.750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1763.992 ; gain = 168.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1765.418 ; gain = 167.750
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1763.992 ; gain = 168.285
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1777.430 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1763.992 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -318,15 +318,15 @@ Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel
 Finished Parsing XDC File [D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1896.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1876.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   FDR => FDRE: 1 instance 
   MUXCY_L => MUXCY: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1896.863 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1876.660 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1896.863 ; gain = 299.195
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1876.660 ; gain = 280.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -334,14 +334,14 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1896.863 ; gain = 299.195
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1876.660 ; gain = 280.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1896.863 ; gain = 299.195
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1876.660 ; gain = 280.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "wrap_burst_total_cmb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg' in module 'wr_chnl'
@@ -391,7 +391,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rlast_sm
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1896.863 ; gain = 299.195
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1876.660 ; gain = 280.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -411,17 +411,17 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 4     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
 	                8 Bit    Registers := 3     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 5     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 156   
+	                1 Bit    Registers := 160   
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
-	   5 Input     11 Bit        Muxes := 2     
-	   2 Input     11 Bit        Muxes := 8     
+	   5 Input     13 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 8     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 5     
 	   9 Input      4 Bit        Muxes := 1     
@@ -446,10 +446,10 @@ Hierarchical RTL Component report
 Module wrap_brst 
 Detailed RTL Component Info : 
 +---Registers : 
-	               10 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 +---Muxes : 
-	   5 Input     11 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
@@ -466,14 +466,14 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
-	               11 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 69    
+	                1 Bit    Registers := 71    
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 4     
 	   2 Input      8 Bit        Muxes := 2     
 	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 7     
@@ -487,14 +487,14 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	               11 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 87    
+	                1 Bit    Registers := 89    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 4     
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	   9 Input      4 Bit        Muxes := 1     
@@ -535,7 +535,7 @@ INFO: [Synth 8-3886] merging instance 'U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_BRESP.axi_bresp_int_reg[1] )
 INFO: [Synth 8-3886] merging instance 'U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_aresetn_re_reg_reg' (FD) to 'U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_AWREADY.axi_aresetn_re_reg_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1896.863 ; gain = 299.195
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1876.660 ; gain = 280.953
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -547,13 +547,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 2499.836 ; gain = 902.168
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 2496.391 ; gain = 900.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 2565.719 ; gain = 968.051
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 2562.965 ; gain = 967.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -565,7 +565,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 2566.738 ; gain = 969.070
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 2563.988 ; gain = 968.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -589,13 +589,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -614,25 +614,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -649,45 +649,46 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |LUT1    |     4|
-|2     |LUT2    |    22|
-|3     |LUT3    |    69|
-|4     |LUT4    |    49|
-|5     |LUT5    |    70|
-|6     |LUT6    |   137|
+|2     |LUT2    |    23|
+|3     |LUT3    |    72|
+|4     |LUT4    |    44|
+|5     |LUT5    |    63|
+|6     |LUT6    |   144|
 |7     |MUXCY_L |     3|
-|8     |SRL16E  |     1|
-|9     |XORCY   |     4|
-|10    |FDR     |     1|
-|11    |FDRE    |   280|
+|8     |MUXF7   |     2|
+|9     |SRL16E  |     1|
+|10    |XORCY   |     4|
+|11    |FDR     |     1|
+|12    |FDRE    |   292|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------+------------------+------+
 |      |Instance                                  |Module            |Cells |
 +------+------------------------------------------+------------------+------+
-|1     |top                                       |                  |   640|
-|2     |  U0                                      |axi_bram_ctrl     |   640|
-|3     |    \gext_inst.abcv4_0_ext_inst           |axi_bram_ctrl_top |   640|
-|4     |      \GEN_AXI4.I_FULL_AXI                |full_axi          |   640|
-|5     |        I_RD_CHNL                         |rd_chnl           |   399|
-|6     |          \GEN_NO_RD_CMD_OPT.I_WRAP_BRST  |wrap_brst_0       |    60|
-|7     |        I_WR_CHNL                         |wr_chnl           |   241|
+|1     |top                                       |                  |   653|
+|2     |  U0                                      |axi_bram_ctrl     |   653|
+|3     |    \gext_inst.abcv4_0_ext_inst           |axi_bram_ctrl_top |   653|
+|4     |      \GEN_AXI4.I_FULL_AXI                |full_axi          |   653|
+|5     |        I_RD_CHNL                         |rd_chnl           |   404|
+|6     |          \GEN_NO_RD_CMD_OPT.I_WRAP_BRST  |wrap_brst_0       |    65|
+|7     |        I_WR_CHNL                         |wr_chnl           |   249|
 |8     |          BID_FIFO                        |SRL_FIFO          |    33|
-|9     |          I_WRAP_BRST                     |wrap_brst         |    55|
+|9     |          I_WRAP_BRST                     |wrap_brst         |    61|
 +------+------------------------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 155 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 2571.574 ; gain = 842.461
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:48 . Memory (MB): peak = 2571.574 ; gain = 973.906
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 2567.793 ; gain = 859.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 2567.793 ; gain = 972.086
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2571.574 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2567.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2615.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.980 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   (CARRY4) => CARRY8: 1 instance 
@@ -696,17 +697,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 85 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 2615.668 ; gain = 2185.895
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2615.668 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:55 . Memory (MB): peak = 2613.980 ; gain = 2184.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.980 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_axi_bram_ctrl_0_0, cache-ID = a3f6b613e1f0fd44
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_axi_bram_ctrl_0_0, cache-ID = 944907938541d311
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2615.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2613.980 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_axi_bram_ctrl_0_0_synth_1/NFC_4Channel_bd_axi_bram_ctrl_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NFC_4Channel_bd_axi_bram_ctrl_0_0_utilization_synth.rpt -pb NFC_4Channel_bd_axi_bram_ctrl_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 16:46:27 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 14:44:15 2026...

@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Apr 22 16:46:26 2026
+// Date        : Fri Apr 24 14:44:14 2026
 // Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top NFC_4Channel_bd_axi_bram_ctrl_0_1 -prefix
 //               NFC_4Channel_bd_axi_bram_ctrl_0_1_ NFC_4Channel_bd_axi_bram_ctrl_0_0_sim_netlist.v
@@ -64,7 +64,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
     bram_rddata_b);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 CLKIF CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLKIF, ASSOCIATED_BUSIF S_AXI:S_AXI_CTRL, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast, INSERT_VIP 0" *) input s_axi_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RSTIF RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s_axi_aresetn;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [12:0]s_axi_awaddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 50000000, ID_WIDTH 0, ADDR_WIDTH 15, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 16, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [14:0]s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWLEN" *) input [7:0]s_axi_awlen;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWSIZE" *) input [2:0]s_axi_awsize;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI AWBURST" *) input [1:0]s_axi_awburst;
@@ -81,7 +81,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BRESP" *) output [1:0]s_axi_bresp;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BVALID" *) output s_axi_bvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI BREADY" *) input s_axi_bready;
-  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [12:0]s_axi_araddr;
+  (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARADDR" *) input [14:0]s_axi_araddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARLEN" *) input [7:0]s_axi_arlen;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARSIZE" *) input [2:0]s_axi_arsize;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI ARBURST" *) input [1:0]s_axi_arburst;
@@ -95,23 +95,23 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RLAST" *) output s_axi_rlast;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RVALID" *) output s_axi_rvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S_AXI RREADY" *) input s_axi_rready;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORTA, MASTER_TYPE BRAM_CTRL, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE WRITE_ONLY, READ_LATENCY 1" *) output bram_rst_a;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORTA, MASTER_TYPE BRAM_CTRL, MEM_SIZE 32768, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE WRITE_ONLY, READ_LATENCY 1" *) output bram_rst_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *) output bram_clk_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *) output bram_en_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA WE" *) output [3:0]bram_we_a;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) output [12:0]bram_addr_a;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) output [14:0]bram_addr_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DIN" *) output [31:0]bram_wrdata_a;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *) input [31:0]bram_rddata_a;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORTB, MASTER_TYPE BRAM_CTRL, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE READ_ONLY, READ_LATENCY 1" *) output bram_rst_b;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB RST" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORTB, MASTER_TYPE BRAM_CTRL, MEM_SIZE 32768, MEM_WIDTH 32, MEM_ECC NONE, READ_WRITE_MODE READ_ONLY, READ_LATENCY 1" *) output bram_rst_b;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB CLK" *) output bram_clk_b;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB EN" *) output bram_en_b;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB WE" *) output [3:0]bram_we_b;
-  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB ADDR" *) output [12:0]bram_addr_b;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB ADDR" *) output [14:0]bram_addr_b;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB DIN" *) output [31:0]bram_wrdata_b;
   (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTB DOUT" *) input [31:0]bram_rddata_b;
 
-  wire [12:0]bram_addr_a;
-  wire [12:0]bram_addr_b;
+  wire [14:0]bram_addr_a;
+  wire [14:0]bram_addr_b;
   wire bram_clk_a;
   wire bram_clk_b;
   wire bram_en_a;
@@ -125,7 +125,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
   wire [31:0]bram_wrdata_a;
   wire [31:0]bram_wrdata_b;
   wire s_axi_aclk;
-  wire [12:0]s_axi_araddr;
+  wire [14:0]s_axi_araddr;
   wire [1:0]s_axi_arburst;
   wire [3:0]s_axi_arcache;
   wire s_axi_aresetn;
@@ -135,7 +135,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
   wire s_axi_arready;
   wire [2:0]s_axi_arsize;
   wire s_axi_arvalid;
-  wire [12:0]s_axi_awaddr;
+  wire [14:0]s_axi_awaddr;
   wire [1:0]s_axi_awburst;
   wire [3:0]s_axi_awcache;
   wire [7:0]s_axi_awlen;
@@ -170,18 +170,18 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
   wire [1:0]NLW_U0_s_axi_ctrl_rresp_UNCONNECTED;
   wire [0:0]NLW_U0_s_axi_rid_UNCONNECTED;
 
-  (* C_BRAM_ADDR_WIDTH = "11" *) 
+  (* C_BRAM_ADDR_WIDTH = "13" *) 
   (* C_BRAM_INST_MODE = "EXTERNAL" *) 
   (* C_ECC = "0" *) 
   (* C_ECC_ONOFF_RESET_VALUE = "0" *) 
   (* C_ECC_TYPE = "0" *) 
   (* C_FAMILY = "zynquplus" *) 
   (* C_FAULT_INJECT = "0" *) 
-  (* C_MEMORY_DEPTH = "2048" *) 
+  (* C_MEMORY_DEPTH = "8192" *) 
   (* C_RD_CMD_OPTIMIZATION = "0" *) 
   (* C_READ_LATENCY = "1" *) 
   (* C_SINGLE_PORT_BRAM = "0" *) 
-  (* C_S_AXI_ADDR_WIDTH = "13" *) 
+  (* C_S_AXI_ADDR_WIDTH = "15" *) 
   (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) 
   (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) 
   (* C_S_AXI_DATA_WIDTH = "32" *) 
@@ -262,62 +262,68 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1
 endmodule
 
 module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
-   (bid_gets_fifo_load,
-    \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ,
-    \bvalid_cnt_reg[0] ,
+   (\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ,
+    \bvalid_cnt_reg[1] ,
+    bid_gets_fifo_load,
+    \bvalid_cnt_reg[1]_0 ,
+    axi_wr_burst_reg,
     \axi_bid_int_reg[0] ,
     \Addr_Counters[3].FDRE_I_0 ,
     s_axi_aclk,
+    bram_addr_ld_en,
+    bid_gets_fifo_load_d1,
+    axi_bvalid_int_reg,
+    s_axi_bready,
+    Q,
+    bid_gets_fifo_load_d1_reg,
+    bid_gets_fifo_load_d1_reg_0,
+    bid_gets_fifo_load_d1_reg_1,
+    axi_awaddr_full,
     axi_bvalid_int_i_3_0,
     aw_active,
     axi_bvalid_int_i_3_1,
     axi_bvalid_int_i_3_2,
-    axi_awaddr_full,
-    Q,
-    bram_addr_ld_en,
-    bid_gets_fifo_load_d1_reg,
-    bid_gets_fifo_load_d1,
-    s_axi_bready,
-    \axi_bid_int_reg[0]_0 ,
-    bid_gets_fifo_load_d1_reg_0,
-    s_axi_wlast,
     s_axi_wvalid,
+    s_axi_wlast,
     s_axi_awvalid,
     s_axi_awready,
-    last_data_ack_mod,
     axi_awlen_pipe_1_or_2,
-    curr_awlen_reg_1_or_2,
     axi_bvalid_int_i_5_0,
+    curr_awlen_reg_1_or_2,
+    last_data_ack_mod,
     axi_wr_burst,
     axi_awid_pipe,
     s_axi_awid,
     s_axi_bid);
-  output bid_gets_fifo_load;
   output \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ;
-  output \bvalid_cnt_reg[0] ;
+  output \bvalid_cnt_reg[1] ;
+  output bid_gets_fifo_load;
+  output \bvalid_cnt_reg[1]_0 ;
+  output axi_wr_burst_reg;
   output \axi_bid_int_reg[0] ;
   input \Addr_Counters[3].FDRE_I_0 ;
   input s_axi_aclk;
+  input bram_addr_ld_en;
+  input bid_gets_fifo_load_d1;
+  input axi_bvalid_int_reg;
+  input s_axi_bready;
+  input [2:0]Q;
+  input bid_gets_fifo_load_d1_reg;
+  input bid_gets_fifo_load_d1_reg_0;
+  input [2:0]bid_gets_fifo_load_d1_reg_1;
+  input axi_awaddr_full;
   input axi_bvalid_int_i_3_0;
   input aw_active;
   input axi_bvalid_int_i_3_1;
   input axi_bvalid_int_i_3_2;
-  input axi_awaddr_full;
-  input [2:0]Q;
-  input bram_addr_ld_en;
-  input bid_gets_fifo_load_d1_reg;
-  input bid_gets_fifo_load_d1;
-  input s_axi_bready;
-  input \axi_bid_int_reg[0]_0 ;
-  input [2:0]bid_gets_fifo_load_d1_reg_0;
-  input s_axi_wlast;
   input s_axi_wvalid;
+  input s_axi_wlast;
   input s_axi_awvalid;
   input s_axi_awready;
-  input last_data_ack_mod;
   input axi_awlen_pipe_1_or_2;
-  input curr_awlen_reg_1_or_2;
   input axi_bvalid_int_i_5_0;
+  input curr_awlen_reg_1_or_2;
+  input last_data_ack_mod;
   input axi_wr_burst;
   input axi_awid_pipe;
   input [0:0]s_axi_awid;
@@ -333,7 +339,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   wire D;
   wire Data_Exists_DFF_i_2_n_0;
   wire Data_Exists_DFF_i_3_n_0;
-  wire Data_Exists_DFF_i_4_n_0;
   wire \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ;
   wire [2:0]Q;
   wire S;
@@ -349,7 +354,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   wire \axi_bid_int[0]_i_2_n_0 ;
   wire \axi_bid_int[0]_i_3_n_0 ;
   wire \axi_bid_int_reg[0] ;
-  wire \axi_bid_int_reg[0]_0 ;
   wire axi_bvalid_int_i_3_0;
   wire axi_bvalid_int_i_3_1;
   wire axi_bvalid_int_i_3_2;
@@ -357,17 +361,20 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   wire axi_bvalid_int_i_5_0;
   wire axi_bvalid_int_i_5_n_0;
   wire axi_bvalid_int_i_6_n_0;
-  wire axi_bvalid_int_i_7_n_0;
+  wire axi_bvalid_int_reg;
   wire axi_wr_burst;
+  wire axi_wr_burst_reg;
   wire bid_fifo_ld;
   wire bid_fifo_not_empty;
   wire bid_fifo_rd;
   wire bid_gets_fifo_load;
   wire bid_gets_fifo_load_d1;
   wire bid_gets_fifo_load_d1_reg;
-  wire [2:0]bid_gets_fifo_load_d1_reg_0;
+  wire bid_gets_fifo_load_d1_reg_0;
+  wire [2:0]bid_gets_fifo_load_d1_reg_1;
   wire bram_addr_ld_en;
-  wire \bvalid_cnt_reg[0] ;
+  wire \bvalid_cnt_reg[1] ;
+  wire \bvalid_cnt_reg[1]_0 ;
   wire curr_awlen_reg_1_or_2;
   wire last_data_ack_mod;
   wire s_axi_aclk;
@@ -425,10 +432,10 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
     \Addr_Counters[0].MUXCY_L_I_i_2 
        (.I0(bram_addr_ld_en),
         .I1(\axi_bid_int[0]_i_2_n_0 ),
-        .I2(\Addr_Counters[0].FDRE_I_n_0 ),
-        .I3(\Addr_Counters[1].FDRE_I_n_0 ),
-        .I4(\Addr_Counters[3].FDRE_I_n_0 ),
-        .I5(\Addr_Counters[2].FDRE_I_n_0 ),
+        .I2(\Addr_Counters[2].FDRE_I_n_0 ),
+        .I3(\Addr_Counters[3].FDRE_I_n_0 ),
+        .I4(\Addr_Counters[1].FDRE_I_n_0 ),
+        .I5(\Addr_Counters[0].FDRE_I_n_0 ),
         .O(CI));
   (* BOX_TYPE = "PRIMITIVE" *) 
   FDRE #(
@@ -445,8 +452,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   LUT6 #(
     .INIT(64'h0000FFFFFFFE0000)) 
     \Addr_Counters[1].MUXCY_L_I_i_1 
-       (.I0(\Addr_Counters[0].FDRE_I_n_0 ),
-        .I1(\Addr_Counters[3].FDRE_I_n_0 ),
+       (.I0(\Addr_Counters[3].FDRE_I_n_0 ),
+        .I1(\Addr_Counters[0].FDRE_I_n_0 ),
         .I2(\Addr_Counters[2].FDRE_I_n_0 ),
         .I3(bram_addr_ld_en),
         .I4(\axi_bid_int[0]_i_2_n_0 ),
@@ -467,9 +474,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   LUT6 #(
     .INIT(64'h0000FFFFFFFE0000)) 
     \Addr_Counters[2].MUXCY_L_I_i_1 
-       (.I0(\Addr_Counters[0].FDRE_I_n_0 ),
-        .I1(\Addr_Counters[1].FDRE_I_n_0 ),
-        .I2(\Addr_Counters[3].FDRE_I_n_0 ),
+       (.I0(\Addr_Counters[1].FDRE_I_n_0 ),
+        .I1(\Addr_Counters[3].FDRE_I_n_0 ),
+        .I2(\Addr_Counters[0].FDRE_I_n_0 ),
         .I3(bram_addr_ld_en),
         .I4(\axi_bid_int[0]_i_2_n_0 ),
         .I5(\Addr_Counters[2].FDRE_I_n_0 ),
@@ -489,8 +496,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
   LUT6 #(
     .INIT(64'h0000FFFFFFFE0000)) 
     \Addr_Counters[3].XORCY_I_i_1 
-       (.I0(\Addr_Counters[0].FDRE_I_n_0 ),
-        .I1(\Addr_Counters[1].FDRE_I_n_0 ),
+       (.I0(\Addr_Counters[1].FDRE_I_n_0 ),
+        .I1(\Addr_Counters[0].FDRE_I_n_0 ),
         .I2(\Addr_Counters[2].FDRE_I_n_0 ),
         .I3(bram_addr_ld_en),
         .I4(\axi_bid_int[0]_i_2_n_0 ),
@@ -507,12 +514,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
         .Q(bid_fifo_not_empty),
         .R(\Addr_Counters[3].FDRE_I_0 ));
   LUT4 #(
-    .INIT(16'hCFC8)) 
+    .INIT(16'hFE0A)) 
     Data_Exists_DFF_i_1
-       (.I0(Data_Exists_DFF_i_2_n_0),
-        .I1(bid_fifo_not_empty),
+       (.I0(bram_addr_ld_en),
+        .I1(Data_Exists_DFF_i_2_n_0),
         .I2(Data_Exists_DFF_i_3_n_0),
-        .I3(bram_addr_ld_en),
+        .I3(bid_fifo_not_empty),
         .O(D));
   LUT6 #(
     .INIT(64'h000000000000FFFE)) 
@@ -521,27 +528,17 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
         .I1(Q[2]),
         .I2(Q[1]),
         .I3(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ),
-        .I4(Data_Exists_DFF_i_4_n_0),
+        .I4(\bvalid_cnt_reg[1] ),
         .I5(bid_gets_fifo_load_d1),
         .O(Data_Exists_DFF_i_2_n_0));
   LUT4 #(
     .INIT(16'hFFFE)) 
     Data_Exists_DFF_i_3
-       (.I0(\Addr_Counters[0].FDRE_I_n_0 ),
-        .I1(\Addr_Counters[1].FDRE_I_n_0 ),
-        .I2(\Addr_Counters[3].FDRE_I_n_0 ),
+       (.I0(\Addr_Counters[1].FDRE_I_n_0 ),
+        .I1(\Addr_Counters[3].FDRE_I_n_0 ),
+        .I2(\Addr_Counters[0].FDRE_I_n_0 ),
         .I3(\Addr_Counters[2].FDRE_I_n_0 ),
         .O(Data_Exists_DFF_i_3_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
-  LUT5 #(
-    .INIT(32'h88888880)) 
-    Data_Exists_DFF_i_4
-       (.I0(\axi_bid_int_reg[0]_0 ),
-        .I1(s_axi_bready),
-        .I2(Q[1]),
-        .I3(Q[2]),
-        .I4(Q[0]),
-        .O(Data_Exists_DFF_i_4_n_0));
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* srl_bus_name = "U0/\gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM " *) 
   (* srl_name = "U0/\gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[0].SRL16E_I " *) 
@@ -564,102 +561,113 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO
         .I1(axi_awaddr_full),
         .I2(s_axi_awid),
         .O(bid_fifo_ld));
+  LUT2 #(
+    .INIT(4'hB)) 
+    \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_6 
+       (.I0(axi_wr_burst),
+        .I1(bid_gets_fifo_load_d1_reg_1[0]),
+        .O(axi_wr_burst_reg));
   LUT6 #(
-    .INIT(64'h808080FF80FF80FF)) 
-    \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2 
-       (.I0(Q[0]),
-        .I1(Q[1]),
+    .INIT(64'h7F7F7F7F7F000000)) 
+    \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3 
+       (.I0(Q[1]),
+        .I1(Q[0]),
         .I2(Q[2]),
-        .I3(aw_active),
-        .I4(s_axi_awvalid),
-        .I5(s_axi_awready),
-        .O(\bvalid_cnt_reg[0] ));
+        .I3(s_axi_awvalid),
+        .I4(s_axi_awready),
+        .I5(aw_active),
+        .O(\bvalid_cnt_reg[1]_0 ));
   LUT5 #(
-    .INIT(32'hACAFACA0)) 
+    .INIT(32'hAACFAAC0)) 
     \axi_bid_int[0]_i_1 
        (.I0(bid_fifo_ld),
         .I1(bid_fifo_rd),
-        .I2(bid_gets_fifo_load),
-        .I3(\axi_bid_int[0]_i_2_n_0 ),
+        .I2(\axi_bid_int[0]_i_2_n_0 ),
+        .I3(bid_gets_fifo_load),
         .I4(s_axi_bid),
         .O(\axi_bid_int_reg[0] ));
   LUT6 #(
-    .INIT(64'h8A888888AAA8A8A8)) 
+    .INIT(64'hA8888888A888AAAA)) 
     \axi_bid_int[0]_i_2 
        (.I0(bid_fifo_not_empty),
         .I1(bid_gets_fifo_load_d1),
-        .I2(\axi_bid_int[0]_i_3_n_0 ),
+        .I2(axi_bvalid_int_reg),
         .I3(s_axi_bready),
-        .I4(\axi_bid_int_reg[0]_0 ),
+        .I4(\axi_bid_int[0]_i_3_n_0 ),
         .I5(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ),
         .O(\axi_bid_int[0]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT3 #(
-    .INIT(8'h01)) 
+    .INIT(8'hFE)) 
     \axi_bid_int[0]_i_3 
        (.I0(Q[0]),
         .I1(Q[2]),
         .I2(Q[1]),
         .O(\axi_bid_int[0]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  LUT5 #(
+    .INIT(32'hFE000000)) 
+    axi_bvalid_int_i_2
+       (.I0(Q[1]),
+        .I1(Q[2]),
+        .I2(Q[0]),
+        .I3(s_axi_bready),
+        .I4(axi_bvalid_int_reg),
+        .O(\bvalid_cnt_reg[1] ));
   LUT6 #(
-    .INIT(64'hBBBBAABABBBBBBBB)) 
+    .INIT(64'hBBBBBBBBBBBBAABA)) 
     axi_bvalid_int_i_3
-       (.I0(bid_gets_fifo_load_d1_reg_0[2]),
+       (.I0(bid_gets_fifo_load_d1_reg_1[2]),
         .I1(axi_bvalid_int_i_4_n_0),
-        .I2(\bvalid_cnt_reg[0] ),
-        .I3(axi_bvalid_int_i_5_n_0),
-        .I4(bid_gets_fifo_load_d1_reg_0[1]),
-        .I5(axi_bvalid_int_i_6_n_0),
+        .I2(axi_bvalid_int_i_5_n_0),
+        .I3(\bvalid_cnt_reg[1]_0 ),
+        .I4(bid_gets_fifo_load_d1_reg_1[1]),
+        .I5(axi_wr_burst_reg),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ));
   LUT5 #(
-    .INIT(32'h0C000400)) 
+    .INIT(32'h0C080000)) 
     axi_bvalid_int_i_4
-       (.I0(\bvalid_cnt_reg[0] ),
-        .I1(s_axi_wlast),
-        .I2(bid_gets_fifo_load_d1_reg_0[0]),
-        .I3(s_axi_wvalid),
-        .I4(bid_gets_fifo_load_d1_reg_0[1]),
+       (.I0(bid_gets_fifo_load_d1_reg_1[1]),
+        .I1(s_axi_wvalid),
+        .I2(bid_gets_fifo_load_d1_reg_1[0]),
+        .I3(\bvalid_cnt_reg[1]_0 ),
+        .I4(s_axi_wlast),
         .O(axi_bvalid_int_i_4_n_0));
   LUT6 #(
-    .INIT(64'h0F01000000000000)) 
+    .INIT(64'hFFFFDDD5FFFFFFFF)) 
     axi_bvalid_int_i_5
-       (.I0(axi_bvalid_int_i_3_0),
-        .I1(aw_active),
-        .I2(axi_bvalid_int_i_3_1),
-        .I3(axi_bvalid_int_i_7_n_0),
-        .I4(axi_bvalid_int_i_3_2),
-        .I5(axi_awaddr_full),
+       (.I0(axi_awaddr_full),
+        .I1(axi_bvalid_int_i_6_n_0),
+        .I2(axi_bvalid_int_i_3_0),
+        .I3(aw_active),
+        .I4(axi_bvalid_int_i_3_1),
+        .I5(axi_bvalid_int_i_3_2),
         .O(axi_bvalid_int_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT5 #(
+    .INIT(32'hFEFFFFFF)) 
     axi_bvalid_int_i_6
-       (.I0(bid_gets_fifo_load_d1_reg_0[0]),
-        .I1(axi_wr_burst),
-        .O(axi_bvalid_int_i_6_n_0));
-  LUT5 #(
-    .INIT(32'h00020000)) 
-    axi_bvalid_int_i_7
-       (.I0(last_data_ack_mod),
-        .I1(axi_awlen_pipe_1_or_2),
+       (.I0(axi_awlen_pipe_1_or_2),
+        .I1(axi_bvalid_int_i_5_0),
         .I2(curr_awlen_reg_1_or_2),
-        .I3(axi_bvalid_int_i_5_0),
-        .I4(axi_awaddr_full),
-        .O(axi_bvalid_int_i_7_n_0));
-  LUT5 #(
-    .INIT(32'h00000444)) 
+        .I3(axi_awaddr_full),
+        .I4(last_data_ack_mod),
+        .O(axi_bvalid_int_i_6_n_0));
+  LUT6 #(
+    .INIT(64'h0000000404040404)) 
     bid_gets_fifo_load_d1_i_1
        (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] ),
         .I1(bram_addr_ld_en),
-        .I2(bid_fifo_not_empty),
-        .I3(Q[0]),
-        .I4(bid_gets_fifo_load_d1_reg),
+        .I2(bid_gets_fifo_load_d1_reg),
+        .I3(bid_fifo_not_empty),
+        .I4(bid_gets_fifo_load_d1_reg_0),
+        .I5(Q[0]),
         .O(bid_gets_fifo_load));
 endmodule
 
-(* C_BRAM_ADDR_WIDTH = "11" *) (* C_BRAM_INST_MODE = "EXTERNAL" *) (* C_ECC = "0" *) 
+(* C_BRAM_ADDR_WIDTH = "13" *) (* C_BRAM_INST_MODE = "EXTERNAL" *) (* C_ECC = "0" *) 
 (* C_ECC_ONOFF_RESET_VALUE = "0" *) (* C_ECC_TYPE = "0" *) (* C_FAMILY = "zynquplus" *) 
-(* C_FAULT_INJECT = "0" *) (* C_MEMORY_DEPTH = "2048" *) (* C_RD_CMD_OPTIMIZATION = "0" *) 
-(* C_READ_LATENCY = "1" *) (* C_SINGLE_PORT_BRAM = "0" *) (* C_S_AXI_ADDR_WIDTH = "13" *) 
+(* C_FAULT_INJECT = "0" *) (* C_MEMORY_DEPTH = "8192" *) (* C_RD_CMD_OPTIMIZATION = "0" *) 
+(* C_READ_LATENCY = "1" *) (* C_SINGLE_PORT_BRAM = "0" *) (* C_S_AXI_ADDR_WIDTH = "15" *) 
 (* C_S_AXI_CTRL_ADDR_WIDTH = "32" *) (* C_S_AXI_CTRL_DATA_WIDTH = "32" *) (* C_S_AXI_DATA_WIDTH = "32" *) 
 (* C_S_AXI_ID_WIDTH = "1" *) (* C_S_AXI_PROTOCOL = "AXI4" *) (* C_S_AXI_SUPPORTS_NARROW_BURST = "0" *) 
 (* downgradeipidentifiedwarnings = "yes" *) 
@@ -738,7 +746,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
   output ecc_interrupt;
   output ecc_ue;
   input [0:0]s_axi_awid;
-  input [12:0]s_axi_awaddr;
+  input [14:0]s_axi_awaddr;
   input [7:0]s_axi_awlen;
   input [2:0]s_axi_awsize;
   input [1:0]s_axi_awburst;
@@ -757,7 +765,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
   output s_axi_bvalid;
   input s_axi_bready;
   input [0:0]s_axi_arid;
-  input [12:0]s_axi_araddr;
+  input [14:0]s_axi_araddr;
   input [7:0]s_axi_arlen;
   input [2:0]s_axi_arsize;
   input [1:0]s_axi_arburst;
@@ -792,20 +800,20 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
   output bram_clk_a;
   output bram_en_a;
   output [3:0]bram_we_a;
-  output [12:0]bram_addr_a;
+  output [14:0]bram_addr_a;
   output [31:0]bram_wrdata_a;
   input [31:0]bram_rddata_a;
   output bram_rst_b;
   output bram_clk_b;
   output bram_en_b;
   output [3:0]bram_we_b;
-  output [12:0]bram_addr_b;
+  output [14:0]bram_addr_b;
   output [31:0]bram_wrdata_b;
   input [31:0]bram_rddata_b;
 
   wire \<const0> ;
-  wire [12:2]\^bram_addr_a ;
-  wire [12:2]\^bram_addr_b ;
+  wire [14:2]\^bram_addr_a ;
+  wire [14:2]\^bram_addr_b ;
   wire bram_en_a;
   wire bram_en_b;
   wire [31:0]bram_rddata_b;
@@ -813,14 +821,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
   wire [3:0]bram_we_a;
   wire [31:0]bram_wrdata_a;
   wire s_axi_aclk;
-  wire [12:0]s_axi_araddr;
+  wire [14:0]s_axi_araddr;
   wire [1:0]s_axi_arburst;
   wire s_axi_aresetn;
   wire [0:0]s_axi_arid;
   wire [7:0]s_axi_arlen;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [12:0]s_axi_awaddr;
+  wire [14:0]s_axi_awaddr;
   wire [1:0]s_axi_awburst;
   wire [0:0]s_axi_awid;
   wire [7:0]s_axi_awlen;
@@ -840,10 +848,10 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
   wire [3:0]s_axi_wstrb;
   wire s_axi_wvalid;
 
-  assign bram_addr_a[12:2] = \^bram_addr_a [12:2];
+  assign bram_addr_a[14:2] = \^bram_addr_a [14:2];
   assign bram_addr_a[1] = \<const0> ;
   assign bram_addr_a[0] = \<const0> ;
-  assign bram_addr_b[12:2] = \^bram_addr_b [12:2];
+  assign bram_addr_b[14:2] = \^bram_addr_b [14:2];
   assign bram_addr_b[1] = \<const0> ;
   assign bram_addr_b[0] = \<const0> ;
   assign bram_clk_a = s_axi_aclk;
@@ -946,7 +954,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
         .bram_we_a(bram_we_a),
         .bram_wrdata_a(bram_wrdata_a),
         .s_axi_aclk(s_axi_aclk),
-        .s_axi_araddr(s_axi_araddr[12:2]),
+        .s_axi_araddr(s_axi_araddr[14:2]),
         .s_axi_arburst(s_axi_arburst),
         .s_axi_aresetn(s_axi_aresetn),
         .s_axi_aresetn_0(bram_rst_b),
@@ -954,7 +962,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl
         .s_axi_arlen(s_axi_arlen),
         .s_axi_arready(s_axi_arready),
         .s_axi_arvalid(s_axi_arvalid),
-        .s_axi_awaddr(s_axi_awaddr[12:2]),
+        .s_axi_awaddr(s_axi_awaddr[14:2]),
         .s_axi_awburst(s_axi_awburst),
         .s_axi_awid(s_axi_awid),
         .s_axi_awlen(s_axi_awlen),
@@ -1013,11 +1021,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl_top
   output \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ;
   output s_axi_awready;
   output s_axi_aresetn_0;
-  output [10:0]bram_addr_a;
+  output [12:0]bram_addr_a;
   output bram_en_a;
   output [3:0]bram_we_a;
   output [31:0]bram_wrdata_a;
-  output [10:0]bram_addr_b;
+  output [12:0]bram_addr_b;
   output [31:0]s_axi_rdata;
   output s_axi_wready;
   output s_axi_arready;
@@ -1032,11 +1040,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl_top
   input [1:0]s_axi_awburst;
   input s_axi_aclk;
   input [7:0]s_axi_awlen;
-  input [10:0]s_axi_awaddr;
+  input [12:0]s_axi_awaddr;
   input [0:0]s_axi_awid;
   input [3:0]s_axi_wstrb;
   input [31:0]s_axi_wdata;
-  input [10:0]s_axi_araddr;
+  input [12:0]s_axi_araddr;
   input [0:0]s_axi_arid;
   input [31:0]bram_rddata_b;
   input [1:0]s_axi_arburst;
@@ -1047,15 +1055,15 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl_top
   wire \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ;
   wire \GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg ;
   wire axi_bvalid_int_reg;
-  wire [10:0]bram_addr_a;
-  wire [10:0]bram_addr_b;
+  wire [12:0]bram_addr_a;
+  wire [12:0]bram_addr_b;
   wire bram_en_a;
   wire bram_en_b;
   wire [31:0]bram_rddata_b;
   wire [3:0]bram_we_a;
   wire [31:0]bram_wrdata_a;
   wire s_axi_aclk;
-  wire [10:0]s_axi_araddr;
+  wire [12:0]s_axi_araddr;
   wire [1:0]s_axi_arburst;
   wire s_axi_aresetn;
   wire s_axi_aresetn_0;
@@ -1063,7 +1071,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_axi_bram_ctrl_top
   wire [7:0]s_axi_arlen;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [10:0]s_axi_awaddr;
+  wire [12:0]s_axi_awaddr;
   wire [1:0]s_axi_awburst;
   wire [0:0]s_axi_awid;
   wire [7:0]s_axi_awlen;
@@ -1159,11 +1167,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_full_axi
   output \GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ;
   output s_axi_awready;
   output [0:0]SR;
-  output [10:0]bram_addr_a;
+  output [12:0]bram_addr_a;
   output bram_en_a;
   output [3:0]bram_we_a;
   output [31:0]bram_wrdata_a;
-  output [10:0]bram_addr_b;
+  output [12:0]bram_addr_b;
   output [31:0]s_axi_rdata;
   output s_axi_wready;
   output s_axi_arready;
@@ -1178,11 +1186,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_full_axi
   input [1:0]s_axi_awburst;
   input s_axi_aclk;
   input [7:0]s_axi_awlen;
-  input [10:0]s_axi_awaddr;
+  input [12:0]s_axi_awaddr;
   input [0:0]s_axi_awid;
   input [3:0]s_axi_wstrb;
   input [31:0]s_axi_wdata;
-  input [10:0]s_axi_araddr;
+  input [12:0]s_axi_araddr;
   input [0:0]s_axi_arid;
   input [31:0]bram_rddata_b;
   input [1:0]s_axi_arburst;
@@ -1197,22 +1205,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_full_axi
   wire axi_aresetn_d3;
   wire axi_aresetn_re_reg;
   wire axi_bvalid_int_reg;
-  wire [10:0]bram_addr_a;
-  wire [10:0]bram_addr_b;
+  wire [12:0]bram_addr_a;
+  wire [12:0]bram_addr_b;
   wire bram_en_a;
   wire bram_en_b;
   wire [31:0]bram_rddata_b;
   wire [3:0]bram_we_a;
   wire [31:0]bram_wrdata_a;
   wire s_axi_aclk;
-  wire [10:0]s_axi_araddr;
+  wire [12:0]s_axi_araddr;
   wire [1:0]s_axi_arburst;
   wire s_axi_aresetn;
   wire [0:0]s_axi_arid;
   wire [7:0]s_axi_arlen;
   wire s_axi_arready;
   wire s_axi_arvalid;
-  wire [10:0]s_axi_awaddr;
+  wire [12:0]s_axi_awaddr;
   wire [1:0]s_axi_awburst;
   wire [0:0]s_axi_awid;
   wire [7:0]s_axi_awlen;
@@ -1233,10 +1241,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_full_axi
        (.\FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_reg_0 (I_WR_CHNL_n_37),
         .\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 (\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg ),
         .\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg ),
-        .Q(bram_addr_b[9:0]),
+        .Q(bram_addr_b),
         .axi_aresetn_d3(axi_aresetn_d3),
         .axi_aresetn_re_reg(axi_aresetn_re_reg),
-        .bram_addr_b(bram_addr_b[10]),
         .bram_en_b(bram_en_b),
         .bram_rddata_b(bram_rddata_b),
         .s_axi_aclk(s_axi_aclk),
@@ -1287,7 +1294,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     bram_en_b,
     Q,
     s_axi_arready,
-    bram_addr_b,
     s_axi_araddr,
     s_axi_aclk,
     s_axi_arid,
@@ -1306,10 +1312,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   output \GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ;
   output [0:0]s_axi_rid;
   output bram_en_b;
-  output [9:0]Q;
+  output [12:0]Q;
   output s_axi_arready;
-  output [0:0]bram_addr_b;
-  input [10:0]s_axi_araddr;
+  input [12:0]s_axi_araddr;
   input s_axi_aclk;
   input [0:0]s_axi_arid;
   input \FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_reg_0 ;
@@ -1329,9 +1334,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_3_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_2_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3_n_0 ;
+  wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_4_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3_n_0 ;
-  wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_4_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_3_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ;
@@ -1339,15 +1344,17 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_2_n_0 ;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_ARREADY.GEN_ARREADY_NORL.axi_arready_int_i_1_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg ;
@@ -1357,7 +1364,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_1_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ;
@@ -1368,14 +1374,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_4_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_3_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2_n_0 ;
@@ -1420,7 +1424,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_5_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2_n_0 ;
@@ -1431,7 +1435,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp[0]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_10 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_11 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_12 ;
@@ -1446,6 +1449,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_22 ;
+  wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_23 ;
+  wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_24 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_5 ;
   wire \GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_6 ;
@@ -1456,13 +1461,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_5_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_6_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_7_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_8_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.act_rd_burst_i_9_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.act_rd_burst_two_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_3_n_0 ;
@@ -1472,23 +1478,21 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.axi_rvalid_int_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_10_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_11_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_5_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_6_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_7_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_8_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.bram_en_int_i_9_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.bram_en_int_reg_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[0]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[1]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[2]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[3]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[5]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[6]_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_cnt[6]_i_2_n_0 ;
@@ -1506,8 +1510,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[7] ;
   wire \GEN_NO_RD_CMD_OPT.brst_one_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_one_i_2_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.brst_one_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.brst_one_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.brst_zero_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_3_n_0 ;
@@ -1518,19 +1520,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_6_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_7_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_8_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.last_bram_addr_i_9_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.no_ar_ack_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.no_ar_ack_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_2_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_5_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_6_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_7_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.pend_rd_op_i_8_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.pend_rd_op_reg_i_3_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_1_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_3_n_0 ;
-  wire [9:0]Q;
+  wire [12:0]Q;
   wire act_rd_burst;
   wire act_rd_burst_set;
   wire act_rd_burst_two;
@@ -1553,7 +1558,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire axi_early_arready_int0;
   wire axi_rd_burst;
   wire axi_rd_burst0;
-  wire axi_rd_burst_two;
   wire axi_rdata_en;
   wire axi_rid_temp;
   wire axi_rid_temp2;
@@ -1563,8 +1567,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire axi_rvalid_clr_ok;
   wire axi_rvalid_set;
   wire axi_rvalid_set_cmb;
-  wire [0:0]bram_addr_b;
   wire bram_addr_ld_en;
+  wire bram_addr_ld_en_mod;
   wire bram_en_b;
   wire [31:0]bram_rddata_b;
   wire brst_cnt_max;
@@ -1596,7 +1600,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire [2:0]rlast_sm_cs;
   wire [2:0]rlast_sm_ns;
   wire s_axi_aclk;
-  wire [10:0]s_axi_araddr;
+  wire [12:0]s_axi_araddr;
   wire [1:0]s_axi_arburst;
   wire s_axi_aresetn;
   wire s_axi_aresetn_0;
@@ -1609,10 +1613,10 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   wire s_axi_rready;
 
   LUT6 #(
-    .INIT(64'h444F000044440000)) 
+    .INIT(64'h222F000022220000)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
-        .I1(last_bram_addr),
+       (.I0(last_bram_addr),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
         .I2(rd_addr_sm_cs),
         .I3(axi_araddr_full),
         .I4(s_axi_arvalid),
@@ -1623,8 +1627,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     .INIT(8'hFE)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_i_3 
        (.I0(no_ar_ack),
-        .I1(pend_rd_op),
-        .I2(ar_active),
+        .I1(ar_active),
+        .I2(pend_rd_op),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_i_3_n_0 ));
   (* FSM_ENCODED_STATES = "idle:0,ld_araddr:1" *) 
   FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_reg 
@@ -1633,144 +1637,142 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_i_2_n_0 ),
         .Q(rd_addr_sm_cs),
         .R(\FSM_sequential_GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.rd_addr_sm_cs_reg_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT5 #(
-    .INIT(32'h00031F1F)) 
+    .INIT(32'h000AABAB)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_1 
-       (.I0(rd_data_sm_cs[2]),
-        .I1(rd_data_sm_cs[1]),
-        .I2(rd_data_sm_cs[3]),
-        .I3(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2_n_0 ),
-        .I4(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_3_n_0 ),
+       (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2_n_0 ),
+        .I1(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_3_n_0 ),
+        .I2(rd_data_sm_cs[1]),
+        .I3(rd_data_sm_cs[2]),
+        .I4(rd_data_sm_cs[3]),
         .O(rd_data_sm_ns[0]));
   LUT6 #(
-    .INIT(64'hDD0FDD0FDD0F000F)) 
+    .INIT(64'hEF000000FFFFFFFF)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
+       (.I0(pend_rd_op),
         .I1(bram_addr_ld_en),
-        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .I3(rd_data_sm_cs[2]),
-        .I4(act_rd_burst),
-        .I5(act_rd_burst_two),
+        .I2(rd_data_sm_cs[2]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[0]),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h777F777700000000)) 
+    .INIT(64'hDD0FDD0FDD0F000F)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I1(rd_data_sm_cs[1]),
-        .I2(pend_rd_op),
-        .I3(bram_addr_ld_en),
-        .I4(rd_data_sm_cs[2]),
-        .I5(rd_data_sm_cs[0]),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I1(bram_addr_ld_en),
+        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I3(rd_data_sm_cs[2]),
+        .I4(act_rd_burst_two),
+        .I5(act_rd_burst),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h00000000AAEAAFEA)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_1 
        (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_2_n_0 ),
-        .I1(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3_n_0 ),
+        .I1(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3_n_0 ),
         .I2(rd_data_sm_cs[1]),
         .I3(rd_data_sm_cs[2]),
         .I4(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ),
-        .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3_n_0 ),
+        .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_4_n_0 ),
         .O(rd_data_sm_ns[1]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT5 #(
     .INIT(32'h000EFFFF)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I1(axi_rd_burst),
-        .I2(rd_data_sm_cs[2]),
-        .I3(rd_data_sm_cs[1]),
+       (.I0(axi_rd_burst),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I2(rd_data_sm_cs[1]),
+        .I3(rd_data_sm_cs[2]),
         .I4(rd_data_sm_cs[0]),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAABBABABABBBAB)) 
+    .INIT(64'h0002000000000000)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3 
-       (.I0(rd_data_sm_cs[3]),
-        .I1(rd_data_sm_cs[0]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I4(rd_data_sm_cs[2]),
-        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I1(disable_b2b_brst),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ),
+        .I3(axi_arlen_pipe_1_or_2),
+        .I4(axi_araddr_full),
+        .I5(axi_arsize_pipe_max),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h00000000AABAAFBA)) 
+    .INIT(64'hFFFFFFFF00050D0D)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_4 
+       (.I0(rd_data_sm_cs[1]),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I2(rd_data_sm_cs[0]),
+        .I3(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
+        .I4(rd_data_sm_cs[2]),
+        .I5(rd_data_sm_cs[3]),
+        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000A2A222A2)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_1 
        (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2_n_0 ),
         .I1(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3_n_0 ),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ),
-        .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_4_n_0 ),
-        .O(rd_data_sm_ns[2]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT5 #(
-    .INIT(32'h0001FFFF)) 
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I1(axi_rd_burst),
         .I2(rd_data_sm_cs[2]),
-        .I3(rd_data_sm_cs[1]),
-        .I4(rd_data_sm_cs[0]),
-        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2_n_0 ));
+        .I3(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
+        .I4(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[3]),
+        .O(rd_data_sm_ns[2]));
   LUT6 #(
-    .INIT(64'h0002000000000000)) 
+    .INIT(64'h337733773FFF3F33)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2 
+       (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ),
+        .I1(rd_data_sm_cs[0]),
+        .I2(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[1]_i_3_n_0 ),
+        .I3(rd_data_sm_cs[1]),
+        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I5(rd_data_sm_cs[2]),
+        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  LUT3 #(
+    .INIT(8'h13)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ),
-        .I2(axi_arlen_pipe_1_or_2),
-        .I3(disable_b2b_brst),
-        .I4(axi_araddr_full),
-        .I5(axi_arsize_pipe_max),
+       (.I0(rd_data_sm_cs[1]),
+        .I1(rd_data_sm_cs[0]),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'hAAABAFAFAAABABAB)) 
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_4 
-       (.I0(rd_data_sm_cs[3]),
-        .I1(rd_data_sm_cs[2]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I4(rd_data_sm_cs[1]),
-        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
-        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0100FFFF01000000)) 
+    .INIT(64'h0010FFFF00100000)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1 
-       (.I0(rd_data_sm_cs[1]),
-        .I1(rd_data_sm_cs[2]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
+       (.I0(rd_data_sm_cs[2]),
+        .I1(rd_data_sm_cs[0]),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I3(rd_data_sm_cs[1]),
         .I4(rd_data_sm_cs[3]),
         .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_3_n_0 ),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0000000008C80000)) 
+    .INIT(64'h00000C0008000800)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_2 
        (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ),
         .I1(rd_data_sm_cs[0]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I4(rd_data_sm_cs[2]),
-        .I5(rd_data_sm_cs[3]),
+        .I2(rd_data_sm_cs[3]),
+        .I3(rd_data_sm_cs[2]),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I5(rd_data_sm_cs[1]),
         .O(rd_data_sm_ns[3]));
   LUT6 #(
-    .INIT(64'hEFFFF3F3E3FFF3C0)) 
+    .INIT(64'hF8F8FF3FFCFCEEEE)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_3 
-       (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ),
-        .I1(rd_data_sm_cs[2]),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I3(rd_data_sm_cs[1]),
-        .I4(rd_data_sm_cs[0]),
-        .I5(bram_addr_ld_en),
+       (.I0(bram_addr_ld_en),
+        .I1(rd_data_sm_cs[0]),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I3(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ),
+        .I4(rd_data_sm_cs[2]),
+        .I5(rd_data_sm_cs[1]),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
     .INIT(32'hE0000000)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4 
-       (.I0(act_rd_burst_two),
-        .I1(act_rd_burst),
-        .I2(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I3(s_axi_rready),
+       (.I0(act_rd_burst),
+        .I1(act_rd_burst_two),
+        .I2(s_axi_rready),
+        .I3(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
         .I4(bram_addr_ld_en),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ));
   LUT3 #(
@@ -1809,51 +1811,51 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(rd_data_sm_cs[3]),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hAAAAAAAAAAAA8880)) 
+    .INIT(64'hAAAAAAAAAA88AA80)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[0]_i_1 
        (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_2_n_0 ),
         .I1(axi_rd_burst),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I3(act_rd_burst_two),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I4(act_rd_burst_two),
         .I5(rlast_sm_cs[1]),
         .O(rlast_sm_ns[0]));
   LUT6 #(
-    .INIT(64'hAAAAAAAAAA880008)) 
+    .INIT(64'hAAAAAAAAA8A80008)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_1 
        (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_2_n_0 ),
         .I1(axi_rd_burst),
-        .I2(act_rd_burst_two),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I3(act_rd_burst_two),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
         .I5(rlast_sm_cs[1]),
         .O(rlast_sm_ns[1]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_2 
-       (.I0(rlast_sm_cs[0]),
-        .I1(rlast_sm_cs[2]),
+       (.I0(rlast_sm_cs[2]),
+        .I1(rlast_sm_cs[0]),
         .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h333E000200020002)) 
+    .INIT(64'h0008888F00088880)) 
     \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1 
-       (.I0(last_bram_addr),
-        .I1(rlast_sm_cs[2]),
-        .I2(rlast_sm_cs[0]),
-        .I3(rlast_sm_cs[1]),
-        .I4(s_axi_rready),
-        .I5(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT5 #(
-    .INIT(32'h0F000001)) 
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I1(axi_rd_burst),
-        .I2(rlast_sm_cs[2]),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
+        .I2(rlast_sm_cs[1]),
         .I3(rlast_sm_cs[0]),
-        .I4(rlast_sm_cs[1]),
+        .I4(rlast_sm_cs[2]),
+        .I5(last_bram_addr),
+        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT5 #(
+    .INIT(32'h0000F001)) 
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs[2]_i_2 
+       (.I0(axi_rd_burst),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I2(rlast_sm_cs[1]),
+        .I3(rlast_sm_cs[0]),
+        .I4(rlast_sm_cs[2]),
         .O(rlast_sm_ns[2]));
   (* FSM_ENCODED_STATES = "idle:000,w8_last_data:100,w8_2nd_last_data:011,w8_throttle:010,w8_throttle_b2:001" *) 
   FDRE \FSM_sequential_GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg[0] 
@@ -1902,33 +1904,41 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_arready_int),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'h00000000000022F2)) 
+    .INIT(64'h000000000080FF00)) 
     \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_1 
        (.I0(brst_one),
-        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
+        .I3(rd_data_sm_cs[1]),
+        .I4(rd_data_sm_cs[2]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_2_n_0 ),
         .O(axi_early_arready_int0));
   LUT6 #(
-    .INIT(64'hFFFF7CFCFFFF4CFC)) 
-    \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
+    .INIT(64'hFFFFBEAEFFFFFEEE)) 
+    \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_2 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
         .I1(rd_data_sm_cs[0]),
         .I2(rd_data_sm_cs[1]),
-        .I3(brst_one),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3_n_0 ),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hEFFFEFFFEFFFFFFF)) 
+    \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3 
+       (.I0(rd_data_sm_cs[3]),
+        .I1(axi_arready_int),
+        .I2(axi_araddr_full),
+        .I3(s_axi_arvalid),
         .I4(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_4_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I5(brst_one),
         .O(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT4 #(
-    .INIT(16'hFFF7)) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
     \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_4 
-       (.I0(s_axi_arvalid),
-        .I1(axi_araddr_full),
-        .I2(axi_arready_int),
-        .I3(rd_data_sm_cs[3]),
+       (.I0(rd_data_sm_cs[0]),
+        .I1(rd_data_sm_cs[1]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_4_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -1939,45 +1949,35 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_early_arready_int),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hEFEEEFEFAAAAAAAA)) 
+    .INIT(64'hFFFFEFEAAAAAAAAA)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_1 
        (.I0(bram_addr_ld_en),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_2_n_0 ),
-        .I2(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_2_n_0 ),
+        .I2(rd_data_sm_cs[0]),
         .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_3_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I4(rd_data_sm_cs[3]),
         .I5(ar_active),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFFFFF31310131)) 
+    .INIT(64'hABFBFBFBFBFBFBFB)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_4_n_0 ),
-        .I1(rd_data_sm_cs[0]),
+       (.I0(rd_data_sm_cs[2]),
+        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
         .I2(rd_data_sm_cs[1]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I4(rd_data_sm_cs[2]),
-        .I5(rd_data_sm_cs[3]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ),
+        .I5(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFF0DFFFFFFFFFF)) 
+    .INIT(64'hFFFF5555333FFFFF)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_3 
-       (.I0(end_brst_rd),
-        .I1(axi_b2b_brst),
-        .I2(brst_zero),
-        .I3(rd_data_sm_cs[1]),
-        .I4(rd_data_sm_cs[2]),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
-  LUT5 #(
-    .INIT(32'h80808000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_4 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I2(rd_data_sm_cs[2]),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I2(end_brst_rd),
         .I3(brst_zero),
-        .I4(end_brst_rd),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_4_n_0 ));
+        .I4(rd_data_sm_cs[2]),
+        .I5(rd_data_sm_cs[1]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_DUAL.ar_active_reg 
@@ -2009,6 +2009,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .CE(araddr_pipe_ld49_out),
         .D(s_axi_araddr[10]),
         .Q(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(araddr_pipe_ld49_out),
+        .D(s_axi_araddr[11]),
+        .Q(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(araddr_pipe_ld49_out),
+        .D(s_axi_araddr[12]),
+        .Q(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2074,22 +2090,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(s_axi_araddr[7]),
         .Q(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ),
         .R(1'b0));
-  LUT5 #(
-    .INIT(32'hDDF00000)) 
+  LUT4 #(
+    .INIT(16'hDC00)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_1 
        (.I0(bram_addr_ld_en),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_2_n_0 ),
-        .I2(araddr_pipe_ld49_out),
-        .I3(axi_araddr_full),
-        .I4(s_axi_aresetn),
+        .I1(araddr_pipe_ld49_out),
+        .I2(axi_araddr_full),
+        .I3(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_1_n_0 ));
-  LUT3 #(
-    .INIT(8'h20)) 
-    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_2 
-       (.I0(s_axi_arvalid),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
-        .I2(last_bram_addr),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_araddr_full_reg 
@@ -2102,8 +2110,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     .INIT(16'h03AA)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_i_1 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ),
-        .I1(s_axi_arburst[0]),
-        .I2(s_axi_arburst[1]),
+        .I1(s_axi_arburst[1]),
+        .I2(s_axi_arburst[0]),
         .I3(araddr_pipe_ld49_out),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_i_1_n_0 ));
   FDRE #(
@@ -2139,36 +2147,36 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_arid_pipe),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'h0800AAAA08000800)) 
+    .INIT(64'h0080AAAA00800080)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_1 
        (.I0(axi_aresetn_d3),
         .I1(s_axi_arvalid),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
-        .I3(last_bram_addr),
+        .I2(last_bram_addr),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ),
         .I4(axi_araddr_full),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_3_n_0 ),
         .O(araddr_pipe_ld49_out));
   LUT6 #(
-    .INIT(64'hAEAEAEAEFFAEAEAE)) 
+    .INIT(64'hAAEAAAEAFFFFAAEA)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
-        .I1(brst_zero),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I3(end_brst_rd_clr_cmb),
-        .I4(rd_data_sm_cs[1]),
-        .I5(rd_data_sm_cs[0]),
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
+        .I1(end_brst_rd_clr_cmb),
+        .I2(rd_data_sm_cs[1]),
+        .I3(rd_data_sm_cs[0]),
+        .I4(brst_zero),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT5 #(
     .INIT(32'h0000FE00)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_3 
-       (.I0(ar_active),
-        .I1(pend_rd_op),
+       (.I0(pend_rd_op),
+        .I1(ar_active),
         .I2(no_ar_ack),
         .I3(s_axi_arvalid),
         .I4(rd_addr_sm_cs),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe[7]_i_4 
@@ -2179,17 +2187,17 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     .INIT(16'h0001)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_1_or_2_i_1 
        (.I0(s_axi_arlen[7]),
-        .I1(s_axi_arlen[5]),
-        .I2(s_axi_arlen[4]),
+        .I1(s_axi_arlen[4]),
+        .I2(s_axi_arlen[5]),
         .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_1_or_2_i_2_n_0 ),
         .O(axi_arlen_pipe_1_or_20));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_1_or_2_i_2 
-       (.I0(s_axi_arlen[2]),
-        .I1(s_axi_arlen[3]),
+       (.I0(s_axi_arlen[3]),
+        .I1(s_axi_arlen[1]),
         .I2(s_axi_arlen[6]),
-        .I3(s_axi_arlen[1]),
+        .I3(s_axi_arlen[2]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_1_or_2_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -2289,60 +2297,43 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_BRST_MAX_WO_NARROW.brst_cnt_max_i_1_n_0 ),
         .Q(brst_cnt_max),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT5 #(
-    .INIT(32'h80000000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2 
-       (.I0(Q[7]),
-        .I1(Q[5]),
-        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ),
-        .I3(Q[4]),
-        .I4(Q[6]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[8]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_3 
+       (.I0(Q[7]),
+        .I1(Q[5]),
+        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
+        .I3(Q[4]),
+        .I4(Q[6]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h8000000000000000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4 
-       (.I0(Q[8]),
-        .I1(Q[6]),
-        .I2(Q[4]),
-        .I3(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ),
-        .I4(Q[5]),
-        .I5(Q[7]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[9]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5 
+       (.I0(Q[8]),
+        .I1(Q[6]),
+        .I2(Q[4]),
+        .I3(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
+        .I4(Q[5]),
+        .I5(Q[7]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5_n_0 ));
-  LUT5 #(
-    .INIT(32'hACAFACA0)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_16 ),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_2_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
-        .I3(bram_addr_ld_en),
-        .I4(bram_addr_b),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair29" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ),
-        .I1(axi_araddr_full),
-        .I2(s_axi_araddr[10]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_3 
@@ -2350,187 +2341,202 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[1]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2 
-       (.I0(Q[1]),
-        .I1(Q[0]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[2]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT4 #(
-    .INIT(16'h6AAA)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2 
-       (.I0(Q[3]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4 
+       (.I0(Q[0]),
         .I1(Q[1]),
-        .I2(Q[0]),
-        .I3(Q[2]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4_n_0 ));
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_4 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[5].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[3]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT4 #(
+    .INIT(16'h6AAA)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_4 
+       (.I0(Q[3]),
+        .I1(Q[0]),
+        .I2(Q[1]),
+        .I3(Q[2]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[6].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[4]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT5 #(
-    .INIT(32'h80000000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2 
-       (.I0(Q[4]),
-        .I1(Q[2]),
-        .I2(Q[0]),
-        .I3(Q[1]),
-        .I4(Q[3]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[7].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[5]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h8000000000000000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2 
-       (.I0(Q[5]),
-        .I1(Q[3]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3 
+       (.I0(Q[4]),
+        .I1(Q[2]),
         .I2(Q[1]),
         .I3(Q[0]),
-        .I4(Q[2]),
-        .I5(Q[4]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+        .I4(Q[3]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[6]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_3 
+       (.I0(Q[5]),
+        .I1(Q[3]),
+        .I2(Q[0]),
+        .I3(Q[1]),
+        .I4(Q[2]),
+        .I5(Q[4]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT4 #(
-    .INIT(16'h8000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_2 
-       (.I0(Q[6]),
-        .I1(Q[4]),
-        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ),
-        .I3(Q[5]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ),
         .I1(axi_araddr_full),
         .I2(s_axi_araddr[7]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_3 
+       (.I0(Q[6]),
+        .I1(Q[4]),
+        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
+        .I3(Q[5]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_6 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_9 ),
         .Q(Q[8]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_5 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_8 ),
         .Q(Q[9]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[12] 
        (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ),
-        .Q(bram_addr_b),
+        .CE(bram_addr_ld_en_mod),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_7 ),
+        .Q(Q[10]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en_mod),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_6 ),
+        .Q(Q[11]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en_mod),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_5 ),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[2] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_14 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
         .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_13 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_16 ),
         .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_12 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ),
         .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_11 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_14 ),
         .Q(Q[3]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_10 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_13 ),
         .Q(Q[4]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_9 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_12 ),
         .Q(Q[5]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_8 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_11 ),
         .Q(Q[6]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] 
        (.C(s_axi_aclk),
-        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_7 ),
+        .CE(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
+        .D(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_10 ),
         .Q(Q[7]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[0].axi_rdata_int[0]_i_1 
@@ -2546,7 +2552,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[0].axi_rdata_int[0]_i_1_n_0 ),
         .Q(s_axi_rdata[0]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[10].axi_rdata_int[10]_i_1 
@@ -2562,7 +2568,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[10].axi_rdata_int[10]_i_1_n_0 ),
         .Q(s_axi_rdata[10]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[11].axi_rdata_int[11]_i_1 
@@ -2578,7 +2584,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[11].axi_rdata_int[11]_i_1_n_0 ),
         .Q(s_axi_rdata[11]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[12].axi_rdata_int[12]_i_1 
@@ -2594,7 +2600,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[12].axi_rdata_int[12]_i_1_n_0 ),
         .Q(s_axi_rdata[12]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[13].axi_rdata_int[13]_i_1 
@@ -2610,7 +2616,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[13].axi_rdata_int[13]_i_1_n_0 ),
         .Q(s_axi_rdata[13]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[14].axi_rdata_int[14]_i_1 
@@ -2626,7 +2632,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[14].axi_rdata_int[14]_i_1_n_0 ),
         .Q(s_axi_rdata[14]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[15].axi_rdata_int[15]_i_1 
@@ -2642,7 +2648,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[15].axi_rdata_int[15]_i_1_n_0 ),
         .Q(s_axi_rdata[15]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[16].axi_rdata_int[16]_i_1 
@@ -2658,7 +2664,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[16].axi_rdata_int[16]_i_1_n_0 ),
         .Q(s_axi_rdata[16]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[17].axi_rdata_int[17]_i_1 
@@ -2674,7 +2680,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[17].axi_rdata_int[17]_i_1_n_0 ),
         .Q(s_axi_rdata[17]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[18].axi_rdata_int[18]_i_1 
@@ -2690,7 +2696,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[18].axi_rdata_int[18]_i_1_n_0 ),
         .Q(s_axi_rdata[18]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[19].axi_rdata_int[19]_i_1 
@@ -2706,7 +2712,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[19].axi_rdata_int[19]_i_1_n_0 ),
         .Q(s_axi_rdata[19]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[1].axi_rdata_int[1]_i_1 
@@ -2722,7 +2728,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[1].axi_rdata_int[1]_i_1_n_0 ),
         .Q(s_axi_rdata[1]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[20].axi_rdata_int[20]_i_1 
@@ -2738,7 +2744,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[20].axi_rdata_int[20]_i_1_n_0 ),
         .Q(s_axi_rdata[20]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[21].axi_rdata_int[21]_i_1 
@@ -2754,7 +2760,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[21].axi_rdata_int[21]_i_1_n_0 ),
         .Q(s_axi_rdata[21]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[22].axi_rdata_int[22]_i_1 
@@ -2770,7 +2776,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[22].axi_rdata_int[22]_i_1_n_0 ),
         .Q(s_axi_rdata[22]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[23].axi_rdata_int[23]_i_1 
@@ -2786,7 +2792,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[23].axi_rdata_int[23]_i_1_n_0 ),
         .Q(s_axi_rdata[23]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[24].axi_rdata_int[24]_i_1 
@@ -2802,7 +2808,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[24].axi_rdata_int[24]_i_1_n_0 ),
         .Q(s_axi_rdata[24]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[25].axi_rdata_int[25]_i_1 
@@ -2818,7 +2824,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[25].axi_rdata_int[25]_i_1_n_0 ),
         .Q(s_axi_rdata[25]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[26].axi_rdata_int[26]_i_1 
@@ -2834,7 +2840,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[26].axi_rdata_int[26]_i_1_n_0 ),
         .Q(s_axi_rdata[26]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[27].axi_rdata_int[27]_i_1 
@@ -2850,7 +2856,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[27].axi_rdata_int[27]_i_1_n_0 ),
         .Q(s_axi_rdata[27]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[28].axi_rdata_int[28]_i_1 
@@ -2866,7 +2872,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[28].axi_rdata_int[28]_i_1_n_0 ),
         .Q(s_axi_rdata[28]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[29].axi_rdata_int[29]_i_1 
@@ -2882,7 +2888,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[29].axi_rdata_int[29]_i_1_n_0 ),
         .Q(s_axi_rdata[29]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[2].axi_rdata_int[2]_i_1 
@@ -2898,7 +2904,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[2].axi_rdata_int[2]_i_1_n_0 ),
         .Q(s_axi_rdata[2]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[30].axi_rdata_int[30]_i_1 
@@ -2917,22 +2923,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   LUT4 #(
     .INIT(16'h08FF)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I1(s_axi_rready),
         .I2(axi_b2b_brst),
         .I3(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h000000003F08F030)) 
+    .INIT(64'h1010444051514040)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
-        .I1(rd_data_sm_cs[0]),
-        .I2(rd_data_sm_cs[1]),
+       (.I0(rd_data_sm_cs[3]),
+        .I1(rd_data_sm_cs[2]),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
         .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I4(rd_data_sm_cs[2]),
-        .I5(rd_data_sm_cs[3]),
+        .I4(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[0]),
         .O(axi_rdata_en));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_3 
@@ -2940,18 +2946,18 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I1(bram_rddata_b[31]),
         .I2(rddata_mux_sel),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h1)) 
-    \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4 
-       (.I0(act_rd_burst_two),
-        .I1(act_rd_burst),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT2 #(
     .INIT(4'h8)) 
+    \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4 
+       (.I0(s_axi_rready),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5 
-       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I1(s_axi_rready),
+       (.I0(act_rd_burst),
+        .I1(act_rd_burst_two),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -2961,7 +2967,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_3_n_0 ),
         .Q(s_axi_rdata[31]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[3].axi_rdata_int[3]_i_1 
@@ -2977,7 +2983,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[3].axi_rdata_int[3]_i_1_n_0 ),
         .Q(s_axi_rdata[3]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[4].axi_rdata_int[4]_i_1 
@@ -2993,7 +2999,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[4].axi_rdata_int[4]_i_1_n_0 ),
         .Q(s_axi_rdata[4]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[5].axi_rdata_int[5]_i_1 
@@ -3009,7 +3015,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[5].axi_rdata_int[5]_i_1_n_0 ),
         .Q(s_axi_rdata[5]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[6].axi_rdata_int[6]_i_1 
@@ -3025,7 +3031,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[6].axi_rdata_int[6]_i_1_n_0 ),
         .Q(s_axi_rdata[6]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[7].axi_rdata_int[7]_i_1 
@@ -3041,7 +3047,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[7].axi_rdata_int[7]_i_1_n_0 ),
         .Q(s_axi_rdata[7]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[8].axi_rdata_int[8]_i_1 
@@ -3057,7 +3063,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[8].axi_rdata_int[8]_i_1_n_0 ),
         .Q(s_axi_rdata[8]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[9].axi_rdata_int[9]_i_1 
@@ -3074,14 +3080,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(s_axi_rdata[9]),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAAAAAAABAAAAAA)) 
+    .INIT(64'hAAAAAAAAAAAABAAA)) 
     \GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.rd_skid_buf[31]_i_1 
        (.I0(rd_skid_buf_ld_reg),
-        .I1(rd_data_sm_cs[3]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I5(rd_data_sm_cs[0]),
+        .I1(rd_data_sm_cs[0]),
+        .I2(rd_data_sm_cs[2]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(rd_data_sm_cs[3]),
+        .I5(rd_data_sm_cs[1]),
         .O(rd_skid_buf_ld));
   FDRE #(
     .INIT(1'b0)) 
@@ -3346,41 +3352,34 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I1(brst_zero),
         .I2(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT1 #(
-    .INIT(2'h1)) 
+  LUT4 #(
+    .INIT(16'hE2FF)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
+       (.I0(s_axi_arlen[3]),
+        .I1(axi_araddr_full),
+        .I2(axi_arlen_pipe[3]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
         .O(axi_rd_burst0));
-  LUT5 #(
-    .INIT(32'h00000100)) 
+  LUT6 #(
+    .INIT(64'h0000101000051015)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_22 ),
-        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4_n_0 ),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_5_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4_n_0 ),
+        .I1(axi_arlen_pipe[1]),
+        .I2(axi_araddr_full),
+        .I3(s_axi_arlen[1]),
+        .I4(axi_arlen_pipe[2]),
+        .I5(s_axi_arlen[2]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT5 #(
-    .INIT(32'hFFFACCFA)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFBBFCB8)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4 
-       (.I0(s_axi_arlen[4]),
-        .I1(axi_arlen_pipe[4]),
-        .I2(s_axi_arlen[7]),
-        .I3(axi_araddr_full),
-        .I4(axi_arlen_pipe[7]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
-  LUT5 #(
-    .INIT(32'h00053305)) 
-    \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_5 
-       (.I0(s_axi_arlen[6]),
-        .I1(axi_arlen_pipe[6]),
+       (.I0(axi_arlen_pipe[5]),
+        .I1(axi_araddr_full),
         .I2(s_axi_arlen[5]),
-        .I3(axi_araddr_full),
-        .I4(axi_arlen_pipe[5]),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_5_n_0 ));
+        .I3(axi_arlen_pipe[4]),
+        .I4(s_axi_arlen[4]),
+        .I5(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_9_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_4_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg 
@@ -3389,39 +3388,40 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(axi_rd_burst0),
         .Q(axi_rd_burst),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT4 #(
-    .INIT(16'hE200)) 
+  LUT6 #(
+    .INIT(64'h202A000A20200000)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1 
-       (.I0(s_axi_arlen[0]),
-        .I1(axi_araddr_full),
-        .I2(axi_arlen_pipe[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .O(axi_rd_burst_two));
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
+        .I1(axi_arlen_pipe[3]),
+        .I2(axi_araddr_full),
+        .I3(s_axi_arlen[3]),
+        .I4(axi_arlen_pipe[0]),
+        .I5(s_axi_arlen[0]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg 
        (.C(s_axi_aclk),
         .CE(bram_addr_ld_en),
-        .D(axi_rd_burst_two),
+        .D(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ),
         .Q(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
         .R(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hE200E200F0000000)) 
+    .INIT(64'hB800B800AA000000)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_1 
-       (.I0(s_axi_rid),
+       (.I0(axi_rid_temp),
         .I1(axi_rvalid_set),
-        .I2(axi_rid_temp),
+        .I2(s_axi_rid),
         .I3(s_axi_aresetn),
         .I4(axi_b2b_brst),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I1(s_axi_rready),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3442,10 +3442,10 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I5(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp2_reg_n_0_[0] ),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp2[0]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h3311F00000000000)) 
+    .INIT(64'hAA22F00000000000)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp2_full_i_1 
-       (.I0(axi_rid_temp_full_d1),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ),
+        .I1(axi_rid_temp_full_d1),
         .I2(bram_addr_ld_en),
         .I3(axi_rid_temp_full),
         .I4(axi_rid_temp2_full),
@@ -3477,7 +3477,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I4(bram_addr_ld_en),
         .I5(axi_rid_temp),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp[0]_i_2 
@@ -3486,14 +3486,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I2(s_axi_arid),
         .O(axi_rid_temp2));
   LUT6 #(
-    .INIT(64'h8A88AAAA8A888A88)) 
+    .INIT(64'hAA08AAAAAA08AA08)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp[0]_i_3 
        (.I0(axi_rid_temp2_full),
-        .I1(axi_rvalid_set),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2_n_0 ),
-        .I3(axi_b2b_brst),
-        .I4(axi_rid_temp_full),
-        .I5(axi_rid_temp_full_d1),
+        .I1(axi_rid_temp_full_d1),
+        .I2(axi_rid_temp_full),
+        .I3(axi_rvalid_set),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_int[0]_i_2_n_0 ),
+        .I5(axi_b2b_brst),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp[0]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3504,21 +3504,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_rid_temp_full_d1),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hBBBBFFA800000000)) 
+    .INIT(64'hFAFAFF8A00000000)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_1 
        (.I0(axi_rid_temp2_full),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ),
-        .I2(axi_rid_temp_full_d1),
+        .I1(axi_rid_temp_full_d1),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ),
         .I3(bram_addr_ld_en),
         .I4(axi_rid_temp_full),
         .I5(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
-    .INIT(16'hEAAA)) 
+    .INIT(16'h1555)) 
     \GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2 
        (.I0(axi_rvalid_set),
-        .I1(s_axi_rready),
-        .I2(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I2(s_axi_rready),
         .I3(axi_b2b_brst),
         .O(\GEN_NO_RD_CMD_OPT.GEN_RID.axi_rid_temp_full_i_2_n_0 ));
   FDRE #(
@@ -3538,14 +3539,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_rid_temp),
         .R(s_axi_aresetn_0));
   NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0 \GEN_NO_RD_CMD_OPT.I_WRAP_BRST 
-       (.D({\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_5 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_6 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_7 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_8 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_9 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_10 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_11 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_12 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_13 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_14 }),
-        .E(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_1 ),
-        .\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 (\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
-        .\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
+       (.D({\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_5 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_6 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_7 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_8 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_9 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_10 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_11 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_12 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_13 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_14 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_16 ,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 }),
+        .E({bram_addr_ld_en_mod,\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 }),
+        .\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ),
+        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ),
+        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg ),
@@ -3554,30 +3555,32 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[7].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[7].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ),
+        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_24 ),
         .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_22 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_23 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_3_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] (Q[9:0]),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_1 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_5_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_3_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_4_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_15 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_18 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_1 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_4_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_3_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_2_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_2_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_3_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_3_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_2_n_0 ),
         .\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9]_0 (\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_3_n_0 ),
-        .\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .\GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
-        .\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_2 ),
-        .Q(Q),
+        .\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .\GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg (\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .\GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
+        .Q(rd_data_sm_cs),
         .SR(s_axi_aresetn_0),
         .ar_active(ar_active),
         .axi_araddr_full(axi_araddr_full),
@@ -3603,70 +3606,78 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .s_axi_arlen(s_axi_arlen[3:0]),
         .s_axi_arvalid(s_axi_arvalid),
         .s_axi_rready(s_axi_rready),
-        .\save_init_bram_addr_ld_reg[12]_0 (\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_16 ),
-        .\save_init_bram_addr_ld_reg[12]_1 (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .\save_init_bram_addr_ld_reg[12]_2 (rd_data_sm_cs),
-        .\save_init_bram_addr_ld_reg[12]_3 (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ),
-        .\wrap_burst_total_reg[1]_0 (axi_arlen_pipe[3:0]));
+        .\save_init_bram_addr_ld_reg[14]_0 (\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .\save_init_bram_addr_ld_reg[14]_1 (\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arburst_pipe_fixed_reg_n_0 ),
+        .\wrap_burst_total_reg[0]_0 (axi_arlen_pipe[3:0]));
   LUT6 #(
-    .INIT(64'h01800000FFFFFFFF)) 
+    .INIT(64'h08000020FFFFFFFF)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_i_1 
-       (.I0(rd_data_sm_cs[1]),
+       (.I0(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ),
         .I1(rd_data_sm_cs[2]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(rd_data_sm_cs[3]),
-        .I4(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ),
+        .I2(rd_data_sm_cs[3]),
+        .I3(rd_data_sm_cs[0]),
+        .I4(rd_data_sm_cs[1]),
         .I5(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0011000300110000)) 
+    .INIT(64'hAAAA002AAAAA0020)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_i_2 
        (.I0(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_5_n_0 ),
-        .I1(rd_data_sm_cs[3]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(rd_data_sm_cs[0]),
-        .I5(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_6_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I2(rd_data_sm_cs[0]),
+        .I3(rd_data_sm_cs[1]),
+        .I4(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_7_n_0 ),
+        .I5(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_8_n_0 ),
         .O(act_rd_burst_set));
-  LUT6 #(
-    .INIT(64'h1DFF1DFFFFFF0000)) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  LUT3 #(
+    .INIT(8'h74)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_i_3 
-       (.I0(s_axi_arlen[0]),
-        .I1(axi_araddr_full),
-        .I2(axi_arlen_pipe[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .I4(axi_rd_burst),
-        .I5(bram_addr_ld_en),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ),
+        .I1(bram_addr_ld_en),
+        .I2(axi_rd_burst),
         .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'h8880)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_i_4 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I2(act_rd_burst),
-        .I3(act_rd_burst_two),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
+        .I2(act_rd_burst_two),
+        .I3(act_rd_burst),
         .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h00F3FFFFAAAAAAAA)) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_i_5 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .I1(end_brst_rd),
-        .I2(axi_b2b_brst),
-        .I3(brst_zero),
-        .I4(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[2]_i_3_n_0 ),
-        .I5(rd_data_sm_cs[1]),
+       (.I0(rd_data_sm_cs[3]),
+        .I1(rd_data_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_5_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT5 #(
-    .INIT(32'h8A80AAAA)) 
-    \GEN_NO_RD_CMD_OPT.act_rd_burst_i_6 
+  LUT6 #(
+    .INIT(64'h4444004000000000)) 
+    \GEN_NO_RD_CMD_OPT.act_rd_burst_i_7 
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
+        .I1(rd_data_sm_cs[0]),
+        .I2(end_brst_rd),
+        .I3(axi_b2b_brst),
+        .I4(brst_zero),
+        .I5(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_9_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_7_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \GEN_NO_RD_CMD_OPT.act_rd_burst_i_8 
        (.I0(bram_addr_ld_en),
-        .I1(axi_arlen_pipe[0]),
-        .I2(axi_araddr_full),
-        .I3(s_axi_arlen[0]),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_6_n_0 ));
+        .I1(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_7_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_8_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT3 #(
+    .INIT(8'h80)) 
+    \GEN_NO_RD_CMD_OPT.act_rd_burst_i_9 
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
+        .I2(rd_data_sm_cs[1]),
+        .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_reg 
@@ -3675,15 +3686,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_3_n_0 ),
         .Q(act_rd_burst),
         .R(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hE200FFFFE2000000)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \GEN_NO_RD_CMD_OPT.act_rd_burst_two_i_1 
-       (.I0(s_axi_arlen[0]),
-        .I1(axi_araddr_full),
-        .I2(axi_arlen_pipe[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .I4(bram_addr_ld_en),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ),
+        .I1(bram_addr_ld_en),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.act_rd_burst_two_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3708,41 +3716,32 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_arsize_pipe_max),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'h554C0C0C4C4C0C0C)) 
+    .INIT(64'hF000F0F1F0F0F0F1)) 
     \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
-        .I1(axi_b2b_brst),
-        .I2(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ),
-        .I3(rd_data_sm_cs[0]),
-        .I4(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_4_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
-  LUT4 #(
-    .INIT(16'h0008)) 
-    \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2 
-       (.I0(rd_data_sm_cs[0]),
-        .I1(rd_data_sm_cs[2]),
-        .I2(rd_data_sm_cs[1]),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
+        .I2(axi_b2b_brst),
         .I3(rd_data_sm_cs[3]),
-        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3 
-       (.I0(rd_data_sm_cs[2]),
-        .I1(rd_data_sm_cs[3]),
-        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ));
+        .I4(rd_data_sm_cs[2]),
+        .I5(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0800080808000800)) 
-    \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_4 
-       (.I0(rd_data_sm_cs[1]),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
-        .I3(brst_zero),
-        .I4(axi_b2b_brst),
-        .I5(end_brst_rd),
-        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_4_n_0 ));
+    .INIT(64'h7F777F7FFFFFFFFF)) 
+    \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I1(rd_data_sm_cs[1]),
+        .I2(brst_zero),
+        .I3(axi_b2b_brst),
+        .I4(end_brst_rd),
+        .I5(rd_data_sm_cs[0]),
+        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3 
+       (.I0(rd_data_sm_cs[0]),
+        .I1(rd_data_sm_cs[1]),
+        .O(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.axi_b2b_brst_reg 
@@ -3755,24 +3754,25 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     .INIT(64'hFF55FFC000000000)) 
     \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_1 
        (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_2_n_0 ),
-        .I2(rlast_sm_cs[2]),
+        .I1(rlast_sm_cs[2]),
+        .I2(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_2_n_0 ),
         .I3(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_3_n_0 ),
         .I4(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
         .I5(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h1)) 
     \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_2 
        (.I0(rlast_sm_cs[0]),
         .I1(rlast_sm_cs[1]),
         .O(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     \GEN_NO_RD_CMD_OPT.axi_rlast_int_i_3 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
         .I2(rlast_sm_cs[0]),
         .I3(rlast_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.axi_rlast_int_i_3_n_0 ));
@@ -3793,14 +3793,15 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I3(axi_rvalid_clr_ok),
         .I4(s_axi_aresetn),
         .O(\GEN_NO_RD_CMD_OPT.axi_rvalid_clr_ok_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hBABABAAA)) 
+  LUT6 #(
+    .INIT(64'h8F888F888F888888)) 
     \GEN_NO_RD_CMD_OPT.axi_rvalid_clr_ok_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_2_n_0 ),
-        .I1(axi_rvalid_clr_ok),
-        .I2(last_bram_addr),
-        .I3(disable_b2b_brst),
-        .I4(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ),
+        .I1(end_brst_rd_clr_cmb),
+        .I2(axi_rvalid_clr_ok),
+        .I3(last_bram_addr),
+        .I4(disable_b2b_brst),
+        .I5(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.axi_rvalid_clr_ok_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3814,8 +3815,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
     .INIT(64'h7F7F7F0000000000)) 
     \GEN_NO_RD_CMD_OPT.axi_rvalid_int_i_1 
        (.I0(axi_rvalid_clr_ok),
-        .I1(s_axi_rready),
-        .I2(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I2(s_axi_rready),
         .I3(axi_rvalid_set),
         .I4(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
         .I5(s_axi_aresetn),
@@ -3828,14 +3829,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_i_1_n_0 ),
         .Q(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
-    .INIT(16'h0010)) 
+    .INIT(16'h0100)) 
     \GEN_NO_RD_CMD_OPT.axi_rvalid_set_i_1 
-       (.I0(rd_data_sm_cs[1]),
+       (.I0(rd_data_sm_cs[2]),
         .I1(rd_data_sm_cs[3]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(rd_data_sm_cs[2]),
+        .I2(rd_data_sm_cs[1]),
+        .I3(rd_data_sm_cs[0]),
         .O(axi_rvalid_set_cmb));
   FDRE #(
     .INIT(1'b0)) 
@@ -3846,108 +3847,89 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(axi_rvalid_set),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hFFFFFFEA000000EA)) 
+    .INIT(64'hFFFFFF2F0000002F)) 
     \GEN_NO_RD_CMD_OPT.bram_en_int_i_1 
        (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
         .I1(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.bram_en_int_i_4_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.bram_en_int_reg_i_4_n_0 ),
         .I3(rd_data_sm_cs[3]),
         .I4(\GEN_NO_RD_CMD_OPT.bram_en_int_i_5_n_0 ),
         .I5(bram_en_b),
         .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h3011333330110000)) 
+    .INIT(64'hFF0CFFCCAAAAAAAA)) 
     \GEN_NO_RD_CMD_OPT.bram_en_int_i_10 
-       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
-        .I1(rd_data_sm_cs[2]),
-        .I2(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I4(rd_data_sm_cs[0]),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I1(end_brst_rd),
+        .I2(axi_b2b_brst),
+        .I3(brst_zero),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I5(rd_data_sm_cs[0]),
         .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_10_n_0 ));
-  LUT6 #(
-    .INIT(64'hF0F8FFF8F0F8F0F8)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_11 
-       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
-        .I1(brst_one),
-        .I2(rd_data_sm_cs[2]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
-        .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_5_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_11_n_0 ));
-  LUT6 #(
-    .INIT(64'h00000000EAFFFFFF)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_2 
-       (.I0(bram_addr_ld_en),
-        .I1(pend_rd_op),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I3(rd_data_sm_cs[2]),
-        .I4(rd_data_sm_cs[1]),
-        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_6_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
     .INIT(4'h1)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_3 
-       (.I0(brst_zero),
-        .I1(end_brst_rd),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
-  LUT4 #(
-    .INIT(16'h0080)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_4 
-       (.I0(rd_data_sm_cs[2]),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I2(s_axi_rready),
-        .I3(rd_data_sm_cs[0]),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAAA2AAAA8AA28AA)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_5 
-       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_7_n_0 ),
-        .I1(rd_data_sm_cs[1]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(\GEN_NO_RD_CMD_OPT.bram_en_int_i_8_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_9_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h8BBBBB8B8B88BB8B)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_6 
-       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_10_n_0 ),
-        .I1(rd_data_sm_cs[1]),
-        .I2(bram_addr_ld_en),
-        .I3(rd_data_sm_cs[2]),
-        .I4(rd_data_sm_cs[0]),
-        .I5(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'hD0FFFFFF80809191)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_7 
-       (.I0(rd_data_sm_cs[0]),
-        .I1(rd_data_sm_cs[1]),
-        .I2(\GEN_NO_RD_CMD_OPT.bram_en_int_i_11_n_0 ),
-        .I3(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ),
-        .I4(bram_addr_ld_en),
-        .I5(rd_data_sm_cs[2]),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_7_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT4 #(
-    .INIT(16'h1555)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_8 
-       (.I0(bram_addr_ld_en),
-        .I1(pend_rd_op),
-        .I2(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I3(s_axi_rready),
-        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
-  LUT4 #(
-    .INIT(16'h0111)) 
-    \GEN_NO_RD_CMD_OPT.bram_en_int_i_9 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_2 
        (.I0(end_brst_rd),
         .I1(brst_zero),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT4 #(
+    .INIT(16'hBFFF)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_3 
+       (.I0(rd_data_sm_cs[0]),
+        .I1(rd_data_sm_cs[2]),
         .I2(s_axi_rready),
         .I3(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h3A3A3F00FAFAFFFF)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_5 
+       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_8_n_0 ),
+        .I1(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[3]_i_4_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.axi_b2b_brst_i_3_n_0 ),
+        .I3(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_7_n_0 ),
+        .I4(rd_data_sm_cs[2]),
+        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_9_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_5_n_0 ));
+  LUT5 #(
+    .INIT(32'h0F10FF1F)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_6 
+       (.I0(axi_rd_burst),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I2(rd_data_sm_cs[0]),
+        .I3(rd_data_sm_cs[2]),
+        .I4(bram_addr_ld_en),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'h007FFFFF007F0000)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_7 
+       (.I0(pend_rd_op),
+        .I1(s_axi_rready),
+        .I2(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I3(bram_addr_ld_en),
+        .I4(rd_data_sm_cs[2]),
+        .I5(\GEN_NO_RD_CMD_OPT.bram_en_int_i_10_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000CEECCEECCEE)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_8 
+       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
+        .I1(rd_data_sm_cs[1]),
+        .I2(pend_rd_op),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(bram_addr_ld_en),
+        .I5(rd_data_sm_cs[0]),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_8_n_0 ));
+  LUT6 #(
+    .INIT(64'hF7FFFFFFF7FFAAAA)) 
+    \GEN_NO_RD_CMD_OPT.bram_en_int_i_9 
+       (.I0(rd_data_sm_cs[0]),
+        .I1(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I3(brst_one),
+        .I4(rd_data_sm_cs[1]),
+        .I5(bram_addr_ld_en),
         .O(\GEN_NO_RD_CMD_OPT.bram_en_int_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3957,6 +3939,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.bram_en_int_i_1_n_0 ),
         .Q(bram_en_b),
         .R(s_axi_aresetn_0));
+  MUXF7 \GEN_NO_RD_CMD_OPT.bram_en_int_reg_i_4 
+       (.I0(\GEN_NO_RD_CMD_OPT.bram_en_int_i_6_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.bram_en_int_i_7_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.bram_en_int_reg_i_4_n_0 ),
+        .S(rd_data_sm_cs[1]));
   LUT5 #(
     .INIT(32'hB800B8FF)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[0]_i_1 
@@ -3973,54 +3960,47 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[1]),
         .I3(bram_addr_ld_en),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
-        .I5(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I5(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT5 #(
     .INIT(32'hB8B8B88B)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[2]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_20 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
         .I1(bram_addr_ld_en),
         .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[2]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hB8B8B8B8B8B8B88B)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[3]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_23 ),
         .I1(bram_addr_ld_en),
         .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
         .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
-        .I5(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I5(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[3]_i_1_n_0 ));
-  LUT5 #(
-    .INIT(32'hB88BB8B8)) 
+  LUT6 #(
+    .INIT(64'hB8FFB800B800B8FF)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2_n_0 ),
-        .I1(bram_addr_ld_en),
-        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_3_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2 
        (.I0(axi_arlen_pipe[4]),
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[4]),
+        .I3(bram_addr_ld_en),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
+        .I5(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2 
+       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
+        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
+        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'h01)) 
-    \GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
-        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
-        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
-        .O(\GEN_NO_RD_CMD_OPT.brst_cnt[4]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hB800B8FFB8FFB800)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[5]_i_1 
@@ -4040,7 +4020,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[5] ),
         .I4(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_4_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[6]_i_2 
@@ -4049,7 +4029,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I2(s_axi_arlen[6]),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[6]_i_2_n_0 ));
   LUT2 #(
-    .INIT(4'hB)) 
+    .INIT(4'hE)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_1 
        (.I0(bram_addr_ld_en),
         .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
@@ -4060,11 +4040,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
        (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_3_n_0 ),
         .I1(bram_addr_ld_en),
         .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[7] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[6] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[5] ),
+        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[5] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[6] ),
         .I5(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_4_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_3 
@@ -4072,14 +4052,15 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[7]),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_3_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT5 #(
     .INIT(32'h00000001)) 
     \GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_4 
-       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
-        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
-        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
+       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
+        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
         .O(\GEN_NO_RD_CMD_OPT.brst_cnt[7]_i_4_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4154,44 +4135,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[7] ),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'h0000000044444440)) 
+    .INIT(64'h4400444444004040)) 
     \GEN_NO_RD_CMD_OPT.brst_one_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_2_n_0 ),
         .I1(s_axi_aresetn),
         .I2(brst_one),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_one_i_2_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_one_i_3_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.brst_one_i_4_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT5 #(
-    .INIT(32'h8A800000)) 
-    \GEN_NO_RD_CMD_OPT.brst_one_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .I1(axi_arlen_pipe[0]),
-        .I2(axi_araddr_full),
-        .I3(s_axi_arlen[0]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_i_1_n_0 ),
         .I4(bram_addr_ld_en),
-        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+        .I5(\GEN_NO_RD_CMD_OPT.brst_one_i_2_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT4 #(
-    .INIT(16'h0010)) 
-    \GEN_NO_RD_CMD_OPT.brst_one_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_6_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
+    .INIT(16'h0020)) 
+    \GEN_NO_RD_CMD_OPT.brst_one_i_2 
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
+        .I1(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
         .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
-        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT5 #(
-    .INIT(32'h1DFF0000)) 
-    \GEN_NO_RD_CMD_OPT.brst_one_i_4 
-       (.I0(s_axi_arlen[0]),
-        .I1(axi_araddr_full),
-        .I2(axi_arlen_pipe[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .I4(bram_addr_ld_en),
-        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_4_n_0 ));
+        .O(\GEN_NO_RD_CMD_OPT.brst_one_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.brst_one_reg 
@@ -4202,12 +4163,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT4 #(
-    .INIT(16'h5400)) 
+    .INIT(16'h00E0)) 
     \GEN_NO_RD_CMD_OPT.brst_zero_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_6_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ),
-        .I2(brst_zero),
-        .I3(s_axi_aresetn),
+       (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_2_n_0 ),
+        .I1(brst_zero),
+        .I2(s_axi_aresetn),
+        .I3(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_8_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.brst_zero_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4221,11 +4182,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
   LUT5 #(
     .INIT(32'h00053305)) 
     \GEN_NO_RD_CMD_OPT.curr_fixed_burst_reg_i_1 
-       (.I0(s_axi_arburst[0]),
-        .I1(axi_arburst_pipe[0]),
-        .I2(s_axi_arburst[1]),
+       (.I0(s_axi_arburst[1]),
+        .I1(axi_arburst_pipe[1]),
+        .I2(s_axi_arburst[0]),
         .I3(axi_araddr_full),
-        .I4(axi_arburst_pipe[1]),
+        .I4(axi_arburst_pipe[0]),
         .O(curr_fixed_burst));
   FDRE #(
     .INIT(1'b0)) 
@@ -4254,34 +4215,34 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(curr_wrap_burst_reg),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hAAAAAAAABFBBAAAA)) 
+    .INIT(64'hAABAAAAABABABABA)) 
     \GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_1 
        (.I0(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2_n_0 ),
-        .I1(rd_data_sm_cs[0]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(disable_b2b_brst),
-        .I5(rd_data_sm_cs[3]),
+        .I1(rd_data_sm_cs[3]),
+        .I2(disable_b2b_brst),
+        .I3(rd_data_sm_cs[1]),
+        .I4(rd_data_sm_cs[2]),
+        .I5(rd_data_sm_cs[0]),
         .O(disable_b2b_brst_cmb));
   LUT6 #(
     .INIT(64'h00000000BFBBBFBF)) 
     \GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2 
        (.I0(disable_b2b_brst),
         .I1(rd_data_sm_cs[1]),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
         .I3(brst_one),
-        .I4(\GEN_NO_RD_CMD_OPT.bram_en_int_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.bram_en_int_i_2_n_0 ),
         .I5(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_3_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hEFEFEFEFEFFFEFEF)) 
+    .INIT(64'hFFFFFF10FFFFFFFF)) 
     \GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_3 
-       (.I0(rd_data_sm_cs[2]),
-        .I1(rd_data_sm_cs[3]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(rd_data_sm_cs[1]),
-        .I4(axi_rd_burst),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I1(rd_data_sm_cs[1]),
+        .I2(axi_rd_burst),
+        .I3(rd_data_sm_cs[3]),
+        .I4(rd_data_sm_cs[2]),
+        .I5(rd_data_sm_cs[0]),
         .O(\GEN_NO_RD_CMD_OPT.disable_b2b_brst_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4327,63 +4288,93 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(end_brst_rd),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hFFFFFFFF81018000)) 
+    .INIT(64'hFBAAAAAAAAAAAAFB)) 
     \GEN_NO_RD_CMD_OPT.last_bram_addr_i_1 
-       (.I0(rd_data_sm_cs[1]),
-        .I1(rd_data_sm_cs[2]),
-        .I2(rd_data_sm_cs[0]),
-        .I3(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_2_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_3_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_2_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_3_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ),
+        .I3(rd_data_sm_cs[0]),
+        .I4(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[2]),
         .O(last_bram_addr0));
-  LUT6 #(
-    .INIT(64'h0000000000F80000)) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  LUT4 #(
+    .INIT(16'h0040)) 
     \GEN_NO_RD_CMD_OPT.last_bram_addr_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .I1(pend_rd_op),
-        .I2(bram_addr_ld_en),
-        .I3(rd_data_sm_cs[3]),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_6_n_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
+        .I2(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
+        .I3(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h02FF020002000200)) 
+    .INIT(64'hFFFFFFFFFFFFFF7F)) 
     \GEN_NO_RD_CMD_OPT.last_bram_addr_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I1(axi_rd_burst),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I3(rd_data_sm_cs[3]),
-        .I4(bram_addr_ld_en),
-        .I5(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ),
+       (.I0(s_axi_rready),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I2(rd_data_sm_cs[3]),
+        .I3(axi_rd_burst),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I5(rd_data_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT4 #(
-    .INIT(16'h0010)) 
+  LUT6 #(
+    .INIT(64'h00000200AAAA0200)) 
     \GEN_NO_RD_CMD_OPT.last_bram_addr_i_4 
        (.I0(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_6_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_4 ),
-        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[0] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[1] ),
+        .I1(axi_rd_burst),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
+        .I3(pend_rd_op),
+        .I4(bram_addr_ld_en),
+        .I5(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_7_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
-  LUT4 #(
-    .INIT(16'h02A2)) 
-    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_5 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_i_3_n_0 ),
-        .I1(s_axi_arlen[0]),
-        .I2(axi_araddr_full),
-        .I3(axi_arlen_pipe[0]),
-        .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_6 
-       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[5] ),
-        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[6] ),
-        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[7] ),
-        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
-        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
+    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_5 
+       (.I0(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[6] ),
+        .I1(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[5] ),
+        .I2(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[4] ),
+        .I3(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[7] ),
+        .I4(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[2] ),
         .I5(\GEN_NO_RD_CMD_OPT.brst_cnt_reg_n_0_[3] ),
+        .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000C0800000FF00)) 
+    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_6 
+       (.I0(pend_rd_op),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I2(s_axi_rready),
+        .I3(bram_addr_ld_en),
+        .I4(rd_data_sm_cs[3]),
+        .I5(rd_data_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_7 
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_21 ),
+        .I1(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_22 ),
+        .I2(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_8_n_0 ),
+        .I3(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_9_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_24 ),
+        .I5(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_23 ),
+        .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_7_n_0 ));
+  LUT5 #(
+    .INIT(32'hFFFACCFA)) 
+    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_8 
+       (.I0(s_axi_arlen[4]),
+        .I1(axi_arlen_pipe[4]),
+        .I2(s_axi_arlen[5]),
+        .I3(axi_araddr_full),
+        .I4(axi_arlen_pipe[5]),
+        .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_8_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT5 #(
+    .INIT(32'hFFFACCFA)) 
+    \GEN_NO_RD_CMD_OPT.last_bram_addr_i_9 
+       (.I0(s_axi_arlen[6]),
+        .I1(axi_arlen_pipe[6]),
+        .I2(s_axi_arlen[7]),
+        .I3(axi_araddr_full),
+        .I4(axi_arlen_pipe[7]),
+        .O(\GEN_NO_RD_CMD_OPT.last_bram_addr_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_NO_RD_CMD_OPT.last_bram_addr_reg 
@@ -4393,21 +4384,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(last_bram_addr),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'hFFFFFF0F00002000)) 
+    .INIT(64'hCCCCCCCCC050C0C0)) 
     \GEN_NO_RD_CMD_OPT.no_ar_ack_i_1 
-       (.I0(bram_addr_ld_en),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.no_ar_ack_i_2_n_0 ),
-        .I3(rd_data_sm_cs[1]),
-        .I4(rd_data_sm_cs[3]),
-        .I5(no_ar_ack),
+       (.I0(rd_data_sm_cs[3]),
+        .I1(no_ar_ack),
+        .I2(rd_data_sm_cs[1]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(bram_addr_ld_en),
+        .I5(\GEN_NO_RD_CMD_OPT.no_ar_ack_i_2_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.no_ar_ack_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT3 #(
+    .INIT(8'hDF)) 
     \GEN_NO_RD_CMD_OPT.no_ar_ack_i_2 
-       (.I0(rd_data_sm_cs[2]),
-        .I1(rd_data_sm_cs[0]),
+       (.I0(rd_data_sm_cs[0]),
+        .I1(rd_data_sm_cs[3]),
+        .I2(rd_data_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.no_ar_ack_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4418,78 +4410,71 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .Q(no_ar_ack),
         .R(s_axi_aresetn_0));
   LUT6 #(
-    .INIT(64'h3F7F3F7500400045)) 
+    .INIT(64'hFFDFFFD500100015)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_1 
        (.I0(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_2_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_3_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.pend_rd_op_reg_i_3_n_0 ),
         .I2(rd_data_sm_cs[0]),
         .I3(rd_data_sm_cs[3]),
         .I4(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_4_n_0 ),
         .I5(pend_rd_op),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hE800E808EBEBEBEB)) 
+    .INIT(64'hCF00000FCFCFDF0F)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_2 
-       (.I0(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_5_n_0 ),
-        .I1(rd_data_sm_cs[0]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(rd_data_sm_cs[2]),
-        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
-        .I5(bram_addr_ld_en),
+       (.I0(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I1(rd_data_sm_cs[2]),
+        .I2(bram_addr_ld_en),
+        .I3(rd_data_sm_cs[0]),
+        .I4(rd_data_sm_cs[1]),
+        .I5(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_5_n_0 ),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h3101313131010101)) 
-    \GEN_NO_RD_CMD_OPT.pend_rd_op_i_3 
-       (.I0(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_6_n_0 ),
-        .I1(rd_data_sm_cs[3]),
-        .I2(rd_data_sm_cs[1]),
-        .I3(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_7_n_0 ),
-        .I4(rd_data_sm_cs[2]),
-        .I5(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_8_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h838383838BBBBBBB)) 
+    .INIT(64'h07FF07000FFF0FFF)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_4 
-       (.I0(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_5_n_0 ),
-        .I1(rd_data_sm_cs[1]),
-        .I2(rd_data_sm_cs[2]),
-        .I3(pend_rd_op),
-        .I4(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
-        .I5(bram_addr_ld_en),
-        .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT4 #(
-    .INIT(16'h15FF)) 
-    \GEN_NO_RD_CMD_OPT.pend_rd_op_i_5 
-       (.I0(bram_addr_ld_en),
+       (.I0(ar_active),
         .I1(end_brst_rd),
-        .I2(ar_active),
-        .I3(rd_data_sm_cs[2]),
+        .I2(bram_addr_ld_en),
+        .I3(rd_data_sm_cs[1]),
+        .I4(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_8_n_0 ),
+        .I5(rd_data_sm_cs[2]),
+        .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_4_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT4 #(
+    .INIT(16'hA888)) 
+    \GEN_NO_RD_CMD_OPT.pend_rd_op_i_5 
+       (.I0(rd_data_sm_cs[2]),
+        .I1(bram_addr_ld_en),
+        .I2(end_brst_rd),
+        .I3(ar_active),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_5_n_0 ));
   LUT6 #(
-    .INIT(64'h0000770F000F770F)) 
+    .INIT(64'h00700070007F0F7F)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_6 
        (.I0(ar_active),
         .I1(end_brst_rd),
-        .I2(pend_rd_op),
-        .I3(rd_data_sm_cs[2]),
-        .I4(bram_addr_ld_en),
-        .I5(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_17 ),
+        .I2(rd_data_sm_cs[2]),
+        .I3(bram_addr_ld_en),
+        .I4(\GEN_NO_RD_CMD_OPT.I_WRAP_BRST_n_19 ),
+        .I5(pend_rd_op),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_6_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT6 #(
+    .INIT(64'h7070F0F0707FFFFF)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_7 
-       (.I0(s_axi_rready),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I2(pend_rd_op),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
+        .I2(rd_data_sm_cs[2]),
+        .I3(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I4(pend_rd_op),
+        .I5(bram_addr_ld_en),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_7_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT3 #(
-    .INIT(8'hEA)) 
+    .INIT(8'h07)) 
     \GEN_NO_RD_CMD_OPT.pend_rd_op_i_8 
-       (.I0(bram_addr_ld_en),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
-        .I2(pend_rd_op),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rlast_int_reg_0 ),
+        .I1(pend_rd_op),
+        .I2(bram_addr_ld_en),
         .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_8_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4499,15 +4484,20 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_1_n_0 ),
         .Q(pend_rd_op),
         .R(s_axi_aresetn_0));
+  MUXF7 \GEN_NO_RD_CMD_OPT.pend_rd_op_reg_i_3 
+       (.I0(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_6_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.pend_rd_op_i_7_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.pend_rd_op_reg_i_3_n_0 ),
+        .S(rd_data_sm_cs[1]));
   LUT6 #(
-    .INIT(64'h0000080F00000F00)) 
+    .INIT(64'h0000000000008FF0)) 
     \GEN_NO_RD_CMD_OPT.rd_skid_buf_ld_reg_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I1(s_axi_rready),
-        .I2(rd_data_sm_cs[2]),
-        .I3(rd_data_sm_cs[0]),
+       (.I0(s_axi_rready),
+        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I2(rd_data_sm_cs[0]),
+        .I3(rd_data_sm_cs[1]),
         .I4(rd_data_sm_cs[3]),
-        .I5(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[2]),
         .O(rd_skid_buf_ld_cmb));
   FDRE #(
     .INIT(1'b0)) 
@@ -4517,6 +4507,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(rd_skid_buf_ld_cmb),
         .Q(rd_skid_buf_ld_reg),
         .R(s_axi_aresetn_0));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT4 #(
     .INIT(16'hFE02)) 
     \GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_1 
@@ -4526,23 +4517,23 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .I3(rddata_mux_sel),
         .O(\GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0000727200000200)) 
+    .INIT(64'h0000000070447040)) 
     \GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_2 
-       (.I0(rd_data_sm_cs[0]),
-        .I1(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_5_n_0 ),
-        .I3(rd_data_sm_cs[1]),
-        .I4(rd_data_sm_cs[3]),
-        .I5(rd_data_sm_cs[2]),
+       (.I0(\GEN_NO_RD_CMD_OPT.act_rd_burst_i_4_n_0 ),
+        .I1(rd_data_sm_cs[0]),
+        .I2(rd_data_sm_cs[2]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_RDATA_NO_ECC.GEN_RDATA_NO_RL_NO_ECC.GEN_RDATA[31].axi_rdata_int[31]_i_4_n_0 ),
+        .I4(rd_data_sm_cs[1]),
+        .I5(rd_data_sm_cs[3]),
         .O(rddata_mux_sel_cmb));
   LUT6 #(
-    .INIT(64'hA0AFAFAF07070707)) 
+    .INIT(64'hF077F077000F00FF)) 
     \GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_3 
-       (.I0(rd_data_sm_cs[1]),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
-        .I2(rd_data_sm_cs[0]),
-        .I3(s_axi_rready),
-        .I4(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+       (.I0(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
+        .I1(s_axi_rready),
+        .I2(rd_data_sm_cs[1]),
+        .I3(rd_data_sm_cs[0]),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg_n_0 ),
         .I5(rd_data_sm_cs[2]),
         .O(\GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_3_n_0 ));
   FDRE #(
@@ -4553,12 +4544,13 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_rd_chnl
         .D(\GEN_NO_RD_CMD_OPT.rddata_mux_sel_i_1_n_0 ),
         .Q(rddata_mux_sel),
         .R(s_axi_aresetn_0));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'hEAAA)) 
     s_axi_arready_INST_0
        (.I0(axi_arready_int),
-        .I1(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
-        .I2(s_axi_rready),
+        .I1(s_axi_rready),
+        .I2(\GEN_NO_RD_CMD_OPT.axi_rvalid_int_reg_0 ),
         .I3(axi_early_arready_int),
         .O(s_axi_arready));
 endmodule
@@ -4597,11 +4589,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   output \GEN_AWREADY.axi_aresetn_d3_reg_0 ;
   output s_axi_awready;
   output [0:0]s_axi_bid;
-  output [10:0]bram_addr_a;
+  output [12:0]bram_addr_a;
   output [3:0]bram_we_a;
   input \wrap_burst_total_reg[0] ;
   input s_axi_aclk;
-  input [10:0]s_axi_awaddr;
+  input [12:0]s_axi_awaddr;
   input s_axi_aresetn;
   input [0:0]s_axi_awid;
   input [31:0]s_axi_wdata;
@@ -4613,10 +4605,11 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   input [7:0]s_axi_awlen;
   input [3:0]s_axi_wstrb;
 
+  wire BID_FIFO_n_0;
   wire BID_FIFO_n_1;
-  wire BID_FIFO_n_2;
   wire BID_FIFO_n_3;
-  wire \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2_n_0 ;
+  wire BID_FIFO_n_4;
+  wire BID_FIFO_n_5;
   wire \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_2_n_0 ;
   wire \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ;
   wire \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_1_n_0 ;
@@ -4634,6 +4627,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ;
+  wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ;
+  wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ;
@@ -4648,13 +4643,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire \GEN_AW_PIPE_DUAL.axi_awlen_pipe[7]_i_1_n_0 ;
   wire \GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ;
   wire \GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ;
-  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ;
-  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3_n_0 ;
   wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_i_2_n_0 ;
-  wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3_n_0 ;
+  wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2_n_0 ;
   wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_i_2_n_0 ;
   wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_1_n_0 ;
-  wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_3_n_0 ;
+  wire \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_2_n_0 ;
   wire \GEN_WR_NO_ECC.bram_we_int[3]_i_1_n_0 ;
   wire \I_RD_CHNL/axi_aresetn_d1 ;
   wire \I_RD_CHNL/axi_aresetn_d2 ;
@@ -4662,14 +4656,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire I_WRAP_BRST_n_10;
   wire I_WRAP_BRST_n_11;
   wire I_WRAP_BRST_n_12;
-  wire I_WRAP_BRST_n_14;
-  wire I_WRAP_BRST_n_16;
+  wire I_WRAP_BRST_n_13;
+  wire I_WRAP_BRST_n_15;
   wire I_WRAP_BRST_n_17;
   wire I_WRAP_BRST_n_18;
   wire I_WRAP_BRST_n_19;
-  wire I_WRAP_BRST_n_2;
   wire I_WRAP_BRST_n_20;
-  wire I_WRAP_BRST_n_3;
+  wire I_WRAP_BRST_n_21;
+  wire I_WRAP_BRST_n_22;
   wire I_WRAP_BRST_n_4;
   wire I_WRAP_BRST_n_5;
   wire I_WRAP_BRST_n_6;
@@ -4688,7 +4682,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire axi_awlen_pipe_1_or_20;
   wire [1:1]axi_awsize_pipe;
   wire axi_bvalid_int_i_1_n_0;
-  wire axi_bvalid_int_i_2_n_0;
   wire axi_bvalid_int_reg_0;
   wire axi_wdata_full_cmb;
   wire axi_wdata_full_reg;
@@ -4699,7 +4692,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire axi_wready_int_mod_i_1_n_0;
   wire bid_gets_fifo_load;
   wire bid_gets_fifo_load_d1;
-  wire [10:0]bram_addr_a;
+  wire bid_gets_fifo_load_d1_i_2_n_0;
+  wire bid_gets_fifo_load_d1_i_3_n_0;
+  wire [12:0]bram_addr_a;
   wire bram_addr_ld_en;
   wire bram_addr_ld_en_mod;
   wire bram_en_a;
@@ -4722,13 +4717,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
   wire curr_wrap_burst;
   wire curr_wrap_burst_reg;
   wire delay_aw_active_clr;
-  wire delay_aw_active_clr_cmb;
   wire last_data_ack_mod;
   wire last_data_ack_mod0;
-  wire [9:9]p_1_in;
+  wire [11:9]p_1_in;
   wire s_axi_aclk;
   wire s_axi_aresetn;
-  wire [10:0]s_axi_awaddr;
+  wire [12:0]s_axi_awaddr;
   wire [1:0]s_axi_awburst;
   wire [0:0]s_axi_awid;
   wire [7:0]s_axi_awlen;
@@ -4749,25 +4743,28 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
 
   NFC_4Channel_bd_axi_bram_ctrl_0_1_SRL_FIFO BID_FIFO
        (.\Addr_Counters[3].FDRE_I_0 (\wrap_burst_total_reg[0] ),
-        .\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] (BID_FIFO_n_1),
+        .\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[2] (BID_FIFO_n_0),
         .Q(bvalid_cnt),
         .aw_active(aw_active),
         .axi_awaddr_full(axi_awaddr_full),
         .axi_awid_pipe(axi_awid_pipe),
         .axi_awlen_pipe_1_or_2(axi_awlen_pipe_1_or_2),
-        .\axi_bid_int_reg[0] (BID_FIFO_n_3),
-        .\axi_bid_int_reg[0]_0 (axi_bvalid_int_reg_0),
-        .axi_bvalid_int_i_3_0(I_WRAP_BRST_n_18),
-        .axi_bvalid_int_i_3_1(I_WRAP_BRST_n_17),
+        .\axi_bid_int_reg[0] (BID_FIFO_n_5),
+        .axi_bvalid_int_i_3_0(I_WRAP_BRST_n_19),
+        .axi_bvalid_int_i_3_1(I_WRAP_BRST_n_18),
         .axi_bvalid_int_i_3_2(axi_aresetn_d3),
         .axi_bvalid_int_i_5_0(\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
+        .axi_bvalid_int_reg(axi_bvalid_int_reg_0),
         .axi_wr_burst(axi_wr_burst),
+        .axi_wr_burst_reg(BID_FIFO_n_4),
         .bid_gets_fifo_load(bid_gets_fifo_load),
         .bid_gets_fifo_load_d1(bid_gets_fifo_load_d1),
-        .bid_gets_fifo_load_d1_reg(axi_bvalid_int_i_2_n_0),
-        .bid_gets_fifo_load_d1_reg_0(wr_data_sm_cs),
+        .bid_gets_fifo_load_d1_reg(bid_gets_fifo_load_d1_i_2_n_0),
+        .bid_gets_fifo_load_d1_reg_0(bid_gets_fifo_load_d1_i_3_n_0),
+        .bid_gets_fifo_load_d1_reg_1(wr_data_sm_cs),
         .bram_addr_ld_en(bram_addr_ld_en),
-        .\bvalid_cnt_reg[0] (BID_FIFO_n_2),
+        .\bvalid_cnt_reg[1] (BID_FIFO_n_1),
+        .\bvalid_cnt_reg[1]_0 (BID_FIFO_n_3),
         .curr_awlen_reg_1_or_2(curr_awlen_reg_1_or_2),
         .last_data_ack_mod(last_data_ack_mod),
         .s_axi_aclk(s_axi_aclk),
@@ -4784,36 +4781,26 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
        (.I0(axi_aresetn_d3),
         .O(\GEN_AWREADY.axi_aresetn_d3_reg_0 ));
   LUT6 #(
-    .INIT(64'hC5C5C5C5C0CFC0C0)) 
+    .INIT(64'h88888888B8B888BB)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_1 
-       (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2_n_0 ),
-        .I1(s_axi_wvalid),
-        .I2(wr_data_sm_cs[2]),
-        .I3(wr_data_sm_cs[0]),
-        .I4(BID_FIFO_n_2),
-        .I5(wr_data_sm_cs[1]),
+       (.I0(s_axi_wvalid),
+        .I1(wr_data_sm_cs[2]),
+        .I2(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
+        .I3(BID_FIFO_n_3),
+        .I4(wr_data_sm_cs[1]),
+        .I5(wr_data_sm_cs[0]),
         .O(wr_data_sm_ns__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
-  LUT5 #(
-    .INIT(32'hFFFFBAAA)) 
-    \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2 
-       (.I0(wr_data_sm_cs[0]),
-        .I1(bvalid_cnt[0]),
-        .I2(bvalid_cnt[2]),
-        .I3(bvalid_cnt[1]),
-        .I4(I_WRAP_BRST_n_16),
-        .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h000000000000FF8A)) 
+    .INIT(64'h00000000FFAAF088)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_1 
        (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_2_n_0 ),
-        .I1(wr_data_sm_cs[0]),
-        .I2(BID_FIFO_n_2),
+        .I1(BID_FIFO_n_3),
+        .I2(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
         .I3(wr_data_sm_cs[1]),
-        .I4(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
+        .I4(wr_data_sm_cs[0]),
         .I5(wr_data_sm_cs[2]),
         .O(wr_data_sm_ns__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT3 #(
     .INIT(8'h8B)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_2 
@@ -4821,56 +4808,57 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I1(wr_data_sm_cs[0]),
         .I2(s_axi_wlast),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h4444444404000000)) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  LUT4 #(
+    .INIT(16'h5515)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3 
-       (.I0(wr_data_sm_cs[0]),
-        .I1(wr_data_sm_cs[1]),
-        .I2(bvalid_cnt[0]),
-        .I3(bvalid_cnt[2]),
-        .I4(bvalid_cnt[1]),
-        .I5(I_WRAP_BRST_n_16),
+       (.I0(I_WRAP_BRST_n_20),
+        .I1(bvalid_cnt[1]),
+        .I2(bvalid_cnt[2]),
+        .I3(bvalid_cnt[0]),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ));
   LUT6 #(
-    .INIT(64'h0F040C0437343734)) 
+    .INIT(64'h0303F7C703034444)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_1 
        (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_3_n_0 ),
         .I1(wr_data_sm_cs[0]),
-        .I2(wr_data_sm_cs[2]),
-        .I3(s_axi_wvalid),
-        .I4(s_axi_wlast),
-        .I5(wr_data_sm_cs[1]),
+        .I2(wr_data_sm_cs[1]),
+        .I3(s_axi_wlast),
+        .I4(wr_data_sm_cs[2]),
+        .I5(s_axi_wvalid),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hAAFAAAAAAEFEAAAA)) 
+    .INIT(64'h0000AAEF0000AAAF)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_2 
        (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_4_n_0 ),
-        .I1(s_axi_wlast),
-        .I2(wr_data_sm_cs[0]),
-        .I3(axi_wr_burst),
-        .I4(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_5_n_0 ),
-        .I5(BID_FIFO_n_2),
+        .I1(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_5_n_0 ),
+        .I2(BID_FIFO_n_4),
+        .I3(wr_data_sm_cs[1]),
+        .I4(wr_data_sm_cs[2]),
+        .I5(BID_FIFO_n_3),
         .O(wr_data_sm_ns__0[2]));
   LUT4 #(
-    .INIT(16'hBFAA)) 
+    .INIT(16'hABBB)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_3 
        (.I0(wr_data_sm_cs[1]),
-        .I1(bram_addr_ld_en),
+        .I1(BID_FIFO_n_3),
         .I2(axi_awaddr_full),
-        .I3(BID_FIFO_n_2),
+        .I3(bram_addr_ld_en),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_3_n_0 ));
-  LUT2 #(
-    .INIT(4'h2)) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  LUT3 #(
+    .INIT(8'h04)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_4 
        (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
-        .I1(wr_data_sm_cs[2]),
+        .I1(wr_data_sm_cs[1]),
+        .I2(wr_data_sm_cs[0]),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT2 #(
-    .INIT(4'h1)) 
+    .INIT(4'h2)) 
     \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_5 
-       (.I0(wr_data_sm_cs[1]),
-        .I1(wr_data_sm_cs[2]),
+       (.I0(s_axi_wlast),
+        .I1(wr_data_sm_cs[0]),
         .O(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_5_n_0 ));
   (* FSM_ENCODED_STATES = "brst_wr_data:010,idle:000,w8_awaddr:001,sng_wr_data:100,b2b_w8_wr_data:011" *) 
   FDRE \FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs_reg[0] 
@@ -4942,24 +4930,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I5(s_axi_awready),
         .O(\GEN_AWREADY.axi_awready_int_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h5444444400000000)) 
+    .INIT(64'h4440404040404040)) 
     \GEN_AWREADY.axi_awready_int_i_2 
        (.I0(\GEN_AWREADY.axi_awready_int_i_3_n_0 ),
-        .I1(aw_active),
-        .I2(bvalid_cnt[0]),
+        .I1(s_axi_awvalid),
+        .I2(aw_active),
         .I3(bvalid_cnt[1]),
-        .I4(bvalid_cnt[2]),
-        .I5(s_axi_awvalid),
+        .I4(bvalid_cnt[0]),
+        .I5(bvalid_cnt[2]),
         .O(\GEN_AWREADY.axi_awready_int_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hAAAAAAAABFFFAAAA)) 
+    .INIT(64'hAABABABABABABABA)) 
     \GEN_AWREADY.axi_awready_int_i_3 
        (.I0(wr_addr_sm_cs),
-        .I1(bvalid_cnt[2]),
-        .I2(bvalid_cnt[1]),
-        .I3(bvalid_cnt[0]),
-        .I4(last_data_ack_mod),
-        .I5(I_WRAP_BRST_n_16),
+        .I1(I_WRAP_BRST_n_20),
+        .I2(last_data_ack_mod),
+        .I3(bvalid_cnt[2]),
+        .I4(bvalid_cnt[0]),
+        .I5(bvalid_cnt[1]),
         .O(\GEN_AWREADY.axi_awready_int_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4970,13 +4958,13 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(s_axi_awready),
         .R(\wrap_burst_total_reg[0] ));
   LUT6 #(
-    .INIT(64'hFFFFFFBFAAAAAAAA)) 
+    .INIT(64'hFEFFFFFFAAAAAAAA)) 
     \GEN_AW_DUAL.aw_active_i_1 
        (.I0(bram_addr_ld_en),
-        .I1(wr_data_sm_cs[2]),
-        .I2(delay_aw_active_clr),
-        .I3(wr_data_sm_cs[0]),
-        .I4(wr_data_sm_cs[1]),
+        .I1(wr_data_sm_cs[1]),
+        .I2(wr_data_sm_cs[0]),
+        .I3(wr_data_sm_cs[2]),
+        .I4(delay_aw_active_clr),
         .I5(aw_active),
         .O(\GEN_AW_DUAL.aw_active_i_1_n_0 ));
   FDRE #(
@@ -4987,13 +4975,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(\GEN_AW_DUAL.aw_active_i_1_n_0 ),
         .Q(aw_active),
         .R(\GEN_AWREADY.axi_aresetn_d3_reg_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT3 #(
     .INIT(8'h80)) 
     \GEN_AW_DUAL.last_data_ack_mod_i_1 
        (.I0(s_axi_wready),
-        .I1(s_axi_wlast),
-        .I2(s_axi_wvalid),
+        .I1(s_axi_wvalid),
+        .I2(s_axi_wlast),
         .O(last_data_ack_mod0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5003,9 +4990,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(last_data_ack_mod0),
         .Q(last_data_ack_mod),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT5 #(
-    .INIT(32'h00100000)) 
+    .INIT(32'h00000020)) 
     \GEN_AW_DUAL.wr_addr_sm_cs_i_1 
        (.I0(\GEN_AW_DUAL.wr_addr_sm_cs_i_2_n_0 ),
         .I1(wr_addr_sm_cs),
@@ -5014,21 +5000,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I4(\GEN_AW_DUAL.wr_addr_sm_cs_i_3_n_0 ),
         .O(\GEN_AW_DUAL.wr_addr_sm_cs_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h0000000000020000)) 
+    .INIT(64'hFFFFFFFFFFFFFFBF)) 
     \GEN_AW_DUAL.wr_addr_sm_cs_i_2 
-       (.I0(axi_awaddr_full),
-        .I1(\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
-        .I2(curr_awlen_reg_1_or_2),
-        .I3(axi_awlen_pipe_1_or_2),
-        .I4(last_data_ack_mod),
-        .I5(I_WRAP_BRST_n_17),
+       (.I0(I_WRAP_BRST_n_18),
+        .I1(last_data_ack_mod),
+        .I2(axi_awaddr_full),
+        .I3(curr_awlen_reg_1_or_2),
+        .I4(\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
+        .I5(axi_awlen_pipe_1_or_2),
         .O(\GEN_AW_DUAL.wr_addr_sm_cs_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
-    .INIT(16'hEAAA)) 
+    .INIT(16'h1555)) 
     \GEN_AW_DUAL.wr_addr_sm_cs_i_3 
        (.I0(aw_active),
-        .I1(bvalid_cnt[0]),
-        .I2(bvalid_cnt[1]),
+        .I1(bvalid_cnt[1]),
+        .I2(bvalid_cnt[0]),
         .I3(bvalid_cnt[2]),
         .O(\GEN_AW_DUAL.wr_addr_sm_cs_i_3_n_0 ));
   FDRE \GEN_AW_DUAL.wr_addr_sm_cs_reg 
@@ -5060,6 +5047,22 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .CE(\GEN_AW_PIPE_DUAL.axi_awlen_pipe[7]_i_1_n_0 ),
         .D(s_axi_awaddr[10]),
         .Q(\GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(\GEN_AW_PIPE_DUAL.axi_awlen_pipe[7]_i_1_n_0 ),
+        .D(s_axi_awaddr[11]),
+        .Q(\GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(\GEN_AW_PIPE_DUAL.axi_awlen_pipe[7]_i_1_n_0 ),
+        .D(s_axi_awaddr[12]),
+        .Q(\GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5126,13 +5129,13 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(\GEN_AW_PIPE_DUAL.GEN_AWADDR[9].axi_awaddr_pipe_reg ),
         .R(1'b0));
   LUT5 #(
-    .INIT(32'h4000EA00)) 
+    .INIT(32'h40EA0000)) 
     \GEN_AW_PIPE_DUAL.axi_awaddr_full_i_1 
        (.I0(axi_awaddr_full),
         .I1(\GEN_AWREADY.axi_awready_int_i_2_n_0 ),
         .I2(axi_aresetn_d3),
-        .I3(s_axi_aresetn),
-        .I4(bram_addr_ld_en),
+        .I3(bram_addr_ld_en),
+        .I4(s_axi_aresetn),
         .O(\GEN_AW_PIPE_DUAL.axi_awaddr_full_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -5149,8 +5152,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I1(\GEN_AWREADY.axi_awready_int_i_2_n_0 ),
         .I2(axi_aresetn_d3),
         .I3(\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
-        .I4(s_axi_awburst[0]),
-        .I5(s_axi_awburst[1]),
+        .I4(s_axi_awburst[1]),
+        .I5(s_axi_awburst[0]),
         .O(\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -5191,21 +5194,21 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I1(\GEN_AWREADY.axi_awready_int_i_2_n_0 ),
         .I2(axi_aresetn_d3),
         .O(\GEN_AW_PIPE_DUAL.axi_awlen_pipe[7]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h0002)) 
+  LUT5 #(
+    .INIT(32'h00000001)) 
     \GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_1 
-       (.I0(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ),
+       (.I0(s_axi_awlen[2]),
         .I1(s_axi_awlen[3]),
-        .I2(s_axi_awlen[2]),
-        .I3(s_axi_awlen[1]),
+        .I2(s_axi_awlen[1]),
+        .I3(s_axi_awlen[7]),
+        .I4(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ),
         .O(axi_awlen_pipe_1_or_20));
-  LUT4 #(
-    .INIT(16'h0001)) 
+  LUT3 #(
+    .INIT(8'hFE)) 
     \GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2 
-       (.I0(s_axi_awlen[7]),
+       (.I0(s_axi_awlen[6]),
         .I1(s_axi_awlen[5]),
-        .I2(s_axi_awlen[6]),
-        .I3(s_axi_awlen[4]),
+        .I2(s_axi_awlen[4]),
         .O(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -5292,134 +5295,142 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
     \GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2 
        (.I0(bram_addr_a[5]),
         .I1(bram_addr_a[3]),
-        .I2(bram_addr_a[1]),
-        .I3(bram_addr_a[0]),
+        .I2(bram_addr_a[0]),
+        .I3(bram_addr_a[1]),
         .I4(bram_addr_a[2]),
         .I5(bram_addr_a[4]),
         .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ));
   LUT5 #(
     .INIT(32'h80000000)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3 
        (.I0(bram_addr_a[7]),
         .I1(bram_addr_a[5]),
-        .I2(I_WRAP_BRST_n_14),
+        .I2(I_WRAP_BRST_n_15),
         .I3(bram_addr_a[4]),
         .I4(bram_addr_a[6]),
-        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ));
-  LUT4 #(
-    .INIT(16'h00E2)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1 
-       (.I0(bram_addr_a[10]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(p_1_in),
-        .I3(I_WRAP_BRST_n_0),
-        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ));
+        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_4),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_5),
         .Q(bram_addr_a[8]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_3),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_4),
         .Q(bram_addr_a[9]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[12] 
        (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1_n_0 ),
+        .CE(bram_addr_ld_en_mod),
+        .D(p_1_in[9]),
         .Q(bram_addr_a[10]),
-        .R(1'b0));
+        .R(I_WRAP_BRST_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en_mod),
+        .D(p_1_in[10]),
+        .Q(bram_addr_a[11]),
+        .R(I_WRAP_BRST_n_0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en_mod),
+        .D(p_1_in[11]),
+        .Q(bram_addr_a[12]),
+        .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[2] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_12),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_13),
         .Q(bram_addr_a[0]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_11),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_12),
         .Q(bram_addr_a[1]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_10),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_11),
         .Q(bram_addr_a[2]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_9),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_10),
         .Q(bram_addr_a[3]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_8),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_9),
         .Q(bram_addr_a[4]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_7),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_8),
         .Q(bram_addr_a[5]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_6),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_7),
         .Q(bram_addr_a[6]),
         .R(I_WRAP_BRST_n_0));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] 
        (.C(s_axi_aclk),
-        .CE(I_WRAP_BRST_n_2),
-        .D(I_WRAP_BRST_n_5),
+        .CE(I_WRAP_BRST_n_17),
+        .D(I_WRAP_BRST_n_6),
         .Q(bram_addr_a[7]),
         .R(I_WRAP_BRST_n_0));
   LUT6 #(
-    .INIT(64'h00CC00CC00AAFCA8)) 
+    .INIT(64'h0000F0F033305554)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_i_1 
        (.I0(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_i_2_n_0 ),
-        .I1(axi_wdata_full_reg),
-        .I2(s_axi_wvalid),
-        .I3(wr_data_sm_cs[2]),
-        .I4(wr_data_sm_cs[0]),
+        .I1(wr_data_sm_cs[0]),
+        .I2(axi_wdata_full_reg),
+        .I3(s_axi_wvalid),
+        .I4(wr_data_sm_cs[2]),
         .I5(wr_data_sm_cs[1]),
         .O(axi_wdata_full_cmb));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT5 #(
-    .INIT(32'h7F557F00)) 
+    .INIT(32'hF080FF80)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_i_2 
-       (.I0(wr_data_sm_cs[0]),
+       (.I0(bram_addr_ld_en),
         .I1(axi_awaddr_full),
-        .I2(bram_addr_ld_en),
-        .I3(BID_FIFO_n_2),
+        .I2(wr_data_sm_cs[0]),
+        .I3(BID_FIFO_n_3),
         .I4(axi_wdata_full_reg),
         .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.axi_wdata_full_reg_i_2_n_0 ));
   FDRE #(
@@ -5431,24 +5442,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(axi_wdata_full_reg),
         .R(\wrap_burst_total_reg[0] ));
   LUT6 #(
-    .INIT(64'h4400450055115511)) 
+    .INIT(64'h5555000044544444)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_1 
        (.I0(wr_data_sm_cs[2]),
-        .I1(wr_data_sm_cs[1]),
-        .I2(wr_data_sm_cs[0]),
-        .I3(s_axi_wvalid),
-        .I4(BID_FIFO_n_2),
-        .I5(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3_n_0 ),
-        .O(bram_en_cmb));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
-  LUT4 #(
-    .INIT(16'h70FF)) 
-    \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3 
-       (.I0(bram_addr_ld_en),
-        .I1(axi_awaddr_full),
-        .I2(BID_FIFO_n_2),
+        .I1(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2_n_0 ),
+        .I2(BID_FIFO_n_3),
         .I3(wr_data_sm_cs[0]),
-        .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3_n_0 ));
+        .I4(s_axi_wvalid),
+        .I5(wr_data_sm_cs[1]),
+        .O(bram_en_cmb));
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  LUT4 #(
+    .INIT(16'hA888)) 
+    \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2 
+       (.I0(wr_data_sm_cs[0]),
+        .I1(BID_FIFO_n_3),
+        .I2(axi_awaddr_full),
+        .I3(bram_addr_ld_en),
+        .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_reg 
@@ -5457,24 +5468,23 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(bram_en_cmb),
         .Q(bram_en_a),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT5 #(
-    .INIT(32'h10101011)) 
+    .INIT(32'h10111010)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_i_1 
-       (.I0(wr_data_sm_cs[2]),
-        .I1(wr_data_sm_cs[1]),
+       (.I0(wr_data_sm_cs[1]),
+        .I1(wr_data_sm_cs[2]),
         .I2(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_i_2_n_0 ),
         .I3(axi_wr_burst),
-        .I4(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_3_n_0 ),
+        .I4(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2_n_0 ),
         .O(clr_bram_we_cmb));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT4 #(
-    .INIT(16'h0020)) 
+    .INIT(16'h0800)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_i_2 
        (.I0(s_axi_wlast),
-        .I1(wr_data_sm_cs[0]),
-        .I2(s_axi_wvalid),
-        .I3(BID_FIFO_n_2),
+        .I1(BID_FIFO_n_3),
+        .I2(wr_data_sm_cs[0]),
+        .I3(s_axi_wvalid),
         .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.clr_bram_we_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -5485,32 +5495,25 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(clr_bram_we),
         .R(\wrap_burst_total_reg[0] ));
   LUT6 #(
-    .INIT(64'hAAABAABB88A88888)) 
+    .INIT(64'h0000EEEF0000EEE0)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_1 
-       (.I0(delay_aw_active_clr_cmb),
-        .I1(clr_bram_we_cmb),
-        .I2(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_3_n_0 ),
-        .I3(wr_data_sm_cs[2]),
-        .I4(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
+       (.I0(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.bram_en_int_i_2_n_0 ),
+        .I1(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[2]_i_5_n_0 ),
+        .I2(clr_bram_we_cmb),
+        .I3(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_2_n_0 ),
+        .I4(wr_data_sm_cs[2]),
         .I5(delay_aw_active_clr),
         .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h000000008FFF8F00)) 
+    .INIT(64'h0000000002000000)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_2 
-       (.I0(bram_addr_ld_en),
-        .I1(axi_awaddr_full),
-        .I2(BID_FIFO_n_2),
-        .I3(wr_data_sm_cs[0]),
-        .I4(s_axi_wlast),
-        .I5(wr_data_sm_cs[2]),
-        .O(delay_aw_active_clr_cmb));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_3 
        (.I0(s_axi_wvalid),
-        .I1(s_axi_wlast),
-        .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_3_n_0 ));
+        .I1(wr_data_sm_cs[0]),
+        .I2(wr_data_sm_cs[2]),
+        .I3(wr_data_sm_cs[1]),
+        .I4(s_axi_wlast),
+        .I5(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
+        .O(\GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.delay_aw_active_clr_reg 
@@ -5826,12 +5829,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(bram_we_a[3]),
         .R(\GEN_WR_NO_ECC.bram_we_int[3]_i_1_n_0 ));
   NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst I_WRAP_BRST
-       (.D({I_WRAP_BRST_n_3,I_WRAP_BRST_n_4,I_WRAP_BRST_n_5,I_WRAP_BRST_n_6,I_WRAP_BRST_n_7,I_WRAP_BRST_n_8,I_WRAP_BRST_n_9,I_WRAP_BRST_n_10,I_WRAP_BRST_n_11,I_WRAP_BRST_n_12}),
-        .E(I_WRAP_BRST_n_2),
-        .\GEN_AW_DUAL.wr_addr_sm_cs_reg (I_WRAP_BRST_n_18),
+       (.D({p_1_in,I_WRAP_BRST_n_4,I_WRAP_BRST_n_5,I_WRAP_BRST_n_6,I_WRAP_BRST_n_7,I_WRAP_BRST_n_8,I_WRAP_BRST_n_9,I_WRAP_BRST_n_10,I_WRAP_BRST_n_11,I_WRAP_BRST_n_12,I_WRAP_BRST_n_13}),
+        .E({bram_addr_ld_en_mod,I_WRAP_BRST_n_17}),
+        .\GEN_AW_DUAL.wr_addr_sm_cs_reg (I_WRAP_BRST_n_19),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ),
+        .\GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ),
+        .\GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ),
@@ -5840,12 +5845,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[7].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[7].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[8].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[8].axi_awaddr_pipe_reg ),
         .\GEN_AW_PIPE_DUAL.GEN_AWADDR[9].axi_awaddr_pipe_reg (\GEN_AW_PIPE_DUAL.GEN_AWADDR[9].axi_awaddr_pipe_reg ),
-        .\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg (I_WRAP_BRST_n_16),
-        .\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] (I_WRAP_BRST_n_19),
-        .\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] (I_WRAP_BRST_n_20),
-        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] (\GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ),
-        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] (\GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_4_n_0 ),
-        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] (I_WRAP_BRST_n_14),
+        .\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg (I_WRAP_BRST_n_20),
+        .\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] (I_WRAP_BRST_n_21),
+        .\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] (I_WRAP_BRST_n_22),
+        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] (\GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3_n_0 ),
+        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] (I_WRAP_BRST_n_15),
+        .\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] (\GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_2_n_0 ),
         .Q(wr_data_sm_cs),
         .SR(I_WRAP_BRST_n_0),
         .aw_active(aw_active),
@@ -5854,8 +5859,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .axi_awsize_pipe(axi_awsize_pipe),
         .bram_addr_a(bram_addr_a[9:0]),
         .bram_addr_ld_en(bram_addr_ld_en),
-        .bram_addr_ld_en_mod(bram_addr_ld_en_mod),
-        .\bvalid_cnt_reg[2] (I_WRAP_BRST_n_17),
+        .\bvalid_cnt_reg[2] (I_WRAP_BRST_n_18),
         .curr_awlen_reg_1_or_2(curr_awlen_reg_1_or_2),
         .curr_fixed_burst_reg(curr_fixed_burst_reg),
         .curr_wrap_burst_reg(curr_wrap_burst_reg),
@@ -5866,10 +5870,9 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .s_axi_awlen(s_axi_awlen[3:0]),
         .s_axi_awvalid(s_axi_awvalid),
         .s_axi_wvalid(s_axi_wvalid),
-        .\save_init_bram_addr_ld_reg[12]_0 (p_1_in),
-        .\save_init_bram_addr_ld_reg[12]_1 (axi_aresetn_d3),
-        .\save_init_bram_addr_ld_reg[12]_2 (bvalid_cnt),
-        .\save_init_bram_addr_ld_reg[12]_3 (\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
+        .\save_init_bram_addr_ld_reg[14]_0 (axi_aresetn_d3),
+        .\save_init_bram_addr_ld_reg[14]_1 (bvalid_cnt),
+        .\save_init_bram_addr_ld_reg[14]_2 (\GEN_AW_PIPE_DUAL.axi_awburst_pipe_fixed_reg_n_0 ),
         .wr_addr_sm_cs(wr_addr_sm_cs),
         .\wrap_burst_total_reg[0]_0 (axi_awlen_pipe[3:0]),
         .\wrap_burst_total_reg[0]_1 (\wrap_burst_total_reg[0] ));
@@ -5878,26 +5881,19 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
     \axi_bid_int_reg[0] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(BID_FIFO_n_3),
+        .D(BID_FIFO_n_5),
         .Q(s_axi_bid),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
-  LUT3 #(
-    .INIT(8'h8A)) 
+  LUT6 #(
+    .INIT(64'hA8AAA8A8AAAAAAAA)) 
     axi_bvalid_int_i_1
        (.I0(s_axi_aresetn),
-        .I1(axi_bvalid_int_i_2_n_0),
-        .I2(BID_FIFO_n_1),
-        .O(axi_bvalid_int_i_1_n_0));
-  LUT5 #(
-    .INIT(32'hEFFFEEEE)) 
-    axi_bvalid_int_i_2
-       (.I0(bvalid_cnt[2]),
-        .I1(bvalid_cnt[1]),
-        .I2(s_axi_bready),
-        .I3(axi_bvalid_int_reg_0),
+        .I1(bvalid_cnt[2]),
+        .I2(bvalid_cnt[1]),
+        .I3(BID_FIFO_n_1),
         .I4(bvalid_cnt[0]),
-        .O(axi_bvalid_int_i_2_n_0));
+        .I5(BID_FIFO_n_0),
+        .O(axi_bvalid_int_i_1_n_0));
   FDRE #(
     .INIT(1'b0)) 
     axi_bvalid_int_reg
@@ -5914,24 +5910,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .I2(axi_wr_burst),
         .O(axi_wr_burst_i_1_n_0));
   LUT6 #(
-    .INIT(64'h00030003F4F74447)) 
+    .INIT(64'h0003FF8B0003008B)) 
     axi_wr_burst_i_2
-       (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2_n_0 ),
+       (.I0(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
         .I1(wr_data_sm_cs[1]),
-        .I2(wr_data_sm_cs[0]),
-        .I3(s_axi_wlast),
-        .I4(s_axi_wvalid),
-        .I5(wr_data_sm_cs[2]),
+        .I2(s_axi_wlast),
+        .I3(wr_data_sm_cs[0]),
+        .I4(wr_data_sm_cs[2]),
+        .I5(s_axi_wvalid),
         .O(axi_wr_burst_cmb));
   LUT6 #(
-    .INIT(64'h400C44CC400C400C)) 
+    .INIT(64'h440C400C400C400C)) 
     axi_wr_burst_i_3
        (.I0(wr_data_sm_cs[2]),
         .I1(s_axi_wvalid),
         .I2(wr_data_sm_cs[0]),
         .I3(wr_data_sm_cs[1]),
-        .I4(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[0]_i_2_n_0 ),
-        .I5(s_axi_wlast),
+        .I4(s_axi_wlast),
+        .I5(\FSM_sequential_GEN_WDATA_SM_NO_ECC_DUAL_REG_WREADY.wr_data_sm_cs[1]_i_3_n_0 ),
         .O(axi_wr_burst_i_3_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -5941,7 +5937,6 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(axi_wr_burst_i_1_n_0),
         .Q(axi_wr_burst),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT2 #(
     .INIT(4'h2)) 
     axi_wready_int_mod_i_1
@@ -5956,6 +5951,18 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(axi_wready_int_mod_i_1_n_0),
         .Q(s_axi_wready),
         .R(1'b0));
+  LUT2 #(
+    .INIT(4'hE)) 
+    bid_gets_fifo_load_d1_i_2
+       (.I0(bvalid_cnt[1]),
+        .I1(bvalid_cnt[2]),
+        .O(bid_gets_fifo_load_d1_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h7)) 
+    bid_gets_fifo_load_d1_i_3
+       (.I0(axi_bvalid_int_reg_0),
+        .I1(s_axi_bready),
+        .O(bid_gets_fifo_load_d1_i_3_n_0));
   FDRE #(
     .INIT(1'b0)) 
     bid_gets_fifo_load_d1_reg
@@ -5964,41 +5971,40 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(bid_gets_fifo_load),
         .Q(bid_gets_fifo_load_d1),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \bvalid_cnt[0]_i_1 
        (.I0(bvalid_cnt[0]),
         .O(\bvalid_cnt[0]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hA5A5A5A5A45A5A5A)) 
+    .INIT(64'hEA15EA1515EA15AA)) 
     \bvalid_cnt[1]_i_1 
-       (.I0(bvalid_cnt[0]),
-        .I1(bvalid_cnt[2]),
-        .I2(bvalid_cnt[1]),
-        .I3(s_axi_bready),
-        .I4(axi_bvalid_int_reg_0),
-        .I5(BID_FIFO_n_1),
+       (.I0(BID_FIFO_n_0),
+        .I1(axi_bvalid_int_reg_0),
+        .I2(s_axi_bready),
+        .I3(bvalid_cnt[0]),
+        .I4(bvalid_cnt[2]),
+        .I5(bvalid_cnt[1]),
         .O(\bvalid_cnt[1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFE00000001FFFFFF)) 
+    .INIT(64'h9595959595959555)) 
     \bvalid_cnt[2]_i_1 
-       (.I0(bvalid_cnt[0]),
-        .I1(bvalid_cnt[2]),
-        .I2(bvalid_cnt[1]),
-        .I3(s_axi_bready),
-        .I4(axi_bvalid_int_reg_0),
-        .I5(BID_FIFO_n_1),
+       (.I0(BID_FIFO_n_0),
+        .I1(axi_bvalid_int_reg_0),
+        .I2(s_axi_bready),
+        .I3(bvalid_cnt[0]),
+        .I4(bvalid_cnt[2]),
+        .I5(bvalid_cnt[1]),
         .O(\bvalid_cnt[2]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hC9C9C9C9C86C6C6C)) 
+    .INIT(64'hEAFF1500FF1500AA)) 
     \bvalid_cnt[2]_i_2 
-       (.I0(bvalid_cnt[0]),
-        .I1(bvalid_cnt[2]),
-        .I2(bvalid_cnt[1]),
-        .I3(s_axi_bready),
-        .I4(axi_bvalid_int_reg_0),
-        .I5(BID_FIFO_n_1),
+       (.I0(BID_FIFO_n_0),
+        .I1(axi_bvalid_int_reg_0),
+        .I2(s_axi_bready),
+        .I3(bvalid_cnt[0]),
+        .I4(bvalid_cnt[2]),
+        .I5(bvalid_cnt[1]),
         .O(\bvalid_cnt[2]_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -6025,31 +6031,33 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .Q(bvalid_cnt[2]),
         .R(\wrap_burst_total_reg[0] ));
   LUT6 #(
-    .INIT(64'h0002000002020202)) 
+    .INIT(64'h000000000000FF1F)) 
     curr_awlen_reg_1_or_2_i_1
-       (.I0(curr_awlen_reg_1_or_2_i_2_n_0),
-        .I1(I_WRAP_BRST_n_20),
-        .I2(I_WRAP_BRST_n_19),
-        .I3(s_axi_awlen[1]),
-        .I4(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ),
+       (.I0(s_axi_awlen[7]),
+        .I1(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_1_or_2_i_2_n_0 ),
+        .I2(s_axi_awvalid),
+        .I3(axi_awaddr_full),
+        .I4(curr_awlen_reg_1_or_2_i_2_n_0),
         .I5(curr_awlen_reg_1_or_2_i_3_n_0),
         .O(curr_awlen_reg_1_or_20));
-  LUT6 #(
-    .INIT(64'h00000001FFFFFFFF)) 
+  LUT5 #(
+    .INIT(32'hFFFEAAAA)) 
     curr_awlen_reg_1_or_2_i_2
-       (.I0(axi_awlen_pipe[4]),
-        .I1(axi_awlen_pipe[7]),
-        .I2(axi_awlen_pipe[6]),
-        .I3(axi_awlen_pipe[1]),
-        .I4(axi_awlen_pipe[5]),
-        .I5(axi_awaddr_full),
+       (.I0(I_WRAP_BRST_n_21),
+        .I1(axi_awlen_pipe[6]),
+        .I2(axi_awlen_pipe[1]),
+        .I3(axi_awlen_pipe[7]),
+        .I4(axi_awaddr_full),
         .O(curr_awlen_reg_1_or_2_i_2_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT6 #(
+    .INIT(64'hFFEAFFEAFFEAAAEA)) 
     curr_awlen_reg_1_or_2_i_3
-       (.I0(s_axi_awvalid),
-        .I1(axi_awaddr_full),
+       (.I0(I_WRAP_BRST_n_22),
+        .I1(s_axi_awlen[1]),
+        .I2(s_axi_awvalid),
+        .I3(axi_awaddr_full),
+        .I4(axi_awlen_pipe[5]),
+        .I5(axi_awlen_pipe[4]),
         .O(curr_awlen_reg_1_or_2_i_3_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -6059,15 +6067,15 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(curr_awlen_reg_1_or_20),
         .Q(curr_awlen_reg_1_or_2),
         .R(\wrap_burst_total_reg[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT5 #(
     .INIT(32'h00053305)) 
     curr_fixed_burst_reg_i_1
-       (.I0(s_axi_awburst[0]),
-        .I1(axi_awburst_pipe[0]),
-        .I2(s_axi_awburst[1]),
+       (.I0(s_axi_awburst[1]),
+        .I1(axi_awburst_pipe[1]),
+        .I2(s_axi_awburst[0]),
         .I3(axi_awaddr_full),
-        .I4(axi_awburst_pipe[1]),
+        .I4(axi_awburst_pipe[0]),
         .O(curr_fixed_burst));
   FDRE #(
     .INIT(1'b0)) 
@@ -6077,7 +6085,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wr_chnl
         .D(curr_fixed_burst),
         .Q(curr_fixed_burst_reg),
         .R(I_WRAP_BRST_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT5 #(
     .INIT(32'h000ACC0A)) 
     curr_wrap_burst_reg_i_1
@@ -6099,27 +6107,25 @@ endmodule
 
 module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
    (SR,
-    bram_addr_ld_en_mod,
-    E,
     D,
-    \save_init_bram_addr_ld_reg[12]_0 ,
-    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ,
     bram_addr_ld_en,
-    \GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ,
+    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ,
+    E,
     \bvalid_cnt_reg[2] ,
     \GEN_AW_DUAL.wr_addr_sm_cs_reg ,
+    \GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ,
     \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ,
     \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ,
     Q,
     s_axi_wvalid,
     s_axi_aresetn,
-    curr_fixed_burst_reg,
     bram_addr_a,
     \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ,
-    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ,
     axi_awaddr_full,
     s_axi_awaddr,
+    \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ,
+    curr_fixed_burst_reg,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[5].axi_awaddr_pipe_reg ,
@@ -6130,15 +6136,17 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ,
     \GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ,
-    \save_init_bram_addr_ld_reg[12]_1 ,
-    last_data_ack_mod,
+    \GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ,
+    \GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ,
+    \save_init_bram_addr_ld_reg[14]_0 ,
     aw_active,
-    \save_init_bram_addr_ld_reg[12]_2 ,
-    \save_init_bram_addr_ld_reg[12]_3 ,
-    curr_awlen_reg_1_or_2,
-    axi_awlen_pipe_1_or_2,
+    last_data_ack_mod,
     wr_addr_sm_cs,
     s_axi_awvalid,
+    \save_init_bram_addr_ld_reg[14]_1 ,
+    curr_awlen_reg_1_or_2,
+    \save_init_bram_addr_ld_reg[14]_2 ,
+    axi_awlen_pipe_1_or_2,
     curr_wrap_burst_reg,
     axi_awsize_pipe,
     \wrap_burst_total_reg[0]_0 ,
@@ -6146,27 +6154,25 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     \wrap_burst_total_reg[0]_1 ,
     s_axi_aclk);
   output [0:0]SR;
-  output bram_addr_ld_en_mod;
-  output [0:0]E;
-  output [9:0]D;
-  output [0:0]\save_init_bram_addr_ld_reg[12]_0 ;
-  output \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ;
+  output [12:0]D;
   output bram_addr_ld_en;
-  output \GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ;
+  output \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ;
+  output [1:0]E;
   output \bvalid_cnt_reg[2] ;
   output \GEN_AW_DUAL.wr_addr_sm_cs_reg ;
+  output \GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ;
   output \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ;
   output \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ;
   input [2:0]Q;
   input s_axi_wvalid;
   input s_axi_aresetn;
-  input curr_fixed_burst_reg;
   input [9:0]bram_addr_a;
   input \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
-  input \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ;
   input axi_awaddr_full;
-  input [10:0]s_axi_awaddr;
+  input [12:0]s_axi_awaddr;
+  input \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ;
+  input curr_fixed_burst_reg;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[5].axi_awaddr_pipe_reg ;
@@ -6177,15 +6183,17 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ;
   input \GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ;
-  input \save_init_bram_addr_ld_reg[12]_1 ;
-  input last_data_ack_mod;
+  input \GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ;
+  input \GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ;
+  input \save_init_bram_addr_ld_reg[14]_0 ;
   input aw_active;
-  input [2:0]\save_init_bram_addr_ld_reg[12]_2 ;
-  input \save_init_bram_addr_ld_reg[12]_3 ;
-  input curr_awlen_reg_1_or_2;
-  input axi_awlen_pipe_1_or_2;
+  input last_data_ack_mod;
   input wr_addr_sm_cs;
   input s_axi_awvalid;
+  input [2:0]\save_init_bram_addr_ld_reg[14]_1 ;
+  input curr_awlen_reg_1_or_2;
+  input \save_init_bram_addr_ld_reg[14]_2 ;
+  input axi_awlen_pipe_1_or_2;
   input curr_wrap_burst_reg;
   input [0:0]axi_awsize_pipe;
   input [3:0]\wrap_burst_total_reg[0]_0 ;
@@ -6193,12 +6201,14 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
   input \wrap_burst_total_reg[0]_1 ;
   input s_axi_aclk;
 
-  wire [9:0]D;
-  wire [0:0]E;
+  wire [12:0]D;
+  wire [1:0]E;
   wire \GEN_AW_DUAL.wr_addr_sm_cs_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ;
+  wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ;
+  wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ;
   wire \GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ;
@@ -6210,11 +6220,13 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
   wire \GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ;
   wire \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ;
   wire \GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ;
-  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3_n_0 ;
-  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ;
-  wire \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_6_n_0 ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_7_n_0 ;
   wire \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
   wire \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ;
+  wire \GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ;
   wire [2:0]Q;
   wire [0:0]SR;
   wire aw_active;
@@ -6223,194 +6235,232 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
   wire [0:0]axi_awsize_pipe;
   wire [9:0]bram_addr_a;
   wire bram_addr_ld_en;
-  wire bram_addr_ld_en_mod;
   wire \bvalid_cnt_reg[2] ;
   wire curr_awlen_reg_1_or_2;
   wire curr_fixed_burst_reg;
   wire curr_wrap_burst_reg;
-  wire [10:1]data0;
+  wire [12:1]data0;
   wire last_data_ack_mod;
   wire [8:0]p_1_in;
   wire s_axi_aclk;
   wire s_axi_aresetn;
-  wire [10:0]s_axi_awaddr;
+  wire [12:0]s_axi_awaddr;
   wire [3:0]s_axi_awlen;
   wire s_axi_awvalid;
   wire s_axi_wvalid;
-  wire \save_init_bram_addr_ld[12]_i_6_n_0 ;
   wire \save_init_bram_addr_ld[3]_i_2_n_0 ;
   wire \save_init_bram_addr_ld[4]_i_2_n_0 ;
   wire \save_init_bram_addr_ld[5]_i_2_n_0 ;
-  wire [0:0]\save_init_bram_addr_ld_reg[12]_0 ;
-  wire \save_init_bram_addr_ld_reg[12]_1 ;
-  wire [2:0]\save_init_bram_addr_ld_reg[12]_2 ;
-  wire \save_init_bram_addr_ld_reg[12]_3 ;
+  wire \save_init_bram_addr_ld_reg[14]_0 ;
+  wire [2:0]\save_init_bram_addr_ld_reg[14]_1 ;
+  wire \save_init_bram_addr_ld_reg[14]_2 ;
   wire wr_addr_sm_cs;
   wire [2:0]wrap_burst_total;
   wire \wrap_burst_total[0]_i_1__0_n_0 ;
   wire \wrap_burst_total[0]_i_2__0_n_0 ;
   wire \wrap_burst_total[0]_i_3_n_0 ;
   wire \wrap_burst_total[1]_i_1__0_n_0 ;
+  wire \wrap_burst_total[1]_i_3__0_n_0 ;
   wire \wrap_burst_total[2]_i_1__0_n_0 ;
   wire \wrap_burst_total[2]_i_2__0_n_0 ;
   wire [3:0]\wrap_burst_total_reg[0]_0 ;
   wire \wrap_burst_total_reg[0]_1 ;
 
   LUT6 #(
-    .INIT(64'h8BB8B8B8B8B8B8B8)) 
+    .INIT(64'h6AAAFFFF6AAA0000)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_1 
-       (.I0(p_1_in[7]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[8]),
-        .I3(bram_addr_a[6]),
-        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ),
-        .I5(bram_addr_a[7]),
+       (.I0(bram_addr_a[8]),
+        .I1(bram_addr_a[6]),
+        .I2(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ),
+        .I3(bram_addr_a[7]),
+        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I5(p_1_in[7]),
         .O(D[8]));
   LUT6 #(
-    .INIT(64'h00000002FFFFFFFF)) 
+    .INIT(64'h55555555555D5555)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_1 
-       (.I0(Q[2]),
-        .I1(s_axi_wvalid),
-        .I2(Q[1]),
-        .I3(Q[0]),
-        .I4(bram_addr_ld_en_mod),
-        .I5(s_axi_aresetn),
-        .O(SR));
-  LUT6 #(
-    .INIT(64'hAAAAAAAAAAAEAAAA)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_2 
-       (.I0(bram_addr_ld_en_mod),
+       (.I0(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
         .I1(s_axi_wvalid),
         .I2(Q[0]),
         .I3(Q[2]),
         .I4(Q[1]),
         .I5(curr_fixed_burst_reg),
-        .O(E));
+        .O(E[0]));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT5 #(
-    .INIT(32'h8BB8B8B8)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3 
-       (.I0(p_1_in[8]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[9]),
-        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ),
-        .I4(bram_addr_a[8]),
+    .INIT(32'h6AFF6A00)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_2 
+       (.I0(bram_addr_a[9]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ),
+        .I2(bram_addr_a[8]),
+        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I4(p_1_in[8]),
         .O(D[9]));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1 
+       (.I0(data0[10]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
+        .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ),
+        .I3(axi_awaddr_full),
+        .I4(s_axi_awaddr[10]),
+        .O(D[10]));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[13]_i_1 
+       (.I0(data0[11]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
+        .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[13].axi_awaddr_pipe_reg ),
+        .I3(axi_awaddr_full),
+        .I4(s_axi_awaddr[11]),
+        .O(D[11]));
   LUT6 #(
-    .INIT(64'hAAAAAAAAAAAEAAAA)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_2 
-       (.I0(bram_addr_ld_en),
-        .I1(s_axi_wvalid),
-        .I2(Q[0]),
+    .INIT(64'h01000000FFFFFFFF)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_1 
+       (.I0(Q[0]),
+        .I1(Q[1]),
+        .I2(s_axi_wvalid),
         .I3(Q[2]),
-        .I4(Q[1]),
-        .I5(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3_n_0 ),
-        .O(bram_addr_ld_en_mod));
+        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I5(s_axi_aresetn),
+        .O(SR));
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_2 
+       (.I0(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .O(E[1]));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3 
+       (.I0(data0[12]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
+        .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[14].axi_awaddr_pipe_reg ),
+        .I3(axi_awaddr_full),
+        .I4(s_axi_awaddr[12]),
+        .O(D[12]));
   LUT6 #(
-    .INIT(64'h55555555FFDFFFFF)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3 
+    .INIT(64'h5555554555555555)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4 
+       (.I0(bram_addr_ld_en),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_6_n_0 ),
+        .I2(s_axi_wvalid),
+        .I3(Q[0]),
+        .I4(Q[2]),
+        .I5(Q[1]),
+        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5 
+       (.I0(bram_addr_ld_en),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_6_n_0 ),
+        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h55555555FFFFF7FF)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_6 
        (.I0(curr_wrap_burst_reg),
-        .I1(wrap_burst_total[0]),
-        .I2(wrap_burst_total[2]),
-        .I3(wrap_burst_total[1]),
-        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
-        .I5(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ),
-        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3_n_0 ));
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+        .I2(wrap_burst_total[0]),
+        .I3(wrap_burst_total[2]),
+        .I4(wrap_burst_total[1]),
+        .I5(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_7_n_0 ),
+        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_6_n_0 ));
   LUT6 #(
-    .INIT(64'h000000008F00A000)) 
-    \GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4 
+    .INIT(64'h000000008FA00000)) 
+    \GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_7 
        (.I0(bram_addr_a[1]),
         .I1(bram_addr_a[2]),
         .I2(wrap_burst_total[1]),
-        .I3(bram_addr_a[0]),
-        .I4(wrap_burst_total[0]),
+        .I3(wrap_burst_total[0]),
+        .I4(bram_addr_a[0]),
         .I5(wrap_burst_total[2]),
-        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ));
+        .O(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_7_n_0 ));
   LUT6 #(
-    .INIT(64'hB800B800B800FFFF)) 
+    .INIT(64'hF4FFF44444444444)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[2]_i_1 
-       (.I0(\GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ),
-        .I1(axi_awaddr_full),
-        .I2(s_axi_awaddr[0]),
-        .I3(bram_addr_ld_en),
-        .I4(bram_addr_ld_en_mod),
-        .I5(bram_addr_a[0]),
+       (.I0(bram_addr_a[0]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[2].axi_awaddr_pipe_reg ),
+        .I3(axi_awaddr_full),
+        .I4(s_axi_awaddr[0]),
+        .I5(bram_addr_ld_en),
         .O(D[0]));
   LUT4 #(
-    .INIT(16'h8BB8)) 
+    .INIT(16'h6F60)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_1 
-       (.I0(p_1_in[0]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[1]),
-        .I3(bram_addr_a[0]),
+       (.I0(bram_addr_a[0]),
+        .I1(bram_addr_a[1]),
+        .I2(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I3(p_1_in[0]),
         .O(D[1]));
   LUT5 #(
-    .INIT(32'h8BB8B8B8)) 
+    .INIT(32'h6AFF6A00)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_1 
-       (.I0(p_1_in[1]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[2]),
-        .I3(bram_addr_a[0]),
-        .I4(bram_addr_a[1]),
+       (.I0(bram_addr_a[2]),
+        .I1(bram_addr_a[1]),
+        .I2(bram_addr_a[0]),
+        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I4(p_1_in[1]),
         .O(D[2]));
   LUT6 #(
-    .INIT(64'h8BB8B8B8B8B8B8B8)) 
+    .INIT(64'h6AAAFFFF6AAA0000)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_1 
-       (.I0(p_1_in[2]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[3]),
-        .I3(bram_addr_a[1]),
-        .I4(bram_addr_a[0]),
-        .I5(bram_addr_a[2]),
+       (.I0(bram_addr_a[3]),
+        .I1(bram_addr_a[0]),
+        .I2(bram_addr_a[1]),
+        .I3(bram_addr_a[2]),
+        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I5(p_1_in[2]),
         .O(D[3]));
   LUT4 #(
-    .INIT(16'h8BB8)) 
+    .INIT(16'h6F60)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_1 
-       (.I0(p_1_in[3]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[4]),
-        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+       (.I0(bram_addr_a[4]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+        .I2(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I3(p_1_in[3]),
         .O(D[4]));
   LUT5 #(
-    .INIT(32'h8BB8B8B8)) 
+    .INIT(32'h6AFF6A00)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_1 
-       (.I0(p_1_in[4]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[5]),
-        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
-        .I4(bram_addr_a[4]),
+       (.I0(bram_addr_a[5]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+        .I2(bram_addr_a[4]),
+        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I4(p_1_in[4]),
         .O(D[5]));
   LUT6 #(
-    .INIT(64'h8BB8B8B8B8B8B8B8)) 
+    .INIT(64'h6AAAFFFF6AAA0000)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_1 
-       (.I0(p_1_in[5]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[6]),
-        .I3(bram_addr_a[4]),
-        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
-        .I5(bram_addr_a[5]),
+       (.I0(bram_addr_a[6]),
+        .I1(bram_addr_a[4]),
+        .I2(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+        .I3(bram_addr_a[5]),
+        .I4(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I5(p_1_in[5]),
         .O(D[6]));
   LUT4 #(
     .INIT(16'h8000)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_2 
        (.I0(bram_addr_a[3]),
-        .I1(bram_addr_a[1]),
-        .I2(bram_addr_a[0]),
+        .I1(bram_addr_a[0]),
+        .I2(bram_addr_a[1]),
         .I3(bram_addr_a[2]),
         .O(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ));
   LUT5 #(
-    .INIT(32'h8BB8B8B8)) 
+    .INIT(32'h6AFF6A00)) 
     \GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_1 
-       (.I0(p_1_in[6]),
-        .I1(bram_addr_ld_en_mod),
-        .I2(bram_addr_a[7]),
-        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ),
-        .I4(bram_addr_a[6]),
+       (.I0(bram_addr_a[7]),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ),
+        .I2(bram_addr_a[6]),
+        .I3(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I4(p_1_in[6]),
         .O(D[7]));
   LUT5 #(
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[10]_i_1 
        (.I0(data0[8]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[10].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[8]),
@@ -6419,64 +6469,49 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[11]_i_1 
        (.I0(data0[9]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[11].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[9]),
         .O(p_1_in[8]));
   LUT6 #(
-    .INIT(64'h00200020002000AA)) 
-    \save_init_bram_addr_ld[12]_i_1 
-       (.I0(\save_init_bram_addr_ld_reg[12]_1 ),
-        .I1(\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ),
-        .I2(last_data_ack_mod),
-        .I3(\bvalid_cnt_reg[2] ),
-        .I4(aw_active),
-        .I5(\GEN_AW_DUAL.wr_addr_sm_cs_reg ),
+    .INIT(64'h0002000222220002)) 
+    \save_init_bram_addr_ld[14]_i_1 
+       (.I0(\save_init_bram_addr_ld_reg[14]_0 ),
+        .I1(\bvalid_cnt_reg[2] ),
+        .I2(aw_active),
+        .I3(\GEN_AW_DUAL.wr_addr_sm_cs_reg ),
+        .I4(last_data_ack_mod),
+        .I5(\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ),
         .O(bram_addr_ld_en));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \save_init_bram_addr_ld[12]_i_2 
-       (.I0(data0[10]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
-        .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[12].axi_awaddr_pipe_reg ),
-        .I3(axi_awaddr_full),
-        .I4(s_axi_awaddr[10]),
-        .O(\save_init_bram_addr_ld_reg[12]_0 ));
-  LUT4 #(
-    .INIT(16'hFFFD)) 
-    \save_init_bram_addr_ld[12]_i_3 
-       (.I0(axi_awaddr_full),
-        .I1(\save_init_bram_addr_ld_reg[12]_3 ),
-        .I2(curr_awlen_reg_1_or_2),
-        .I3(axi_awlen_pipe_1_or_2),
-        .O(\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ));
   LUT3 #(
     .INIT(8'h80)) 
-    \save_init_bram_addr_ld[12]_i_4 
-       (.I0(\save_init_bram_addr_ld_reg[12]_2 [2]),
-        .I1(\save_init_bram_addr_ld_reg[12]_2 [1]),
-        .I2(\save_init_bram_addr_ld_reg[12]_2 [0]),
+    \save_init_bram_addr_ld[14]_i_2 
+       (.I0(\save_init_bram_addr_ld_reg[14]_1 [2]),
+        .I1(\save_init_bram_addr_ld_reg[14]_1 [0]),
+        .I2(\save_init_bram_addr_ld_reg[14]_1 [1]),
         .O(\bvalid_cnt_reg[2] ));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT3 #(
     .INIT(8'hAB)) 
-    \save_init_bram_addr_ld[12]_i_5 
+    \save_init_bram_addr_ld[14]_i_3 
        (.I0(wr_addr_sm_cs),
-        .I1(axi_awaddr_full),
-        .I2(s_axi_awvalid),
+        .I1(s_axi_awvalid),
+        .I2(axi_awaddr_full),
         .O(\GEN_AW_DUAL.wr_addr_sm_cs_reg ));
-  LUT2 #(
-    .INIT(4'h1)) 
-    \save_init_bram_addr_ld[12]_i_6 
-       (.I0(bram_addr_ld_en),
-        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3_n_0 ),
-        .O(\save_init_bram_addr_ld[12]_i_6_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFD)) 
+    \save_init_bram_addr_ld[14]_i_4 
+       (.I0(axi_awaddr_full),
+        .I1(curr_awlen_reg_1_or_2),
+        .I2(\save_init_bram_addr_ld_reg[14]_2 ),
+        .I3(axi_awlen_pipe_1_or_2),
+        .O(\GEN_AW_PIPE_DUAL.axi_awaddr_full_reg ));
   LUT5 #(
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[3]_i_1 
        (.I0(\save_init_bram_addr_ld[3]_i_2_n_0 ),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[3].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[1]),
@@ -6493,12 +6528,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[4]_i_1 
        (.I0(\save_init_bram_addr_ld[4]_i_2_n_0 ),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[4].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[2]),
         .O(p_1_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT4 #(
     .INIT(16'hA28A)) 
     \save_init_bram_addr_ld[4]_i_2 
@@ -6512,12 +6547,12 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     \save_init_bram_addr_ld[5]_i_1 
        (.I0(data0[3]),
         .I1(\save_init_bram_addr_ld[5]_i_2_n_0 ),
-        .I2(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I2(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I3(\GEN_AW_PIPE_DUAL.GEN_AWADDR[5].axi_awaddr_pipe_reg ),
         .I4(axi_awaddr_full),
         .I5(s_axi_awaddr[3]),
         .O(p_1_in[2]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \save_init_bram_addr_ld[5]_i_2 
@@ -6529,7 +6564,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[6]_i_1 
        (.I0(data0[4]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[6].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[4]),
@@ -6538,7 +6573,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[7]_i_1 
        (.I0(data0[5]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[7].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[5]),
@@ -6547,7 +6582,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[8]_i_1 
        (.I0(data0[6]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[8].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[6]),
@@ -6556,7 +6591,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[9]_i_1 
        (.I0(data0[7]),
-        .I1(\save_init_bram_addr_ld[12]_i_6_n_0 ),
+        .I1(\GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_5_n_0 ),
         .I2(\GEN_AW_PIPE_DUAL.GEN_AWADDR[9].axi_awaddr_pipe_reg ),
         .I3(axi_awaddr_full),
         .I4(s_axi_awaddr[7]),
@@ -6582,8 +6617,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
     \save_init_bram_addr_ld_reg[12] 
        (.C(s_axi_aclk),
         .CE(bram_addr_ld_en),
-        .D(\save_init_bram_addr_ld_reg[12]_0 ),
+        .D(D[10]),
         .Q(data0[10]),
+        .R(\wrap_burst_total_reg[0]_1 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \save_init_bram_addr_ld_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en),
+        .D(D[11]),
+        .Q(data0[11]),
+        .R(\wrap_burst_total_reg[0]_1 ));
+  FDRE #(
+    .INIT(1'b0)) 
+    \save_init_bram_addr_ld_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en),
+        .D(D[12]),
+        .Q(data0[12]),
         .R(\wrap_burst_total_reg[0]_1 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -6642,78 +6693,84 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst
         .Q(data0[7]),
         .R(\wrap_burst_total_reg[0]_1 ));
   LUT6 #(
-    .INIT(64'h0000000009090809)) 
+    .INIT(64'h0090009000800090)) 
     \wrap_burst_total[0]_i_1__0 
        (.I0(\wrap_burst_total[0]_i_2__0_n_0 ),
         .I1(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ),
         .I2(\wrap_burst_total[0]_i_3_n_0 ),
-        .I3(axi_awaddr_full),
-        .I4(axi_awsize_pipe),
-        .I5(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
+        .I3(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
+        .I4(axi_awaddr_full),
+        .I5(axi_awsize_pipe),
         .O(\wrap_burst_total[0]_i_1__0_n_0 ));
   LUT4 #(
-    .INIT(16'hF088)) 
-    \wrap_burst_total[0]_i_2__0 
-       (.I0(s_axi_awvalid),
-        .I1(s_axi_awlen[1]),
-        .I2(\wrap_burst_total_reg[0]_0 [1]),
-        .I3(axi_awaddr_full),
-        .O(\wrap_burst_total[0]_i_2__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
-  LUT4 #(
-    .INIT(16'h0F77)) 
-    \wrap_burst_total[0]_i_3 
-       (.I0(s_axi_awvalid),
-        .I1(s_axi_awlen[0]),
-        .I2(\wrap_burst_total_reg[0]_0 [0]),
-        .I3(axi_awaddr_full),
-        .O(\wrap_burst_total[0]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT5 #(
-    .INIT(32'h08A200A2)) 
-    \wrap_burst_total[1]_i_1__0 
-       (.I0(\wrap_burst_total[2]_i_2__0_n_0 ),
-        .I1(axi_awaddr_full),
-        .I2(axi_awsize_pipe),
-        .I3(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
-        .I4(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ),
-        .O(\wrap_burst_total[1]_i_1__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
-  LUT5 #(
-    .INIT(32'h80880000)) 
-    \wrap_burst_total[2]_i_1__0 
-       (.I0(\wrap_burst_total[2]_i_2__0_n_0 ),
-        .I1(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
-        .I2(axi_awsize_pipe),
-        .I3(axi_awaddr_full),
-        .I4(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ),
-        .O(\wrap_burst_total[2]_i_1__0_n_0 ));
-  LUT6 #(
-    .INIT(64'hAC0CA000A000A000)) 
-    \wrap_burst_total[2]_i_2__0 
-       (.I0(\wrap_burst_total_reg[0]_0 [1]),
-        .I1(s_axi_awlen[1]),
-        .I2(axi_awaddr_full),
-        .I3(\wrap_burst_total_reg[0]_0 [0]),
-        .I4(s_axi_awlen[0]),
-        .I5(s_axi_awvalid),
-        .O(\wrap_burst_total[2]_i_2__0_n_0 ));
-  LUT4 #(
     .INIT(16'hB888)) 
-    \wrap_burst_total[2]_i_3__0 
-       (.I0(\wrap_burst_total_reg[0]_0 [3]),
+    \wrap_burst_total[0]_i_2__0 
+       (.I0(\wrap_burst_total_reg[0]_0 [1]),
         .I1(axi_awaddr_full),
         .I2(s_axi_awvalid),
-        .I3(s_axi_awlen[3]),
-        .O(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ));
+        .I3(s_axi_awlen[1]),
+        .O(\wrap_burst_total[0]_i_2__0_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT4 #(
     .INIT(16'hB888)) 
-    \wrap_burst_total[2]_i_4 
+    \wrap_burst_total[0]_i_3 
+       (.I0(\wrap_burst_total_reg[0]_0 [0]),
+        .I1(axi_awaddr_full),
+        .I2(s_axi_awvalid),
+        .I3(s_axi_awlen[0]),
+        .O(\wrap_burst_total[0]_i_3_n_0 ));
+  LUT5 #(
+    .INIT(32'h0800F300)) 
+    \wrap_burst_total[1]_i_1__0 
+       (.I0(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ),
+        .I1(axi_awaddr_full),
+        .I2(axi_awsize_pipe),
+        .I3(\wrap_burst_total[1]_i_3__0_n_0 ),
+        .I4(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
+        .O(\wrap_burst_total[1]_i_1__0_n_0 ));
+  LUT4 #(
+    .INIT(16'hB888)) 
+    \wrap_burst_total[1]_i_2__0 
        (.I0(\wrap_burst_total_reg[0]_0 [2]),
         .I1(axi_awaddr_full),
         .I2(s_axi_awvalid),
         .I3(s_axi_awlen[2]),
         .O(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[2] ));
+  LUT6 #(
+    .INIT(64'hCCCCA0000000A000)) 
+    \wrap_burst_total[1]_i_3__0 
+       (.I0(s_axi_awlen[0]),
+        .I1(\wrap_burst_total_reg[0]_0 [0]),
+        .I2(s_axi_awlen[1]),
+        .I3(s_axi_awvalid),
+        .I4(axi_awaddr_full),
+        .I5(\wrap_burst_total_reg[0]_0 [1]),
+        .O(\wrap_burst_total[1]_i_3__0_n_0 ));
+  LUT4 #(
+    .INIT(16'hB888)) 
+    \wrap_burst_total[1]_i_4__0 
+       (.I0(\wrap_burst_total_reg[0]_0 [3]),
+        .I1(axi_awaddr_full),
+        .I2(s_axi_awvalid),
+        .I3(s_axi_awlen[3]),
+        .O(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ));
+  LUT3 #(
+    .INIT(8'h8A)) 
+    \wrap_burst_total[2]_i_1__0 
+       (.I0(\wrap_burst_total[2]_i_2__0_n_0 ),
+        .I1(axi_awsize_pipe),
+        .I2(axi_awaddr_full),
+        .O(\wrap_burst_total[2]_i_1__0_n_0 ));
+  LUT6 #(
+    .INIT(64'h8088800080008000)) 
+    \wrap_burst_total[2]_i_2__0 
+       (.I0(\wrap_burst_total[1]_i_3__0_n_0 ),
+        .I1(\GEN_AW_PIPE_DUAL.axi_awlen_pipe_reg[3] ),
+        .I2(\wrap_burst_total_reg[0]_0 [2]),
+        .I3(axi_awaddr_full),
+        .I4(s_axi_awvalid),
+        .I5(s_axi_awlen[2]),
+        .O(\wrap_burst_total[2]_i_2__0_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \wrap_burst_total_reg[0] 
@@ -6744,29 +6801,28 @@ endmodule
 module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
    (SR,
     E,
-    \GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ,
     bram_addr_ld_en,
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ,
+    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ,
     D,
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ,
-    \save_init_bram_addr_ld_reg[12]_0 ,
-    \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg ,
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ,
+    \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg ,
     \GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ,
-    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ,
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ,
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] ,
+    Q,
     end_brst_rd,
-    axi_b2b_brst,
     brst_zero,
+    \save_init_bram_addr_ld_reg[14]_0 ,
     s_axi_rready,
-    \save_init_bram_addr_ld_reg[12]_1 ,
+    axi_b2b_brst,
     s_axi_aresetn,
     curr_fixed_burst_reg,
-    Q,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ,
     axi_araddr_full,
     s_axi_araddr,
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ,
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ,
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] ,
@@ -6789,54 +6845,54 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ,
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10]_0 ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ,
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ,
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 ,
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_1 ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ,
     \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ,
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ,
+    \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ,
     curr_wrap_burst_reg,
-    \save_init_bram_addr_ld_reg[12]_2 ,
-    \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 ,
+    \GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg ,
     axi_aresetn_d3,
     last_bram_addr,
-    axi_arsize_pipe_max,
-    disable_b2b_brst,
-    axi_arlen_pipe_1_or_2,
-    \save_init_bram_addr_ld_reg[12]_3 ,
     axi_rd_burst,
+    axi_arsize_pipe_max,
+    axi_arlen_pipe_1_or_2,
+    \save_init_bram_addr_ld_reg[14]_1 ,
+    disable_b2b_brst,
     rd_addr_sm_cs,
-    no_ar_ack,
-    pend_rd_op,
-    ar_active,
     s_axi_arvalid,
-    \wrap_burst_total_reg[1]_0 ,
+    no_ar_ack,
+    ar_active,
+    pend_rd_op,
     axi_arsize_pipe,
+    \wrap_burst_total_reg[0]_0 ,
     s_axi_arlen,
     s_axi_aclk);
   output [0:0]SR;
-  output [0:0]E;
-  output \GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ;
+  output [1:0]E;
   output bram_addr_ld_en;
-  output \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ;
-  output [9:0]D;
-  output \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ;
-  output [0:0]\save_init_bram_addr_ld_reg[12]_0 ;
-  output \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg ;
   output \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ;
+  output [12:0]D;
+  output \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ;
+  output \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg ;
   output \GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg ;
   output \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ;
-  output \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ;
   output \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ;
+  output \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ;
+  output \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] ;
+  input [3:0]Q;
   input end_brst_rd;
-  input axi_b2b_brst;
   input brst_zero;
+  input \save_init_bram_addr_ld_reg[14]_0 ;
   input s_axi_rready;
-  input \save_init_bram_addr_ld_reg[12]_1 ;
+  input axi_b2b_brst;
   input s_axi_aresetn;
   input curr_fixed_burst_reg;
-  input [9:0]Q;
   input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ;
   input axi_araddr_full;
-  input [10:0]s_axi_araddr;
+  input [12:0]s_axi_araddr;
+  input [9:0]\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
   input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] ;
   input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ;
   input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] ;
@@ -6859,38 +6915,39 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ;
   input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10]_0 ;
   input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ;
-  input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
   input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 ;
+  input \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_1 ;
   input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ;
   input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ;
+  input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ;
+  input \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ;
   input curr_wrap_burst_reg;
-  input [3:0]\save_init_bram_addr_ld_reg[12]_2 ;
-  input \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 ;
+  input \GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg ;
   input axi_aresetn_d3;
   input last_bram_addr;
-  input axi_arsize_pipe_max;
-  input disable_b2b_brst;
-  input axi_arlen_pipe_1_or_2;
-  input \save_init_bram_addr_ld_reg[12]_3 ;
   input axi_rd_burst;
+  input axi_arsize_pipe_max;
+  input axi_arlen_pipe_1_or_2;
+  input \save_init_bram_addr_ld_reg[14]_1 ;
+  input disable_b2b_brst;
   input rd_addr_sm_cs;
-  input no_ar_ack;
-  input pend_rd_op;
-  input ar_active;
   input s_axi_arvalid;
-  input [3:0]\wrap_burst_total_reg[1]_0 ;
+  input no_ar_ack;
+  input ar_active;
+  input pend_rd_op;
   input [0:0]axi_arsize_pipe;
+  input [3:0]\wrap_burst_total_reg[0]_0 ;
   input [3:0]s_axi_arlen;
   input s_axi_aclk;
 
-  wire [9:0]D;
-  wire [0:0]E;
-  wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 ;
+  wire [12:0]D;
+  wire [1:0]E;
   wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ;
-  wire \FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg ;
@@ -6899,19 +6956,23 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[7].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_6_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_7_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_8_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10]_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
+  wire [9:0]\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_1 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4]_0 ;
@@ -6925,10 +6986,10 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8]_0 ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ;
   wire \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9]_0 ;
-  wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg ;
+  wire \GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg ;
+  wire \GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg ;
   wire \GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg ;
-  wire \GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ;
-  wire [9:0]Q;
+  wire [3:0]Q;
   wire [0:0]SR;
   wire ar_active;
   wire axi_araddr_full;
@@ -6949,17 +7010,16 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   wire pend_rd_op;
   wire rd_addr_sm_cs;
   wire s_axi_aclk;
-  wire [10:0]s_axi_araddr;
+  wire [12:0]s_axi_araddr;
   wire s_axi_aresetn;
   wire [3:0]s_axi_arlen;
   wire s_axi_arvalid;
   wire s_axi_rready;
   wire \save_init_bram_addr_ld[10]_i_1__0_n_0 ;
   wire \save_init_bram_addr_ld[11]_i_1__0_n_0 ;
-  wire \save_init_bram_addr_ld[12]_i_2__0_n_0 ;
-  wire \save_init_bram_addr_ld[12]_i_3__0_n_0 ;
-  wire \save_init_bram_addr_ld[12]_i_4__0_n_0 ;
-  wire \save_init_bram_addr_ld[12]_i_6__0_n_0 ;
+  wire \save_init_bram_addr_ld[14]_i_2__0_n_0 ;
+  wire \save_init_bram_addr_ld[14]_i_3__0_n_0 ;
+  wire \save_init_bram_addr_ld[14]_i_4__0_n_0 ;
   wire \save_init_bram_addr_ld[3]_i_1__0_n_0 ;
   wire \save_init_bram_addr_ld[4]_i_1__0_n_0 ;
   wire \save_init_bram_addr_ld[5]_i_1__0_n_0 ;
@@ -6967,12 +7027,13 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   wire \save_init_bram_addr_ld[7]_i_1__0_n_0 ;
   wire \save_init_bram_addr_ld[8]_i_1__0_n_0 ;
   wire \save_init_bram_addr_ld[9]_i_1__0_n_0 ;
-  wire [0:0]\save_init_bram_addr_ld_reg[12]_0 ;
-  wire \save_init_bram_addr_ld_reg[12]_1 ;
-  wire [3:0]\save_init_bram_addr_ld_reg[12]_2 ;
-  wire \save_init_bram_addr_ld_reg[12]_3 ;
+  wire \save_init_bram_addr_ld_reg[14]_0 ;
+  wire \save_init_bram_addr_ld_reg[14]_1 ;
   wire \save_init_bram_addr_ld_reg_n_0_[10] ;
   wire \save_init_bram_addr_ld_reg_n_0_[11] ;
+  wire \save_init_bram_addr_ld_reg_n_0_[12] ;
+  wire \save_init_bram_addr_ld_reg_n_0_[13] ;
+  wire \save_init_bram_addr_ld_reg_n_0_[14] ;
   wire \save_init_bram_addr_ld_reg_n_0_[3] ;
   wire \save_init_bram_addr_ld_reg_n_0_[4] ;
   wire \save_init_bram_addr_ld_reg_n_0_[5] ;
@@ -6981,129 +7042,158 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   wire \save_init_bram_addr_ld_reg_n_0_[8] ;
   wire \save_init_bram_addr_ld_reg_n_0_[9] ;
   wire \wrap_burst_total[0]_i_1_n_0 ;
-  wire \wrap_burst_total[0]_i_3__0_n_0 ;
-  wire \wrap_burst_total[0]_i_4_n_0 ;
+  wire \wrap_burst_total[0]_i_2_n_0 ;
   wire \wrap_burst_total[1]_i_1_n_0 ;
   wire \wrap_burst_total[2]_i_1_n_0 ;
   wire \wrap_burst_total[2]_i_2_n_0 ;
-  wire [3:0]\wrap_burst_total_reg[1]_0 ;
+  wire [3:0]\wrap_burst_total_reg[0]_0 ;
   wire \wrap_burst_total_reg_n_0_[0] ;
   wire \wrap_burst_total_reg_n_0_[1] ;
   wire \wrap_burst_total_reg_n_0_[2] ;
 
   LUT6 #(
-    .INIT(64'hFFFBFFFFFFFFFFFF)) 
-    \GEN_NO_RD_CMD_OPT.GEN_ARREADY.axi_early_arready_int_i_2 
-       (.I0(\save_init_bram_addr_ld_reg[12]_2 [1]),
-        .I1(\save_init_bram_addr_ld_reg[12]_2 [2]),
-        .I2(brst_zero),
-        .I3(end_brst_rd),
-        .I4(\save_init_bram_addr_ld_reg[12]_1 ),
-        .I5(s_axi_rready),
-        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ));
-  LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[10]_i_1 
-       (.I0(Q[8]),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[10] ),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[10] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [8]),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[10]_0 ),
         .O(D[8]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
-    .INIT(16'hEEEF)) 
+    .INIT(16'hEFEE)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I1(bram_addr_ld_en),
-        .I2(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ),
-        .I3(curr_fixed_burst_reg),
-        .O(E));
+        .I2(curr_fixed_burst_reg),
+        .I3(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ),
+        .O(E[0]));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_2 
-       (.I0(Q[9]),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] ),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[11] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[11] ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_0 ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [9]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11]_1 ),
         .O(D[9]));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFBEA0000)) 
+    .INIT(64'h0000000001FF0DFF)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_3 
-       (.I0(\save_init_bram_addr_ld_reg[12]_2 [2]),
-        .I1(\save_init_bram_addr_ld_reg[12]_2 [1]),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_6_n_0 ),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg ),
-        .I4(\save_init_bram_addr_ld_reg[12]_2 [0]),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_8_n_0 ),
-        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg ),
+        .I1(Q[1]),
+        .I2(Q[2]),
+        .I3(Q[0]),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_6_n_0 ),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_7_n_0 ),
+        .O(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
     .INIT(32'hF2FFFFFF)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_6 
        (.I0(end_brst_rd),
         .I1(axi_b2b_brst),
         .I2(brst_zero),
-        .I3(s_axi_rready),
-        .I4(\save_init_bram_addr_ld_reg[12]_1 ),
+        .I3(\save_init_bram_addr_ld_reg[14]_0 ),
+        .I4(s_axi_rready),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_6_n_0 ));
-  LUT2 #(
-    .INIT(4'h1)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_7 
-       (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 ),
-        .I1(axi_rd_burst),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_two_reg ));
   LUT6 #(
     .INIT(64'hBBBBBABBAAAAAAAA)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_7 
+       (.I0(Q[3]),
+        .I1(Q[0]),
+        .I2(\GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg ),
+        .I3(Q[1]),
+        .I4(Q[2]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_8_n_0 ),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFDFFFFFFFFFFFF)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_8 
-       (.I0(\save_init_bram_addr_ld_reg[12]_2 [3]),
-        .I1(\save_init_bram_addr_ld_reg[12]_2 [0]),
-        .I2(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs[0]_i_2 ),
-        .I3(\save_init_bram_addr_ld_reg[12]_2 [1]),
-        .I4(\save_init_bram_addr_ld_reg[12]_2 [2]),
-        .I5(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ),
+       (.I0(Q[2]),
+        .I1(Q[1]),
+        .I2(end_brst_rd),
+        .I3(brst_zero),
+        .I4(\save_init_bram_addr_ld_reg[14]_0 ),
+        .I5(s_axi_rready),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[11]_i_8_n_0 ));
   LUT5 #(
-    .INIT(32'h44444000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_3 
-       (.I0(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[2] ),
-        .I1(curr_wrap_burst_reg),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
-        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ),
-        .O(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ));
-  LUT6 #(
-    .INIT(64'h000000008F00A000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4 
-       (.I0(Q[1]),
-        .I1(Q[2]),
-        .I2(\wrap_burst_total_reg_n_0_[1] ),
-        .I3(Q[0]),
-        .I4(\wrap_burst_total_reg_n_0_[0] ),
-        .I5(\wrap_burst_total_reg_n_0_[2] ),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h5055500011111111)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[2]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I1(Q[0]),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ),
+    .INIT(32'hB8BBB888)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[12]_i_1 
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[12] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
-        .I4(s_axi_araddr[0]),
-        .I5(bram_addr_ld_en),
+        .I4(s_axi_araddr[10]),
+        .O(D[10]));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[13]_i_1 
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[13] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[13].axi_araddr_pipe_reg ),
+        .I3(axi_araddr_full),
+        .I4(s_axi_araddr[11]),
+        .O(D[11]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_1 
+       (.I0(bram_addr_ld_en),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .O(E[1]));
+  LUT5 #(
+    .INIT(32'hB8BBB888)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_2 
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[14] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[14].axi_araddr_pipe_reg ),
+        .I3(axi_araddr_full),
+        .I4(s_axi_araddr[12]),
+        .O(D[12]));
+  LUT5 #(
+    .INIT(32'hF8000000)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ),
+        .I3(\FSM_sequential_GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg[1] ),
+        .I4(curr_wrap_burst_reg),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h5040004010400040)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4 
+       (.I0(\wrap_burst_total_reg_n_0_[2] ),
+        .I1(\wrap_burst_total_reg_n_0_[0] ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [0]),
+        .I3(\wrap_burst_total_reg_n_0_[1] ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [1]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [2]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h00000000B8B800FF)) 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[2]_i_1 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[2].axi_araddr_pipe_reg ),
+        .I1(axi_araddr_full),
+        .I2(s_axi_araddr[0]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [0]),
+        .I4(bram_addr_ld_en),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .O(D[0]));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_1 
-       (.I0(Q[1]),
-        .I1(Q[0]),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[3] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [0]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [1]),
         .O(D[1]));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'hA08A)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2 
@@ -7113,90 +7203,95 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
         .I3(\wrap_burst_total_reg_n_0_[1] ),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_1 
-       (.I0(Q[2]),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [2]),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[4]_0 ),
         .O(D[2]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'hA28A)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[4] ),
         .I1(\wrap_burst_total_reg_n_0_[0] ),
         .I2(\wrap_burst_total_reg_n_0_[2] ),
         .I3(\wrap_burst_total_reg_n_0_[1] ),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ));
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'h0E0EFE0E0202F202)) 
+    .INIT(64'h2222F0FF2222F000)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_0 ),
-        .I1(bram_addr_ld_en),
-        .I2(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I3(\save_init_bram_addr_ld_reg_n_0_[5] ),
-        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[5] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_0 ),
+        .I3(bram_addr_ld_en),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5]_1 ),
         .O(D[3]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'h04)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3 
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2 
        (.I0(\wrap_burst_total_reg_n_0_[1] ),
         .I1(\wrap_burst_total_reg_n_0_[2] ),
         .I2(\wrap_burst_total_reg_n_0_[0] ),
-        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ));
+        .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_1 
-       (.I0(Q[4]),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[6] ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[6] ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[6] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [4]),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ),
         .O(D[4]));
   LUT4 #(
     .INIT(16'h8000)) 
-    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_2 
-       (.I0(Q[3]),
-        .I1(Q[1]),
-        .I2(Q[0]),
-        .I3(Q[2]),
+    \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[6]_i_3 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [3]),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [0]),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [1]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [2]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[5] ));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[7]_i_1 
-       (.I0(Q[5]),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[7] ),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[7] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [5]),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[7]_0 ),
         .O(D[5]));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[8]_i_1 
-       (.I0(Q[6]),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[8] ),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[8] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [6]),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[8]_0 ),
         .O(D[6]));
   LUT6 #(
-    .INIT(64'hFFF600F6FF060006)) 
+    .INIT(64'hAAC0AACFAACFAAC0)) 
     \GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[9]_i_1 
-       (.I0(Q[7]),
+       (.I0(\save_init_bram_addr_ld_reg_n_0_[9] ),
         .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9] ),
         .I2(bram_addr_ld_en),
-        .I3(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I4(\save_init_bram_addr_ld_reg_n_0_[9] ),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[11] [7]),
         .I5(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int_reg[9]_0 ),
         .O(D[7]));
+  LUT2 #(
+    .INIT(4'h1)) 
+    \GEN_NO_RD_CMD_OPT.act_rd_burst_i_6 
+       (.I0(axi_rd_burst),
+        .I1(\GEN_NO_RD_CMD_OPT.act_rd_burst_two_reg ),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_RD_BURST_NORL.axi_rd_burst_reg ));
   LUT1 #(
     .INIT(2'h1)) 
     bram_rst_b_INST_0
@@ -7206,7 +7301,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[10]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[10] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[10].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[8]),
@@ -7215,70 +7310,61 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[11]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[11] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[11].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[9]),
         .O(\save_init_bram_addr_ld[11]_i_1__0_n_0 ));
   LUT6 #(
-    .INIT(64'h00000008AAAAAAAA)) 
-    \save_init_bram_addr_ld[12]_i_1__0 
+    .INIT(64'h8888888A88888888)) 
+    \save_init_bram_addr_ld[14]_i_1__0 
        (.I0(axi_aresetn_d3),
-        .I1(last_bram_addr),
-        .I2(\save_init_bram_addr_ld[12]_i_3__0_n_0 ),
-        .I3(\save_init_bram_addr_ld[12]_i_4__0_n_0 ),
+        .I1(\save_init_bram_addr_ld[14]_i_2__0_n_0 ),
+        .I2(\save_init_bram_addr_ld[14]_i_3__0_n_0 ),
+        .I3(\save_init_bram_addr_ld[14]_i_4__0_n_0 ),
         .I4(\GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg ),
-        .I5(\save_init_bram_addr_ld[12]_i_6__0_n_0 ),
+        .I5(last_bram_addr),
         .O(bram_addr_ld_en));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
-    \save_init_bram_addr_ld[12]_i_2__0 
-       (.I0(\save_init_bram_addr_ld_reg[12]_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
-        .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[12].axi_araddr_pipe_reg ),
-        .I3(axi_araddr_full),
-        .I4(s_axi_araddr[10]),
-        .O(\save_init_bram_addr_ld[12]_i_2__0_n_0 ));
-  LUT4 #(
-    .INIT(16'h0040)) 
-    \save_init_bram_addr_ld[12]_i_3__0 
-       (.I0(\save_init_bram_addr_ld_reg[12]_2 [3]),
-        .I1(\save_init_bram_addr_ld_reg[12]_2 [2]),
-        .I2(\save_init_bram_addr_ld_reg[12]_2 [1]),
-        .I3(\save_init_bram_addr_ld_reg[12]_2 [0]),
-        .O(\save_init_bram_addr_ld[12]_i_3__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT6 #(
+    .INIT(64'h0000000000000054)) 
+    \save_init_bram_addr_ld[14]_i_2__0 
+       (.I0(rd_addr_sm_cs),
+        .I1(axi_araddr_full),
+        .I2(s_axi_arvalid),
+        .I3(no_ar_ack),
+        .I4(ar_active),
+        .I5(pend_rd_op),
+        .O(\save_init_bram_addr_ld[14]_i_2__0_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT3 #(
     .INIT(8'h2A)) 
-    \save_init_bram_addr_ld[12]_i_4__0 
+    \save_init_bram_addr_ld[14]_i_3__0 
        (.I0(brst_zero),
-        .I1(s_axi_rready),
-        .I2(\save_init_bram_addr_ld_reg[12]_1 ),
-        .O(\save_init_bram_addr_ld[12]_i_4__0_n_0 ));
+        .I1(\save_init_bram_addr_ld_reg[14]_0 ),
+        .I2(s_axi_rready),
+        .O(\save_init_bram_addr_ld[14]_i_3__0_n_0 ));
+  LUT4 #(
+    .INIT(16'h0040)) 
+    \save_init_bram_addr_ld[14]_i_4__0 
+       (.I0(Q[3]),
+        .I1(Q[2]),
+        .I2(Q[1]),
+        .I3(Q[0]),
+        .O(\save_init_bram_addr_ld[14]_i_4__0_n_0 ));
   LUT5 #(
     .INIT(32'hFFFFFFF7)) 
-    \save_init_bram_addr_ld[12]_i_5__0 
+    \save_init_bram_addr_ld[14]_i_5 
        (.I0(axi_arsize_pipe_max),
         .I1(axi_araddr_full),
-        .I2(disable_b2b_brst),
-        .I3(axi_arlen_pipe_1_or_2),
-        .I4(\save_init_bram_addr_ld_reg[12]_3 ),
+        .I2(axi_arlen_pipe_1_or_2),
+        .I3(\save_init_bram_addr_ld_reg[14]_1 ),
+        .I4(disable_b2b_brst),
         .O(\GEN_NO_RD_CMD_OPT.axi_arsize_pipe_max_reg ));
-  LUT6 #(
-    .INIT(64'hFFFEFFFEFFFEFFFF)) 
-    \save_init_bram_addr_ld[12]_i_6__0 
-       (.I0(rd_addr_sm_cs),
-        .I1(no_ar_ack),
-        .I2(pend_rd_op),
-        .I3(ar_active),
-        .I4(axi_araddr_full),
-        .I5(s_axi_arvalid),
-        .O(\save_init_bram_addr_ld[12]_i_6__0_n_0 ));
   LUT5 #(
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[3]_i_1__0 
        (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[3]_i_2_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[3].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[1]),
@@ -7286,8 +7372,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
   LUT5 #(
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[4]_i_1__0 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_3_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[4]_i_2_n_0 ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[4].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[2]),
@@ -7296,8 +7382,8 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(64'h2F202F2F2F202020)) 
     \save_init_bram_addr_ld[5]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[5] ),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_3_n_0 ),
-        .I2(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[5]_i_2_n_0 ),
+        .I2(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[5].axi_araddr_pipe_reg ),
         .I4(axi_araddr_full),
         .I5(s_axi_araddr[3]),
@@ -7306,7 +7392,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[6]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[6] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[6].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[4]),
@@ -7315,7 +7401,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[7]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[7] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[7].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[5]),
@@ -7324,7 +7410,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[8]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[8] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[8].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[6]),
@@ -7333,7 +7419,7 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     .INIT(32'hB8BBB888)) 
     \save_init_bram_addr_ld[9]_i_1__0 
        (.I0(\save_init_bram_addr_ld_reg_n_0_[9] ),
-        .I1(\GEN_NO_RD_CMD_OPT.curr_wrap_burst_reg_reg ),
+        .I1(\GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[14]_i_3_n_0 ),
         .I2(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.GEN_ARADDR[9].axi_araddr_pipe_reg ),
         .I3(axi_araddr_full),
         .I4(s_axi_araddr[7]),
@@ -7359,8 +7445,24 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
     \save_init_bram_addr_ld_reg[12] 
        (.C(s_axi_aclk),
         .CE(bram_addr_ld_en),
-        .D(\save_init_bram_addr_ld[12]_i_2__0_n_0 ),
-        .Q(\save_init_bram_addr_ld_reg[12]_0 ),
+        .D(D[10]),
+        .Q(\save_init_bram_addr_ld_reg_n_0_[12] ),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \save_init_bram_addr_ld_reg[13] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en),
+        .D(D[11]),
+        .Q(\save_init_bram_addr_ld_reg_n_0_[13] ),
+        .R(SR));
+  FDRE #(
+    .INIT(1'b0)) 
+    \save_init_bram_addr_ld_reg[14] 
+       (.C(s_axi_aclk),
+        .CE(bram_addr_ld_en),
+        .D(D[12]),
+        .Q(\save_init_bram_addr_ld_reg_n_0_[14] ),
         .R(SR));
   FDRE #(
     .INIT(1'b0)) 
@@ -7419,84 +7521,85 @@ module NFC_4Channel_bd_axi_bram_ctrl_0_1_wrap_brst_0
         .Q(\save_init_bram_addr_ld_reg_n_0_[9] ),
         .R(SR));
   LUT6 #(
-    .INIT(64'h3202000001010000)) 
+    .INIT(64'hE21D0000E2110000)) 
     \wrap_burst_total[0]_i_1 
-       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ),
-        .I2(\wrap_burst_total[0]_i_3__0_n_0 ),
-        .I3(\wrap_burst_total_reg[1]_0 [2]),
-        .I4(\wrap_burst_total[0]_i_4_n_0 ),
-        .I5(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ),
+       (.I0(s_axi_arlen[2]),
+        .I1(axi_araddr_full),
+        .I2(\wrap_burst_total_reg[0]_0 [2]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ),
+        .I4(\wrap_burst_total[0]_i_2_n_0 ),
+        .I5(axi_arsize_pipe),
         .O(\wrap_burst_total[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h000ACC0A)) 
+    \wrap_burst_total[0]_i_2 
+       (.I0(s_axi_arlen[0]),
+        .I1(\wrap_burst_total_reg[0]_0 [0]),
+        .I2(s_axi_arlen[3]),
+        .I3(axi_araddr_full),
+        .I4(\wrap_burst_total_reg[0]_0 [3]),
+        .O(\wrap_burst_total[0]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'h0800F30000000000)) 
+    \wrap_burst_total[1]_i_1 
+       (.I0(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ),
+        .I1(axi_araddr_full),
+        .I2(axi_arsize_pipe),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] ),
+        .O(\wrap_burst_total[1]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \wrap_burst_total[0]_i_2 
-       (.I0(\wrap_burst_total_reg[1]_0 [2]),
+    \wrap_burst_total[1]_i_2 
+       (.I0(\wrap_burst_total_reg[0]_0 [2]),
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[2]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \wrap_burst_total[0]_i_3__0 
-       (.I0(axi_araddr_full),
-        .I1(axi_arsize_pipe),
-        .O(\wrap_burst_total[0]_i_3__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \wrap_burst_total[0]_i_4 
-       (.I0(\wrap_burst_total_reg[1]_0 [0]),
-        .I1(axi_araddr_full),
-        .I2(s_axi_arlen[0]),
-        .O(\wrap_burst_total[0]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \wrap_burst_total[0]_i_5 
-       (.I0(\wrap_burst_total_reg[1]_0 [1]),
+    \wrap_burst_total[1]_i_3 
+       (.I0(\wrap_burst_total_reg[0]_0 [1]),
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[1]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ));
-  LUT6 #(
-    .INIT(64'h220A880A000A880A)) 
-    \wrap_burst_total[1]_i_1 
-       (.I0(\wrap_burst_total[2]_i_2_n_0 ),
-        .I1(axi_arsize_pipe),
-        .I2(s_axi_arlen[3]),
-        .I3(axi_araddr_full),
-        .I4(\wrap_burst_total_reg[1]_0 [3]),
-        .I5(\wrap_burst_total_reg[1]_0 [2]),
-        .O(\wrap_burst_total[1]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'h8800000080808080)) 
-    \wrap_burst_total[2]_i_1 
-       (.I0(\wrap_burst_total[2]_i_2_n_0 ),
-        .I1(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ),
-        .I2(s_axi_arlen[2]),
-        .I3(\wrap_burst_total_reg[1]_0 [2]),
-        .I4(axi_arsize_pipe),
-        .I5(axi_araddr_full),
-        .O(\wrap_burst_total[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'hCCA000A0)) 
-    \wrap_burst_total[2]_i_2 
-       (.I0(s_axi_arlen[0]),
-        .I1(\wrap_burst_total_reg[1]_0 [0]),
-        .I2(s_axi_arlen[1]),
-        .I3(axi_araddr_full),
-        .I4(\wrap_burst_total_reg[1]_0 [1]),
-        .O(\wrap_burst_total[2]_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \wrap_burst_total[2]_i_3 
-       (.I0(\wrap_burst_total_reg[1]_0 [3]),
+    \wrap_burst_total[1]_i_4 
+       (.I0(\wrap_burst_total_reg[0]_0 [3]),
         .I1(axi_araddr_full),
         .I2(s_axi_arlen[3]),
         .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \wrap_burst_total[1]_i_5 
+       (.I0(\wrap_burst_total_reg[0]_0 [0]),
+        .I1(axi_araddr_full),
+        .I2(s_axi_arlen[0]),
+        .O(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[0] ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'h8A)) 
+    \wrap_burst_total[2]_i_1 
+       (.I0(\wrap_burst_total[2]_i_2_n_0 ),
+        .I1(axi_arsize_pipe),
+        .I2(axi_araddr_full),
+        .O(\wrap_burst_total[2]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hB800000000000000)) 
+    \wrap_burst_total[2]_i_2 
+       (.I0(\wrap_burst_total_reg[0]_0 [0]),
+        .I1(axi_araddr_full),
+        .I2(s_axi_arlen[0]),
+        .I3(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[1] ),
+        .I4(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[3] ),
+        .I5(\GEN_NO_RD_CMD_OPT.GEN_AR_PIPE_DUAL.axi_arlen_pipe_reg[2] ),
+        .O(\wrap_burst_total[2]_i_2_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \wrap_burst_total_reg[0] 

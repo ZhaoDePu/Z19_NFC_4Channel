@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Apr 22 17:20:43 2026
+// Date        : Fri Apr 24 14:45:03 2026
 // Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top NFC_4Channel_bd_smartconnect_0_0 -prefix
-//               NFC_4Channel_bd_smartconnect_0_0_ NFC_4Channel_bd_smartconnect_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_smartconnect_0_0/NFC_4Channel_bd_smartconnect_0_0_sim_netlist.v
 // Design      : NFC_4Channel_bd_smartconnect_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -569,7 +569,7 @@ module NFC_4Channel_bd_smartconnect_0_0
         .aresetn(aresetn));
 endmodule
 
-(* HW_HANDOFF = "NFC_4Channel_bd_smartconnect_0_0.hwdef" *) 
+(* HW_HANDOFF = "NFC_4Channel_bd_smartconnect_0_0.hwdef" *) (* ORIG_REF_NAME = "bd_84d5" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5
    (M00_AXI_araddr,
     M00_AXI_arprot,
@@ -1342,6 +1342,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5
         .s_sc_payld({M04_AXI_bresp,M03_AXI_bresp,M02_AXI_bresp,M01_AXI_bresp,M00_AXI_bresp}));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_arni_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0
    (S_SC_AR_recv,
     M_SC_AR_send,
@@ -1455,6 +1456,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_arni_0
         .s_sc_send(S_SC_AR_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_awni_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0
    (S_SC_AW_recv,
     M_SC_AW_send,
@@ -1562,12 +1564,13 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_awni_0
         .s_sc_aclken(1'b1),
         .s_sc_aresetn(interconnect_aresetn),
         .s_sc_info(1'b0),
-        .s_sc_payld({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[39:37],1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[36:5],1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[4:0]}),
+        .s_sc_payld({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[39:37],1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[36:5],1'b0,1'b0,1'b0,1'b1,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,S_SC_AW_payld[4:0]}),
         .s_sc_recv(S_SC_AW_recv),
         .s_sc_req(1'b0),
         .s_sc_send(S_SC_AW_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_bni_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0
    (S_SC_B_recv,
     M_SC_B_send,
@@ -1684,6 +1687,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_bni_0
         .s_sc_send(S_SC_B_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_boutsw_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0
    (S_SC_B_payld,
     s_sc_payld,
@@ -1729,6 +1733,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_boutsw_0
         .s_sc_send({1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00arn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0
    (M_SC_AR_send,
     aclk,
@@ -1831,6 +1836,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00arn_0
         .s_sc_send(\gen_r_cmd_reg.s_read_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00awn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0
    (M_SC_AW_send,
     aclk,
@@ -1933,6 +1939,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00awn_0
         .s_sc_send(\gen_w_cmd_reg.s_write_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00bn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0
    (M_SC_B_send,
     M_SC_B_req,
@@ -2040,6 +2047,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00bn_0
         .s_sc_send(M00_AXI_bvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00e_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -2159,7 +2167,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0
   (* C_RDATA_WIDTH = "32" *) 
   (* C_READ_ACCEPTANCE = "32" *) 
   (* C_SINGLE_ISSUING = "1" *) 
-  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) 
+  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) 
   (* C_SSC_ROUTE_WIDTH = "3" *) 
   (* C_S_ID_WIDTH = "4" *) 
   (* C_WDATA_WIDTH = "32" *) 
@@ -2257,6 +2265,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00e_0
         .s_axi_wvalid(M_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00rn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0
    (M_SC_R_send,
     M_SC_R_req,
@@ -2364,6 +2373,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00rn_0
         .s_sc_send(M00_AXI_rvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m00wn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0
    (M_SC_W_send,
     aclk,
@@ -2466,6 +2476,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m00wn_0
         .s_sc_send(M00_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01arn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0
    (M_SC_AR_send,
     aclk,
@@ -2568,6 +2579,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01arn_0
         .s_sc_send(\gen_r_cmd_reg.s_read_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01awn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0
    (M_SC_AW_send,
     aclk,
@@ -2670,6 +2682,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01awn_0
         .s_sc_send(\gen_w_cmd_reg.s_write_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01bn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0
    (M_SC_B_send,
     M_SC_B_req,
@@ -2777,6 +2790,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01bn_0
         .s_sc_send(M01_AXI_bvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01e_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -2896,7 +2910,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0
   (* C_RDATA_WIDTH = "32" *) 
   (* C_READ_ACCEPTANCE = "32" *) 
   (* C_SINGLE_ISSUING = "1" *) 
-  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) 
+  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) 
   (* C_SSC_ROUTE_WIDTH = "3" *) 
   (* C_S_ID_WIDTH = "4" *) 
   (* C_WDATA_WIDTH = "32" *) 
@@ -2994,6 +3008,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01e_0
         .s_axi_wvalid(M_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01rn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0
    (M_SC_R_send,
     M_SC_R_req,
@@ -3101,6 +3116,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01rn_0
         .s_sc_send(M01_AXI_rvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m01wn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0
    (M_SC_W_send,
     aclk,
@@ -3203,6 +3219,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m01wn_0
         .s_sc_send(M01_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02arn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0
    (M_SC_AR_send,
     aclk,
@@ -3305,6 +3322,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02arn_0
         .s_sc_send(\gen_r_cmd_reg.s_read_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02awn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0
    (M_SC_AW_send,
     aclk,
@@ -3407,6 +3425,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02awn_0
         .s_sc_send(\gen_w_cmd_reg.s_write_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02bn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0
    (M_SC_B_send,
     M_SC_B_req,
@@ -3514,6 +3533,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02bn_0
         .s_sc_send(M02_AXI_bvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02e_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -3633,7 +3653,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0
   (* C_RDATA_WIDTH = "32" *) 
   (* C_READ_ACCEPTANCE = "32" *) 
   (* C_SINGLE_ISSUING = "1" *) 
-  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) 
+  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) 
   (* C_SSC_ROUTE_WIDTH = "3" *) 
   (* C_S_ID_WIDTH = "4" *) 
   (* C_WDATA_WIDTH = "32" *) 
@@ -3731,6 +3751,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02e_0
         .s_axi_wvalid(M_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02rn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0
    (M_SC_R_send,
     M_SC_R_req,
@@ -3838,6 +3859,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02rn_0
         .s_sc_send(M02_AXI_rvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m02wn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0
    (M_SC_W_send,
     aclk,
@@ -3940,6 +3962,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m02wn_0
         .s_sc_send(M02_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03arn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0
    (M_SC_AR_send,
     aclk,
@@ -4042,6 +4065,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03arn_0
         .s_sc_send(\gen_r_cmd_reg.s_read_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03awn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0
    (M_SC_AW_send,
     aclk,
@@ -4144,6 +4168,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03awn_0
         .s_sc_send(\gen_w_cmd_reg.s_write_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03bn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0
    (M_SC_B_send,
     M_SC_B_req,
@@ -4251,6 +4276,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03bn_0
         .s_sc_send(M03_AXI_bvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03e_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -4370,7 +4396,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0
   (* C_RDATA_WIDTH = "32" *) 
   (* C_READ_ACCEPTANCE = "32" *) 
   (* C_SINGLE_ISSUING = "1" *) 
-  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) 
+  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) 
   (* C_SSC_ROUTE_WIDTH = "3" *) 
   (* C_S_ID_WIDTH = "4" *) 
   (* C_WDATA_WIDTH = "32" *) 
@@ -4468,6 +4494,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03e_0
         .s_axi_wvalid(M_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03rn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0
    (M_SC_R_send,
     M_SC_R_req,
@@ -4575,6 +4602,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03rn_0
         .s_sc_send(M03_AXI_rvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m03wn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0
    (M_SC_W_send,
     aclk,
@@ -4677,6 +4705,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m03wn_0
         .s_sc_send(M03_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04arn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0
    (M_SC_AR_send,
     aclk,
@@ -4779,6 +4808,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04arn_0
         .s_sc_send(\gen_r_cmd_reg.s_read_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04awn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0
    (M_SC_AW_send,
     aclk,
@@ -4881,6 +4911,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04awn_0
         .s_sc_send(\gen_w_cmd_reg.s_write_cmd_vacancy_i_reg ));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04bn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0
    (M_SC_B_send,
     M_SC_B_req,
@@ -4988,6 +5019,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04bn_0
         .s_sc_send(M04_AXI_bvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04e_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -5107,7 +5139,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0
   (* C_RDATA_WIDTH = "32" *) 
   (* C_READ_ACCEPTANCE = "32" *) 
   (* C_SINGLE_ISSUING = "1" *) 
-  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) 
+  (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) 
   (* C_SSC_ROUTE_WIDTH = "3" *) 
   (* C_S_ID_WIDTH = "4" *) 
   (* C_WDATA_WIDTH = "32" *) 
@@ -5205,6 +5237,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04e_0
         .s_axi_wvalid(M_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04rn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0
    (M_SC_R_send,
     M_SC_R_req,
@@ -5312,6 +5345,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04rn_0
         .s_sc_send(M04_AXI_rvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_m04wn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0
    (M_SC_W_send,
     aclk,
@@ -5414,6 +5448,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_m04wn_0
         .s_sc_send(M04_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_psr_aclk_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0
    (interconnect_aresetn,
     aclk,
@@ -5432,6 +5467,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_psr_aclk_0
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_rni_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0
    (S_SC_R_recv,
     M_SC_R_send,
@@ -5548,6 +5584,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_rni_0
         .s_sc_send(S_SC_R_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_routsw_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0
    (m_sc_payld,
     \gen_single_rank.data_reg[55] ,
@@ -5593,6 +5630,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_routsw_0
         .s_sc_send({1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_s00mmu_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0
    (S00_AXI_awready,
     S00_AXI_wready,
@@ -5925,6 +5963,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00mmu_0
         .s_axi_wvalid(S00_AXI_wvalid));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_s00sic_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0
    (s_axi_awready,
     s_axi_wready,
@@ -6163,7 +6202,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0
         .s_axi_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,m_axi_araddr}),
         .s_axi_arburst({1'b0,1'b0}),
         .s_axi_arcache({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_arid({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_arid({1'b0,1'b0,1'b0,1'b1}),
         .s_axi_arlen(m_axi_arlen),
         .s_axi_arlock(1'b0),
         .s_axi_arprot(m_axi_arprot),
@@ -6175,7 +6214,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0
         .s_axi_awaddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,m_axi_awaddr}),
         .s_axi_awburst({1'b0,1'b0}),
         .s_axi_awcache({1'b0,1'b0,1'b0,1'b0}),
-        .s_axi_awid({1'b0,1'b0,1'b0,1'b0}),
+        .s_axi_awid({1'b0,1'b0,1'b0,1'b1}),
         .s_axi_awlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_awlock(1'b0),
         .s_axi_awprot({1'b0,1'b0,1'b0}),
@@ -6204,6 +6243,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00sic_0
         .s_axi_wvalid(m_axi_awvalid_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_s00tr_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0
    (s_axi_awready,
     s_axi_bid,
@@ -6304,7 +6344,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0
   (* C_ENABLE_PIPELINING = "1'b1" *) 
   (* C_FAMILY = "zynquplus" *) 
   (* C_IS_CASCADED = "0" *) 
-  (* C_MEP_IDENTIFIER = "4'b0000" *) 
+  (* C_MEP_IDENTIFIER = "4'b0001" *) 
   (* C_MEP_IDENTIFIER_WIDTH = "4" *) 
   (* C_M_ID_WIDTH = "4" *) 
   (* C_NUM_READ_OUTSTANDING = "8" *) 
@@ -6376,7 +6416,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0
         .m_axi_wstrb(NLW_inst_m_axi_wstrb_UNCONNECTED[3:0]),
         .m_axi_wuser(NLW_inst_m_axi_wuser_UNCONNECTED[1023:0]),
         .m_axi_wvalid(NLW_inst_m_axi_wvalid_UNCONNECTED),
-        .mep_identifier({1'b0,1'b0,1'b0,1'b0}),
+        .mep_identifier({1'b0,1'b0,1'b0,1'b1}),
         .s_axi_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .s_axi_arburst({1'b0,1'b0}),
         .s_axi_arcache({1'b0,1'b0,1'b0,1'b0}),
@@ -6421,6 +6461,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_s00tr_0
         .s_axi_wvalid(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_sarn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0
    (M_SC_AR_send,
     aclk,
@@ -6523,6 +6564,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sarn_0
         .s_sc_send(S_SC_AR_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_sawn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0
    (M_SC_AW_send,
     aclk,
@@ -6625,6 +6667,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sawn_0
         .s_sc_send(S_SC_AW_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_sbn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0
    (M_SC_B_send,
     aclk,
@@ -6727,6 +6770,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_sbn_0
         .s_sc_send(m_axi_bready_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_srn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0
    (M_SC_R_send,
     aclk,
@@ -6829,6 +6873,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_srn_0
         .s_sc_send(s_axi_rvalid_i_reg));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_swn_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0
    (M_SC_W_send,
     aclk,
@@ -6931,6 +6976,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_swn_0
         .s_sc_send(S_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "bd_84d5_wni_0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0
    (S_SC_W_recv,
     M_SC_W_send,
@@ -7044,6 +7090,7 @@ module NFC_4Channel_bd_smartconnect_0_0_bd_84d5_wni_0
         .s_sc_send(S_SC_W_send));
 endmodule
 
+(* ORIG_REF_NAME = "cdc_sync" *) 
 module NFC_4Channel_bd_smartconnect_0_0_cdc_sync
    (scndry_out,
     aresetn,
@@ -7111,6 +7158,7 @@ module NFC_4Channel_bd_smartconnect_0_0_cdc_sync
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "clk_map_imp_TJ1WQG" *) 
 module NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG
    (interconnect_aresetn,
     aclk,
@@ -7129,6 +7177,7 @@ module NFC_4Channel_bd_smartconnect_0_0_clk_map_imp_TJ1WQG
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "i_nodes_imp_1BL5L3Q" *) 
 module NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q
    (S_SC_AR_recv,
     M_SC_AR_send,
@@ -7288,6 +7337,7 @@ module NFC_4Channel_bd_smartconnect_0_0_i_nodes_imp_1BL5L3Q
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "lpf" *) 
 module NFC_4Channel_bd_smartconnect_0_0_lpf
    (lpf_int,
     aclk,
@@ -7346,6 +7396,7 @@ module NFC_4Channel_bd_smartconnect_0_0_lpf
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "m00_exit_pipeline_imp_14PZQCJ" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -7425,6 +7476,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m00_exit_pipeline_imp_14PZQCJ
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m00_nodes_imp_1I3FPXR" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -7512,6 +7564,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m00_nodes_imp_1I3FPXR
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m01_exit_pipeline_imp_115P1PF" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -7591,6 +7644,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m01_exit_pipeline_imp_115P1PF
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m01_nodes_imp_QMNM2H" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -7678,6 +7732,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m01_nodes_imp_QMNM2H
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m02_exit_pipeline_imp_1GBM5K3" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -7757,6 +7812,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m02_exit_pipeline_imp_1GBM5K3
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m02_nodes_imp_9VJVDU" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -7844,6 +7900,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m02_nodes_imp_9VJVDU
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m03_exit_pipeline_imp_1BNDSGZ" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -7923,6 +7980,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m03_exit_pipeline_imp_1BNDSGZ
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m03_nodes_imp_1GVRPP0" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -8010,6 +8068,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m03_nodes_imp_1GVRPP0
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m04_exit_pipeline_imp_1L9IIAR" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR
    (M_SC_AW_recv,
     M_SC_W_recv,
@@ -8089,6 +8148,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m04_exit_pipeline_imp_1L9IIAR
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "m04_nodes_imp_1OV1OUS" *) 
 module NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -8176,6 +8236,7 @@ module NFC_4Channel_bd_smartconnect_0_0_m04_nodes_imp_1OV1OUS
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "proc_sys_reset" *) 
 module NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset
    (interconnect_aresetn,
     aclk,
@@ -8212,6 +8273,7 @@ module NFC_4Channel_bd_smartconnect_0_0_proc_sys_reset
         .lpf_int(lpf_int));
 endmodule
 
+(* ORIG_REF_NAME = "s00_entry_pipeline_imp_4YY0IO" *) 
 module NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO
    (S00_AXI_awready,
     S00_AXI_wready,
@@ -8506,6 +8568,7 @@ module NFC_4Channel_bd_smartconnect_0_0_s00_entry_pipeline_imp_4YY0IO
         .s_axi_rvalid(s00_mmu_M_AXI_RVALID));
 endmodule
 
+(* ORIG_REF_NAME = "s00_nodes_imp_177IGQ" *) 
 module NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ
    (M_SC_AR_send,
     M_SC_AW_send,
@@ -8577,6 +8640,7 @@ module NFC_4Channel_bd_smartconnect_0_0_s00_nodes_imp_177IGQ
         .interconnect_aresetn(interconnect_aresetn));
 endmodule
 
+(* ORIG_REF_NAME = "sequence_psr" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sequence_psr
    (bsr_reg_0,
     lpf_int,
@@ -8752,6 +8816,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sequence_psr
         .R(lpf_int));
 endmodule
 
+(* ORIG_REF_NAME = "switchboards_imp_UZ6KOE" *) 
 module NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE
    (S_SC_B_recv,
     S_SC_AR_recv,
@@ -8906,6 +8971,7 @@ module NFC_4Channel_bd_smartconnect_0_0_switchboards_imp_UZ6KOE
         .m_sc_payld({r_la_out_swbd_M00_SC_PAYLD[55:24],r_la_out_swbd_M00_SC_PAYLD[22:21]}));
 endmodule
 
+(* ORIG_REF_NAME = "upcnt_n" *) 
 module NFC_4Channel_bd_smartconnect_0_0_upcnt_n
    (Q,
     seq_clr,
@@ -9027,6 +9093,7 @@ module NFC_4Channel_bd_smartconnect_0_0_upcnt_n
         .R(clear));
 endmodule
 
+(* ORIG_REF_NAME = "sc_exit_v1_0_9_exit" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_exit
    (m_axi_awvalid,
     m_axi_arvalid,
@@ -9834,10 +9901,11 @@ endmodule
 (* C_M_RUSER_BITS_PER_BYTE = "0" *) (* C_M_RUSER_WIDTH = "0" *) (* C_M_WUSER_BITS_PER_BYTE = "0" *) 
 (* C_M_WUSER_WIDTH = "0" *) (* C_NUM_MSC = "5" *) (* C_NUM_READ_OUTSTANDING = "8" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_RDATA_WIDTH = "32" *) (* C_READ_ACCEPTANCE = "32" *) 
-(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
+(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
 (* C_S_ID_WIDTH = "4" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_BYPASS = "0" *) (* P_FULLY_PIPELINED = "2" *) 
-(* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) (* P_ZERO_LATENCY = "1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_exit_v1_0_9_top" *) (* P_BYPASS = "0" *) 
+(* P_FULLY_PIPELINED = "2" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
+(* P_ZERO_LATENCY = "1" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top
    (aclk,
     aclken,
@@ -12303,7 +12371,7 @@ endmodule
 (* C_M_RUSER_BITS_PER_BYTE = "0" *) (* C_M_RUSER_WIDTH = "0" *) (* C_M_WUSER_BITS_PER_BYTE = "0" *) 
 (* C_M_WUSER_WIDTH = "0" *) (* C_NUM_MSC = "5" *) (* C_NUM_READ_OUTSTANDING = "8" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_RDATA_WIDTH = "32" *) (* C_READ_ACCEPTANCE = "32" *) 
-(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
+(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
 (* C_S_ID_WIDTH = "4" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
 (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_exit_v1_0_9_top" *) (* P_BYPASS = "0" *) 
 (* P_FULLY_PIPELINED = "2" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
@@ -14773,7 +14841,7 @@ endmodule
 (* C_M_RUSER_BITS_PER_BYTE = "0" *) (* C_M_RUSER_WIDTH = "0" *) (* C_M_WUSER_BITS_PER_BYTE = "0" *) 
 (* C_M_WUSER_WIDTH = "0" *) (* C_NUM_MSC = "5" *) (* C_NUM_READ_OUTSTANDING = "8" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_RDATA_WIDTH = "32" *) (* C_READ_ACCEPTANCE = "32" *) 
-(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
+(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
 (* C_S_ID_WIDTH = "4" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
 (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_exit_v1_0_9_top" *) (* P_BYPASS = "0" *) 
 (* P_FULLY_PIPELINED = "2" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
@@ -17243,7 +17311,7 @@ endmodule
 (* C_M_RUSER_BITS_PER_BYTE = "0" *) (* C_M_RUSER_WIDTH = "0" *) (* C_M_WUSER_BITS_PER_BYTE = "0" *) 
 (* C_M_WUSER_WIDTH = "0" *) (* C_NUM_MSC = "5" *) (* C_NUM_READ_OUTSTANDING = "8" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_RDATA_WIDTH = "32" *) (* C_READ_ACCEPTANCE = "32" *) 
-(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
+(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
 (* C_S_ID_WIDTH = "4" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
 (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_exit_v1_0_9_top" *) (* P_BYPASS = "0" *) 
 (* P_FULLY_PIPELINED = "2" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
@@ -19713,7 +19781,7 @@ endmodule
 (* C_M_RUSER_BITS_PER_BYTE = "0" *) (* C_M_RUSER_WIDTH = "0" *) (* C_M_WUSER_BITS_PER_BYTE = "0" *) 
 (* C_M_WUSER_WIDTH = "0" *) (* C_NUM_MSC = "5" *) (* C_NUM_READ_OUTSTANDING = "8" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_RDATA_WIDTH = "32" *) (* C_READ_ACCEPTANCE = "32" *) 
-(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101101111" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
+(* C_SINGLE_ISSUING = "1" *) (* C_SSC_ROUTE_ARRAY = "48'b101101101101101101101101101101101101101101111101" *) (* C_SSC_ROUTE_WIDTH = "3" *) 
 (* C_S_ID_WIDTH = "4" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
 (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_exit_v1_0_9_top" *) (* P_BYPASS = "0" *) 
 (* P_FULLY_PIPELINED = "2" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
@@ -22219,6 +22287,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_exit_v1_0_9_top__parameterized0
         .O(s_axi_wready));
 endmodule
 
+(* ORIG_REF_NAME = "sc_mmu_v1_0_8_decerr_slave" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_decerr_slave
    (\gen_endpoint.err_awready ,
     \gen_endpoint.err_rvalid ,
@@ -23373,13 +23442,13 @@ endmodule
 (* C_SUPPORTS_WRITE_DECERR = "1" *) (* C_S_ARUSER_WIDTH = "16" *) (* C_S_AWUSER_WIDTH = "16" *) 
 (* C_S_BUSER_WIDTH = "0" *) (* C_S_PROTOCOL = "0" *) (* C_S_RUSER_WIDTH = "0" *) 
 (* C_S_WUSER_WIDTH = "0" *) (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* P_AXI3 = "1" *) (* P_AXI4 = "0" *) 
-(* P_AXILITE = "2" *) (* P_BYPASS = "0" *) (* P_DECERR = "2'b11" *) 
-(* P_FIXED = "2'b00" *) (* P_FULLY_PIPELINED = "2" *) (* P_INCR = "2'b01" *) 
-(* P_NUM_MSC_LOG = "3" *) (* P_NUM_SEG_LOG = "3" *) (* P_R_DWBYTES = "4" *) 
-(* P_R_DWSIZE = "2" *) (* P_R_QUEUE_SIZE = "4" *) (* P_WRAP = "2'b10" *) 
-(* P_W_DWBYTES = "4" *) (* P_W_DWSIZE = "2" *) (* P_W_QUEUE_SIZE = "4" *) 
-(* P_ZERO_LATENCY = "1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "sc_mmu_v1_0_8_top" *) (* P_AXI3 = "1" *) 
+(* P_AXI4 = "0" *) (* P_AXILITE = "2" *) (* P_BYPASS = "0" *) 
+(* P_DECERR = "2'b11" *) (* P_FIXED = "2'b00" *) (* P_FULLY_PIPELINED = "2" *) 
+(* P_INCR = "2'b01" *) (* P_NUM_MSC_LOG = "3" *) (* P_NUM_SEG_LOG = "3" *) 
+(* P_R_DWBYTES = "4" *) (* P_R_DWSIZE = "2" *) (* P_R_QUEUE_SIZE = "4" *) 
+(* P_WRAP = "2'b10" *) (* P_W_DWBYTES = "4" *) (* P_W_DWSIZE = "2" *) 
+(* P_W_QUEUE_SIZE = "4" *) (* P_ZERO_LATENCY = "1" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top
    (aclk,
     aresetn,
@@ -27786,6 +27855,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_mmu_v1_0_8_top
         .O(s_axi_rresp[1]));
 endmodule
 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_arb_alg_rr" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr
    (\grant_i_reg[3]_0 ,
     \grant_i_reg[2]_0 ,
@@ -28553,6 +28623,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_arb_alg_rr_6
         .S(SR));
 endmodule
 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_fi_regulator" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator
    (arb_stall,
     s_sc_aclk,
@@ -28763,6 +28834,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fi_regulator_4
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_fifo" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo
    (\gen_normal_area.fifo_node_payld_full_i ,
     m_sc_send,
@@ -29077,6 +29149,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_fifo__parameterized2
         .s_sc_send(s_sc_send));
 endmodule
 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_mi_handler" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler
    (m_sc_send,
     out,
@@ -30820,6 +30893,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_mi_handler__parameterize
         .R(1'b0));
 endmodule
 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_reg_fifo" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_reg_fifo
    (\gen_normal_area.fifo_node_payld_full_i ,
     m_sc_send,
@@ -32780,7 +32854,7 @@ endmodule
 (* LP_NODE_ROUTE_WIDTH = "7" *) (* LP_NODE_USER_WIDTH = "16" *) (* LP_SYNCHRONIZATION_STAGES = "2" *) 
 (* LP_S_AXIS_REG_SLICE_CONFIG = "0" *) (* LP_S_MAX_NUM_BYTES = "4" *) (* LP_S_MIN_NUM_BYTES = "4" *) 
 (* LP_S_PIPELINE = "0" *) (* LP_S_STATIC_DWIDTH = "1" *) (* LP_ZERO_ROUTE_WIDTH = "0" *) 
-(* P_NUM_OUTSTANDING = "16" *) 
+(* ORIG_REF_NAME = "sc_node_v1_0_10_top" *) (* P_NUM_OUTSTANDING = "16" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top
    (s_sc_aclk,
     s_sc_aclken,
@@ -40777,6 +40851,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_node_v1_0_10_top__parameterized9
         .S(s_sc_areset_pipe));
 endmodule
 
+(* ORIG_REF_NAME = "sc_si_converter_v1_0_9_axilite_conv" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
    (m_axi_bready_i_reg_0,
     s_axi_bvalid_i_reg_0,
@@ -40880,7 +40955,6 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
   wire \ar_addr_d[11]_i_1_n_0 ;
   wire \ar_addr_d[11]_i_3_n_0 ;
   wire \ar_addr_d[11]_i_4_n_0 ;
-  wire \ar_addr_d[31]_i_1_n_0 ;
   wire \ar_addr_d[6]_i_2_n_0 ;
   wire \ar_addr_d[7]_i_2_n_0 ;
   wire [7:0]ar_cnt;
@@ -40953,6 +41027,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
   wire \b_cnt[8]_i_4_n_0 ;
   wire [8:0]b_cnt_reg;
   wire [1:0]f_worst_resp_return;
+  wire m_aruser;
   wire [31:0]m_axi_araddr;
   wire [2:0]m_axi_arprot;
   wire m_axi_arready;
@@ -41320,7 +41395,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
        (.I0(s_axi_arvalid),
         .I1(r_state__0[1]),
         .I2(r_state__0[0]),
-        .O(\ar_addr_d[31]_i_1_n_0 ));
+        .O(m_aruser));
   (* SOFT_HLUTNM = "soft_lutpair144" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
@@ -41432,7 +41507,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[12] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[12]),
         .Q(m_axi_araddr[12]),
         .R(areset));
@@ -41440,7 +41515,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[13] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[13]),
         .Q(m_axi_araddr[13]),
         .R(areset));
@@ -41448,7 +41523,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[14] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[14]),
         .Q(m_axi_araddr[14]),
         .R(areset));
@@ -41456,7 +41531,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[15] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[15]),
         .Q(m_axi_araddr[15]),
         .R(areset));
@@ -41464,7 +41539,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[16] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[16]),
         .Q(m_axi_araddr[16]),
         .R(areset));
@@ -41472,7 +41547,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[17] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[17]),
         .Q(m_axi_araddr[17]),
         .R(areset));
@@ -41480,7 +41555,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[18] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[18]),
         .Q(m_axi_araddr[18]),
         .R(areset));
@@ -41488,7 +41563,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[19] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[19]),
         .Q(m_axi_araddr[19]),
         .R(areset));
@@ -41504,7 +41579,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[20] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[20]),
         .Q(m_axi_araddr[20]),
         .R(areset));
@@ -41512,7 +41587,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[21] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[21]),
         .Q(m_axi_araddr[21]),
         .R(areset));
@@ -41520,7 +41595,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[22] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[22]),
         .Q(m_axi_araddr[22]),
         .R(areset));
@@ -41528,7 +41603,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[23] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[23]),
         .Q(m_axi_araddr[23]),
         .R(areset));
@@ -41536,7 +41611,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[24] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[24]),
         .Q(m_axi_araddr[24]),
         .R(areset));
@@ -41544,7 +41619,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[25] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[25]),
         .Q(m_axi_araddr[25]),
         .R(areset));
@@ -41552,7 +41627,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[26] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[26]),
         .Q(m_axi_araddr[26]),
         .R(areset));
@@ -41560,7 +41635,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[27] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[27]),
         .Q(m_axi_araddr[27]),
         .R(areset));
@@ -41568,7 +41643,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[28] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[28]),
         .Q(m_axi_araddr[28]),
         .R(areset));
@@ -41576,7 +41651,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[29] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[29]),
         .Q(m_axi_araddr[29]),
         .R(areset));
@@ -41592,7 +41667,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[30] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[30]),
         .Q(m_axi_araddr[30]),
         .R(areset));
@@ -41600,7 +41675,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_addr_d_reg[31] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_araddr[31]),
         .Q(m_axi_araddr[31]),
         .R(areset));
@@ -42086,7 +42161,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_size_d_reg[0] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arsize[0]),
         .Q(ar_size_d[0]),
         .R(areset));
@@ -42094,7 +42169,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_size_d_reg[1] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arsize[1]),
         .Q(ar_size_d[1]),
         .R(areset));
@@ -42102,7 +42177,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \ar_size_d_reg[2] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arsize[2]),
         .Q(ar_size_d[2]),
         .R(areset));
@@ -42685,31 +42760,31 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
         .R(\b_cnt[8]_i_1_n_0 ));
   FDRE \m_aruser_reg[sc_route][1] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_aruser[0]),
         .Q(m_axi_aruser[0]),
         .R(areset));
   FDRE \m_aruser_reg[sc_route][2] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_aruser[1]),
         .Q(m_axi_aruser[1]),
         .R(areset));
   FDRE \m_aruser_reg[sc_route][3] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_aruser[2]),
         .Q(m_axi_aruser[2]),
         .R(areset));
   FDRE \m_aruser_reg[sc_route][4] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_aruser[3]),
         .Q(m_axi_aruser[3]),
         .R(areset));
   FDRE \m_aruser_reg[sc_route][5] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_aruser[4]),
         .Q(m_axi_aruser[4]),
         .R(areset));
@@ -42717,7 +42792,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \m_axi_arprot_i_reg[0] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arprot[0]),
         .Q(m_axi_arprot[0]),
         .R(areset));
@@ -42725,7 +42800,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \m_axi_arprot_i_reg[1] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arprot[1]),
         .Q(m_axi_arprot[1]),
         .R(areset));
@@ -42733,7 +42808,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_axilite_conv
     .INIT(1'b0)) 
     \m_axi_arprot_i_reg[2] 
        (.C(aclk),
-        .CE(\ar_addr_d[31]_i_1_n_0 ),
+        .CE(m_aruser),
         .D(s_axi_arprot[2]),
         .Q(m_axi_arprot[2]),
         .R(areset));
@@ -44568,12 +44643,12 @@ endmodule
 (* C_READ_WATERMARK = "0" *) (* C_SEP_PROTOCOL_ARRAY = "160'b0000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010" *) (* C_SEP_RDATA_WIDTH_ARRAY = "160'b0000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000" *) 
 (* C_SEP_WDATA_WIDTH_ARRAY = "160'b0000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000" *) (* C_SINGLE_ISSUING = "1" *) (* C_SUPPORTS_NARROW = "1" *) 
 (* C_S_RUSER_BITS_PER_BYTE = "0" *) (* C_S_WUSER_BITS_PER_BYTE = "0" *) (* C_WDATA_WIDTH = "32" *) 
-(* C_WRITE_ACCEPTANCE = "32" *) (* C_WRITE_WATERMARK = "0" *) (* P_EXOK = "2'b01" *) 
-(* P_FULLY_PIPELINED = "2" *) (* P_ID_WIDTH = "4" *) (* P_MAX_RUSER_BITS_PER_BYTE = "1" *) 
-(* P_MAX_WUSER_BITS_PER_BYTE = "1" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
-(* P_R_DWBYTES = "4" *) (* P_R_DWSIZE = "2" *) (* P_S_RUSER_BITS_PER_BYTE = "1" *) 
-(* P_S_WUSER_BITS_PER_BYTE = "1" *) (* P_W_DWBYTES = "4" *) (* P_W_DWSIZE = "2" *) 
-(* P_ZERO_LATENCY = "1" *) 
+(* C_WRITE_ACCEPTANCE = "32" *) (* C_WRITE_WATERMARK = "0" *) (* ORIG_REF_NAME = "sc_si_converter_v1_0_9_top" *) 
+(* P_EXOK = "2'b01" *) (* P_FULLY_PIPELINED = "2" *) (* P_ID_WIDTH = "4" *) 
+(* P_MAX_RUSER_BITS_PER_BYTE = "1" *) (* P_MAX_WUSER_BITS_PER_BYTE = "1" *) (* P_NUM_READ_OUTSTANDING = "16" *) 
+(* P_NUM_WRITE_OUTSTANDING = "16" *) (* P_R_DWBYTES = "4" *) (* P_R_DWSIZE = "2" *) 
+(* P_S_RUSER_BITS_PER_BYTE = "1" *) (* P_S_WUSER_BITS_PER_BYTE = "1" *) (* P_W_DWBYTES = "4" *) 
+(* P_W_DWSIZE = "2" *) (* P_ZERO_LATENCY = "1" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_si_converter_v1_0_9_top
    (aclk,
     aclken,
@@ -51283,6 +51358,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_switchboard_v1_0_6_top__parameterized
         .O(\m_sc_payld[55]_INST_0_i_3_n_0 ));
 endmodule
 
+(* ORIG_REF_NAME = "sc_transaction_regulator_v1_0_8_singleorder" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleorder
    (s_axi_awready_i_reg,
     s_axi_arready,
@@ -51691,15 +51767,16 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_singleor
 endmodule
 
 (* C_ADDR_WIDTH = "40" *) (* C_ENABLE_PIPELINING = "1'b1" *) (* C_FAMILY = "zynquplus" *) 
-(* C_IS_CASCADED = "0" *) (* C_MEP_IDENTIFIER = "4'b0000" *) (* C_MEP_IDENTIFIER_WIDTH = "4" *) 
+(* C_IS_CASCADED = "0" *) (* C_MEP_IDENTIFIER = "4'b0001" *) (* C_MEP_IDENTIFIER_WIDTH = "4" *) 
 (* C_M_ID_WIDTH = "4" *) (* C_NUM_READ_OUTSTANDING = "8" *) (* C_NUM_READ_THREADS = "1" *) 
 (* C_NUM_WRITE_OUTSTANDING = "8" *) (* C_NUM_WRITE_THREADS = "1" *) (* C_RDATA_WIDTH = "32" *) 
 (* C_READ_ACCEPTANCE = "32" *) (* C_SEP_ROUTE_WIDTH = "3" *) (* C_SINGLE_ISSUING = "1" *) 
 (* C_SUPPORTS_READ_DEADLOCK = "0" *) (* C_SUPPORTS_WRITE_DEADLOCK = "0" *) (* C_S_ID_WIDTH = "16" *) 
 (* C_WDATA_WIDTH = "32" *) (* C_WRITE_ACCEPTANCE = "32" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
-(* P_FULLY_PIPELINED = "2" *) (* P_ID_BUFFER_WIDTH = "16" *) (* P_M_THREAD_ID_WIDTH = "1" *) 
-(* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) (* P_R_QUEUE_SIZE = "4" *) 
-(* P_S_ID_WIDTH = "16" *) (* P_W_QUEUE_SIZE = "4" *) (* P_ZERO_LATENCY = "1" *) 
+(* ORIG_REF_NAME = "sc_transaction_regulator_v1_0_8_top" *) (* P_FULLY_PIPELINED = "2" *) (* P_ID_BUFFER_WIDTH = "16" *) 
+(* P_M_THREAD_ID_WIDTH = "1" *) (* P_NUM_READ_OUTSTANDING = "16" *) (* P_NUM_WRITE_OUTSTANDING = "16" *) 
+(* P_R_QUEUE_SIZE = "4" *) (* P_S_ID_WIDTH = "16" *) (* P_W_QUEUE_SIZE = "4" *) 
+(* P_ZERO_LATENCY = "1" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_transaction_regulator_v1_0_8_top
    (mep_identifier,
     aclk,
@@ -59886,6 +59963,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_reg_stall__parameteri
         .R(SR));
 endmodule
 
+(* ORIG_REF_NAME = "sc_util_v1_0_4_axi_splitter" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter
    (\state_reg[s_ready_i] ,
     sr_axi_awvalid,
@@ -60070,6 +60148,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axi_splitter
         .O(\state_reg[s_ready_i] ));
 endmodule
 
+(* ORIG_REF_NAME = "sc_util_v1_0_4_axic_reg_srl_fifo" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_axic_reg_srl_fifo
    (D,
     Q,
@@ -62146,6 +62225,7 @@ module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_pipeline__parameterized7_
         .O(s_sc_recv));
 endmodule
 
+(* ORIG_REF_NAME = "sc_util_v1_0_4_srl_rtl" *) 
 module NFC_4Channel_bd_smartconnect_0_0_sc_util_v1_0_4_srl_rtl
    (D,
     shift_qual,

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed Apr 22 18:45:21 2026
+| Date             : Fri Apr 24 15:05:10 2026
 | Host             : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 | Command          : report_power -file NFC_4Channel_bd_wrapper_power_routed.rpt -pb NFC_4Channel_bd_wrapper_power_summary_routed.pb -rpx NFC_4Channel_bd_wrapper_power_routed.rpx
 | Design           : NFC_4Channel_bd_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.320        |
+| Total On-Chip Power (W)  | 4.375        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.104        |
-| Device Static (W)        | 1.216        |
+| Dynamic (W)              | 3.157        |
+| Device Static (W)        | 1.217        |
 | Effective TJA (C/W)      | 0.7          |
 | Max Ambient (C)          | 96.8         |
 | Junction Temperature (C) | 28.2         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.065 |       11 |       --- |             --- |
-| CLB Logic                |     0.053 |    79431 |       --- |             --- |
-|   LUT as Distributed RAM |     0.028 |     2368 |    161280 |            1.47 |
-|   LUT as Logic           |     0.019 |    25019 |    522720 |            4.79 |
-|   LUT as Shift Register  |     0.003 |     1253 |    161280 |            0.78 |
-|   Register               |     0.002 |    37617 |   1045440 |            3.60 |
-|   CARRY8                 |    <0.001 |      222 |     65340 |            0.34 |
-|   Others                 |     0.000 |     2573 |       --- |             --- |
+| Clocks                   |     0.077 |       11 |       --- |             --- |
+| CLB Logic                |     0.075 |    99427 |       --- |             --- |
+|   LUT as Distributed RAM |     0.040 |     3136 |    161280 |            1.94 |
+|   LUT as Logic           |     0.028 |    31962 |    522720 |            6.11 |
+|   LUT as Shift Register  |     0.004 |     1497 |    161280 |            0.93 |
+|   Register               |     0.003 |    45663 |   1045440 |            4.37 |
+|   CARRY8                 |    <0.001 |      238 |     65340 |            0.36 |
+|   Others                 |     0.000 |     2946 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      525 |    522720 |            0.10 |
 |   BUFG                   |     0.000 |        2 |        88 |            2.27 |
-|   F7/F8 Muxes            |     0.000 |       80 |    522720 |            0.02 |
-| Signals                  |     0.030 |    54134 |       --- |             --- |
-| Block RAM                |     0.021 |       32 |       984 |            3.25 |
+| Signals                  |     0.039 |    67012 |       --- |             --- |
+| Block RAM                |     0.031 |       56 |       984 |            5.69 |
 | MMCM                     |     0.098 |        0 |       --- |             --- |
 | I/O                      |     0.078 |       73 |       512 |           14.26 |
 | PS8                      |     2.760 |        1 |       --- |             --- |
-| Static Power             |     1.216 |          |           |                 |
+| Static Power             |     1.217 |          |           |                 |
 |   PS Static              |     0.101 |          |           |                 |
-|   PL Static              |     1.115 |          |           |                 |
-| Total                    |     4.320 |          |           |                 |
+|   PL Static              |     1.116 |          |           |                 |
+| Total                    |     4.375 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,9 +80,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.522 |       0.194 |      0.328 |
+| Vccint          |       0.850 |     0.585 |       0.256 |      0.329 |
 | Vccint_io       |       0.850 |     0.144 |       0.047 |      0.097 |
-| Vccbram         |       0.850 |     0.008 |       0.003 |      0.004 |
+| Vccbram         |       0.850 |     0.009 |       0.005 |      0.004 |
 | Vccaux          |       1.800 |     0.390 |       0.054 |      0.336 |
 | Vccaux_io       |       1.800 |     0.084 |       0.011 |      0.073 |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |
@@ -176,34 +176,42 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| NFC_4Channel_bd_wrapper  |     3.104 |
-|   NFC_4Channel_bd_i      |     3.104 |
-|     axi_bram_ctrl_0_bram |     0.001 |
+| NFC_4Channel_bd_wrapper  |     3.157 |
+|   NFC_4Channel_bd_i      |     3.157 |
+|     axi_bram_ctrl_0      |     0.001 |
 |       U0                 |     0.001 |
-|     axi_bram_ctrl_1_bram |     0.001 |
+|     axi_bram_ctrl_0_bram |     0.004 |
+|       U0                 |     0.004 |
+|     axi_bram_ctrl_1      |     0.001 |
 |       U0                 |     0.001 |
-|     axi_bram_ctrl_2_bram |     0.001 |
+|     axi_bram_ctrl_1_bram |     0.005 |
+|       U0                 |     0.005 |
+|     axi_bram_ctrl_2      |     0.001 |
 |       U0                 |     0.001 |
-|     axi_bram_ctrl_3_bram |     0.001 |
+|     axi_bram_ctrl_2_bram |     0.004 |
+|       U0                 |     0.004 |
+|     axi_bram_ctrl_3      |     0.001 |
 |       U0                 |     0.001 |
-|     axi_dma_0            |     0.002 |
-|       U0                 |     0.002 |
-|     axi_dma_1            |     0.002 |
-|       U0                 |     0.002 |
-|     axi_dma_2            |     0.002 |
-|       U0                 |     0.002 |
-|     axi_dma_3            |     0.002 |
-|       U0                 |     0.002 |
+|     axi_bram_ctrl_3_bram |     0.003 |
+|       U0                 |     0.003 |
+|     axi_dma_0            |     0.003 |
+|       U0                 |     0.003 |
+|     axi_dma_1            |     0.003 |
+|       U0                 |     0.003 |
+|     axi_dma_2            |     0.003 |
+|       U0                 |     0.003 |
+|     axi_dma_3            |     0.003 |
+|       U0                 |     0.003 |
 |     clk_wiz_0            |     0.098 |
 |       inst               |     0.098 |
-|     nfc_top_0            |     0.144 |
-|       inst               |     0.144 |
-|     smartconnect_0       |     0.002 |
-|       inst               |     0.002 |
-|     smartconnect_1       |     0.081 |
-|       inst               |     0.081 |
-|     zynq_ultra_ps_e_0    |     2.761 |
-|       inst               |     2.761 |
+|     nfc_top_0            |     0.146 |
+|       inst               |     0.146 |
+|     smartconnect_0       |     0.003 |
+|       inst               |     0.003 |
+|     smartconnect_1       |     0.119 |
+|       inst               |     0.119 |
+|     zynq_ultra_ps_e_0    |     2.760 |
+|       inst               |     2.760 |
 +--------------------------+-----------+
 
 
