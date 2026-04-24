@@ -13,9 +13,13 @@
 #define NFC_CH_NUM      4U
 #define NFC_CH_STRIDE   0x40U
 #define BRAM_CH_RD_OFF  0x1000U
+#define BRAM_WIN_SIZE   0x8000U
 
-// 临时地址同步：将 BRAM0 映射到 0xA0000000 用于通路隔离验证
+// 固定BRAM映射：每通道32KB
 #define BRAM0_BASE_SYNC 0xA0000000U
+#define BRAM1_BASE_SYNC 0xA2000000U
+#define BRAM2_BASE_SYNC 0xA4000000U
+#define BRAM3_BASE_SYNC 0xA6000000U
 
 // DMA缓冲区后端选择：
 // 1) 本地静态缓冲区（OCM/栈/全局地址，DMA可能不可达）
@@ -51,9 +55,9 @@ static const u16 g_dma_dev_ids[NFC_CH_NUM] = {
 
 static const u32 g_bram_base[NFC_CH_NUM] = {
     BRAM0_BASE_SYNC,
-    XPAR_BRAM_1_BASEADDR,
-    XPAR_BRAM_2_BASEADDR,
-    XPAR_BRAM_3_BASEADDR
+    BRAM1_BASE_SYNC,
+    BRAM2_BASE_SYNC,
+    BRAM3_BASE_SYNC
 };
 
 static u8 g_wr_buf[NFC_CH_NUM][LOCAL_BUF_SIZE] __attribute__((aligned(64)));
