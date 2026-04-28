@@ -3045,3 +3045,121 @@ con
 ----------------End of Script----------------
 
 17:49:19 INFO  : Launch script is exported to file 'D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_nfc_4ch_test_system_standalone.tcl'
+17:56:19 INFO  : Checking for BSP changes to sync application flags for project 'NFC_4CH_TEST'...
+17:56:34 INFO  : Disconnected from the channel tcfchan#10.
+17:56:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:56:35 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+17:56:35 INFO  : 'jtag frequency' command is executed.
+17:56:35 INFO  : Sourcing of 'D:/Xilinx_2019_2/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:56:35 INFO  : Context for 'APU' is selected.
+17:56:36 INFO  : System reset is completed.
+17:56:39 INFO  : 'after 3000' command is executed.
+17:56:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 0' command is executed.
+17:57:09 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.bit"
+17:57:10 INFO  : Context for 'APU' is selected.
+17:57:10 INFO  : Hardware design information is loaded from 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.xsa'.
+17:57:10 INFO  : 'configparams force-mem-access 1' command is executed.
+17:57:10 INFO  : Context for 'APU' is selected.
+17:57:10 INFO  : Sourcing of 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/psinit/psu_init.tcl' is done.
+17:57:10 INFO  : 'psu_init' command is executed.
+17:57:11 INFO  : 'after 1000' command is executed.
+17:57:11 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:57:12 INFO  : 'after 1000' command is executed.
+17:57:12 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:57:12 INFO  : 'catch {psu_protection}' command is executed.
+17:57:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:57:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:57:12 INFO  : The application 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/Debug/NFC_4CH_TEST.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:57:12 INFO  : 'configparams force-mem-access 0' command is executed.
+17:57:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Xilinx_2019_2/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 0
+fpga -file D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/Debug/NFC_4CH_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:57:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:57:13 INFO  : 'con' command is executed.
+17:57:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:57:13 INFO  : Launch script is exported to file 'D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_nfc_4ch_test_system_standalone.tcl'
+18:01:59 INFO  : Checking for BSP changes to sync application flags for project 'NFC_4CH_TEST'...
+18:02:14 INFO  : Disconnected from the channel tcfchan#12.
+18:02:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:14 INFO  : Jtag cable 'Digilent JTAG-HS1 210512180081' is selected.
+18:02:14 INFO  : 'jtag frequency' command is executed.
+18:02:14 INFO  : Sourcing of 'D:/Xilinx_2019_2/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:02:14 INFO  : Context for 'APU' is selected.
+18:02:15 INFO  : System reset is completed.
+18:02:18 INFO  : 'after 3000' command is executed.
+18:02:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 0' command is executed.
+18:02:49 INFO  : FPGA configured successfully with bitstream "D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.bit"
+18:02:49 INFO  : Context for 'APU' is selected.
+18:02:49 INFO  : Hardware design information is loaded from 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.xsa'.
+18:02:49 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:49 INFO  : Context for 'APU' is selected.
+18:02:49 INFO  : Sourcing of 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/psinit/psu_init.tcl' is done.
+18:02:50 INFO  : 'psu_init' command is executed.
+18:02:51 INFO  : 'after 1000' command is executed.
+18:02:51 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+18:02:52 INFO  : 'after 1000' command is executed.
+18:02:52 INFO  : 'psu_ps_pl_reset_config' command is executed.
+18:02:52 INFO  : 'catch {psu_protection}' command is executed.
+18:02:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:02:52 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:02:52 INFO  : The application 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/Debug/NFC_4CH_TEST.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:02:52 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/Xilinx_2019_2/Vitis/2019.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0} -index 0
+fpga -file D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/hw/NFC_4Channel_bd_wrapper_2026428.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/Debug/NFC_4CH_TEST.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:02:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:02:53 INFO  : 'con' command is executed.
+18:02:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:02:53 INFO  : Launch script is exported to file 'D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel\vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_nfc_4ch_test_system_standalone.tcl'
