@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Apr 22 16:49:34 2026
+| Date         : Tue Apr 28 16:49:41 2026
 | Host         : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file NFC_4Channel_bd_nfc_top_0_0_utilization_synth.rpt -pb NFC_4Channel_bd_nfc_top_0_0_utilization_synth.pb
 | Design       : NFC_4Channel_bd_nfc_top_0_0
@@ -108,9 +108,9 @@ Table of Contents
 +----------------------+------+-------+-----------+-------+
 |       Site Type      | Used | Fixed | Available | Util% |
 +----------------------+------+-------+-----------+-------+
-| GLOBAL CLOCK BUFFERs |    4 |     0 |       940 |  0.43 |
+| GLOBAL CLOCK BUFFERs |    0 |     0 |       940 |  0.00 |
 |   BUFGCE             |    0 |     0 |       280 |  0.00 |
-|   BUFGCE_DIV         |    4 |     0 |        44 |  9.09 |
+|   BUFGCE_DIV         |    0 |     0 |        44 |  0.00 |
 |   BUFG_GT            |    0 |     0 |       456 |  0.00 |
 |   BUFG_PS            |    0 |     0 |        72 |  0.00 |
 |   BUFGCTRL*          |    0 |     0 |        88 |  0.00 |
@@ -159,37 +159,36 @@ Table of Contents
 8. Primitives
 -------------
 
-+------------+-------+---------------------+
-|  Ref Name  |  Used | Functional Category |
-+------------+-------+---------------------+
-| FDCE       | 13872 |            Register |
-| FDRE       |  4322 |            Register |
-| LUT3       |  3754 |                 CLB |
-| LUT6       |  3734 |                 CLB |
-| LUT5       |  2438 |                 CLB |
-| LUT2       |  2433 |                 CLB |
-| LUT4       |  2216 |                 CLB |
-| RAMD32     |  1400 |                 CLB |
-| LUT1       |  1321 |                 CLB |
-| FDPE       |   384 |            Register |
-| RAMS32     |   200 |                 CLB |
-| CARRY8     |   172 |                 CLB |
-| FDSE       |   160 |            Register |
-| MUXF7      |    76 |                 CLB |
-| OSERDESE3  |    60 |                 I/O |
-| OBUFT      |    40 |                 I/O |
-| IBUFCTRL   |    40 |              Others |
-| ISERDESE3  |    36 |                 I/O |
-| INBUF      |    36 |                 I/O |
-| IDELAYE3   |    36 |                 I/O |
-| OBUF       |    28 |                 I/O |
-| SRL16E     |    20 |                 CLB |
-| RAMB36E2   |    12 |           Block Ram |
-| RAMB18E2   |     8 |           Block Ram |
-| INV        |     8 |                 CLB |
-| DIFFINBUF  |     4 |                 I/O |
-| BUFGCE_DIV |     4 |               Clock |
-+------------+-------+---------------------+
++-----------+-------+---------------------+
+|  Ref Name |  Used | Functional Category |
++-----------+-------+---------------------+
+| FDCE      | 13872 |            Register |
+| FDRE      |  4322 |            Register |
+| LUT3      |  3754 |                 CLB |
+| LUT6      |  3734 |                 CLB |
+| LUT5      |  2438 |                 CLB |
+| LUT2      |  2433 |                 CLB |
+| LUT4      |  2216 |                 CLB |
+| RAMD32    |  1400 |                 CLB |
+| LUT1      |  1321 |                 CLB |
+| FDPE      |   384 |            Register |
+| RAMS32    |   200 |                 CLB |
+| CARRY8    |   172 |                 CLB |
+| FDSE      |   160 |            Register |
+| MUXF7     |    76 |                 CLB |
+| OSERDESE3 |    60 |                 I/O |
+| OBUFT     |    40 |                 I/O |
+| IBUFCTRL  |    40 |              Others |
+| ISERDESE3 |    36 |                 I/O |
+| INBUF     |    36 |                 I/O |
+| IDELAYE3  |    36 |                 I/O |
+| OBUF      |    28 |                 I/O |
+| SRL16E    |    20 |                 CLB |
+| RAMB36E2  |    12 |           Block Ram |
+| RAMB18E2  |     8 |           Block Ram |
+| INV       |     8 |                 CLB |
+| DIFFINBUF |     4 |                 I/O |
++-----------+-------+---------------------+
 
 
 9. Black Boxes

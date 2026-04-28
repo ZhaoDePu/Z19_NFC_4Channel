@@ -4,7 +4,8 @@ set_false_path -to [get_pins -hier *ISERDESE3_*/D]
 
 set_false_path -from [get_cells -hierarchical -filter {REF_NAME == OSERDESE3}] -to [get_cells -hierarchical -filter {REF_NAME == ISERDESE3}]
 
-# fast(400M) and slow(100M) are from the same MMCM â€? synchronous, keep in one group.
+# fast(400M) and slow(100M = clk_ref) are from the same MMCM â†’ synchronous, keep in one group.
+# nand_clk_slow (100MHz) replaces BUFGCE_DIV in fcc_phy â€” routed as clk_ref from clk_wiz to nfc_top.
 # Both are asynchronous to clk_ctrl_50 (CDC via async FIFOs in fcc_wrapper).
 set_clock_groups -name nand_vs_ctrl_async -asynchronous -group [get_clocks -include_generated_clocks nand_clk_fast_*] -group [get_clocks -include_generated_clocks clk_ctrl_50_*]
 
@@ -53,7 +54,7 @@ set_property DATA_RATE DDR [get_ports O_NAND_RE_P]
 
 
 
-# Removed: connect_debug_port dbg_hub/clk to clk_ctrl_50 â€? overridden by line at end of file (u_ila_0_clk_ref)
+# Removed: connect_debug_port dbg_hub/clk to clk_ctrl_50 ï¿½? overridden by line at end of file (u_ila_0_clk_ref)
 
 
 

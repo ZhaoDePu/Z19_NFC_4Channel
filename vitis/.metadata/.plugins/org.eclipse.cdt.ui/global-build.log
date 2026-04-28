@@ -1,29 +1,32 @@
 Nothing to build in platform 'z19_nfc_4ch_platform'
 
-15:58:48 **** Incremental Build of configuration Debug for project NFC_4CH_TEST ****
+18:01:59 **** Incremental Build of configuration Debug for project NFC_4CH_TEST ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/sw/z19_nfc_4ch_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:230:12: warning: 'dma_recv' defined but not used [-Wunused-function]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:353:54: error: 'XAxiDma' {aka 'struct XAxiDma'} has no member named 'IsReady'
+                    ch, g_dmas[ch].RegBase, g_dmas[ch].IsReady);
+                                                      ^
+../src/helloworld.c:434:88: error: 'XAxiDma' {aka 'struct XAxiDma'} has no member named 'IsReady'
+                 xil_printf("DBG: DMA RegBase=0x%08X, IsReady=%d\r\n", dma->RegBase, dma->IsReady);
+                                                                                        ^~
+At top level:
+../src/helloworld.c:234:12: warning: 'dma_recv' defined but not used [-Wunused-function]
  static int dma_recv(u32 ch, u32 byte_len)
             ^~~~~~~~
-../src/helloworld.c:60:11: warning: 'g_rd_buf' defined but not used [-Wunused-variable]
+../src/helloworld.c:64:11: warning: 'g_rd_buf' defined but not used [-Wunused-variable]
  static u8 g_rd_buf[NFC_CH_NUM][LOCAL_BUF_SIZE] __attribute__((aligned(64)));
            ^~~~~~~~
-../src/helloworld.c:59:11: warning: 'g_wr_buf' defined but not used [-Wunused-variable]
+../src/helloworld.c:63:11: warning: 'g_wr_buf' defined but not used [-Wunused-variable]
  static u8 g_wr_buf[NFC_CH_NUM][LOCAL_BUF_SIZE] __attribute__((aligned(64)));
            ^~~~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: NFC_4CH_TEST.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/sw/z19_nfc_4ch_platform/standalone_domain/bsplib/lib -o "NFC_4CH_TEST.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: NFC_4CH_TEST.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size NFC_4CH_TEST.elf  |tee "NFC_4CH_TEST.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  52508	   4872	  65104	 122484	  1de74	NFC_4CH_TEST.elf
-'Finished building: NFC_4CH_TEST.elf.size'
-' '
+make: *** [src/subdir.mk:23: src/helloworld.o] Error 1
+18:02:00 **** Incremental Build of configuration Debug for project NFC_4CH_TEST_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 65201 D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/z19_nfc_4ch_platform.xpfm standalone_domain D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST_system/Debug/system.bif
+sdcard_gen --xpfm D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/z19_nfc_4ch_platform/export/z19_nfc_4ch_platform/z19_nfc_4ch_platform.xpfm --sys_config z19_nfc_4ch_platform --bif D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST_system/Debug/system.bif --bitstream D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/bitstream/NFC_4Channel_bd_wrapper_2026428.bit --elf D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/Debug/NFC_4CH_TEST.elf,psu_cortexa53_0
+creating BOOT.BIN using D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST/_ide/bitstream/NFC_4Channel_bd_wrapper_2026428.bit
+Running D:/Xilinx_2019_2/Vitis/2019.2/bin/bootgen -arch zynqmp -image D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/vitis/NFC_4CH_TEST_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -21,10 +21,10 @@ _EL2_STACK_SIZE = DEFINED(_EL2_STACK_SIZE) ? _EL2_STACK_SIZE : 1024;
 
 MEMORY
 {
-   axi_bram_ctrl_0_Mem0 : ORIGIN = 0x80000000, LENGTH = 0x2000
-   axi_bram_ctrl_1_Mem0 : ORIGIN = 0x82000000, LENGTH = 0x2000
-   axi_bram_ctrl_2_Mem0 : ORIGIN = 0x84000000, LENGTH = 0x2000
-   axi_bram_ctrl_3_Mem0 : ORIGIN = 0x86000000, LENGTH = 0x2000
+   axi_bram_ctrl_0_Mem0 : ORIGIN = 0xA0000000, LENGTH = 0x8000
+   axi_bram_ctrl_1_Mem0 : ORIGIN = 0xA2000000, LENGTH = 0x8000
+   axi_bram_ctrl_2_Mem0 : ORIGIN = 0xA4000000, LENGTH = 0x8000
+   axi_bram_ctrl_3_Mem0 : ORIGIN = 0xA6000000, LENGTH = 0x8000
    psu_ddr_0_MEM_0 : ORIGIN = 0x0, LENGTH = 0x7FF00000
    psu_ocm_ram_0_MEM_0 : ORIGIN = 0xFFFC0000, LENGTH = 0x40000
 }

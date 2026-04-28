@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Fri Apr 24 15:05:10 2026
+| Date             : Tue Apr 28 17:06:05 2026
 | Host             : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 | Command          : report_power -file NFC_4Channel_bd_wrapper_power_routed.rpt -pb NFC_4Channel_bd_wrapper_power_summary_routed.pb -rpx NFC_4Channel_bd_wrapper_power_routed.rpx
 | Design           : NFC_4Channel_bd_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.375        |
+| Total On-Chip Power (W)  | 4.367        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.157        |
+| Dynamic (W)              | 3.150        |
 | Device Static (W)        | 1.217        |
 | Effective TJA (C/W)      | 0.7          |
 | Max Ambient (C)          | 96.8         |
@@ -52,25 +52,25 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.077 |       11 |       --- |             --- |
+| Clocks                   |     0.068 |        8 |       --- |             --- |
 | CLB Logic                |     0.075 |    99427 |       --- |             --- |
 |   LUT as Distributed RAM |     0.040 |     3136 |    161280 |            1.94 |
-|   LUT as Logic           |     0.028 |    31962 |    522720 |            6.11 |
+|   LUT as Logic           |     0.028 |    31988 |    522720 |            6.12 |
 |   LUT as Shift Register  |     0.004 |     1497 |    161280 |            0.93 |
 |   Register               |     0.003 |    45663 |   1045440 |            4.37 |
 |   CARRY8                 |    <0.001 |      238 |     65340 |            0.36 |
 |   Others                 |     0.000 |     2946 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      525 |    522720 |            0.10 |
 |   BUFG                   |     0.000 |        2 |        88 |            2.27 |
-| Signals                  |     0.039 |    67012 |       --- |             --- |
+| Signals                  |     0.039 |    67014 |       --- |             --- |
 | Block RAM                |     0.031 |       56 |       984 |            5.69 |
-| MMCM                     |     0.098 |        0 |       --- |             --- |
+| MMCM                     |     0.099 |        0 |       --- |             --- |
 | I/O                      |     0.078 |       73 |       512 |           14.26 |
 | PS8                      |     2.760 |        1 |       --- |             --- |
 | Static Power             |     1.217 |          |           |                 |
 |   PS Static              |     0.101 |          |           |                 |
 |   PL Static              |     1.116 |          |           |                 |
-| Total                    |     4.375 |          |           |                 |
+| Total                    |     4.367 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,10 +80,10 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------------+-------------+-----------+-------------+------------+
-| Vccint          |       0.850 |     0.585 |       0.256 |      0.329 |
+| Vccint          |       0.850 |     0.575 |       0.247 |      0.329 |
 | Vccint_io       |       0.850 |     0.144 |       0.047 |      0.097 |
 | Vccbram         |       0.850 |     0.009 |       0.005 |      0.004 |
-| Vccaux          |       1.800 |     0.390 |       0.054 |      0.336 |
+| Vccaux          |       1.800 |     0.391 |       0.055 |      0.336 |
 | Vccaux_io       |       1.800 |     0.084 |       0.011 |      0.073 |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -154,17 +154,14 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------+
-| Clock                                     | Domain                                                                                             | Constraint (ns) |
-+-------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------+
-| clk_ctrl_50_NFC_4Channel_bd_clk_wiz_0_0   | NFC_4Channel_bd_i/clk_wiz_0/inst/clk_ctrl_50_NFC_4Channel_bd_clk_wiz_0_0                           |            20.0 |
-| clk_div_int                               | NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_core/fcc_phy/clk_div_int |            10.0 |
-| clk_div_int_1                             | NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_core/fcc_phy/clk_div_int |            10.0 |
-| clk_div_int_2                             | NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_core/fcc_phy/clk_div_int |            10.0 |
-| clk_div_int_3                             | NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy/clk_div_int |            10.0 |
-| clk_in1_0                                 | clk_in1_0                                                                                          |            10.0 |
-| nand_clk_fast_NFC_4Channel_bd_clk_wiz_0_0 | NFC_4Channel_bd_i/clk_wiz_0/inst/nand_clk_fast_NFC_4Channel_bd_clk_wiz_0_0                         |             2.5 |
-+-------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------+
++-------------------------------------------+----------------------------------------------------------------------------+-----------------+
+| Clock                                     | Domain                                                                     | Constraint (ns) |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------+
+| clk_ctrl_50_NFC_4Channel_bd_clk_wiz_0_0   | NFC_4Channel_bd_i/clk_wiz_0/inst/clk_ctrl_50_NFC_4Channel_bd_clk_wiz_0_0   |            20.0 |
+| clk_in1_0                                 | clk_in1_0                                                                  |            10.0 |
+| clk_ref_NFC_4Channel_bd_clk_wiz_0_0       | NFC_4Channel_bd_i/clk_wiz_0/inst/clk_ref_NFC_4Channel_bd_clk_wiz_0_0       |            10.0 |
+| nand_clk_fast_NFC_4Channel_bd_clk_wiz_0_0 | NFC_4Channel_bd_i/clk_wiz_0/inst/nand_clk_fast_NFC_4Channel_bd_clk_wiz_0_0 |             2.5 |
++-------------------------------------------+----------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -176,8 +173,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| NFC_4Channel_bd_wrapper  |     3.157 |
-|   NFC_4Channel_bd_i      |     3.157 |
+| NFC_4Channel_bd_wrapper  |     3.150 |
+|   NFC_4Channel_bd_i      |     3.150 |
 |     axi_bram_ctrl_0      |     0.001 |
 |       U0                 |     0.001 |
 |     axi_bram_ctrl_0_bram |     0.004 |
@@ -202,10 +199,10 @@ Table of Contents
 |       U0                 |     0.003 |
 |     axi_dma_3            |     0.003 |
 |       U0                 |     0.003 |
-|     clk_wiz_0            |     0.098 |
-|       inst               |     0.098 |
-|     nfc_top_0            |     0.146 |
-|       inst               |     0.146 |
+|     clk_wiz_0            |     0.099 |
+|       inst               |     0.099 |
+|     nfc_top_0            |     0.138 |
+|       inst               |     0.138 |
 |     smartconnect_0       |     0.003 |
 |       inst               |     0.003 |
 |     smartconnect_1       |     0.119 |

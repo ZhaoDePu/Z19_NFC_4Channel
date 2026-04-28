@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Apr 24 14:49:38 2026
+-- Date        : Fri Apr 24 14:49:17 2026
 -- Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_smartconnect_0_1/NFC_4Channel_bd_smartconnect_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top NFC_4Channel_bd_smartconnect_0_1 -prefix
+--               NFC_4Channel_bd_smartconnect_0_1_ NFC_4Channel_bd_smartconnect_0_1_stub.vhdl
 -- Design      : NFC_4Channel_bd_smartconnect_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu19eg-ffvc1760-2-i

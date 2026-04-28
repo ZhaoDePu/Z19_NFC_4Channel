@@ -339,8 +339,19 @@ int main(void)
             return -1;
         }
 
+        // 强制复位 DMA 并等待完成
         XAxiDma_Reset(&g_dmas[ch]);
-        while (!XAxiDma_ResetIsDone(&g_dmas[ch])) {}
+        int rst_to = 0;
+        while (!XAxiDma_ResetIsDone(&g_dmas[ch])) {
+            if (++rst_to > 100000) {
+                xil_printf("ERR: CH%u DMA reset timeout\r\n", ch);
+                dma_dump_status(ch);
+                break;
+            }
+        }
+        xil_printf("DBG CH%u: DMA init OK (RegBase=0x%08X, IsReady=%d)\r\n",
+                   ch, g_dmas[ch].RegBase, g_dmas[ch].IsReady);
+
         XAxiDma_IntrDisable(&g_dmas[ch], XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
         XAxiDma_IntrDisable(&g_dmas[ch], XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
     }
@@ -410,21 +421,42 @@ int main(void)
         {
             u32 bram_rd = bram_rd_base_of(cur_ch);
             XAxiDma *dma = &g_dmas[cur_ch];
-
             xil_printf("CH%u Reading %d bytes from LBA=0...\r\n", cur_ch, TEST_LEN);
+            // [DEBUG] 预清零缓冲区，用来验证 DMA 是否真正写入了数据
+            for (u32 i = 0; i < TEST_LEN; i++) Xil_Out8(bram_rd + i, 0xDE); // 用 0xDE 填充作为标记
+            Xil_DCacheFlushRange((UINTPTR)bram_rd, TEST_LEN); // 确保清零写入物理内存
+            xil_printf("DBG CH%u: buffer pre-filled with 0xDE\r\n", cur_ch);
+
             Xil_DCacheInvalidateRange((UINTPTR)bram_rd, TEST_LEN);
-            if (XAxiDma_SimpleTransfer(dma, (UINTPTR)bram_rd,
-                                       TEST_LEN, XAXIDMA_DEVICE_TO_DMA) != XST_SUCCESS) {
-                xil_printf("ERR: CH%u DMA S2MM start failed\r\n", cur_ch);
-                break;
+
+            // [FIX] 如果 DMA 仍忙碌，先强制复位
+            if (XAxiDma_Busy(dma, XAXIDMA_DEVICE_TO_DMA)) {
+                xil_printf("WARN: CH%u DMA S2MM was busy, resetting...\r\n", cur_ch);
+                XAxiDma_Reset(dma);
+                int rst_to = 0;
+                while (!XAxiDma_ResetIsDone(dma)) {
+                    if (++rst_to > 10000) {
+                        xil_printf("ERR: CH%u DMA reset timeout\r\n", cur_ch);
+                        break;
+                    }
+                }
             }
 
+            int dma_st = XAxiDma_SimpleTransfer(dma, (UINTPTR)bram_rd, TEST_LEN, XAXIDMA_DEVICE_TO_DMA);
+            if (dma_st != XST_SUCCESS) {
+                xil_printf("ERR: CH%u DMA S2MM start failed, status=%d\r\n", cur_ch, dma_st);
+                xil_printf("DBG: DMA RegBase=0x%08X, IsReady=%d\r\n", dma->RegBase, dma->IsReady);
+                dma_dump_status(cur_ch);
+                break;
+            }
             if (nfc_fire(cur_ch, 0x3000, 0, TEST_LEN) != 0) break;
             nfc_wait_resp(cur_ch);
-
             int to = 0;
             while (XAxiDma_Busy(dma, XAXIDMA_DEVICE_TO_DMA)) {
-                if (++to > POLL_TO) { xil_printf("ERR: CH%u DMA S2MM timeout\r\n", cur_ch); break; }
+                if (++to > POLL_TO) {
+                    xil_printf("ERR: CH%u DMA S2MM timeout\r\n", cur_ch);
+                    break;
+                }
             }
             Xil_DCacheInvalidateRange((UINTPTR)bram_rd, TEST_LEN);
             xil_printf("--- CH%u Read Data (%d bytes) ---\r\n", cur_ch, TEST_LEN);

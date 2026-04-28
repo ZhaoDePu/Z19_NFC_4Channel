@@ -48,15 +48,16 @@
 
 
 // IP VLNV: xilinx.com:user:nfc_top:2.0
-// IP Revision: 34
+// IP Revision: 36
 
 (* X_CORE_INFO = "nfc_top,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "NFC_4Channel_bd_nfc_top_0_0,nfc_top,{}" *)
-(* CORE_GENERATION_INFO = "NFC_4Channel_bd_nfc_top_0_0,nfc_top,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=nfc_top,x_ipVersion=2.0,x_ipCoreRevision=34,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=32,CHAN_NUM=4}" *)
+(* CORE_GENERATION_INFO = "NFC_4Channel_bd_nfc_top_0_0,nfc_top,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=nfc_top,x_ipVersion=2.0,x_ipCoreRevision=36,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=32,CHAN_NUM=4}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module NFC_4Channel_bd_nfc_top_0_0 (
   nand_clk_fast,
+  nand_clk_slow,
   nand_usr_clk,
   nand_clk_locked,
   s_axil_aclk,
@@ -138,6 +139,7 @@ module NFC_4Channel_bd_nfc_top_0_0 (
 );
 
 input wire nand_clk_fast;
+input wire nand_clk_slow;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME nand_usr_clk, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN NFC_4Channel_bd_clk_wiz_0_0_nand_clk_fast, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 nand_usr_clk CLK" *)
 input wire nand_usr_clk;
@@ -301,6 +303,7 @@ inout wire [31 : 0] IO_NAND_DQ;
     .CHAN_NUM(4)
   ) inst (
     .nand_clk_fast(nand_clk_fast),
+    .nand_clk_slow(nand_clk_slow),
     .nand_usr_clk(nand_usr_clk),
     .nand_clk_locked(nand_clk_locked),
     .s_axil_aclk(s_axil_aclk),

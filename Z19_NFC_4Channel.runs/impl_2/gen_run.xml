@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1777012985">
+<GenRun Id="impl_2" LaunchPart="xczu19eg-ffvc1760-2-i" LaunchTime="1777366001">
   <File Type="BITSTR-BMM" Name="NFC_4Channel_bd_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="NFC_4Channel_bd_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="NFC_4Channel_bd_wrapper_timing_summary_init.rpt"/>
@@ -130,18 +130,16 @@
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_dma_0_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_1_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_1_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_nfc_top_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_dma_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_dma_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_2_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_smartconnect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_smartconnect_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_3"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="NFC_4Channel_bd_axi_bram_ctrl_3_bram_0"/>

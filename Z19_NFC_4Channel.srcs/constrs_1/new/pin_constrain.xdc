@@ -144,3 +144,16 @@ set_property PACKAGE_PIN AP20 [get_ports {O_NAND_WE_N_0[3]}]  ;# WE_3_N
 set_property PACKAGE_PIN AM19 [get_ports {O_NAND_CLE_0[3]}]   ;# CLE_3
 set_property PACKAGE_PIN AL22 [get_ports {O_NAND_ALE_0[3]}]   ;# ALE_3
 set_property PACKAGE_PIN AN19 [get_ports {O_NAND_WP_N_0[3]}]  ;# WP_3_N
+
+# -----------------------------------------------------------------------------
+# Channel 3 floorplan v3
+# - Keep scope on CH3 PHY hierarchy to reduce cross-channel perturbation
+# - Use legal, moderate region ranges on this device
+# - Keep routing containment disabled to avoid over-constraining global routing
+# -----------------------------------------------------------------------------
+create_pblock pblock_nfc_ch3
+resize_pblock [get_pblocks pblock_nfc_ch3] -add {SLICE_X38Y24:SLICE_X58Y96}
+resize_pblock [get_pblocks pblock_nfc_ch3] -add {RAMB36_X4Y20:RAMB36_X6Y30}
+add_cells_to_pblock [get_pblocks pblock_nfc_ch3] \
+    [get_cells -hierarchical -quiet {NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy*}]
+set_property CONTAIN_ROUTING false [get_pblocks pblock_nfc_ch3]

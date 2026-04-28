@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed Apr 22 16:45:16 2026
-# Process ID: 15448
+# Start of session at: Tue Apr 28 16:46:43 2026
+# Process ID: 28140
 # Current directory: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1
 # Command line: vivado.exe -log NFC_4Channel_bd_nfc_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source NFC_4Channel_bd_nfc_top_0_0.tcl
 # Log file: D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/NFC_4Channel_bd_nfc_top_0_0.vds
@@ -21,19 +21,19 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17948 
-WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:521]
-WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:525]
-WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:529]
-WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:533]
+INFO: Helper process launched with PID 27708 
+WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:508]
+WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:512]
+WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:516]
+WARNING: [Synth 8-2292] literal value truncated to fit in 5 bits [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:520]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1685.754 ; gain = 86.781
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1687.844 ; gain = 87.266
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/synth/NFC_4Channel_bd_nfc_top_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'nfc_top' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_top.v:31]
+INFO: [Synth 8-6157] synthesizing module 'nfc_top' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_top.v:31]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter CHAN_NUM bound to: 4 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axil_regfile' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:38]
+INFO: [Synth 8-6157] synthesizing module 'axil_regfile' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:38]
 	Parameter AXIL_ADDR_WIDTH bound to: 16 - type: integer 
 	Parameter AXIL_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter CHAN_NUM bound to: 4 - type: integer 
@@ -54,48 +54,48 @@ INFO: [Synth 8-6157] synthesizing module 'axil_regfile' [d:/Xilinx_2019_2/RTL_pr
 	Parameter RD_IDLE bound to: 2'b00 
 	Parameter RD_ADDR bound to: 2'b01 
 	Parameter RD_DATA bound to: 2'b10 
-INFO: [Synth 8-226] default block is never used [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:192]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:355]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:362]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:369]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:376]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ra3_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:439]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ra2_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:439]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ra1_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:439]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ra0_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:439]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cv3_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:335]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cv2_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:335]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cv1_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:335]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cv0_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:335]
-INFO: [Synth 8-6155] done synthesizing module 'axil_regfile' (1#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/axil_regfile.v:38]
-INFO: [Synth 8-6157] synthesizing module 'nfc_channel' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:49]
+INFO: [Synth 8-226] default block is never used [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:192]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:355]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:362]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:369]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:376]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ra3_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:439]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ra2_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:439]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ra1_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:439]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ra0_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:439]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cv3_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cv2_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cv1_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cv0_d_reg' and it is trimmed from '32' to '1' bits. [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:335]
+INFO: [Synth 8-6155] done synthesizing module 'axil_regfile' (1#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/axil_regfile.v:38]
+INFO: [Synth 8-6157] synthesizing module 'nfc_channel' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:49]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter PATCH bound to: FALSE - type: string 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:70]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:79]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:80]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:81]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:82]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:86]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:87]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:88]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:90]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:121]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:142]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:143]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:144]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:165]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:168]
-INFO: [Synth 8-6157] synthesizing module 'req_gen' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/req_gen.v:43]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:71]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:80]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:81]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:82]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:83]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:87]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:88]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:89]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:122]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:143]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:144]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:145]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:166]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:169]
+INFO: [Synth 8-6157] synthesizing module 'req_gen' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/req_gen.v:43]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter IDLE bound to: 1'b0 
 	Parameter REQ bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'req_gen' (2#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/req_gen.v:43]
-INFO: [Synth 8-6157] synthesizing module 'fcc_top_1way' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_top_1way.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'req_gen' (2#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/req_gen.v:43]
+INFO: [Synth 8-6157] synthesizing module 'fcc_top_1way' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_top_1way.v:71]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter PATCH bound to: FALSE - type: string 
 	Parameter DATA_WIDTH_INTER bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'fcc_wrapper' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_wrapper.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fcc_wrapper' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_wrapper.v:57]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter DATA_WIDTH_INTER bound to: 32 - type: integer 
 	Parameter IDLE bound to: 1'b0 
@@ -522,8 +522,8 @@ INFO: [Synth 8-638] synthesizing module 'asyn_res_fifo' [d:/Xilinx_2019_2/RTL_pr
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'd:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_wr/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_res_fifo/synth/asyn_res_fifo.vhd:544]
 INFO: [Synth 8-256] done synthesizing module 'asyn_res_fifo' (25#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_res_fifo/synth/asyn_res_fifo.vhd:74]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_wrapper.v:233]
-INFO: [Synth 8-6157] synthesizing module 'data_fifo_wr' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/data_fifo_wr.v:43]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_wrapper.v:233]
+INFO: [Synth 8-6157] synthesizing module 'data_fifo_wr' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/data_fifo_wr.v:43]
 	Parameter S_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter M_DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'asyn_fifo_wr' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_wr/synth/asyn_fifo_wr.vhd:77]
@@ -738,8 +738,8 @@ INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized2' (
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (34#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-256] done synthesizing module 'asyn_fifo_wr' (38#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_wr/synth/asyn_fifo_wr.vhd:77]
-INFO: [Synth 8-6155] done synthesizing module 'data_fifo_wr' (39#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/data_fifo_wr.v:43]
-INFO: [Synth 8-6157] synthesizing module 'data_fifo_rd' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/data_fifo_rd.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'data_fifo_wr' (39#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/data_fifo_wr.v:43]
+INFO: [Synth 8-6157] synthesizing module 'data_fifo_rd' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/data_fifo_rd.v:43]
 	Parameter S_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter M_DATA_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'asyn_fifo_rd' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_rd/synth/asyn_fifo_rd.vhd:80]
@@ -947,69 +947,69 @@ INFO: [Synth 8-638] synthesizing module 'asyn_fifo_rd' [d:/Xilinx_2019_2/RTL_prj
 	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'd:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_wr/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_rd/synth/asyn_fifo_rd.vhd:560]
 INFO: [Synth 8-256] done synthesizing module 'asyn_fifo_rd' (40#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/src/asyn_fifo_rd/synth/asyn_fifo_rd.vhd:80]
-INFO: [Synth 8-6155] done synthesizing module 'data_fifo_rd' (41#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/data_fifo_rd.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_wrapper' (42#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_wrapper.v:57]
-INFO: [Synth 8-6157] synthesizing module 'fcc_core' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_core_1way.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'data_fifo_rd' (41#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/data_fifo_rd.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_wrapper' (42#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_wrapper.v:57]
+INFO: [Synth 8-6157] synthesizing module 'fcc_core' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_core_1way.v:103]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter PATCH bound to: FALSE - type: string 
 	Parameter IDLE bound to: 2'b00 
 	Parameter WAIT bound to: 2'b01 
 	Parameter LOCK bound to: 2'b10 
 	Parameter FIN bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'fcc_scheduler' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:96]
+INFO: [Synth 8-6157] synthesizing module 'fcc_scheduler' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:96]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'schedule_read' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_read.v:44]
+INFO: [Synth 8-6157] synthesizing module 'schedule_read' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_read.v:44]
 	Parameter IDLE bound to: 6'b000001 
 	Parameter FIRST_ONE bound to: 6'b000010 
 	Parameter FIRST_TWO bound to: 6'b000100 
 	Parameter WAIT bound to: 6'b001000 
 	Parameter CRCE_ONE bound to: 6'b010000 
 	Parameter CRCE_TWO bound to: 6'b100000 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_read.v:109]
-INFO: [Synth 8-6155] done synthesizing module 'schedule_read' (43#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_read.v:44]
-INFO: [Synth 8-6157] synthesizing module 'schedule_prog' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_prog.v:46]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_read.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'schedule_read' (43#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_read.v:44]
+INFO: [Synth 8-6157] synthesizing module 'schedule_prog' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_prog.v:46]
 	Parameter IDLE bound to: 5'b00001 
 	Parameter PROG bound to: 5'b00010 
 	Parameter WAIT bound to: 5'b00100 
 	Parameter MPP_ONE bound to: 5'b01000 
 	Parameter MPP_TWO bound to: 5'b10000 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_prog.v:105]
-INFO: [Synth 8-6155] done synthesizing module 'schedule_prog' (44#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_prog.v:46]
-INFO: [Synth 8-6157] synthesizing module 'schedule_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_erase.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_prog.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'schedule_prog' (44#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_prog.v:46]
+INFO: [Synth 8-6157] synthesizing module 'schedule_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_erase.v:44]
 	Parameter IDLE bound to: 2'b00 
 	Parameter MPE_ONE bound to: 2'b01 
 	Parameter MPE_TWO bound to: 2'b10 
 	Parameter WAIT bound to: 2'b11 
-INFO: [Synth 8-6155] done synthesizing module 'schedule_erase' (45#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/schedule_erase.v:44]
-WARNING: [Synth 8-689] width (32) of port connection 'i_eaddr' does not match port width (24) of module 'schedule_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:273]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:399]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:473]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:526]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_scheduler' (46#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_scheduler.v:96]
-INFO: [Synth 8-6157] synthesizing module 'fcc_executer' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'schedule_erase' (45#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/schedule_erase.v:44]
+WARNING: [Synth 8-689] width (32) of port connection 'i_eaddr' does not match port width (24) of module 'schedule_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:273]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:399]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:473]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:526]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_scheduler' (46#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_scheduler.v:96]
+INFO: [Synth 8-6157] synthesizing module 'fcc_executer' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:73]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:79]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:80]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:89]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:91]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:96]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:97]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:100]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:109]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:110]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:111]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:112]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:113]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:114]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:115]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:116]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:117]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:118]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:119]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:120]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:121]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:122]
-INFO: [Synth 8-6157] synthesizing module 'phy_status' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_status.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:79]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:80]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:89]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:96]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:97]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:100]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:109]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:110]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:111]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:112]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:113]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:114]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:115]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:116]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:117]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:118]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:119]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:120]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:121]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:122]
+INFO: [Synth 8-6157] synthesizing module 'phy_status' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_status.v:42]
 	Parameter IDLE bound to: 7'b0000001 
 	Parameter CMD1 bound to: 7'b0000010 
 	Parameter ADDR bound to: 7'b0000100 
@@ -1018,9 +1018,9 @@ INFO: [Synth 8-6157] synthesizing module 'phy_status' [d:/Xilinx_2019_2/RTL_prj/
 	Parameter RPST bound to: 7'b0100000 
 	Parameter CMD2 bound to: 7'b1000000 
 	Parameter DELAY_NUM bound to: 4'b0000 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_status.v:125]
-INFO: [Synth 8-6155] done synthesizing module 'phy_status' (47#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_status.v:42]
-INFO: [Synth 8-6157] synthesizing module 'phy_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_erase.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_status.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'phy_status' (47#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_status.v:42]
+INFO: [Synth 8-6157] synthesizing module 'phy_erase' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_erase.v:63]
 	Parameter IDLE bound to: 10'b0000000001 
 	Parameter CMD1 bound to: 10'b0000000010 
 	Parameter ADDR bound to: 10'b0000000100 
@@ -1031,9 +1031,9 @@ INFO: [Synth 8-6157] synthesizing module 'phy_erase' [d:/Xilinx_2019_2/RTL_prj/O
 	Parameter LOCK bound to: 10'b0010000000 
 	Parameter WAIT bound to: 10'b0100000000 
 	Parameter CMD0 bound to: 10'b1000000000 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_erase.v:190]
-INFO: [Synth 8-6155] done synthesizing module 'phy_erase' (48#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_erase.v:63]
-INFO: [Synth 8-6157] synthesizing module 'phy_read' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_read.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_erase.v:190]
+INFO: [Synth 8-6155] done synthesizing module 'phy_erase' (48#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_erase.v:63]
+INFO: [Synth 8-6157] synthesizing module 'phy_read' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_read.v:63]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter IDLE bound to: 11'b00000000001 
 	Parameter CMD1 bound to: 11'b00000000010 
@@ -1047,10 +1047,10 @@ INFO: [Synth 8-6157] synthesizing module 'phy_read' [d:/Xilinx_2019_2/RTL_prj/OC
 	Parameter RPST bound to: 11'b01000000000 
 	Parameter CMD0 bound to: 11'b10000000000 
 	Parameter WARMUP_DATA_NUM bound to: 4'b0000 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_read.v:193]
-WARNING: [Synth 8-6014] Unused sequential element din_cnt_reg was removed.  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_read.v:442]
-INFO: [Synth 8-6155] done synthesizing module 'phy_read' (49#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_read.v:63]
-INFO: [Synth 8-6157] synthesizing module 'phy_prog' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_prog.v:63]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_read.v:193]
+WARNING: [Synth 8-6014] Unused sequential element din_cnt_reg was removed.  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_read.v:442]
+INFO: [Synth 8-6155] done synthesizing module 'phy_read' (49#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_read.v:63]
+INFO: [Synth 8-6157] synthesizing module 'phy_prog' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_prog.v:63]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter IDLE bound to: 11'b00000000001 
 	Parameter CMD1 bound to: 11'b00000000010 
@@ -1064,31 +1064,31 @@ INFO: [Synth 8-6157] synthesizing module 'phy_prog' [d:/Xilinx_2019_2/RTL_prj/OC
 	Parameter WAIT bound to: 11'b01000000000 
 	Parameter CMD0 bound to: 11'b10000000000 
 	Parameter WARMUP_DATA_NUM bound to: 4'b0000 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_prog.v:131]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_prog.v:222]
-INFO: [Synth 8-6155] done synthesizing module 'phy_prog' (50#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_prog.v:63]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_prog'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:606]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_read'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:566]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_erase'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:529]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_status'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:500]
-WARNING: [Synth 8-5788] Register i1_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:440]
-WARNING: [Synth 8-5788] Register i2_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:464]
-WARNING: [Synth 8-5788] Register i3_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:489]
-INFO: [Synth 8-6155] done synthesizing module 'fcc_executer' (51#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_executer.v:73]
-INFO: [Synth 8-6157] synthesizing module 'fcc_phy' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_prog.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_prog.v:222]
+INFO: [Synth 8-6155] done synthesizing module 'phy_prog' (50#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_prog.v:63]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_prog'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:606]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_read'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:566]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_erase'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:529]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_status'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:500]
+WARNING: [Synth 8-5788] Register i1_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:440]
+WARNING: [Synth 8-5788] Register i2_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:464]
+WARNING: [Synth 8-5788] Register i3_isfirst_reg in module fcc_executer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:489]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_executer' (51#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_executer.v:73]
+INFO: [Synth 8-6157] synthesizing module 'fcc_phy' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:42]
 	Parameter PATCH bound to: FALSE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter IDELAY_VALUE bound to: 128 - type: integer 
 	Parameter REFCLK_FREQ bound to: 400 - type: integer 
 	Parameter DLY_NUM bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:119]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:121]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:122]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:123]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:124]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:125]
-INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:140]
-INFO: [Synth 8-6157] synthesizing module 'phy_inout' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_inout.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:120]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:122]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:123]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:124]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:125]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:126]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:141]
+INFO: [Synth 8-6157] synthesizing module 'phy_inout' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_inout.v:42]
 	Parameter SIG_TYPE_DIFF bound to: TRUE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_VALUE bound to: 1'b1 
@@ -1140,8 +1140,8 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE3' [D:/Xilinx_2019_2/Vivado/20
 	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
 	Parameter SIM_VERSION bound to: 2.000000 - type: double 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE3' (55#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50373]
-INFO: [Synth 8-6155] done synthesizing module 'phy_inout' (56#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_inout.v:42]
-INFO: [Synth 8-6157] synthesizing module 'phy_inout__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_inout.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'phy_inout' (56#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_inout.v:42]
+INFO: [Synth 8-6157] synthesizing module 'phy_inout__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_inout.v:42]
 	Parameter SIG_TYPE_DIFF bound to: FALSE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_VALUE bound to: 1'b0 
@@ -1166,34 +1166,24 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE3__parameterized0' [D:/Xilinx_
 	Parameter SIM_DEVICE bound to: ULTRASCALE_PLUS - type: string 
 	Parameter SIM_VERSION bound to: 2.000000 - type: double 
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE3__parameterized0' (57#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:50373]
-INFO: [Synth 8-6155] done synthesizing module 'phy_inout__parameterized0' (57#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_inout.v:42]
-INFO: [Synth 8-6157] synthesizing module 'BUFGCE_DIV' [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1114]
-	Parameter BUFGCE_DIVIDE bound to: 4 - type: integer 
-	Parameter CE_TYPE bound to: SYNC - type: string 
-	Parameter HARDSYNC_CLR bound to: FALSE - type: string 
-	Parameter IS_CE_INVERTED bound to: 1'b0 
-	Parameter IS_CLR_INVERTED bound to: 1'b0 
-	Parameter IS_I_INVERTED bound to: 1'b0 
-	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
-	Parameter STARTUP_SYNC bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'BUFGCE_DIV' (58#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1114]
-INFO: [Synth 8-6157] synthesizing module 'phy_dwidth_convert' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_dwidth_convert.v:42]
-INFO: [Synth 8-6157] synthesizing module 'sync_cell' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'phy_inout__parameterized0' (57#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_inout.v:42]
+INFO: [Synth 8-6157] synthesizing module 'phy_dwidth_convert' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_dwidth_convert.v:42]
+INFO: [Synth 8-6157] synthesizing module 'sync_cell' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 	Parameter C_SYNC_STAGE bound to: 9 - type: integer 
 	Parameter C_DW bound to: 2 - type: integer 
 	Parameter pTCQ bound to: 0 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:36]
-INFO: [Synth 8-6155] done synthesizing module 'sync_cell' (59#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
-INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'sync_cell' (58#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 	Parameter C_SYNC_STAGE bound to: 9 - type: integer 
 	Parameter C_DW bound to: 5 - type: integer 
 	Parameter pTCQ bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized0' (59#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
-INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized1' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized0' (58#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized1' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 	Parameter C_SYNC_STAGE bound to: 2 - type: integer 
 	Parameter C_DW bound to: 1 - type: integer 
 	Parameter pTCQ bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized1' (59#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized1' (58#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
@@ -1352,7 +1342,7 @@ INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM ge
 INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 Info : Asymmetric Ram write pattern identified
 INFO: [Synth 8-4563] Found possible Asymmetric RAM pattern for RAM gen_wr_a.gen_word_wide.mem_reg
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (59#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -1362,10 +1352,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [D:/Xili
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 4 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (59#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 	Parameter REG_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized4' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -1375,10 +1365,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized4' [D:/Xili
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 5 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized4' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized4' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 	Parameter REG_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized5' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
 	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
@@ -1388,10 +1378,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized5' [D:/Xili
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter WIDTH bound to: 6 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized5' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized5' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized1' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 	Parameter REG_WIDTH bound to: 6 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized1' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized1' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1506]
 	Parameter COMMON_CLOCK bound to: 0 - type: integer 
 	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
@@ -1405,37 +1395,37 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst__parameterized1' [D:/
 	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
 	Parameter VERSION bound to: 0 - type: integer 
 	Parameter DEF_VAL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized1' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (62#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1506]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst__parameterized1' (60#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (61#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1506]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1790]
 	Parameter RST_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1790]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (62#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1790]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
 	Parameter RESET_VALUE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
 	Parameter RESET_VALUE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 6 - type: integer 
 	Parameter RESET_VALUE bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
 	Parameter RESET_VALUE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (63#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (64#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (66#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
@@ -1595,35 +1585,35 @@ INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a
 Info : Asymmetric Ram read pattern identified
 INFO: [Synth 8-4563] Found possible Asymmetric RAM pattern for RAM gen_wr_a.gen_word_narrow.mem_reg
 Info : Asymmetric Ram read pattern identified
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (66#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
 	Parameter RESET_VALUE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (66#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (66#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (66#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (65#1) [D:/Xilinx_2019_2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'phy_dwidth_convert' (67#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_dwidth_convert.v:42]
-INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized2' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'phy_dwidth_convert' (66#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_dwidth_convert.v:42]
+INFO: [Synth 8-6157] synthesizing module 'sync_cell__parameterized2' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 	Parameter C_SYNC_STAGE bound to: 7 - type: integer 
 	Parameter C_DW bound to: 2 - type: integer 
 	Parameter pTCQ bound to: 0 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized2' (67#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/sync_cell.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sync_cell__parameterized2' (66#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/sync_cell.v:23]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (68#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
-INFO: [Synth 8-6157] synthesizing module 'phy_out' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (67#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'phy_out' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
 	Parameter SIG_TYPE_DIFF bound to: FALSE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_VALUE bound to: 1'b1 
@@ -1633,15 +1623,15 @@ INFO: [Synth 8-6157] synthesizing module 'OBUF' [D:/Xilinx_2019_2/Vivado/2019.2/
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'OBUF' (69#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
-INFO: [Synth 8-6155] done synthesizing module 'phy_out' (70#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
-INFO: [Synth 8-6157] synthesizing module 'phy_out__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (68#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46211]
+INFO: [Synth 8-6155] done synthesizing module 'phy_out' (69#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
+INFO: [Synth 8-6157] synthesizing module 'phy_out__parameterized0' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
 	Parameter SIG_TYPE_DIFF bound to: FALSE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_VALUE bound to: 1'b0 
 	Parameter OSERDES_CLK_INV bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'phy_out__parameterized0' (70#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
-INFO: [Synth 8-6157] synthesizing module 'phy_out__parameterized1' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'phy_out__parameterized0' (69#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
+INFO: [Synth 8-6157] synthesizing module 'phy_out__parameterized1' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
 	Parameter SIG_TYPE_DIFF bound to: TRUE - type: string 
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter INIT_VALUE bound to: 1'b1 
@@ -1650,49 +1640,32 @@ INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx_2019_2/Vivado/2019.
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (71#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
-INFO: [Synth 8-6155] done synthesizing module 'phy_out__parameterized1' (71#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/phy_out.v:42]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_dwidth_convert'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (70#1) [D:/Xilinx_2019_2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:46225]
+INFO: [Synth 8-6155] done synthesizing module 'phy_out__parameterized1' (70#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/phy_out.v:42]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_dwidth_convert'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:184]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_phy' (72#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_phy.v:42]
-WARNING: [Synth 8-6014] Unused sequential element is_busy_0_r_reg was removed.  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_core_1way.v:298]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_phy' (71#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_phy.v:42]
+WARNING: [Synth 8-6014] Unused sequential element is_busy_0_r_reg was removed.  [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_core_1way.v:299]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_core' (73#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_core_1way.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_core' (72#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_core_1way.v:103]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'fcc_top_1way' (74#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/fcc_top_1way.v:71]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'req_gen_inst'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:148]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fcc_top_1way_inst'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:203]
+INFO: [Synth 8-6155] done synthesizing module 'fcc_top_1way' (73#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/fcc_top_1way.v:71]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'req_gen_inst'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:149]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fcc_top_1way_inst'. This will prevent further optimization [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:204]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'nfc_channel' (75#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_channel.v:49]
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'nfc_top' (76#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/nfc_top.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'nfc_channel' (74#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_channel.v:49]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -1709,7 +1682,24 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM g
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
-INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' (77#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/synth/NFC_4Channel_bd_nfc_top_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'nfc_top' (75#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/nfc_top.v:31]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_wide.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'NFC_4Channel_bd_nfc_top_0_0' (76#1) [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ip/NFC_4Channel_bd_nfc_top_0_0/synth/NFC_4Channel_bd_nfc_top_0_0.v:58]
 WARNING: [Synth 8-3331] design phy_inout__parameterized0 has unconnected port data_to_and_from_pins_n
 WARNING: [Synth 8-3331] design phy_out has unconnected port data_to_pins_n
 WARNING: [Synth 8-3331] design phy_out__parameterized0 has unconnected port data_to_pins_n
@@ -1812,7 +1802,7 @@ WARNING: [Synth 8-3331] design phy_status has unconnected port i_dq[17]
 WARNING: [Synth 8-3331] design phy_status has unconnected port i_dq[16]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2086.883 ; gain = 487.910
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2085.492 ; gain = 484.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1825,12 +1815,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2086.883 ; gain = 487.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2085.492 ; gain = 484.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 2086.883 ; gain = 487.910
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2085.492 ; gain = 484.914
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.793 . Memory (MB): peak = 2086.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.687 . Memory (MB): peak = 2085.492 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 240 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -2223,7 +2213,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/NFC_4Channel_bd_nfc_top_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2636.836 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2635.375 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 44 instances were transformed.
   IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
@@ -2231,9 +2221,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 4 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.715 . Memory (MB): peak = 2644.750 ; gain = 7.914
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.408 . Memory (MB): peak = 2642.824 ; gain = 7.449
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:25 ; elapsed = 00:01:47 . Memory (MB): peak = 2644.750 ; gain = 1045.777
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2642.824 ; gain = 1042.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -2241,27 +2231,27 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:25 ; elapsed = 00:01:47 . Memory (MB): peak = 2644.750 ; gain = 1045.777
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2642.824 ; gain = 1042.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
-Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/asyn_res_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/asyn_req_fifo/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_rd/asyn_fifo_rd/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr/U0. (constraint file  D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/dont_touch.xdc, line 38).
 Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_0/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_1/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_inst/fcc_wrapper_0/data_fifo_wr/asyn_fifo_wr. (constraint file  auto generated constraint, line ).
@@ -2431,12 +2421,12 @@ Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_2/fcc_top_1way_
 Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy/phy_dwidth_convert/xpm_fifo_async_dw_18to36. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy/phy_dwidth_convert/xpm_fifo_async_dw_40to20. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:49 . Memory (MB): peak = 2644.750 ; gain = 1045.777
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 2642.824 ; gain = 1042.246
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'axil_regfile'
 INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'axil_regfile'
 INFO: [Synth 8-5546] ROM "lba0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'o_req_valid_reg' into 'state_reg' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/ad71/src/req_gen.v:96]
+INFO: [Synth 8-4471] merging register 'o_req_valid_reg' into 'state_reg' [d:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.srcs/sources_1/bd/NFC_4Channel_bd/ipshared/67d0/src/req_gen.v:96]
 INFO: [Synth 8-802] inferred FSM for state register 'res_state_reg' in module 'fcc_wrapper__xdcDup__1'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'phy_status'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'phy_erase'
@@ -2799,7 +2789,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_0_reg' using encoding 'sequential' in module 'fcc_core'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:36 ; elapsed = 00:02:01 . Memory (MB): peak = 2644.750 ; gain = 1045.777
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 2642.824 ; gain = 1042.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2808,19 +2798,19 @@ Report RTL Partitions:
 +------+-------------------------------+------------+----------+
 |1     |phy_inout__GC0                 |           1|         3|
 |2     |phy_inout__parameterized0__GC0 |           1|         3|
-|3     |fcc_phy__xdcDup__1__GC0        |           1|      2401|
+|3     |fcc_phy__xdcDup__1__GC0        |           1|      2400|
 |4     |fcc_core__xdcDup__1__GC0       |           1|     14052|
 |5     |fcc_top_1way__xdcDup__1__GC0   |           1|      2293|
 |6     |nfc_channel__xdcDup__1__GC0    |           1|      2608|
-|7     |fcc_phy__xdcDup__2__GC0        |           1|      2401|
+|7     |fcc_phy__xdcDup__2__GC0        |           1|      2400|
 |8     |fcc_core__xdcDup__2__GC0       |           1|     14052|
 |9     |fcc_top_1way__xdcDup__2__GC0   |           1|      2293|
 |10    |nfc_channel__xdcDup__2__GC0    |           1|      2608|
-|11    |fcc_phy__xdcDup__3__GC0        |           1|      2401|
+|11    |fcc_phy__xdcDup__3__GC0        |           1|      2400|
 |12    |fcc_core__xdcDup__3__GC0       |           1|     14052|
 |13    |fcc_top_1way__xdcDup__3__GC0   |           1|      2293|
 |14    |nfc_channel__xdcDup__3__GC0    |           1|      2608|
-|15    |fcc_phy__GC0                   |           1|      2401|
+|15    |fcc_phy__GC0                   |           1|      2400|
 |16    |fcc_core__GC0                  |           1|     14052|
 |17    |fcc_top_1way__GC0              |           1|      2293|
 |18    |nfc_channel__GC0               |           1|      2608|
@@ -7126,7 +7116,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/nfc
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/nfc_channel_inst_1 /fcc_top_1way_inst/fcc_corei_11/fcc_executer_0/phy_erase/\o_rd_st_id_reg[5] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:36 ; elapsed = 00:03:06 . Memory (MB): peak = 2644.750 ; gain = 1045.777
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:02:00 . Memory (MB): peak = 2642.824 ; gain = 1042.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7173,19 +7163,19 @@ Report RTL Partitions:
 +------+-------------------------------+------------+----------+
 |1     |phy_inout__GC0                 |           4|         3|
 |2     |phy_inout__parameterized0__GC0 |          32|         3|
-|3     |fcc_phy__xdcDup__1__GC0        |           1|      1996|
+|3     |fcc_phy__xdcDup__1__GC0        |           1|      1995|
 |4     |fcc_core__xdcDup__1__GC0       |           1|      8058|
 |5     |fcc_top_1way__xdcDup__1__GC0   |           1|      1991|
 |6     |nfc_channel__xdcDup__1__GC0    |           1|       482|
-|7     |fcc_phy__xdcDup__2__GC0        |           1|      1996|
+|7     |fcc_phy__xdcDup__2__GC0        |           1|      1995|
 |8     |fcc_core__xdcDup__2__GC0       |           1|      8058|
 |9     |fcc_top_1way__xdcDup__2__GC0   |           1|      1991|
 |10    |nfc_channel__xdcDup__2__GC0    |           1|       482|
-|11    |fcc_phy__xdcDup__3__GC0        |           1|      1996|
+|11    |fcc_phy__xdcDup__3__GC0        |           1|      1995|
 |12    |fcc_core__xdcDup__3__GC0       |           1|      8058|
 |13    |fcc_top_1way__xdcDup__3__GC0   |           1|      1991|
 |14    |nfc_channel__xdcDup__3__GC0    |           1|       482|
-|15    |fcc_phy__GC0                   |           1|      1996|
+|15    |fcc_phy__GC0                   |           1|      1995|
 |16    |fcc_core__GC0                  |           1|      8058|
 |17    |fcc_top_1way__GC0              |           1|      1991|
 |18    |nfc_channel__GC0               |           1|       482|
@@ -7195,13 +7185,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:42 ; elapsed = 00:03:14 . Memory (MB): peak = 2708.730 ; gain = 1109.758
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:02:05 . Memory (MB): peak = 2711.566 ; gain = 1110.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:45 ; elapsed = 00:03:17 . Memory (MB): peak = 2730.527 ; gain = 1131.555
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2733.840 ; gain = 1133.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7246,19 +7236,19 @@ Report RTL Partitions:
 +------+-------------------------------+------------+----------+
 |1     |phy_inout__GC0                 |           4|         3|
 |2     |phy_inout__parameterized0__GC0 |          32|         3|
-|3     |fcc_phy__xdcDup__1__GC0        |           1|      1996|
+|3     |fcc_phy__xdcDup__1__GC0        |           1|      1995|
 |4     |fcc_core__xdcDup__1__GC0       |           1|      8058|
 |5     |fcc_top_1way__xdcDup__1__GC0   |           1|      1991|
 |6     |nfc_channel__xdcDup__1__GC0    |           1|       482|
-|7     |fcc_phy__xdcDup__2__GC0        |           1|      1996|
+|7     |fcc_phy__xdcDup__2__GC0        |           1|      1995|
 |8     |fcc_core__xdcDup__2__GC0       |           1|      8058|
 |9     |fcc_top_1way__xdcDup__2__GC0   |           1|      1991|
 |10    |nfc_channel__xdcDup__2__GC0    |           1|       482|
-|11    |fcc_phy__xdcDup__3__GC0        |           1|      1996|
+|11    |fcc_phy__xdcDup__3__GC0        |           1|      1995|
 |12    |fcc_core__xdcDup__3__GC0       |           1|      8058|
 |13    |fcc_top_1way__xdcDup__3__GC0   |           1|      1991|
 |14    |nfc_channel__xdcDup__3__GC0    |           1|       482|
-|15    |fcc_phy__GC0                   |           1|      1996|
+|15    |fcc_phy__GC0                   |           1|      1995|
 |16    |fcc_core__GC0                  |           1|      8058|
 |17    |fcc_top_1way__GC0              |           1|      1991|
 |18    |nfc_channel__GC0               |           1|       482|
@@ -7276,7 +7266,7 @@ INFO: [Synth 8-7053] The timing for the instance inst/nfc_channel_inst_2/fcc_top
 INFO: [Synth 8-7053] The timing for the instance inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy/phy_dwidth_convert/xpm_fifo_async_dw_40to20/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_wide.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7053] The timing for the instance inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy/phy_dwidth_convert/xpm_fifo_async_dw_18to36/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:54 ; elapsed = 00:03:28 . Memory (MB): peak = 2761.496 ; gain = 1162.523
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:17 . Memory (MB): peak = 2763.039 ; gain = 1162.461
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7300,13 +7290,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:31 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished IO Insertion : Time (s): cpu = 00:02:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:31 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -7325,25 +7315,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:03:33 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:00 ; elapsed = 00:03:33 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:09 ; elapsed = 00:02:22 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:01 ; elapsed = 00:03:34 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:10 ; elapsed = 00:02:23 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:01 ; elapsed = 00:03:34 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:10 ; elapsed = 00:02:23 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -7374,52 +7364,51 @@ Report Cell Usage:
 +------+------------+------+
 |      |Cell        |Count |
 +------+------------+------+
-|1     |BUFGCE_DIV  |     4|
-|2     |CARRY8      |   140|
-|3     |IDELAYE3    |    36|
-|4     |ISERDESE3   |    36|
-|5     |LUT1        |  1321|
-|6     |LUT2        |  2433|
-|7     |LUT3        |  3754|
-|8     |LUT4        |  2216|
-|9     |LUT5        |  2438|
-|10    |LUT6        |  3734|
-|11    |MUXCY       |   160|
-|12    |MUXF7       |    76|
-|13    |OSERDESE3   |    20|
-|14    |OSERDESE3_1 |    40|
-|15    |RAM32M16    |   100|
-|16    |RAMB18E2    |     4|
-|17    |RAMB18E2_1  |     4|
-|18    |RAMB36E2    |     4|
-|19    |RAMB36E2_1  |     8|
-|20    |SRL16E      |    20|
-|21    |FDCE        | 13872|
-|22    |FDPE        |   384|
-|23    |FDRE        |  4322|
-|24    |FDSE        |   160|
-|25    |IBUF        |     4|
-|26    |IOBUF       |    32|
-|27    |IOBUFDS     |     4|
-|28    |OBUF        |    20|
-|29    |OBUFDS      |     4|
+|1     |CARRY8      |   140|
+|2     |IDELAYE3    |    36|
+|3     |ISERDESE3   |    36|
+|4     |LUT1        |  1321|
+|5     |LUT2        |  2433|
+|6     |LUT3        |  3754|
+|7     |LUT4        |  2216|
+|8     |LUT5        |  2438|
+|9     |LUT6        |  3734|
+|10    |MUXCY       |   160|
+|11    |MUXF7       |    76|
+|12    |OSERDESE3   |    20|
+|13    |OSERDESE3_1 |    40|
+|14    |RAM32M16    |   100|
+|15    |RAMB18E2    |     4|
+|16    |RAMB18E2_1  |     4|
+|17    |RAMB36E2    |     4|
+|18    |RAMB36E2_1  |     8|
+|19    |SRL16E      |    20|
+|20    |FDCE        | 13872|
+|21    |FDPE        |   384|
+|22    |FDRE        |  4322|
+|23    |FDSE        |   160|
+|24    |IBUF        |     4|
+|25    |IOBUF       |    32|
+|26    |IOBUFDS     |     4|
+|27    |OBUF        |    20|
+|28    |OBUFDS      |     4|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+------+
 |      |Instance                                                                                        |Module                                                  |Cells |
 +------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+------+
-|1     |top                                                                                             |                                                        | 35350|
-|2     |  inst                                                                                          |nfc_top                                                 | 35350|
-|3     |    nfc_channel_inst_0                                                                          |nfc_channel__xdcDup__1                                  |  8355|
-|4     |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__1                                 |  7853|
-|5     |        fcc_core                                                                                |fcc_core__xdcDup__1                                     |  5876|
+|1     |top                                                                                             |                                                        | 35346|
+|2     |  inst                                                                                          |nfc_top                                                 | 35346|
+|3     |    nfc_channel_inst_0                                                                          |nfc_channel__xdcDup__1                                  |  8354|
+|4     |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__1                                 |  7852|
+|5     |        fcc_core                                                                                |fcc_core__xdcDup__1                                     |  5875|
 |6     |          fcc_executer_0                                                                        |fcc_executer__4                                         |  2489|
 |7     |            phy_status                                                                          |phy_status__4                                           |   185|
 |8     |            phy_erase                                                                           |phy_erase__4                                            |   338|
 |9     |            phy_read                                                                            |phy_read__4                                             |   412|
 |10    |            phy_prog                                                                            |phy_prog__4                                             |   482|
-|11    |          fcc_phy                                                                               |fcc_phy__xdcDup__1                                      |  1243|
+|11    |          fcc_phy                                                                               |fcc_phy__xdcDup__1                                      |  1242|
 |12    |            phy_dwidth_convert                                                                  |phy_dwidth_convert__xdcDup__1                           |   586|
 |13    |              xpm_fifo_async_dw_40to20                                                          |xpm_fifo_async__xdcDup__1                               |   201|
 |14    |                \gnuram_async_fifo.xpm_fifo_base_inst                                           |xpm_fifo_base__xdcDup__1                                |   201|
@@ -7595,15 +7584,15 @@ Report Instance Areas:
 |184   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd  |xpm_cdc_single__parameterized2__18                      |     5|
 |185   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr  |xpm_cdc_single__parameterized2__19                      |     5|
 |186   |      req_gen_inst                                                                              |req_gen__4                                              |   254|
-|187   |    nfc_channel_inst_1                                                                          |nfc_channel__xdcDup__2                                  |  8355|
-|188   |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__2                                 |  7853|
-|189   |        fcc_core                                                                                |fcc_core__xdcDup__2                                     |  5876|
+|187   |    nfc_channel_inst_1                                                                          |nfc_channel__xdcDup__2                                  |  8354|
+|188   |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__2                                 |  7852|
+|189   |        fcc_core                                                                                |fcc_core__xdcDup__2                                     |  5875|
 |190   |          fcc_executer_0                                                                        |fcc_executer__5                                         |  2489|
 |191   |            phy_status                                                                          |phy_status__5                                           |   185|
 |192   |            phy_erase                                                                           |phy_erase__5                                            |   338|
 |193   |            phy_read                                                                            |phy_read__5                                             |   412|
 |194   |            phy_prog                                                                            |phy_prog__5                                             |   482|
-|195   |          fcc_phy                                                                               |fcc_phy__xdcDup__2                                      |  1243|
+|195   |          fcc_phy                                                                               |fcc_phy__xdcDup__2                                      |  1242|
 |196   |            phy_dwidth_convert                                                                  |phy_dwidth_convert__xdcDup__2                           |   586|
 |197   |              xpm_fifo_async_dw_40to20                                                          |xpm_fifo_async__xdcDup__2                               |   201|
 |198   |                \gnuram_async_fifo.xpm_fifo_base_inst                                           |xpm_fifo_base__xdcDup__2                                |   201|
@@ -7779,15 +7768,15 @@ Report Instance Areas:
 |368   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd  |xpm_cdc_single__parameterized2__22                      |     5|
 |369   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr  |xpm_cdc_single__parameterized2__23                      |     5|
 |370   |      req_gen_inst                                                                              |req_gen__5                                              |   254|
-|371   |    nfc_channel_inst_2                                                                          |nfc_channel__xdcDup__3                                  |  8355|
-|372   |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__3                                 |  7853|
-|373   |        fcc_core                                                                                |fcc_core__xdcDup__3                                     |  5876|
+|371   |    nfc_channel_inst_2                                                                          |nfc_channel__xdcDup__3                                  |  8354|
+|372   |      fcc_top_1way_inst                                                                         |fcc_top_1way__xdcDup__3                                 |  7852|
+|373   |        fcc_core                                                                                |fcc_core__xdcDup__3                                     |  5875|
 |374   |          fcc_executer_0                                                                        |fcc_executer__6                                         |  2489|
 |375   |            phy_status                                                                          |phy_status__6                                           |   185|
 |376   |            phy_erase                                                                           |phy_erase__6                                            |   338|
 |377   |            phy_read                                                                            |phy_read__6                                             |   412|
 |378   |            phy_prog                                                                            |phy_prog__6                                             |   482|
-|379   |          fcc_phy                                                                               |fcc_phy__xdcDup__3                                      |  1243|
+|379   |          fcc_phy                                                                               |fcc_phy__xdcDup__3                                      |  1242|
 |380   |            phy_dwidth_convert                                                                  |phy_dwidth_convert__xdcDup__3                           |   586|
 |381   |              xpm_fifo_async_dw_40to20                                                          |xpm_fifo_async__xdcDup__3                               |   201|
 |382   |                \gnuram_async_fifo.xpm_fifo_base_inst                                           |xpm_fifo_base__xdcDup__3                                |   201|
@@ -7963,15 +7952,15 @@ Report Instance Areas:
 |552   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd  |xpm_cdc_single__parameterized2__26                      |     5|
 |553   |                        \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr  |xpm_cdc_single__parameterized2__27                      |     5|
 |554   |      req_gen_inst                                                                              |req_gen__6                                              |   254|
-|555   |    nfc_channel_inst_3                                                                          |nfc_channel                                             |  8355|
-|556   |      fcc_top_1way_inst                                                                         |fcc_top_1way                                            |  7853|
-|557   |        fcc_core                                                                                |fcc_core                                                |  5876|
+|555   |    nfc_channel_inst_3                                                                          |nfc_channel                                             |  8354|
+|556   |      fcc_top_1way_inst                                                                         |fcc_top_1way                                            |  7852|
+|557   |        fcc_core                                                                                |fcc_core                                                |  5875|
 |558   |          fcc_executer_0                                                                        |fcc_executer                                            |  2489|
 |559   |            phy_status                                                                          |phy_status                                              |   185|
 |560   |            phy_erase                                                                           |phy_erase                                               |   338|
 |561   |            phy_read                                                                            |phy_read                                                |   412|
 |562   |            phy_prog                                                                            |phy_prog                                                |   482|
-|563   |          fcc_phy                                                                               |fcc_phy                                                 |  1243|
+|563   |          fcc_phy                                                                               |fcc_phy                                                 |  1242|
 |564   |            phy_dwidth_convert                                                                  |phy_dwidth_convert                                      |   586|
 |565   |              xpm_fifo_async_dw_40to20                                                          |xpm_fifo_async                                          |   201|
 |566   |                \gnuram_async_fifo.xpm_fifo_base_inst                                           |xpm_fifo_base                                           |   201|
@@ -8150,18 +8139,18 @@ Report Instance Areas:
 |739   |    axil_regfile_inst                                                                           |axil_regfile                                            |  1930|
 +------+------------------------------------------------------------------------------------------------+--------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:01 ; elapsed = 00:03:34 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:10 ; elapsed = 00:02:23 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:02:58 . Memory (MB): peak = 2765.262 ; gain = 608.422
-Synthesis Optimization Complete : Time (s): cpu = 00:03:01 ; elapsed = 00:03:34 . Memory (MB): peak = 2765.262 ; gain = 1166.289
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:02:03 . Memory (MB): peak = 2766.836 ; gain = 608.926
+Synthesis Optimization Complete : Time (s): cpu = 00:02:10 ; elapsed = 00:02:24 . Memory (MB): peak = 2766.836 ; gain = 1166.258
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.474 . Memory (MB): peak = 2774.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 2776.406 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 556 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 36 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2858.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2865.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 176 instances were transformed.
   (CARRY4) => CARRY8: 32 instances
@@ -8172,19 +8161,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 100 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-606 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+604 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:17 ; elapsed = 00:03:55 . Memory (MB): peak = 2858.438 ; gain = 2429.125
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2858.438 ; gain = 0.000
+synth_design: Time (s): cpu = 00:02:24 ; elapsed = 00:02:39 . Memory (MB): peak = 2865.344 ; gain = 2435.477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2865.344 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/NFC_4Channel_bd_nfc_top_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_nfc_top_0_0, cache-ID = 72a685abdbebeb89
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP NFC_4Channel_bd_nfc_top_0_0, cache-ID = f747467c883f86af
 INFO: [Coretcl 2-1174] Renamed 738 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2858.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2865.344 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_2019_2/RTL_prj/OCOWFC_Z19/OCOWFC_Z19/Z19_NFC_4Chanel/Z19_NFC_4Channel/Z19_NFC_4Channel.runs/NFC_4Channel_bd_nfc_top_0_0_synth_1/NFC_4Channel_bd_nfc_top_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file NFC_4Channel_bd_nfc_top_0_0_utilization_synth.rpt -pb NFC_4Channel_bd_nfc_top_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 16:49:38 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 28 16:49:45 2026...

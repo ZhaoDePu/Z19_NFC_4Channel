@@ -22,11 +22,11 @@
       "axi_dma_2": "",
       "axi_dma_3": "",
       "clk_wiz_0": "",
-      "nfc_top_0": "",
       "proc_sys_reset_0": "",
       "smartconnect_0": "",
       "smartconnect_1": "",
-      "zynq_ultra_ps_e_0": ""
+      "zynq_ultra_ps_e_0": "",
+      "nfc_top_0": ""
     },
     "ports": {
       "O_NAND_RE_N_0": {
@@ -325,15 +325,6 @@
           },
           "RESET_TYPE": {
             "value": "ACTIVE_LOW"
-          }
-        }
-      },
-      "nfc_top_0": {
-        "vlnv": "xilinx.com:user:nfc_top:2.0",
-        "xci_name": "NFC_4Channel_bd_nfc_top_0_0",
-        "parameters": {
-          "CHAN_NUM": {
-            "value": "4"
           }
         }
       },
@@ -3414,85 +3405,22 @@
             "value": "custom"
           }
         }
+      },
+      "nfc_top_0": {
+        "vlnv": "xilinx.com:user:nfc_top:2.0",
+        "xci_name": "NFC_4Channel_bd_nfc_top_0_0",
+        "parameters": {
+          "CHAN_NUM": {
+            "value": "4"
+          }
+        }
       }
     },
     "interface_nets": {
-      "smartconnect_1_M02_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_2/S_AXI",
-          "smartconnect_1/M02_AXI"
-        ]
-      },
       "axi_dma_3_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_3/M_AXI_MM2S",
           "smartconnect_1/S07_AXI"
-        ]
-      },
-      "axi_dma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_0/M_AXI_S2MM",
-          "smartconnect_1/S02_AXI"
-        ]
-      },
-      "smartconnect_0_M02_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M02_AXI",
-          "axi_dma_2/S_AXI_LITE"
-        ]
-      },
-      "axi_dma_3_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_3/M_AXI_S2MM",
-          "smartconnect_1/S08_AXI"
-        ]
-      },
-      "smartconnect_0_M03_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M03_AXI",
-          "axi_dma_3/S_AXI_LITE"
-        ]
-      },
-      "axi_bram_ctrl_1_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_1_bram/BRAM_PORTB",
-          "axi_bram_ctrl_1/BRAM_PORTB"
-        ]
-      },
-      "axi_dma_3_M_AXIS_MM2S": {
-        "interface_ports": [
-          "nfc_top_0/s_axis_3",
-          "axi_dma_3/M_AXIS_MM2S"
-        ]
-      },
-      "nfc_top_0_m_axis_1": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_1",
-          "axi_dma_1/S_AXIS_S2MM"
-        ]
-      },
-      "nfc_top_0_m_axis_2": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_2",
-          "axi_dma_2/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_0_M00_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "axi_dma_0/S_AXI_LITE"
-        ]
-      },
-      "smartconnect_1_M00_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_0/S_AXI",
-          "smartconnect_1/M00_AXI"
-        ]
-      },
-      "nfc_top_0_m_axis_3": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_3",
-          "axi_dma_3/S_AXIS_S2MM"
         ]
       },
       "axi_bram_ctrl_1_BRAM_PORTA": {
@@ -3501,64 +3429,46 @@
           "axi_bram_ctrl_1/BRAM_PORTA"
         ]
       },
-      "axi_dma_2_M_AXIS_MM2S": {
+      "smartconnect_0_M03_AXI": {
         "interface_ports": [
-          "nfc_top_0/s_axis_2",
-          "axi_dma_2/M_AXIS_MM2S"
-        ]
-      },
-      "zynq_ultra_ps_e_0_M_AXI_HPM0_LPD": {
-        "interface_ports": [
-          "zynq_ultra_ps_e_0/M_AXI_HPM0_LPD",
-          "smartconnect_0/S00_AXI"
-        ]
-      },
-      "axi_dma_2_M_AXI_MM2S": {
-        "interface_ports": [
-          "axi_dma_2/M_AXI_MM2S",
-          "smartconnect_1/S05_AXI"
-        ]
-      },
-      "axi_bram_ctrl_0_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_0_bram/BRAM_PORTB",
-          "axi_bram_ctrl_0/BRAM_PORTB"
-        ]
-      },
-      "axi_dma_1_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_1/M_AXI_S2MM",
-          "smartconnect_1/S04_AXI"
-        ]
-      },
-      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
-        "interface_ports": [
-          "smartconnect_1/S00_AXI",
-          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
-        ]
-      },
-      "nfc_top_0_m_axis_0": {
-        "interface_ports": [
-          "nfc_top_0/m_axis_0",
-          "axi_dma_0/S_AXIS_S2MM"
-        ]
-      },
-      "smartconnect_1_M01_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_1/S_AXI",
-          "smartconnect_1/M01_AXI"
-        ]
-      },
-      "smartconnect_0_M01_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M01_AXI",
-          "axi_dma_1/S_AXI_LITE"
+          "smartconnect_0/M03_AXI",
+          "axi_dma_3/S_AXI_LITE"
         ]
       },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "nfc_top_0/s_axis_0",
           "axi_dma_0/M_AXIS_MM2S"
+        ]
+      },
+      "nfc_top_0_m_axis_2": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_2",
+          "axi_dma_2/S_AXIS_S2MM"
+        ]
+      },
+      "smartconnect_1_M00_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_0/S_AXI",
+          "smartconnect_1/M00_AXI"
+        ]
+      },
+      "axi_dma_3_M_AXIS_MM2S": {
+        "interface_ports": [
+          "nfc_top_0/s_axis_3",
+          "axi_dma_3/M_AXIS_MM2S"
+        ]
+      },
+      "smartconnect_1_M02_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_2/S_AXI",
+          "smartconnect_1/M02_AXI"
+        ]
+      },
+      "axi_dma_2_M_AXI_MM2S": {
+        "interface_ports": [
+          "axi_dma_2/M_AXI_MM2S",
+          "smartconnect_1/S05_AXI"
         ]
       },
       "axi_bram_ctrl_2_BRAM_PORTA": {
@@ -3573,10 +3483,22 @@
           "axi_bram_ctrl_3/BRAM_PORTA"
         ]
       },
-      "axi_dma_2_M_AXI_S2MM": {
+      "axi_dma_2_M_AXIS_MM2S": {
         "interface_ports": [
-          "axi_dma_2/M_AXI_S2MM",
-          "smartconnect_1/S06_AXI"
+          "nfc_top_0/s_axis_2",
+          "axi_dma_2/M_AXIS_MM2S"
+        ]
+      },
+      "nfc_top_0_m_axis_0": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_0",
+          "axi_dma_0/S_AXIS_S2MM"
+        ]
+      },
+      "axi_dma_3_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_3/M_AXI_S2MM",
+          "smartconnect_1/S08_AXI"
         ]
       },
       "axi_dma_1_M_AXIS_MM2S": {
@@ -3591,28 +3513,10 @@
           "smartconnect_1/S03_AXI"
         ]
       },
-      "axi_bram_ctrl_2_BRAM_PORTB": {
-        "interface_ports": [
-          "axi_bram_ctrl_2_bram/BRAM_PORTB",
-          "axi_bram_ctrl_2/BRAM_PORTB"
-        ]
-      },
-      "smartconnect_1_M03_AXI": {
-        "interface_ports": [
-          "axi_bram_ctrl_3/S_AXI",
-          "smartconnect_1/M03_AXI"
-        ]
-      },
       "axi_dma_0_M_AXI_MM2S": {
         "interface_ports": [
           "axi_dma_0/M_AXI_MM2S",
           "smartconnect_1/S01_AXI"
-        ]
-      },
-      "smartconnect_0_M04_AXI": {
-        "interface_ports": [
-          "smartconnect_0/M04_AXI",
-          "nfc_top_0/s_axil"
         ]
       },
       "axi_bram_ctrl_3_BRAM_PORTB": {
@@ -3625,6 +3529,102 @@
         "interface_ports": [
           "axi_bram_ctrl_0_bram/BRAM_PORTA",
           "axi_bram_ctrl_0/BRAM_PORTA"
+        ]
+      },
+      "smartconnect_1_M01_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_1/S_AXI",
+          "smartconnect_1/M01_AXI"
+        ]
+      },
+      "axi_dma_1_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_1/M_AXI_S2MM",
+          "smartconnect_1/S04_AXI"
+        ]
+      },
+      "axi_bram_ctrl_2_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_2_bram/BRAM_PORTB",
+          "axi_bram_ctrl_2/BRAM_PORTB"
+        ]
+      },
+      "axi_bram_ctrl_0_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_0_bram/BRAM_PORTB",
+          "axi_bram_ctrl_0/BRAM_PORTB"
+        ]
+      },
+      "axi_dma_2_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_2/M_AXI_S2MM",
+          "smartconnect_1/S06_AXI"
+        ]
+      },
+      "smartconnect_1_M03_AXI": {
+        "interface_ports": [
+          "axi_bram_ctrl_3/S_AXI",
+          "smartconnect_1/M03_AXI"
+        ]
+      },
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
+        "interface_ports": [
+          "smartconnect_1/S00_AXI",
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
+        ]
+      },
+      "axi_dma_0_M_AXI_S2MM": {
+        "interface_ports": [
+          "axi_dma_0/M_AXI_S2MM",
+          "smartconnect_1/S02_AXI"
+        ]
+      },
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_LPD": {
+        "interface_ports": [
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_LPD",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
+      "smartconnect_0_M04_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M04_AXI",
+          "nfc_top_0/s_axil"
+        ]
+      },
+      "nfc_top_0_m_axis_1": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_1",
+          "axi_dma_1/S_AXIS_S2MM"
+        ]
+      },
+      "smartconnect_0_M01_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M01_AXI",
+          "axi_dma_1/S_AXI_LITE"
+        ]
+      },
+      "smartconnect_0_M02_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M02_AXI",
+          "axi_dma_2/S_AXI_LITE"
+        ]
+      },
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "axi_dma_0/S_AXI_LITE"
+        ]
+      },
+      "axi_bram_ctrl_1_BRAM_PORTB": {
+        "interface_ports": [
+          "axi_bram_ctrl_1_bram/BRAM_PORTB",
+          "axi_bram_ctrl_1/BRAM_PORTB"
+        ]
+      },
+      "nfc_top_0_m_axis_3": {
+        "interface_ports": [
+          "nfc_top_0/m_axis_3",
+          "axi_dma_3/S_AXIS_S2MM"
         ]
       }
     },
@@ -3640,9 +3640,9 @@
           "axi_dma_1/axi_resetn",
           "axi_dma_2/axi_resetn",
           "axi_dma_3/axi_resetn",
-          "nfc_top_0/s_axil_aresetn",
           "smartconnect_0/aresetn",
-          "smartconnect_1/aresetn"
+          "smartconnect_1/aresetn",
+          "nfc_top_0/s_axil_aresetn"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
@@ -3731,14 +3731,14 @@
           "axi_dma_3/s_axi_lite_aclk",
           "axi_dma_3/m_axi_mm2s_aclk",
           "axi_dma_3/m_axi_s2mm_aclk",
-          "nfc_top_0/nand_usr_clk",
-          "nfc_top_0/s_axil_aclk",
           "proc_sys_reset_0/slowest_sync_clk",
           "smartconnect_0/aclk",
           "smartconnect_0/aclk1",
           "smartconnect_1/aclk",
           "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
-          "zynq_ultra_ps_e_0/maxihpm0_lpd_aclk"
+          "zynq_ultra_ps_e_0/maxihpm0_lpd_aclk",
+          "nfc_top_0/nand_usr_clk",
+          "nfc_top_0/s_axil_aclk"
         ]
       },
       "clk_wiz_0_locked": {
@@ -3763,6 +3763,12 @@
         "ports": [
           "clk_wiz_0/nand_clk_fast",
           "nfc_top_0/nand_clk_fast"
+        ]
+      },
+      "clk_wiz_0_clk_ref": {
+        "ports": [
+          "clk_wiz_0/clk_ref",
+          "nfc_top_0/nand_clk_slow"
         ]
       }
     },

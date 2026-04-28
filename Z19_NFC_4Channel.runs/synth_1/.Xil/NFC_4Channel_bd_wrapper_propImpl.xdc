@@ -155,3 +155,9 @@ set_property src_info {type:XDC file:1 line:145 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN AL22 [get_ports {O_NAND_ALE_0[3]}]   ;# ALE_3
 set_property src_info {type:XDC file:1 line:146 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN AN19 [get_ports {O_NAND_WP_N_0[3]}]  ;# WP_3_N
+set_property src_info {type:XDC file:1 line:154 export:INPUT save:INPUT read:READ} [current_design]
+create_pblock pblock_nfc_ch3
+resize_pblock [get_pblocks pblock_nfc_ch3] -add {SLICE_X38Y24:SLICE_X58Y96}
+resize_pblock [get_pblocks pblock_nfc_ch3] -add {RAMB36_X4Y20:RAMB36_X6Y30}
+set_property src_info {type:XDC file:1 line:157 export:INPUT save:INPUT read:READ} [current_design]
+add_cells_to_pblock [get_pblocks pblock_nfc_ch3] [get_cells -hierarchical -quiet {NFC_4Channel_bd_i/nfc_top_0/inst/nfc_channel_inst_3/fcc_top_1way_inst/fcc_core/fcc_phy*}]

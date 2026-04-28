@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel" key="scw_hwspec_file_selection"/>
 	<item value="D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel\vitis\z19_nfc_4ch_platform\hw" key="debug_files_selection"/>
 	<item value="D:\Xilinx_2019_2\RTL_prj\OCOWFC_Z19\OCOWFC_Z19\Z19_NFC_4Chanel\Z19_NFC_4Channel" key="scw_hwspec"/>
 </section>

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Fri Apr 24 14:42:35 2026
+//Date        : Tue Apr 28 16:46:08 2026
 //Host        : DESKTOP-TRF6PNO running 64-bit major release  (build 9200)
 //Command     : generate_target NFC_4Channel_bd.bd
 //Design      : NFC_4Channel_bd
@@ -230,6 +230,7 @@ module NFC_4Channel_bd
   wire axi_dma_3_M_AXI_S2MM_WVALID;
   wire clk_in1_0_1;
   wire clk_wiz_0_clk_ctrl_50;
+  wire clk_wiz_0_clk_ref;
   wire clk_wiz_0_locked;
   wire clk_wiz_0_nand_clk_fast;
   wire [3:0]nfc_top_0_O_NAND_ALE;
@@ -1047,6 +1048,7 @@ module NFC_4Channel_bd
   NFC_4Channel_bd_clk_wiz_0_0 clk_wiz_0
        (.clk_ctrl_50(clk_wiz_0_clk_ctrl_50),
         .clk_in1(clk_in1_0_1),
+        .clk_ref(clk_wiz_0_clk_ref),
         .locked(clk_wiz_0_locked),
         .nand_clk_fast(clk_wiz_0_nand_clk_fast),
         .resetn(zynq_ultra_ps_e_0_pl_resetn0));
@@ -1084,6 +1086,7 @@ module NFC_4Channel_bd
         .m_axis_tvalid_3(nfc_top_0_m_axis_3_TVALID),
         .nand_clk_fast(clk_wiz_0_nand_clk_fast),
         .nand_clk_locked(clk_wiz_0_locked),
+        .nand_clk_slow(clk_wiz_0_clk_ref),
         .nand_usr_clk(clk_wiz_0_clk_ctrl_50),
         .s_axil_aclk(clk_wiz_0_clk_ctrl_50),
         .s_axil_araddr(smartconnect_0_M04_AXI_ARADDR),
