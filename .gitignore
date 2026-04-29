@@ -1,0 +1,83 @@
+# Vivado build artifacts
+*.cache/
+*.runs/
+*.hw/
+*.gen/
+*.ip_user_files/
+*.sim/
+*.jou
+*.log
+*.str
+*/.Xil/
+
+# Vivado IP cache
+Z19_NFC_4Channel.cache/
+Z19_NFC_4Channel.ip_user_files/
+
+# Generated files
+*.dcp
+*.bit
+*.xsa
+*.pb
+*.xpe
+
+# BD-generated IP simulation artifacts
+*_sim_netlist.v
+*_sim_netlist.vhdl
+*_stub.v
+*_stub.vhdl
+synth/
+sim/
+ui/
+*.hwdef
+ipshared/
+
+# Vitis generated SDK files
+vitis/.sdk/
+vitis/*/_ide/
+vitis/*/*.prj
+vitis/*_system/_ide/
+
+# REF_DOC binaries
+REF_DOC/*.doc
+REF_DOC/*.docx
+REF_DOC/*.xlsx
+REF_DOC/*.pdf
+
+# BD IP subdirectories (auto-generated, except .xci which is tracked)
+**/ip/*/
+
+# Claude Code memory
+.claude/
+
+# Misc logs
+ip_upgrade.log
+
+# Vitis / SDK
+vitis/.metadata/
+vitis/**/Debug/
+vitis/**/Release/
+vitis/**/._ide/
+vitis/*/Debug/
+vitis/*/Release/
+vitis/IDE.log
+vitis/.analytics
+vitis/webtalk/
+vitis/z19_nfc_4ch_platform/export/
+vitis/z19_nfc_4ch_platform/hw/
+vitis/*/standalone_domain/bsp/*/libsrc/
+*.elf
+*.elf.size
+
+# Vitis platform build artifacts
+vitis/**/*.o
+vitis/**/*.a
+vitis/**/bitstream/
+vitis/**/tempdsa/
+vitis/**/logs/
+vitis/**/.log/
+vitis/**/platform.spr
+
+# Windows
+Thumbs.db
+~$*

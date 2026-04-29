@@ -350,7 +350,7 @@ int main(void)
             }
         }
         xil_printf("DBG CH%u: DMA init OK (RegBase=0x%08X, IsReady=%d)\r\n",
-                   ch, g_dmas[ch].RegBase, g_dmas[ch].IsReady);
+                   ch, g_dmas[ch].RegBase, g_dmas[ch].Initialized);
 
         XAxiDma_IntrDisable(&g_dmas[ch], XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
         XAxiDma_IntrDisable(&g_dmas[ch], XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
@@ -445,7 +445,7 @@ int main(void)
             int dma_st = XAxiDma_SimpleTransfer(dma, (UINTPTR)bram_rd, TEST_LEN, XAXIDMA_DEVICE_TO_DMA);
             if (dma_st != XST_SUCCESS) {
                 xil_printf("ERR: CH%u DMA S2MM start failed, status=%d\r\n", cur_ch, dma_st);
-                xil_printf("DBG: DMA RegBase=0x%08X, IsReady=%d\r\n", dma->RegBase, dma->IsReady);
+                xil_printf("DBG: DMA RegBase=0x%08X, IsReady=%d\r\n", dma->RegBase, dma->Initialized);
                 dma_dump_status(cur_ch);
                 break;
             }

@@ -133,8 +133,8 @@ set_property PACKAGE_PIN AU21 [get_ports {IO_NAND_DQ_0[29]}]  ;# DQ5_3
 set_property PACKAGE_PIN AW19 [get_ports {IO_NAND_DQ_0[30]}]  ;# DQ6_3
 set_property PACKAGE_PIN AV21 [get_ports {IO_NAND_DQ_0[31]}]  ;# DQ7_3
 
-set_property PACKAGE_PIN AK20 [get_ports {IO_NAND_DQS_P_0[3]}] ;# DQS_3_P
-set_property PACKAGE_PIN AK19 [get_ports {IO_NAND_DQS_N_0[3]}] ;# DQS_3_N
+set_property PACKAGE_PIN AK20 [get_ports {IO_NAND_DQS_P_0[3]}] ;# DQS_3_P → AK20 (FMC2_LA21_P = DQS_3_T)
+set_property PACKAGE_PIN AK19 [get_ports {IO_NAND_DQS_N_0[3]}] ;# DQS_3_N → AK19 (FMC2_LA21_N = DQS_3_C)
 set_property PACKAGE_PIN AU23 [get_ports {O_NAND_RE_P_0[3]}]   ;# RE_3_P
 set_property PACKAGE_PIN AV23 [get_ports {O_NAND_RE_N_0[3]}]   ;# RE_3_N
 

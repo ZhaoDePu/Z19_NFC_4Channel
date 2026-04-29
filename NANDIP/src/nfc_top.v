@@ -394,7 +394,7 @@ nfc_channel #(
 //============================================================
 nfc_channel #(
     .DATA_WIDTH (DATA_WIDTH),
-    .PATCH      ("TRUE"    )   // DQS3 pinmap swap on FMC
+    .PATCH      ("FALSE"   )
 ) nfc_channel_inst_3 (
     .user_clk      (s_axil_aclk        ),
     .user_resetn   (s_axil_aresetn     ),
