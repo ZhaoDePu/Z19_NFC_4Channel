@@ -90,7 +90,7 @@ Z19_NFC_4Channel/
 
 | Tool | Version | Purpose |
 |---|---|---|
-| Xilinx Vivado | 2022.2 or later | Synthesis, implementation, STA |
+| Xilinx Vivado | 2024.1 or later | Synthesis, implementation, STA |
 | ModelSim / QuestaSim | 10.7 or later | RTL simulation |
 | Icarus Verilog + GTKWave | 11+ / 3.3+ | Open-source simulation option |
 | Python | 3.8+ | Utility and automation scripts |
